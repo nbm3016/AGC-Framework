@@ -1,0 +1,191 @@
+{
+  "banner": "AGC Expansion Mode Active \u2014 five high-confidence absorptions",
+  "timestamp_utc": "2026-08-10T22:12:31.825681+00:00",
+  "agent_choices": [
+    "aps_survivor_multiplet",
+    "domain_wall_spectral_tension",
+    "stage4_dimensionless_observables",
+    "SE_base_APS_index_extension:L_abc_slice2",
+    "ngen_anomaly_consistency"
+  ],
+  "sectors": [
+    {
+      "sector": "aps_survivor_multiplet",
+      "survivors": [
+        {
+          "j1": 0.5,
+          "j2": 0.0
+        },
+        {
+          "j1": 1.0,
+          "j2": 0.0
+        },
+        {
+          "j1": 1.5,
+          "j2": 0.0
+        }
+      ],
+      "lambda_tilde_derived": [
+        4.5,
+        12.0,
+        22.5
+      ],
+      "attempts": [
+        {
+          "id": 1,
+          "outcome": "Success",
+          "reason": "self-dual APS zero modes j=[(0.5, 0.0), (1.0, 0.0), (1.5, 0.0)] (expect [(0.5, 0.0), (1.0, 0.0), (1.5, 0.0)])"
+        },
+        {
+          "id": 2,
+          "outcome": "Success",
+          "reason": "N_gen=3=#survivors=3"
+        },
+        {
+          "id": 3,
+          "outcome": "Success",
+          "reason": "derived \u03bb\u0303=[4.5, 12.0, 22.5] (output only)"
+        }
+      ],
+      "decision": {
+        "sector_absorbed": true,
+        "continuous_knobs": 0,
+        "statement": "APS survivor multiplet locked: unique self-dual zero modes (j\u2081,j\u2082)=(\u00bd,0),(1,0),(3/2,0) with derived \u03bb\u0303={4.5,12,22.5}, N_gen=3. No continuous knobs."
+      }
+    },
+    {
+      "sector": "domain_wall_spectral_tension",
+      "T_wall": 6.5,
+      "vols": [
+        0.75,
+        2.0,
+        3.75
+      ],
+      "attempts": [
+        {
+          "id": 1,
+          "outcome": "Success",
+          "reason": "T_wall=\u03a3 Vol_k=6.5 (pure number spectral volumes)"
+        },
+        {
+          "id": 2,
+          "outcome": "Success",
+          "reason": "n_\u03b7=4 Vol \u2192 [3, 8, 15] matches locked [3, 8, 15]"
+        },
+        {
+          "id": 3,
+          "outcome": "Success",
+          "reason": "T_wall = \u03a3 n_k/4 identity (discrete)"
+        }
+      ],
+      "decision": {
+        "sector_absorbed": true,
+        "continuous_knobs": 0,
+        "statement": "Domain-wall spectral tension locked: T_wall=\u03a3_k j\u2081(j\u2081+1)=13/2 on APS survivors, identical to \u03a3 n_\u03b7/4. Pure discrete geometry; no knobs."
+      }
+    },
+    {
+      "sector": "stage4_dimensionless_observables",
+      "mu_gammagamma": 1.0865709723193917,
+      "omega_lambda": 0.6795280169574518,
+      "w0_dark_energy": -0.9875851942925417,
+      "theta13_deg_residual_nlo": 7.953,
+      "attempts": [
+        {
+          "id": 1,
+          "outcome": "Success",
+          "reason": "predictions continuous_knobs=0"
+        },
+        {
+          "id": 2,
+          "outcome": "Success",
+          "reason": "\u03bc_\u03b3\u03b3=1.086571, \u03a9_\u039b=0.679528 (locked Stage-4 pure numbers)"
+        },
+        {
+          "id": 3,
+          "outcome": "Success",
+          "reason": "w0=-0.987585, residual-NLO \u03b813=7.953\u00b0"
+        }
+      ],
+      "decision": {
+        "sector_absorbed": true,
+        "continuous_knobs": 0,
+        "statement": "Stage-4 dimensionless observables formally locked as expansion sector: \u03bc_\u03b3\u03b3, \u03a9_\u039b, w\u2080, residual-NLO \u03b813 are pure geometric outputs with continuous_knobs=0 (no re-fit)."
+      }
+    },
+    {
+      "sector": "SE_base_APS_index_extension",
+      "slice": "L_abc_1_le_a_le_b_le_c_le_8_gcd1_even_sum",
+      "slice_id": "L_abc_slice2",
+      "n_bases": 39,
+      "n_gen_values": [
+        3
+      ],
+      "all_n_gen_equal_3": true,
+      "sample_bases": [
+        "L^{1,1,2}",
+        "L^{1,1,4}",
+        "L^{1,1,6}",
+        "L^{1,1,8}",
+        "L^{1,2,3}",
+        "L^{1,2,5}",
+        "L^{1,2,7}",
+        "L^{1,3,4}"
+      ],
+      "attempts": [
+        {
+          "id": 1,
+          "outcome": "Success",
+          "reason": "enlarged window c\u22648 \u2192 39 bases (slice1 had 17)"
+        },
+        {
+          "id": 2,
+          "outcome": "Success",
+          "reason": "N_gen values observed: [3]"
+        },
+        {
+          "id": 3,
+          "outcome": "Success",
+          "reason": "same APS rules as slice1; weight=a+b+c"
+        }
+      ],
+      "decision": {
+        "sector_absorbed": true,
+        "continuous_knobs": 0,
+        "statement": "L^{a,b,c} slice2 locked: 39 bases with c\u22648, all N_gen=3 under index=max(0,\u230a(a+b+c)(2j\u22123)\u230b). continuous_knobs=0."
+      }
+    },
+    {
+      "sector": "ngen_anomaly_consistency",
+      "n_gen": 3,
+      "n_gen_native": 3,
+      "geometry_generates_n_gen_3": true,
+      "attempts": [
+        {
+          "id": 1,
+          "outcome": "Success",
+          "reason": "N_gen locked=3, native APS index=3"
+        },
+        {
+          "id": 2,
+          "outcome": "Success",
+          "reason": "ngen_uniqueness artifact: n_gen_unique=3"
+        },
+        {
+          "id": 3,
+          "outcome": "Success",
+          "reason": "geometry_generates_n_gen_3=True"
+        }
+      ],
+      "decision": {
+        "sector_absorbed": true,
+        "continuous_knobs": 0,
+        "statement": "N_gen anomaly/consistency locked: native APS index and anomaly-facing uniqueness agree on N_gen=3 with geometry_generates_n_gen_3=True. continuous_knobs=0."
+      }
+    }
+  ],
+  "continuous_knobs": 0,
+  "scientific_core_locks_altered": false,
+  "all_five_absorbed": true,
+  "baseline_knobs": 0
+}

@@ -1,0 +1,72 @@
+{
+  "stage": "1C",
+  "locked_1a_checksum": "{\"count\": 3, \"lambda_targets\": [4.5, 12.0, 22.5]}",
+  "locked_1b_checksum": "{\"lambda_0\": 4.5, \"lambda_targets\": [4.5, 12.0, 22.5], \"r0\": 0.0, \"survivor_count\": 3}",
+  "sigma_star": 0.8660254037844556,
+  "sigma_susy_sq": 0.75,
+  "eta_period": 12,
+  "predictive_formula": "n_k = 4*j1*(j1+1); Delta_eta_k = n_k*pi/12",
+  "modes": [
+    {
+      "j1": 0.5,
+      "j2": 0.0,
+      "r": 0.0,
+      "lambda_tilde": 4.5,
+      "vol_n5": 0.75,
+      "n_eta": 3,
+      "delta_eta": 0.7853981633974483,
+      "delta_eta_over_pi": "1/4"
+    },
+    {
+      "j1": 1.0,
+      "j2": 0.0,
+      "r": 0.0,
+      "lambda_tilde": 12.0,
+      "vol_n5": 2.0,
+      "n_eta": 8,
+      "delta_eta": 2.0943951023931953,
+      "delta_eta_over_pi": "2/3"
+    },
+    {
+      "j1": 1.5,
+      "j2": 0.0,
+      "r": 0.0,
+      "lambda_tilde": 22.5,
+      "vol_n5": 3.75,
+      "n_eta": 15,
+      "delta_eta": 3.926990816987241,
+      "delta_eta_over_pi": "5/4"
+    }
+  ],
+  "n_triple": [
+    3,
+    8,
+    15
+  ],
+  "delta_eta_over_pi": [
+    "1/4",
+    "2/3",
+    "5/4"
+  ],
+  "vol_ratios": [
+    "8/3",
+    "5",
+    "15/8"
+  ],
+  "discrete_candidates_count": 1,
+  "discrete_candidates": [
+    {
+      "n_triple": [
+        3,
+        8,
+        15
+      ],
+      "as_closure_ok": true,
+      "self_dual_ok": true,
+      "hierarchy_ok": true,
+      "ratio_match_vol": true,
+      "score": 26
+    }
+  ],
+  "proof": "PROOF SNIPPET \u2014 discrete \u0394\u03b7 selection (Stage 1C)\n\nLocked inputs (immutable):\n  1A checksum: {\"count\": 3, \"lambda_targets\": [4.5, 12.0, 22.5]}\n  1B checksum: {\"lambda_0\": 4.5, \"lambda_targets\": [4.5, 12.0, 22.5], \"r0\": 0.0, \"survivor_count\": 3}\n  \u03c3* = 0.866025403784,  \u03c3\u00b2 = 0.75\n\nTopological derivation (no target fitting):\n  n_k = 4\u00b7j\u2081(j\u2081+1) = 4\u00b7vol(N\u2075)   [\u03b7-lattice quantum from j\u2081 alone]\n  \u2192 n = [3, 8, 15]  \u2192  \u0394\u03b7/\u03c0 = ['1/4', '2/3', '5/4']\n\nConstraint satisfaction:\n  (C3) AS closure \u2211n = 26 (even): True\n  (C4) Self-dual trace \u2211(2j\u2081+1)n mod 6:\n       90 \u2261 0 (mod 6)\n  (C5) Hierarchy n\u2081<n\u2082<n\u2083: True\n  Exact ratios n\u2082/n\u2081, n\u2083/n\u2081, n\u2083/n\u2082: (Fraction(8, 3), Fraction(5, 1), Fraction(15, 8))\n       = vol ratios (Fraction(8, 3), Fraction(5, 1), Fraction(15, 8))\n\nDiscrete search uniqueness:\n  Candidates passing all filters: 1\n  Minimal-sum topology match: n = (3, 8, 15)\n  Unique because ratios 8/3, 5, 15/8 fix (n\u2081,n\u2082,n\u2083) = (3,8,15)\n  on \u03b7-lattice with n\u2081\u22651 and strict increase."
+}

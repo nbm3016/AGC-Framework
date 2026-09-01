@@ -1,0 +1,43 @@
+{
+  "framework": "stage3_master_variational",
+  "timestamp_utc": "2026-07-07T03:45:56.086880+00:00",
+  "status": "PASS",
+  "overall_closure": true,
+  "locked_inputs": {
+    "lambda_targets": [
+      4.5,
+      12.0,
+      22.5
+    ],
+    "sigma_star": 0.8660254037844556,
+    "n_eta_triple": [
+      3,
+      8,
+      15
+    ],
+    "n_gen": 3,
+    "eight_pi_g_eff": 0.562500000000022
+  },
+  "master_solution": {
+    "sigma_star": 0.8660254037844556,
+    "s_master": 164.3956790968391,
+    "residual_sigma": 2.0294876890147862e-13,
+    "residual_beta_lap": 0.19593461535106024,
+    "residual_beta_full": 0.1950113120314795,
+    "phi_coeffs": [
+      0.05,
+      2.435049508865115e-07,
+      -2.8848263893938134e-08,
+      2.435049508865115e-07
+    ]
+  },
+  "stage_reproduction": {
+    "stage1a_survivors": true,
+    "stage1b_sigma": true,
+    "stage1c_n_eta": true,
+    "stage2a_ngen": true,
+    "stage2b_beta": true
+  },
+  "equilibrium_table": "============================================================================\nSTAGE 3 \u2014 MASTER VARIATIONAL EQUILIBRIUM (\u03a3\u2075 \u00d7 T^{1,1})\n============================================================================\nLocked baseline checksum : {\"lambda\": [4.5, 12.0, 22.5], \"n_eta\": [3, 8, 15]}\nContinuous knobs         : 0\nGrid                     : 12\u00d712\nConverged                : True\n----------------------------------------------------------------------------\nAction components:\n  S_APS (\u03a3\u2075 survivors)   : 111.750000\n  S_\u03c3 (breathing modulus) : 2.250000\n  S_YM (T^{1,1} flux)    : 5.039568e+01\n  S_grav (\u03c6 fluctuation)  : 3.527166e-06\n  S_master total          : 164.395679\n----------------------------------------------------------------------------\nEuler\u2013Lagrange residuals:\n  |\u03b4S/\u03b4\u03c3| at \u03c3*           : 2.029e-13\n  \u2016\u03b2^\u25a1 \u2212 8\u03c0G\u00b7T^YM\u2016\u00b2      : 1.959346e-01\n  \u2016\u03b2_ij \u2212 8\u03c0G\u00b7T^YM\u2016\u00b2     : 1.950113e-01\n  max|\u03b2_ij \u2212 8\u03c0G\u00b7T^YM|    : 2.197734e+00\n----------------------------------------------------------------------------\n\u03c3* (master)              : 0.866025403784\n\u03c3* (locked baseline)     : 0.866025403784\n\u03c6 coefficients           : [0.05, 0.0, -0.0, 0.0]\n----------------------------------------------------------------------------\nConsistency with Stages 1\u20132:\n  [PASS] sigma_matches_stage1b\n  [PASS] sigma_is_sqrt3_over_2\n  [PASS] lambda_targets_locked\n  [PASS] survivor_count_three\n  [PASS] n_gen_three\n  [PASS] n_eta_triple_locked\n  [PASS] eight_pi_g_eff_locked\n  [PASS] sigma_eom_satisfied\n  [PASS] beta_lap_improved_or_matched\n  [PASS] beta_full_below_threshold\n  [PASS] zero_continuous_knobs\n============================================================================",
+  "continuous_knobs_remaining": 0
+}

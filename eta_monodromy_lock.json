@@ -1,0 +1,101 @@
+{
+  "banner": "AGC Expansion Mode Active \u2014 discrete \u03b7-lattice + monodromy lock",
+  "timestamp_utc": "2026-08-10T21:55:07.262336+00:00",
+  "sector": "discrete_eta_monodromy_lattice",
+  "why_chosen": "High-confidence discrete structure already present in Stages 1C/flavor; low obstruction; grows skeleton used by A4 residual without absolute scale.",
+  "eta_period": 12,
+  "n_eta": [
+    3,
+    8,
+    15
+  ],
+  "delta_eta_over_pi": [
+    "1/4",
+    "2/3",
+    "5/4"
+  ],
+  "vol_ratios": [
+    "8/3",
+    "5",
+    "15/8"
+  ],
+  "discrete_search": {
+    "n_passing": 1,
+    "winner": [
+      3,
+      8,
+      15
+    ],
+    "winner_score": 26,
+    "unique": true
+  },
+  "monodromy": {
+    "order_from_phases": 24,
+    "order_from_flavor_geometry": 24,
+    "exact_pi_relation": true,
+    "n3_minus_n1": 12
+  },
+  "modes": [
+    {
+      "j1": 0.5,
+      "n_eta": 3,
+      "delta_eta_over_pi": "1/4",
+      "lambda_tilde": 4.5
+    },
+    {
+      "j1": 1.0,
+      "n_eta": 8,
+      "delta_eta_over_pi": "2/3",
+      "lambda_tilde": 12.0
+    },
+    {
+      "j1": 1.5,
+      "n_eta": 15,
+      "delta_eta_over_pi": "5/4",
+      "lambda_tilde": 22.5
+    }
+  ],
+  "attempts": [
+    {
+      "id": 1,
+      "chain": {
+        "scaffolding": "None",
+        "dimensional_audit": "n_\u03b7 pure integers; \u0394\u03b7 pure angles",
+        "discrete_anchor": "APS survivors j\u2081\u2208{1/2,1,3/2}; \u03b7-period 12",
+        "path": "n_k=4 j\u2081(j\u2081+1) \u2192 (3,8,15); \u0394\u03b7_k=n_k \u03c0/12"
+      },
+      "outcome": "Success",
+      "reason": "n_triple=(3, 8, 15)"
+    },
+    {
+      "id": 2,
+      "chain": {
+        "scaffolding": "None",
+        "dimensional_audit": "same",
+        "discrete_anchor": "AS closure + self-dual trace + hierarchy + vol-ratio match",
+        "path": "Enumerate n\u2208{1..24}\u00b3; require unique minimal-sum topology triple"
+      },
+      "outcome": "Success",
+      "reason": "passing=1, winner=(3, 8, 15), score=26"
+    },
+    {
+      "id": 3,
+      "chain": {
+        "scaffolding": "None",
+        "dimensional_audit": "monodromy order pure integer",
+        "discrete_anchor": "phase orders of \u0394\u03b7; n\u2083\u2212n\u2081=12",
+        "path": "Cyclotomic monodromy order lcm \u2192 24; exact \u03c0 relation for A4 path"
+      },
+      "outcome": "Success",
+      "reason": "mono_order_direct=24, mono_flavor=24, n3-n1=12"
+    }
+  ],
+  "decision": {
+    "sector_absorbed": true,
+    "continuous_knobs": 0,
+    "statement": "Discrete \u03b7-lattice and monodromy formally locked: period-12 lattice, unique triple n_\u03b7=(3,8,15) from topology + discrete filters, \u0394\u03b7/\u03c0={1/4,2/3,5/4}, monodromy order 24, n\u2083\u2212n\u2081=12 (\u03c0 relation). No continuous free parameters."
+  },
+  "continuous_knobs": 0,
+  "scientific_core_locks_altered": false,
+  "scaffolding_used": []
+}

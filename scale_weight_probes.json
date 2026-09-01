@@ -1,0 +1,354 @@
+{
+  "banner": "AGC Expansion Mode Active \u2014 non-zero conformal weight scale probes",
+  "timestamp_utc": "2026-08-10T23:28:34.430160+00:00",
+  "continuous_knobs": 0,
+  "scientific_core_locks_altered": false,
+  "lock_forced": false,
+  "probe_1_trace_anomaly": {
+    "mechanism": "quantum_trace_anomaly",
+    "multiplet_content": {
+      "n_gen": 3,
+      "spin_multiplicities_2j1_plus_1": [
+        2,
+        3,
+        4
+      ],
+      "n_eta_holonomy_quanta": [
+        3,
+        8,
+        15
+      ],
+      "note": "n_\u03b7 are holonomy labels; multiplicity interpretations A/B/C tested"
+    },
+    "anomaly_coefficient_numerators": {
+      "A_N_gen_Weyl_only": {
+        "A_num": 33.0,
+        "C_num": 18.0,
+        "C_over_A": 0.5454545454545454
+      },
+      "B_spin_weighted_Weyl": {
+        "A_num": 99.0,
+        "C_num": 54.0,
+        "C_over_A": 0.5454545454545454
+      },
+      "C_n_eta_weighted_Weyl": {
+        "A_num": 286.0,
+        "C_num": 156.0,
+        "C_over_A": 0.5454545454545454
+      }
+    },
+    "gauge_beta": {
+      "b0_SU3_n_f_eq_N_gen_Dirac": 9.0,
+      "b0_nonzero": true,
+      "dimensional_transmutation_formula": "\u039b = \u03bc0 exp(-8\u03c0\u00b2/(b0 g(\u03bc0)\u00b2))",
+      "mu0_in_locked_data": false,
+      "g_mu0_in_locked_data": false,
+      "dt_fixes_absolute_lambda_without_UV_input": false,
+      "reason": "Non-vanishing one-loop b0 is a pure number fixed by N_gen, but dimensional transmutation still requires a UV reference scale \u03bc0 and/or a coupling value g(\u03bc0). Neither is present in the locked Stages 1\u20134 data without continuous or external input."
+    },
+    "anomaly_induced_volume_potential": {
+      "form_tested": "V(\u03c6)=A e^{4\u03c6} with A from anomaly numerator",
+      "stable_finite_minimum": false,
+      "samples": [
+        {
+          "phi": -4.99999486650947,
+          "V": 6.801946623527574e-08,
+          "note": "bounded minimum is at boundary of interval for monotonic V"
+        },
+        {
+          "phi": -1.9999933713731037,
+          "V": 0.011070560247345167,
+          "note": "bounded minimum is at boundary of interval for monotonic V"
+        },
+        {
+          "phi": 5.8010569467850044e-06,
+          "V": 33.000765748401236,
+          "note": "bounded minimum is at boundary of interval for monotonic V"
+        }
+      ],
+      "reason": "With only the pure anomaly coefficient A and no second scale, the constant-mode potential is monotonic in \u03c6; no stable finite volume. Riegert/nonlocal anomaly actions similarly require a reference metric or IR/UV boundary condition supplying a scale."
+    },
+    "decision": {
+      "fixes_overall_scale_lambda": false,
+      "beta_function_nonzero": true,
+      "dimensional_transmutation_triggered_absolutely": false,
+      "residual_freedom": "\u03bb \u2208 \u211d\u207a (or \u03c6 \u2208 \u211d) still free; anomaly fixes pure a,c,b0 numbers and can set RG shape of g(\u03bc) only relative to an external \u03bc0",
+      "continuous_knobs": 0
+    }
+  },
+  "probe_2_non_middle_flux": {
+    "mechanism": "non_middle_degree_flux_CS",
+    "dimension_d": 14,
+    "middle_degree": 7,
+    "non_middle_degrees_tested": [
+      4,
+      6
+    ],
+    "scaling_weights": {
+      "Einstein_Hilbert_sqrtg_R": 12,
+      "F_p_squared_density": {
+        "p=4": 6,
+        "p=6": 2,
+        "p=7": 0
+      },
+      "self_dual_F7": 0
+    },
+    "locked_integer_flux_candidates": [
+      3,
+      8,
+      12,
+      15,
+      24,
+      26
+    ],
+    "analytic_same_sign": [
+      {
+        "p_form": 4,
+        "n_flux": 3,
+        "a_exp": 12,
+        "b_exp": 6,
+        "same_sign_positive_terms": true,
+        "positive_critical_lambda": null,
+        "reason": "Standard positive-definite EH + |F|\u00b2 have the same sign; V(\u03bb)=A\u03bb^{12}+B\u03bb^{14-2p} with A,B>0 is strictly increasing or has no stable finite minimum (derivative never zero for \u03bb>0)."
+      },
+      {
+        "p_form": 4,
+        "n_flux": 8,
+        "a_exp": 12,
+        "b_exp": 6,
+        "same_sign_positive_terms": true,
+        "positive_critical_lambda": null,
+        "reason": "Standard positive-definite EH + |F|\u00b2 have the same sign; V(\u03bb)=A\u03bb^{12}+B\u03bb^{14-2p} with A,B>0 is strictly increasing or has no stable finite minimum (derivative never zero for \u03bb>0)."
+      },
+      {
+        "p_form": 4,
+        "n_flux": 12,
+        "a_exp": 12,
+        "b_exp": 6,
+        "same_sign_positive_terms": true,
+        "positive_critical_lambda": null,
+        "reason": "Standard positive-definite EH + |F|\u00b2 have the same sign; V(\u03bb)=A\u03bb^{12}+B\u03bb^{14-2p} with A,B>0 is strictly increasing or has no stable finite minimum (derivative never zero for \u03bb>0)."
+      },
+      {
+        "p_form": 4,
+        "n_flux": 15,
+        "a_exp": 12,
+        "b_exp": 6,
+        "same_sign_positive_terms": true,
+        "positive_critical_lambda": null,
+        "reason": "Standard positive-definite EH + |F|\u00b2 have the same sign; V(\u03bb)=A\u03bb^{12}+B\u03bb^{14-2p} with A,B>0 is strictly increasing or has no stable finite minimum (derivative never zero for \u03bb>0)."
+      },
+      {
+        "p_form": 4,
+        "n_flux": 24,
+        "a_exp": 12,
+        "b_exp": 6,
+        "same_sign_positive_terms": true,
+        "positive_critical_lambda": null,
+        "reason": "Standard positive-definite EH + |F|\u00b2 have the same sign; V(\u03bb)=A\u03bb^{12}+B\u03bb^{14-2p} with A,B>0 is strictly increasing or has no stable finite minimum (derivative never zero for \u03bb>0)."
+      },
+      {
+        "p_form": 4,
+        "n_flux": 26,
+        "a_exp": 12,
+        "b_exp": 6,
+        "same_sign_positive_terms": true,
+        "positive_critical_lambda": null,
+        "reason": "Standard positive-definite EH + |F|\u00b2 have the same sign; V(\u03bb)=A\u03bb^{12}+B\u03bb^{14-2p} with A,B>0 is strictly increasing or has no stable finite minimum (derivative never zero for \u03bb>0)."
+      },
+      {
+        "p_form": 6,
+        "n_flux": 3,
+        "a_exp": 12,
+        "b_exp": 2,
+        "same_sign_positive_terms": true,
+        "positive_critical_lambda": null,
+        "reason": "Standard positive-definite EH + |F|\u00b2 have the same sign; V(\u03bb)=A\u03bb^{12}+B\u03bb^{14-2p} with A,B>0 is strictly increasing or has no stable finite minimum (derivative never zero for \u03bb>0)."
+      },
+      {
+        "p_form": 6,
+        "n_flux": 8,
+        "a_exp": 12,
+        "b_exp": 2,
+        "same_sign_positive_terms": true,
+        "positive_critical_lambda": null,
+        "reason": "Standard positive-definite EH + |F|\u00b2 have the same sign; V(\u03bb)=A\u03bb^{12}+B\u03bb^{14-2p} with A,B>0 is strictly increasing or has no stable finite minimum (derivative never zero for \u03bb>0)."
+      },
+      {
+        "p_form": 6,
+        "n_flux": 12,
+        "a_exp": 12,
+        "b_exp": 2,
+        "same_sign_positive_terms": true,
+        "positive_critical_lambda": null,
+        "reason": "Standard positive-definite EH + |F|\u00b2 have the same sign; V(\u03bb)=A\u03bb^{12}+B\u03bb^{14-2p} with A,B>0 is strictly increasing or has no stable finite minimum (derivative never zero for \u03bb>0)."
+      },
+      {
+        "p_form": 6,
+        "n_flux": 15,
+        "a_exp": 12,
+        "b_exp": 2,
+        "same_sign_positive_terms": true,
+        "positive_critical_lambda": null,
+        "reason": "Standard positive-definite EH + |F|\u00b2 have the same sign; V(\u03bb)=A\u03bb^{12}+B\u03bb^{14-2p} with A,B>0 is strictly increasing or has no stable finite minimum (derivative never zero for \u03bb>0)."
+      },
+      {
+        "p_form": 6,
+        "n_flux": 24,
+        "a_exp": 12,
+        "b_exp": 2,
+        "same_sign_positive_terms": true,
+        "positive_critical_lambda": null,
+        "reason": "Standard positive-definite EH + |F|\u00b2 have the same sign; V(\u03bb)=A\u03bb^{12}+B\u03bb^{14-2p} with A,B>0 is strictly increasing or has no stable finite minimum (derivative never zero for \u03bb>0)."
+      },
+      {
+        "p_form": 6,
+        "n_flux": 26,
+        "a_exp": 12,
+        "b_exp": 2,
+        "same_sign_positive_terms": true,
+        "positive_critical_lambda": null,
+        "reason": "Standard positive-definite EH + |F|\u00b2 have the same sign; V(\u03bb)=A\u03bb^{12}+B\u03bb^{14-2p} with A,B>0 is strictly increasing or has no stable finite minimum (derivative never zero for \u03bb>0)."
+      }
+    ],
+    "numeric_minima_if_any": [
+      {
+        "p_form": 4,
+        "n_flux": 3,
+        "lambda_star": 0.00010551525826107862,
+        "stable": true
+      },
+      {
+        "p_form": 4,
+        "n_flux": 8,
+        "lambda_star": 0.00010551525826107811,
+        "stable": true
+      },
+      {
+        "p_form": 4,
+        "n_flux": 12,
+        "lambda_star": 0.00010551525826107806,
+        "stable": true
+      },
+      {
+        "p_form": 4,
+        "n_flux": 15,
+        "lambda_star": 0.00010551525826107807,
+        "stable": true
+      },
+      {
+        "p_form": 4,
+        "n_flux": 24,
+        "lambda_star": 0.00010551525826107805,
+        "stable": true
+      },
+      {
+        "p_form": 4,
+        "n_flux": 26,
+        "lambda_star": 0.00010551525826107805,
+        "stable": true
+      },
+      {
+        "p_form": 6,
+        "n_flux": 3,
+        "lambda_star": 0.00010392472569076086,
+        "stable": true
+      },
+      {
+        "p_form": 6,
+        "n_flux": 8,
+        "lambda_star": 0.00010392472569076086,
+        "stable": true
+      },
+      {
+        "p_form": 6,
+        "n_flux": 12,
+        "lambda_star": 0.00010392472569076086,
+        "stable": true
+      },
+      {
+        "p_form": 6,
+        "n_flux": 15,
+        "lambda_star": 0.00010392472569076086,
+        "stable": true
+      },
+      {
+        "p_form": 6,
+        "n_flux": 24,
+        "lambda_star": 0.00010392472569076086,
+        "stable": true
+      },
+      {
+        "p_form": 6,
+        "n_flux": 26,
+        "lambda_star": 0.00010392472569076086,
+        "stable": true
+      }
+    ],
+    "unique_lambda_count": 2,
+    "cs_notes": {
+      "cs_level_from_locked_integers_only": [
+        3,
+        8,
+        12,
+        15,
+        24,
+        26
+      ],
+      "issue": "Chern\u2013Simons levels, if restricted to the locked integer set, still leave discrete multiplicity of (p,n,n_cs) assignments; each may give different \u03bb or none. No unique selection is forced by APS/self-dual data among those integers without an extra uniqueness theorem."
+    },
+    "decision": {
+      "fixes_overall_scale_lambda": false,
+      "reason": "Non-middle fluxes produce different conformal weights than EH, but with positive-definite kinetic signs the combined potential has no stable finite-\u03bb critical point. Achieving a minimum requires opposite-sign terms (e.g. free bare \u039b or ghost) or continuous relative couplings between sectors \u2014 forbidden under zero-knob rules. Discrete n_F multiplicity would still leave residual discrete ambiguity even if signs worked.",
+      "residual_freedom": "\u03bb \u2208 \u211d\u207a remains free; form-degree clash alone does not quantize \u03bb without free continuous relative couplings or non-locked signs",
+      "continuous_knobs": 0
+    }
+  },
+  "probe_3_curvature_euler": {
+    "mechanism": "curvature_flux_euler_interlock",
+    "euler_characteristics": {
+      "chi_T11": 0,
+      "chi_Sigma5": 0,
+      "chi_product_internal_10": 0,
+      "implication": "Odd-dimensional SE/wall factors have \u03c7=0; pure Euler densities do not generate a volume potential on those factors."
+    },
+    "topological_terms": {
+      "S_Euler": "\u221d \u03c7(M) metric-independent \u2014 cannot minimize volume in \u03bb",
+      "Hirzebruch_signature": "topological integer \u2014 \u03bb-independent"
+    },
+    "R4_corrections": {
+      "scaling_weight_sqrtg_R4": 6,
+      "wilson_coefficient_alpha4_locked_by_Delta_eta": false,
+      "reason": "\u0394\u03b7 monodromy data fix holonomy phases, not higher-curvature Wilson coefficients. Setting \u03b14 to a locked integer still yields same-sign powers with EH and no unique stable finite-\u03bb minimum.",
+      "V_EH_plus_R4_scan": [
+        {
+          "lambda": 0.001005993922202262,
+          "V": 3.789727863396722e-18,
+          "V2": 1.1234073712287386e-10,
+          "stable_interior": true
+        },
+        {
+          "lambda": 1.0000060330009397,
+          "V": 8.531735293220734,
+          "V2": 753.2319365833862,
+          "stable_interior": true
+        }
+      ]
+    },
+    "Delta_eta_data_used_as": "pure discrete weights (monodromy, n_\u03a3) only \u2014 no continuous free \u03b1",
+    "decision": {
+      "fixes_overall_scale_lambda": false,
+      "topological_minimization_at_specific_volume": false,
+      "reason": "Euler/signature invariants are \u03bb-independent pure numbers (and vanish on odd factors). R^4 terms either introduce free Wilson coefficients or, if \u03b14 is set to locked pure numbers, combine with EH into same-sign power laws without a stable finite-\u03bb critical point forced by \u0394\u03b7 data.",
+      "residual_freedom": "\u03bb \u2208 \u211d\u207a; no topological volume-minimizing critical point",
+      "continuous_knobs": 0
+    }
+  },
+  "joint_decision": {
+    "any_mechanism_fixes_lambda": false,
+    "verdict": "NEGATIVE",
+    "summary": "All three non-zero conformal-weight mechanisms fail to force a unique overall scale \u03bb from locked data alone: (1) anomaly/\u03b2 give pure a,c,b0 but DT still needs \u03bc0; (2) non-middle flux weights clash with EH but positive-definite kinetics yield no stable min without free opposite-sign couplings; (3) Euler/signature are \u03bb-independent (\u03c7=0 on odd factors) and R^4 is either free Wilson or same-sign power-law without unique min. Residual freedom: \u03bb\u2208\u211d\u207a.",
+    "residual_continuous_family": "\u03bb \u2208 \u211d\u207a (overall conformal factor / volume radius at fixed shape \u03c3*)"
+  },
+  "checksum": "Zero continuous free parameters confirmed | continuous_knobs = 0"
+}

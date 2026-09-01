@@ -1,0 +1,41 @@
+{
+  "method": "native_aps_zero_mode_cohomology: N_gen = # { (j1,0,0) | index(D_APS)=0, \u22c6\u03a8=\u03a8, j1\u2208\u00bd\u2115_{>0} }",
+  "n_gen_native": 3,
+  "aps_index": 3,
+  "eta_invariant": 0.0,
+  "h_kernel": 1,
+  "bulk_a_hat": 0.9999999999999998,
+  "seeded_lambda_targets": false,
+  "seeded_n_gen": false,
+  "continuous_knobs": 0,
+  "geometry_generates_n_gen_3": true,
+  "old_method": "enumerate lattice + filter for target \u03bb\u0303 \u2208 {4.5,12,22.5}",
+  "new_method": "native APS zero-mode cohomology (no \u03bb\u0303 / N_gen seed)",
+  "chiral_modes": [
+    {
+      "j1": 0.5,
+      "j2": 0.0,
+      "r": 0.0,
+      "lambda_tilde_derived": 4.5,
+      "index": 0,
+      "chirality": "+"
+    },
+    {
+      "j1": 1.0,
+      "j2": 0.0,
+      "r": 0.0,
+      "lambda_tilde_derived": 12.0,
+      "index": 0,
+      "chirality": "+"
+    },
+    {
+      "j1": 1.5,
+      "j2": 0.0,
+      "r": 0.0,
+      "lambda_tilde_derived": 22.5,
+      "index": 0,
+      "chirality": "+"
+    }
+  ],
+  "notes": "N_gen is the dimension of the space of APS-neutral self-dual sections on the \u03a3\u2075 wall (j\u2082=0, index=0, j\u2081\u22651/2 half-integer). Derived eigenvalues of those modes (output only): [4.5, 12.0, 22.5]. No target \u03bb\u0303 set or N_gen value was used as a filter."
+}

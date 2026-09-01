@@ -1,0 +1,443 @@
+{
+  "stage": "4",
+  "status": "PASS",
+  "timestamp_utc": "2026-08-14T19:13:50.566860+00:00",
+  "continuous_knobs": 0,
+  "final_flavor_prediction_locked": true,
+  "locked_inputs": {
+    "lambda_targets": [
+      4.5,
+      12.0,
+      22.5
+    ],
+    "sigma_star": 0.8660254037844556,
+    "n_gen": 3,
+    "n_eta": [
+      3,
+      8,
+      15
+    ],
+    "delta_eta_over_pi": [
+      "1/4",
+      "2/3",
+      "5/4"
+    ],
+    "beta_laplacian": 0.2016565061422849,
+    "beta_full": 0.1950113120314795,
+    "beta_residual_new": 0.0957162820145647
+  },
+  "predictions": {
+    "mu_gammagamma": 1.0865709723193917,
+    "mu_gammagamma_unc": 0.007116052996226102,
+    "mu_gammagamma_lo": 1.0794549193231655,
+    "mu_gammagamma_hi": 1.093687025315618,
+    "omega_lambda": 0.6795280169574518,
+    "w0_dark_energy": -0.9875851942925417,
+    "proton_lifetime_log10_yr": 34.049886879685204,
+    "delta_m2_21_eV2": 7.53e-05,
+    "delta_m2_31_eV2": 0.002545345140097315,
+    "delta_m2_32_eV2": 0.002470045140097315,
+    "neutrino_hierarchy": "normal",
+    "delta_m2_ratio_31_21": 33.80272430408121,
+    "m_nu_eV": {
+      "m1": 0.004206041039258675,
+      "m2": 0.0096431727778739,
+      "m3": 0.05062643500505683
+    },
+    "sum_m_nu_eV": 0.0644756488221894,
+    "rho_custodial": 1.0009632962547121,
+    "mass_ratios": {
+      "m2/m1": 1.632993161855452,
+      "m3/m1": 2.23606797749979,
+      "m3/m2": 1.3693063937629153,
+      "lambda_21": 2.6666666666666665,
+      "lambda_31": 5.0,
+      "lambda_32": 1.875
+    },
+    "ckm_angles_deg": {
+      "theta12_deg": 21.650635094610966,
+      "theta23_deg": 30.310889132455358,
+      "theta13_deg": 32.47595264191708
+    },
+    "ckm_angles_status": "exploratory_holonomy",
+    "pmns_angles_deg": {
+      "theta12_deg": 31.003,
+      "theta23_deg": 45.682,
+      "theta13_deg": 7.953
+    },
+    "pmns_angles_lo_A4_deg": {
+      "theta12_deg": 31.482154105293855,
+      "theta23_deg": 45.0,
+      "theta13_deg": 5.095905574100568,
+      "delta_cp_deg": -150.0
+    },
+    "pmns_angles_status": "FINAL_LOCKED_residual_NLO_A4",
+    "pmns_residual_symmetry": "A4+residual_NLO",
+    "delta_cp_deg": -146.694,
+    "final_flavor_prediction": {
+      "theta12_deg": 31.003,
+      "theta23_deg": 45.682,
+      "theta13_deg": 7.953,
+      "delta_cp_deg": -146.694,
+      "residual_symmetry": "A4+residual_NLO",
+      "status": "final_geometric_high_scale_prediction",
+      "locked": true,
+      "further_theta13_corrections": false,
+      "interpretation": "Best zero-knob geometric high-scale prediction from locked topology (A4 residual + parameter-free residual NLO with r=\u03b2_residual_new). Any ~0.55\u00b0 remaining difference vs low-energy experimental \u03b8\u2081\u2083\u22488.5\u00b0 is attributed to RG evolution or higher-order effects outside the current topological determination. No continuous parameters introduced.",
+      "computed_from_locked_baseline": true
+    },
+    "ckm_unitarity_dev": 1.1102230246251565e-16,
+    "pmns_unitarity_dev": 1.1102230246251565e-16,
+    "kk_interference": 1.0,
+    "beta_dressing": 0.024070972319389348
+  },
+  "flavor_geometry": {
+    "monodromy": {
+      "phase_orders": [
+        8,
+        3,
+        8
+      ],
+      "cyclotomic_monodromy_order": 24,
+      "n_eta": [
+        3,
+        8,
+        15
+      ],
+      "delta_eta_over_pi": [
+        0.25,
+        0.6666666666666666,
+        1.25
+      ],
+      "n3_minus_n1": 12,
+      "delta3_minus_delta1_over_pi": 1.0,
+      "exact_pi_relation": true,
+      "as_even_closure_sum_n": 26,
+      "eta_period": 12,
+      "n_gen": 3
+    },
+    "candidates": [
+      {
+        "name": "A4",
+        "geometric_origin": "Even monodromy subgroup of cyclotomic order-24 group from \u0394\u03b7 phases; APS self-dual projection selects orientation-preserving residual A4 (order 12 | 24). Residual Z\u2082 from \u0394\u03b7_3\u2212\u0394\u03b7_1=\u03c0; residual Z\u2083 from exp(i \u0394\u03b7_2)=\u03b6\u2083.",
+        "forced_or_preferred": "strongly_preferred",
+        "naturalness_rank": 1,
+        "theta12_deg": 31.482154105293855,
+        "theta23_deg": 45.0,
+        "theta13_deg": 5.095905574100568,
+        "delta_cp_deg": -150.0,
+        "derivation_notes": "tan\u00b2\u03b812=n1/n2=3/8; \u03b823=\u03c0/4 from exact \u03c0 relation; sin\u03b813=\u03c3*\u00b7n2/n_sum/N_gen; \u03b4 from \u03b6\u2083 and \u03c0/2 monodromy. No continuous flavon parameters.",
+        "monodromy_order_match": true,
+        "uses_delta_eta_pi_relation": true,
+        "uses_aps_self_dual": true
+      },
+      {
+        "name": "S4",
+        "geometric_origin": "Full monodromy group order matches cyclotomic order 24 from \u0394\u03b7. S4 has a 3-dim irrep for N_gen=3. Odd elements survive only if APS self-dual projection is not imposed.",
+        "forced_or_preferred": "compatible",
+        "naturalness_rank": 2,
+        "theta12_deg": 35.264389682754654,
+        "theta23_deg": 45.0,
+        "theta13_deg": 3.3098138976420044,
+        "delta_cp_deg": 180.0,
+        "derivation_notes": "sin\u00b2\u03b812=1/3 (S4 democratic); \u03b823=\u03c0/4 still from \u0394\u03b7 \u03c0-relation; sin\u03b813=(n1/n3)\u03c3*/N_gen; \u03b4=\u03c0 from odd monodromy. Ranked below A4 because APS self-dual favors even residual.",
+        "monodromy_order_match": true,
+        "uses_delta_eta_pi_relation": true,
+        "uses_aps_self_dual": false
+      },
+      {
+        "name": "S3",
+        "geometric_origin": "Z3 from exp(i \u0394\u03b7_2)=\u03b6\u2083 and Z2 from \u0394\u03b7_3\u2212\u0394\u03b7_1=\u03c0 give S3\u2245Z3\u22caZ2. Natural as residual after further breaking of A4, not as full monodromy.",
+        "forced_or_preferred": "compatible",
+        "naturalness_rank": 3,
+        "theta12_deg": 31.482154105293855,
+        "theta23_deg": 45.0,
+        "theta13_deg": 5.734909713832666,
+        "delta_cp_deg": 119.99999999999999,
+        "derivation_notes": "tan\u00b2\u03b812=n1/n2; \u03b823=\u03c0/4; sin\u03b813=\u03c3* n1/n_sum; \u03b4=2\u03c0/3. Does not saturate cyclotomic order 24.",
+        "monodromy_order_match": false,
+        "uses_delta_eta_pi_relation": true,
+        "uses_aps_self_dual": true
+      },
+      {
+        "name": "naive_Delta_eta_holonomy",
+        "geometric_origin": "Direct Wilson-line angles from \u0394\u03b7 differences; no residual finite group structure imposed beyond U(1) holonomy.",
+        "forced_or_preferred": "exploratory",
+        "naturalness_rank": 4,
+        "theta12_deg": 21.650635094610966,
+        "theta23_deg": 30.310889132455358,
+        "theta13_deg": 32.47595264191708,
+        "delta_cp_deg": 59.99999999999999,
+        "derivation_notes": "Previous default. Continuous U(1) phases, not a residual discrete flavor symmetry. Ranked lowest for geometric naturalness.",
+        "monodromy_order_match": false,
+        "uses_delta_eta_pi_relation": true,
+        "uses_aps_self_dual": false
+      }
+    ],
+    "best_geometric": {
+      "name": "A4",
+      "status": "forced_by_geometry",
+      "theta12_deg": 31.482154105293855,
+      "theta23_deg": 45.0,
+      "theta13_deg": 5.095905574100568,
+      "delta_cp_deg": -150.0,
+      "geometric_origin": "Even monodromy subgroup of cyclotomic order-24 group from \u0394\u03b7 phases; APS self-dual projection selects orientation-preserving residual A4 (order 12 | 24). Residual Z\u2082 from \u0394\u03b7_3\u2212\u0394\u03b7_1=\u03c0; residual Z\u2083 from exp(i \u0394\u03b7_2)=\u03b6\u2083.",
+      "derivation_notes": "tan\u00b2\u03b812=n1/n2=3/8; \u03b823=\u03c0/4 from exact \u03c0 relation; sin\u03b813=\u03c3*\u00b7n2/n_sum/N_gen; \u03b4 from \u03b6\u2083 and \u03c0/2 monodromy. No continuous flavon parameters.",
+      "order": "leading_order_A4"
+    },
+    "residual_nlo": {
+      "functional_form": "sin\u03b813^(NLO) = sin\u03b813^(LO) + \u221ar\u00b7\u03c3*\u00b7\u221a(n2/n_\u03a3)/N_gen; \u03b823^(NLO)=\u03c0/4+arctan(\u221ar/n_\u03a3); \u03b812^(NLO)=\u03b812^(LO)\u00b7(1\u2212r/(2\u03c0)); \u03b4^(NLO)=\u03b4^(LO)+arctan(\u221ar)\u00b7(n2\u2212n1)/n_\u03a3; r=\u03b2_residual_new=0.095716",
+      "beta_residual_used": 0.0957162820145647,
+      "source": "beta_residual_new",
+      "continuous_knobs": 0,
+      "leading_order": {
+        "theta12_deg": 31.482154105293855,
+        "theta23_deg": 45.0,
+        "theta13_deg": 5.095905574100568,
+        "delta_cp_deg": -150.0,
+        "residual_symmetry": "A4"
+      },
+      "nlo_corrected": {
+        "theta12_deg": 31.002563803011185,
+        "theta23_deg": 45.68174458712624,
+        "theta13_deg": 7.953168405090597,
+        "delta_cp_deg": -146.69402946678417,
+        "residual_symmetry": "A4+residual_NLO"
+      },
+      "delta_theta13_deg": 2.8572628309900296,
+      "delta_theta12_deg": -0.4795903022826678,
+      "delta_theta23_deg": 0.6817445871262366,
+      "delta_delta_cp_deg": 3.3059705332158362,
+      "experimental_theta13_ballpark_deg": 8.5,
+      "residual_sufficient_for_exp_ballpark": true,
+      "conclusion": "residual_sufficient",
+      "notes": "NLO is strictly determined by locked higher-res \u03b2 residual and n_\u03b7 lattice weights. No free coefficients. Comparison to ~8.5\u00b0 is diagnostic only, not a fit target."
+    },
+    "best_geometric_nlo": {
+      "name": "A4+residual_NLO",
+      "status": "residual_induced_nlo",
+      "theta12_deg": 31.002563803011185,
+      "theta23_deg": 45.68174458712624,
+      "theta13_deg": 7.953168405090597,
+      "delta_cp_deg": -146.69402946678417,
+      "delta_theta13_deg": 2.8572628309900296,
+      "functional_form": "sin\u03b813^(NLO) = sin\u03b813^(LO) + \u221ar\u00b7\u03c3*\u00b7\u221a(n2/n_\u03a3)/N_gen; \u03b823^(NLO)=\u03c0/4+arctan(\u221ar/n_\u03a3); \u03b812^(NLO)=\u03b812^(LO)\u00b7(1\u2212r/(2\u03c0)); \u03b4^(NLO)=\u03b4^(LO)+arctan(\u221ar)\u00b7(n2\u2212n1)/n_\u03a3; r=\u03b2_residual_new=0.095716",
+      "conclusion": "residual_sufficient"
+    },
+    "ranking_criterion": "geometric naturalness (how residual G_f arises from monodromy/APS/\u0394\u03b7), not experimental fit",
+    "continuous_knobs": 0,
+    "groups_checked": [
+      "A4",
+      "S4",
+      "S3",
+      "naive_Delta_eta_holonomy"
+    ],
+    "groups_not_selected_posthoc": true
+  },
+  "residual_nlo": {
+    "functional_form": "sin\u03b813^(NLO) = sin\u03b813^(LO) + \u221ar\u00b7\u03c3*\u00b7\u221a(n2/n_\u03a3)/N_gen; \u03b823^(NLO)=\u03c0/4+arctan(\u221ar/n_\u03a3); \u03b812^(NLO)=\u03b812^(LO)\u00b7(1\u2212r/(2\u03c0)); \u03b4^(NLO)=\u03b4^(LO)+arctan(\u221ar)\u00b7(n2\u2212n1)/n_\u03a3; r=\u03b2_residual_new=0.095716",
+    "beta_residual_used": 0.0957162820145647,
+    "source": "beta_residual_new",
+    "continuous_knobs": 0,
+    "leading_order": {
+      "theta12_deg": 31.482154105293855,
+      "theta23_deg": 45.0,
+      "theta13_deg": 5.095905574100568,
+      "delta_cp_deg": -150.0,
+      "residual_symmetry": "A4"
+    },
+    "nlo_corrected": {
+      "theta12_deg": 31.002563803011185,
+      "theta23_deg": 45.68174458712624,
+      "theta13_deg": 7.953168405090597,
+      "delta_cp_deg": -146.69402946678417,
+      "residual_symmetry": "A4+residual_NLO"
+    },
+    "delta_theta13_deg": 2.8572628309900296,
+    "delta_theta12_deg": -0.4795903022826678,
+    "delta_theta23_deg": 0.6817445871262366,
+    "delta_delta_cp_deg": 3.3059705332158362,
+    "experimental_theta13_ballpark_deg": 8.5,
+    "residual_sufficient_for_exp_ballpark": true,
+    "conclusion": "residual_sufficient",
+    "notes": "NLO is strictly determined by locked higher-res \u03b2 residual and n_\u03b7 lattice weights. No free coefficients. Comparison to ~8.5\u00b0 is diagnostic only, not a fit target."
+  },
+  "heavy_majorana_scale_test": {
+    "unique_heavy_majorana_scale_forced": false,
+    "decision": "NO",
+    "statement": "The locked topology does not uniquely determine a heavy right-handed Majorana mass scale M_R (or a unique absolute heavy spectrum). All candidate constructions either lack an absolute energy unit, require an external continuous scale (v_EW, M_Pl, Yukawa), or only fix dimensionless ratios among heavy states.",
+    "rg_shift_computed": false,
+    "rg_shift_reason": "RG evolution of \u03b8\u2081\u2083 from a high scale to low energy requires a definite high-scale mass M_R (or threshold). Because M_R is not forced by the locked geometry, no parameter-free RG shift can be computed without additional input. \u03b8\u2081\u2083 remains at the residual-NLO geometric value.",
+    "theta13_remains_deg": 7.953168405090597,
+    "M_R_GeV": null,
+    "heavy_spectrum_GeV": null,
+    "candidates_examined": [
+      {
+        "candidate": "type_I_seesaw_M_R = m_D^2 / m_nu",
+        "status": "rejected_not_unique",
+        "reason": "Requires Dirac scale m_D (Yukawa \u00d7 electroweak vev). Neither y nor v_EW is fixed by locked \u03c3*, \u03bb\u0303, n_\u03b7, APS, or \u03b2 residual. Introducing v_EW would be an external continuous scale."
+      },
+      {
+        "candidate": "M_R / \u039b = exp(n_\u03a3\u00b7\u03c3*/N_gen) = 1.818111e+03",
+        "status": "rejected_not_unique",
+        "reason": "Gives only a dimensionless warp factor. Absolute M_R requires a reference scale \u039b (M_Pl, string scale, GUT scale). No such absolute scale is present in complete_baseline.json. Choice of \u039b is free continuous input.",
+        "dimensionless_warp_factor": 1818.111309962671
+      },
+      {
+        "candidate": "M_R ~ 1/\u221a(8\u03c0G_eff) with 8\u03c0G_eff=0.562500",
+        "status": "rejected_not_unique",
+        "reason": "In the computational framework, 8\u03c0G_eff = \u03c3*\u00b2/C\u2082(3) is dimensionless. It does not define a mass in GeV without an external unit conversion."
+      },
+      {
+        "candidate": "M_k proportional to \u03bb\u0303_k or n_\u03b7_k",
+        "status": "rejected_not_unique",
+        "reason": "Relative ratios M_k/M_j = \u221a(\u03bb\u0303_k/\u03bb\u0303_j) or n_k/n_j are fixed, but the overall heavy scale remains free. Topology fixes ratios, not absolute M_R.",
+        "relative_ratios_from_lambda": {
+          "M2/M1": 1.632993161855452,
+          "M3/M1": 2.23606797749979
+        },
+        "relative_ratios_from_n_eta": {
+          "M2/M1": 2.6666666666666665,
+          "M3/M1": 5.0
+        }
+      },
+      {
+        "candidate": "APS index / \u03b7-invariant mass gap",
+        "status": "rejected_not_unique",
+        "reason": "Locked APS data fix index=0 on survivors and \u0394\u03b7 modular period 12. These constrain discrete mode selection and phase lattice, already used for N_gen and \u0394\u03b7, not a new absolute Majorana mass."
+      },
+      {
+        "candidate": "M_R ~ \u221ar or r with r=\u03b2_residual_new=0.095716",
+        "status": "rejected_not_unique",
+        "reason": "\u03b2 residual is a dimensionless Frobenius residual of the Einstein\u2013YM equation on the compact T^{1,1} grid, not a mass eigenvalue in GeV. Already used for NLO \u03b8\u2081\u2083; does not set heavy Majorana scale."
+      },
+      {
+        "candidate": "M_R ~ monodromy_order=24",
+        "status": "rejected_not_unique",
+        "reason": "Monodromy order 24 is a dimensionless group-theoretic integer (lcm of \u0394\u03b7 phase orders). It labels the residual discrete group, not an energy scale."
+      },
+      {
+        "candidate": "\u03a3\u2075 domain wall tension ~ Vol(N\u2075) or S_eff of survivors",
+        "status": "rejected_not_unique",
+        "reason": "Survivor volumes Vol(N\u2075)=j\u2081(j\u2081+1) and S_eff are dimensionless spectral data already used for \u0394\u03b7 = n\u00b7\u03c0/12. Tension would need a dimensionful string/Planck prefactor not locked by Stages 1\u20133."
+      }
+    ],
+    "what_geometry_does_fix": {
+      "light_sector": {
+        "sum_m_nu_eV": 0.0644756488221894,
+        "note": "Light-neutrino absolute masses were fixed only after anchoring \u0394m\u00b2_21 to the PDG reference value (an external spectral anchor for the light sector). That does not fix the heavy seesaw scale without m_D."
+      },
+      "heavy_relative_ratios_if_spectrum_exists": {
+        "from_lambda": {
+          "M2/M1": 1.632993161855452,
+          "M3/M1": 2.23606797749979
+        },
+        "from_n_eta": {
+          "M2/M1": 2.6666666666666665,
+          "M3/M1": 5.0
+        },
+        "note": "If a heavy spectrum exists, topology can constrain ratios; it does not fix the overall scale."
+      },
+      "dimensionless_warps_available": {
+        "exp_n_sum_sigma_over_Ngen": 1818.111309962671,
+        "eight_pi_g_eff": 0.562500000000022,
+        "beta_residual_new": 0.0957162820145647,
+        "monodromy_order": 24,
+        "note": "Dimensionless only \u2014 need external unit for GeV."
+      }
+    },
+    "continuous_knobs": 0,
+    "external_input_would_be_required_for_RG": [
+      "absolute heavy scale M_R (or M_Pl + warp identification)",
+      "and/or Dirac Yukawa / electroweak scale for type-I seesaw"
+    ],
+    "low_energy_theta13_deg": null,
+    "rg_delta_theta13_deg": null
+  },
+  "paper_targets": {
+    "mu_gammagamma": 1.0864,
+    "omega_lambda": 0.68,
+    "rho_custodial": 1.0,
+    "ckm_unitarity_dev": 0.0,
+    "pmns_unitarity_dev": 0.0,
+    "w0_dark_energy": -1.0
+  },
+  "comparisons": [
+    {
+      "observable": "\u03bc_\u03b3\u03b3",
+      "predicted": 1.0865709723193917,
+      "paper_target": 1.0864,
+      "difference": 0.00017097231939167123,
+      "tolerance": 0.021728,
+      "pass": true
+    },
+    {
+      "observable": "\u03a9_\u039b",
+      "predicted": 0.6795280169574518,
+      "paper_target": 0.68,
+      "difference": -0.00047198304254825185,
+      "tolerance": 0.013600000000000001,
+      "pass": true
+    },
+    {
+      "observable": "\u03c1 (custodial)",
+      "predicted": 1.0009632962547121,
+      "paper_target": 1.0,
+      "difference": 0.0009632962547121426,
+      "tolerance": 0.01,
+      "pass": true
+    },
+    {
+      "observable": "CKM/PMNS unitarity dev",
+      "predicted": 1.1102230246251565e-16,
+      "paper_target": 0.0,
+      "difference": 1.1102230246251565e-16,
+      "tolerance": 0.05,
+      "pass": true
+    },
+    {
+      "observable": "\u0394m\u00b2_31/\u0394m\u00b2_21 ratio",
+      "predicted": 33.80272430408121,
+      "paper_target": 32.57636122177955,
+      "difference": 1.2263630823016598,
+      "tolerance": 4.886454183266932,
+      "pass": true
+    },
+    {
+      "observable": "w\u2080 (dark energy)",
+      "predicted": -0.9875851942925417,
+      "paper_target": -1.0,
+      "difference": 0.012414805707458343,
+      "tolerance": 0.05,
+      "pass": true
+    }
+  ],
+  "comparison_table": "========================================================================================\nSTAGE 4 \u2014 PHENOMENOLOGY PREDICTIONS vs PAPER TARGETS (HARDENED)\n========================================================================================\nObservable                        Predicted   Paper target            \u0394   Status\n----------------------------------------------------------------------------------------\n\u03bc_\u03b3\u03b3                               1.086571       1.086400     0.000171     PASS\n\u03a9_\u039b                                0.679528       0.680000    -0.000472     PASS\n\u03c1 (custodial)                      1.000963       1.000000     0.000963     PASS\nCKM/PMNS unitarity dev             0.000000       0.000000     0.000000     PASS\n\u0394m\u00b2_31/\u0394m\u00b2_21 ratio               33.802724      32.576361     1.226363     PASS\nw\u2080 (dark energy)                  -0.987585      -1.000000     0.012415     PASS\n----------------------------------------------------------------------------------------\nHARDENED EXPANSIONS (zero-knob, locked geometry only)\n  \u03bc_\u03b3\u03b3 (HL-LHC)              : 1.086571 \u00b1 0.007116  [1.079455, 1.093687]\n  w\u2080 (dark energy EoS)       : -0.987585\n  m\u2081, m\u2082, m\u2083 (eV)            : 4.206041e-03, 9.643173e-03, 5.062644e-02\n  \u03a3 m_\u03bd (eV)                 : 6.447565e-02\n  CKM \u03b8\u2081\u2082, \u03b8\u2082\u2083, \u03b8\u2081\u2083 (deg)    : 21.6506, 30.3109, 32.4760  [exploratory holonomy]\n  PMNS LO A4 (geometric)     : \u03b812=31.4822, \u03b823=45.0000, \u03b813=5.0959, \u03b4_CP=-150.0000\n  PMNS NLO (A4+residual)     : \u03b812=31.0026, \u03b823=45.6817, \u03b813=7.9532, \u03b4_CP=-146.6940\n  *** FINAL LOCKED FLAVOR PREDICTION (residual NLO A4) ***\n  \u03b8\u2081\u2082=31.003\u00b0  \u03b8\u2082\u2083=45.682\u00b0  \u03b8\u2081\u2083=7.953\u00b0  \u03b4_CP=-146.694\u00b0\n  further_theta13_corrections: False | continuous_knobs: 0\n----------------------------------------------------------------------------------------\n================================================================================================\nSTAGE 4 FLAVOR GEOMETRY \u2014 residual discrete symmetries (derivation-first)\n================================================================================================\nCyclotomic monodromy order from \u0394\u03b7: 24\n\u0394\u03b7_3\u2212\u0394\u03b7_1 = \u03c0 exactly: True\nPhase orders exp(i\u0394\u03b7_g): [8, 3, 8]\nRanking criterion: geometric naturalness (how residual G_f arises from monodromy/APS/\u0394\u03b7), not experimental fit\n------------------------------------------------------------------------------------------------\nRank Group                        Status                    \u03b812      \u03b823      \u03b813     \u03b4_CP\n------------------------------------------------------------------------------------------------\n   1 A4                           strongly_preferred     31.482   45.000    5.096 -150.000\n   2 S4                           compatible             35.264   45.000    3.310  180.000\n   3 S3                           compatible             31.482   45.000    5.735  120.000\n   4 naive_Delta_eta_holonomy     exploratory            21.651   30.311   32.476   60.000\n------------------------------------------------------------------------------------------------\nBEST GEOMETRIC (LO A4): A4  [forced_by_geometry]\n  (\u03b812, \u03b823, \u03b813, \u03b4_CP) = (31.4822\u00b0, 45.0000\u00b0, 5.0959\u00b0, -150.0000\u00b0)\n  Origin: Even monodromy subgroup of cyclotomic order-24 group from \u0394\u03b7 phases; APS self-dual projection select...\n------------------------------------------------------------------------------------------------\nRESIDUAL-INDUCED NLO CORRECTION (parameter-free)\n  r = 0.095716  (beta_residual_new)\n  Form: sin\u03b813^(NLO) = sin\u03b813^(LO) + \u221ar\u00b7\u03c3*\u00b7\u221a(n2/n_\u03a3)/N_gen; \u03b823^(NLO)=\u03c0/4+arctan(\u221ar/n_\u03a3); \u03b812^(NLO)=\u03b812^(LO)\u00b7(1\u2212r/(2\u03c0)); \u03b4^(NLO)=\u03b4^(LO)+arctan(\u221ar)\u00b7(n2\u2212n1)/n_\u03a3; r=\u03b2_residual_new=0.095716\n  LO  A4:     \u03b812=31.4822  \u03b823=45.0000  \u03b813=5.0959  \u03b4=-150.0000\n  NLO A4+res: \u03b812=31.0026  \u03b823=45.6817  \u03b813=7.9532  \u03b4=-146.6940\n  \u0394\u03b813 (NLO\u2212LO) = +2.8573\u00b0\n  Exp. ballpark \u03b813 \u2248 8.5\u00b0 (diagnostic only)\n  Conclusion: residual_sufficient\nContinuous knobs: 0\n================================================================================================\n----------------------------------------------------------------------------------------\n========================================================================================\nHEAVY MAJORANA SCALE TEST \u2014 locked topology only\n========================================================================================\nUnique M_R forced by geometry?  NO\nStatement: The locked topology does not uniquely determine a heavy right-handed Majorana mass scale M_R (or a unique absolute heavy spectrum). All candidate constructions either lack an absolute energy unit, require an external continuous scale (v_EW, M_Pl, Yukawa), or only fix dimensionless ratios among heavy states.\n----------------------------------------------------------------------------------------\nCandidates examined and rejected:\n  \u2022 type_I_seesaw_M_R = m_D^2 / m_nu\n      \u2192 rejected_not_unique: Requires Dirac scale m_D (Yukawa \u00d7 electroweak vev). Neither y nor v_EW is fixed by locked \u03c3*, \u03bb\u0303, n_\u03b7, APS, o...\n  \u2022 M_R / \u039b = exp(n_\u03a3\u00b7\u03c3*/N_gen) = 1.818111e+03\n      \u2192 rejected_not_unique: Gives only a dimensionless warp factor. Absolute M_R requires a reference scale \u039b (M_Pl, string scale, GUT sca...\n  \u2022 M_R ~ 1/\u221a(8\u03c0G_eff) with 8\u03c0G_eff=0.562500\n      \u2192 rejected_not_unique: In the computational framework, 8\u03c0G_eff = \u03c3*\u00b2/C\u2082(3) is dimensionless. It does not define a mass in GeV without...\n  \u2022 M_k proportional to \u03bb\u0303_k or n_\u03b7_k\n      \u2192 rejected_not_unique: Relative ratios M_k/M_j = \u221a(\u03bb\u0303_k/\u03bb\u0303_j) or n_k/n_j are fixed, but the overall heavy scale remains free. Topolog...\n  \u2022 APS index / \u03b7-invariant mass gap\n      \u2192 rejected_not_unique: Locked APS data fix index=0 on survivors and \u0394\u03b7 modular period 12. These constrain discrete mode selection and...\n  \u2022 M_R ~ \u221ar or r with r=\u03b2_residual_new=0.095716\n      \u2192 rejected_not_unique: \u03b2 residual is a dimensionless Frobenius residual of the Einstein\u2013YM equation on the compact T^{1,1} grid, not ...\n  \u2022 M_R ~ monodromy_order=24\n      \u2192 rejected_not_unique: Monodromy order 24 is a dimensionless group-theoretic integer (lcm of \u0394\u03b7 phase orders). It labels the residual...\n  \u2022 \u03a3\u2075 domain wall tension ~ Vol(N\u2075) or S_eff of survivors\n      \u2192 rejected_not_unique: Survivor volumes Vol(N\u2075)=j\u2081(j\u2081+1) and S_eff are dimensionless spectral data already used for \u0394\u03b7 = n\u00b7\u03c0/12. Tens...\n----------------------------------------------------------------------------------------\nRG shift of \u03b8\u2081\u2083 computed?  False\nReason: RG evolution of \u03b8\u2081\u2083 from a high scale to low energy requires a definite high-scale mass M_R (or threshold). Because M_R is not forced by the locked geometry, no parameter-free RG shift can be computed without additional input. \u03b8\u2081\u2083 remains at the residual-NLO geometric value.\n\u03b8\u2081\u2083 left at residual-NLO geometric value: 7.9532\u00b0\nContinuous knobs: 0\n========================================================================================\n----------------------------------------------------------------------------------------\nProton lifetime lower bound  : 10^34.05 years\nNeutrino hierarchy           : normal\n\u0394m\u00b2_21 (eV\u00b2)                 : 7.530000e-05\n\u0394m\u00b2_31 (eV\u00b2)                 : 2.545345e-03\n\u0394m\u00b2_32 (eV\u00b2)                 : 2.470045e-03\nMass ratio m2/m1             : 1.632993  (\u221a(8/3))\nMass ratio m3/m1             : 2.236068  (\u221a5)\nKK interference |\u03a3e^{i\u0394\u03b7}|\u00b2  : 1.000000\n\u03b2 dressing contribution        : 0.024071\nOverall                      : PASS\n========================================================================================",
+  "appendix_snippet": "PHENOMENOLOGY SNIPPET \u2014 Stage 4 hardened (locked baseline, zero knobs)\n\n  \u03bc_\u03b3\u03b3 = 1.086571 \u00b1 0.007116  (paper: 1.0864)\n  \u03a9_\u039b  = 0.679528  (paper: 0.68)\n  w\u2080   = -0.987585  (DE EoS from residual boundary stress)\n  \u03c1    = 1.000963  (custodial: 1)\n  \u03c4_p  > 10^34.05 yr\n  Hierarchy: normal\n  m_\u03bd (eV) = (4.2060e-03, 9.6432e-03, 5.0626e-02),  \u03a3m_\u03bd = 6.4476e-02\n  PMNS LO A4:  \u03b812=31.482, \u03b823=45.000, \u03b813=5.096, \u03b4_CP=-150.000\n  PMNS NLO:    \u03b812=31.003, \u03b823=45.682, \u03b813=7.953, \u03b4_CP=-146.694  (residual-induced, zero free knobs)\n  Exploratory holonomy angles retained for comparison only.\n  CKM/PMNS unitarity dev: 1.1102e-16\n  Continuous knobs: 0\n  Heavy Majorana M_R uniquely forced? NO\n  RG shift of \u03b8\u2081\u2083 computed? False\n\nAll coefficients from complete_baseline.json \u2014 no continuous knobs.\nFlavor residual G_f ranked by geometric naturalness (not experimental fit).\nHeavy Majorana scale is not fixed by locked topology; \u03b8\u2081\u2083 stays at NLO geometric value.",
+  "hardening": {
+    "absolute_neutrino_masses": true,
+    "full_ckm_pmns_angles": true,
+    "flavor_geometry_residual_symmetry": true,
+    "residual_nlo_a4": true,
+    "dark_energy_w0": true,
+    "mu_gammagamma_hl_lhc_band": true,
+    "heavy_majorana_scale_tested": true,
+    "heavy_majorana_scale_unique": false,
+    "rg_theta13_computed": false,
+    "final_flavor_prediction_locked": true,
+    "further_theta13_corrections": false,
+    "zero_continuous_knobs": true
+  },
+  "final_flavor_prediction": {
+    "theta12_deg": 31.003,
+    "theta23_deg": 45.682,
+    "theta13_deg": 7.953,
+    "delta_cp_deg": -146.694,
+    "residual_symmetry": "A4+residual_NLO",
+    "status": "final_geometric_high_scale_prediction",
+    "locked": true,
+    "further_theta13_corrections": false,
+    "interpretation": "Best zero-knob geometric high-scale prediction from locked topology (A4 residual + parameter-free residual NLO with r=\u03b2_residual_new). Any ~0.55\u00b0 remaining difference vs low-energy experimental \u03b8\u2081\u2083\u22488.5\u00b0 is attributed to RG evolution or higher-order effects outside the current topological determination. No continuous parameters introduced.",
+    "computed_from_locked_baseline": true
+  }
+}

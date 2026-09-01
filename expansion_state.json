@@ -1,0 +1,1257 @@
+{
+  "expansion_mode": true,
+  "core_skeleton_version": "stage1+2+3+3B+4-higher-res",
+  "directive_version": "2.0",
+  "taxonomy_version": "1.0",
+  "taxonomy_consolidated_utc": "2026-08-10T22:22:23.450026+00:00",
+  "absorbed_sectors": [
+    {
+      "sector": "SE_base_APS_index_extension",
+      "title": "Native APS generation count on SE bases",
+      "rule_set": "index=max(0,\u230aw(2j\u22123)\u230b), w=p+q or a+b+c; self-dual line; N_gen=#zero modes",
+      "status": "absorbed",
+      "continuous_knobs": 0,
+      "zero_knob_checksum": "Zero continuous free parameters confirmed | continuous_knobs = 0",
+      "consolidated_utc": "2026-08-10T22:22:23.450026+00:00",
+      "taxonomy": true,
+      "summary": {
+        "control": "T^{1,1} \u2192 N_gen=3, \u03bb\u0303={4.5,12,22.5}",
+        "families": {
+          "T_pq": {
+            "n_bases_catalogued": 30,
+            "n_gen": 3,
+            "windows": "gcd=1 slices incl. p,q\u22648 and microcatalog",
+            "sample": [
+              "T^{1,1}",
+              "T^{1,2}",
+              "T^{1,3}",
+              "T^{1,4}",
+              "T^{1,5}"
+            ]
+          },
+          "Y_pq": {
+            "n_bases_catalogued": 18,
+            "n_gen": 3,
+            "windows": "0<q<p slices + microcatalog",
+            "sample": [
+              "Y^{2,1}",
+              "Y^{3,1}",
+              "Y^{3,2}",
+              "Y^{4,1}",
+              "Y^{4,3}"
+            ]
+          },
+          "L_abc": {
+            "n_bases_catalogued": 27,
+            "n_gen": 3,
+            "windows": "1\u2264a\u2264b\u2264c, gcd=1, even sum, c\u22648 + microcatalog",
+            "sample": [
+              "L^{1,1,2}",
+              "L^{1,1,4}",
+              "L^{1,1,6}",
+              "L^{1,1,8}",
+              "L^{1,1,10}"
+            ]
+          }
+        },
+        "slice_records_count": 4,
+        "microcatalog_archived_count": 75,
+        "artifacts": [
+          "se_aps_extension.json",
+          "se_aps_extension_slice2.json",
+          "se_aps_L_abc.json",
+          "expansion_batch_100.json"
+        ],
+        "note": "Individual base micro-entries collapsed into this family sector. Full base lists remain in expansion_batch_100.json / SE JSON artifacts."
+      }
+    },
+    {
+      "sector": "formal_geometric_identities",
+      "title": "Locked pure-structure identities (bundle)",
+      "rule_set": "Algebraic identities among locked pure numbers (no free fits)",
+      "status": "absorbed",
+      "continuous_knobs": 0,
+      "zero_knob_checksum": "Zero continuous free parameters confirmed | continuous_knobs = 0",
+      "consolidated_utc": "2026-08-10T22:22:23.450026+00:00",
+      "taxonomy": true,
+      "summary": {
+        "n_identities": 25,
+        "identity_names": [
+          "identity_lambda_equals_6_vol",
+          "identity_n_eta_equals_4_vol",
+          "identity_sigma_sq_equals_3_over_4",
+          "identity_eight_pi_g_eff_9_over_16",
+          "identity_n3_minus_n1_equals_12",
+          "identity_sum_n_eta_26",
+          "identity_delta_eta_over_pi_fractions",
+          "identity_vol_ratios_8_3_5_15_8",
+          "identity_sqrt_lam_ratios",
+          "identity_T_wall_13_over_2",
+          "identity_beta_residual_positive_locked",
+          "identity_final_theta13_7_953",
+          "identity_final_theta12_31_003",
+          "identity_final_theta23_45_682",
+          "identity_final_delta_cp_m146_694",
+          "identity_mu_gammagamma",
+          "identity_omega_lambda",
+          "identity_w0",
+          "identity_C2_SU3_4_over_3",
+          "identity_eta_period_12",
+          "identity_monodromy_order_24",
+          "identity_A4_order_12_divides_24",
+          "identity_n_gen_equals_3",
+          "identity_continuous_knobs_zero",
+          "identity_tau_res_r_sigma_sq"
+        ],
+        "includes": [
+          "\u03bb\u0303=6 Vol",
+          "n_\u03b7=4 Vol",
+          "\u03c3*\u00b2=3/4",
+          "8\u03c0G_eff=9/16",
+          "monodromy 24",
+          "residual-NLO angles",
+          "Stage-4 \u03bc/\u03a9/w\u2080"
+        ],
+        "artifact": "expansion_batch_100.json"
+      }
+    },
+    {
+      "sector": "aps_survivor_multiplet",
+      "title": "APS survivor multiplet",
+      "rule_set": "self-dual APS zero modes",
+      "status": "absorbed",
+      "continuous_knobs": 0,
+      "zero_knob_checksum": "Zero continuous free parameters confirmed | continuous_knobs = 0",
+      "consolidated_utc": "2026-08-10T22:22:23.450026+00:00",
+      "taxonomy": true,
+      "summary": {
+        "prior_entry_keys": [
+          "sector",
+          "date_utc",
+          "continuous_knobs",
+          "zero_knob_checksum",
+          "artifact",
+          "statement",
+          "survivors",
+          "lambda_tilde_derived"
+        ],
+        "statement": "APS survivor multiplet locked: unique self-dual zero modes (j\u2081,j\u2082)=(\u00bd,0),(1,0),(3/2,0) with derived \u03bb\u0303={4.5,12,22.5}, N_gen=3. No continuous knobs.",
+        "artifact": "expansion_five_lock.json"
+      }
+    },
+    {
+      "sector": "discrete_eta_monodromy_lattice",
+      "title": "\u03b7-lattice + monodromy",
+      "rule_set": "period 12; n_\u03b7; order 24",
+      "status": "absorbed",
+      "continuous_knobs": 0,
+      "zero_knob_checksum": "Zero continuous free parameters confirmed | continuous_knobs = 0",
+      "consolidated_utc": "2026-08-10T22:22:23.450026+00:00",
+      "taxonomy": true,
+      "summary": {
+        "prior_entry_keys": [
+          "sector",
+          "date_utc",
+          "eta_period",
+          "n_eta",
+          "delta_eta_over_pi",
+          "monodromy_order",
+          "discrete_unique",
+          "continuous_knobs",
+          "zero_knob_checksum",
+          "artifact"
+        ],
+        "statement": "Zero continuous free parameters confirmed | continuous_knobs = 0",
+        "artifact": "eta_monodromy_lock.json"
+      }
+    },
+    {
+      "sector": "discrete_spectral_hierarchy",
+      "title": "Spectral hierarchy ratios",
+      "rule_set": "\u221a(\u03bb ratios); n ratios",
+      "status": "absorbed",
+      "continuous_knobs": 0,
+      "zero_knob_checksum": "Zero continuous free parameters confirmed | continuous_knobs = 0",
+      "consolidated_utc": "2026-08-10T22:22:23.450026+00:00",
+      "taxonomy": true,
+      "summary": {
+        "prior_entry_keys": [
+          "sector",
+          "date_utc",
+          "continuous_knobs",
+          "zero_knob_checksum",
+          "artifact",
+          "statement",
+          "spectral_ratios",
+          "exact_fractions"
+        ],
+        "statement": "Discrete spectral hierarchy locked: pure ratios among \u03bb\u0303, n_\u03b7, and Vol follow from APS survivors with identities n_k=4 Vol_k, \u03bb\u0303_k=6 Vol_k. No absolute scale; no continuous knobs.",
+        "artifact": "expansion_triple_lock.json"
+      }
+    },
+    {
+      "sector": "discrete_flavor_residual_A4",
+      "title": "Flavor residual A4",
+      "rule_set": "rank-1 geometric naturalness",
+      "status": "absorbed",
+      "continuous_knobs": 0,
+      "zero_knob_checksum": "Zero continuous free parameters confirmed | continuous_knobs = 0",
+      "consolidated_utc": "2026-08-10T22:22:23.450026+00:00",
+      "taxonomy": true,
+      "summary": {
+        "prior_entry_keys": [
+          "sector",
+          "date_utc",
+          "residual_symmetry",
+          "naturalness_rank",
+          "monodromy_order",
+          "continuous_knobs",
+          "zero_knob_checksum",
+          "artifact",
+          "final_angles_deg"
+        ],
+        "statement": "Zero continuous free parameters confirmed | continuous_knobs = 0",
+        "artifact": "flavor_A4_lock.json"
+      }
+    },
+    {
+      "sector": "sigma_star_shape_freeze",
+      "title": "Shape modulus \u03c3*",
+      "rule_set": "V(\u03c3) min at \u221a3/2, m\u00b2>0",
+      "status": "absorbed",
+      "continuous_knobs": 0,
+      "zero_knob_checksum": "Zero continuous free parameters confirmed | continuous_knobs = 0",
+      "consolidated_utc": "2026-08-10T22:22:23.450026+00:00",
+      "taxonomy": true,
+      "summary": {
+        "prior_entry_keys": [
+          "sector",
+          "date_utc",
+          "continuous_knobs",
+          "zero_knob_checksum",
+          "artifact",
+          "statement",
+          "sigma_star",
+          "mass_squared_proxy"
+        ],
+        "statement": "Shape modulus formally locked: geometric V(\u03c3) from LB + derived APS ground eigenvalue forces \u03c3*=\u221a3/2 with d\u00b2V/d\u03c3\u00b2>0. No free flux; continuous_knobs=0. (Overall volume R remains open/parked.)",
+        "artifact": "expansion_triple_lock.json"
+      }
+    },
+    {
+      "sector": "dimensionless_coupling_self_dual_sector",
+      "title": "8\u03c0G_eff + self-dual sector",
+      "rule_set": "\u03c3*\u00b2/C\u2082; j\u2082=0; off-sector defect",
+      "status": "absorbed",
+      "continuous_knobs": 0,
+      "zero_knob_checksum": "Zero continuous free parameters confirmed | continuous_knobs = 0",
+      "consolidated_utc": "2026-08-10T22:22:23.450026+00:00",
+      "taxonomy": true,
+      "summary": {
+        "prior_entry_keys": [
+          "sector",
+          "date_utc",
+          "continuous_knobs",
+          "zero_knob_checksum",
+          "artifact",
+          "statement",
+          "eight_pi_g_eff",
+          "n_gen"
+        ],
+        "statement": "Dimensionless Einstein\u2013YM coupling 8\u03c0G_eff=\u03c3*\u00b2/C\u2082(3)=9/16 and self-dual APS sector (j\u2082=0, r=0, N_gen=3) formally locked as pure geometric structure. No continuous knobs; no absolute Newton constant claimed.",
+        "artifact": "expansion_triple_lock.json"
+      }
+    },
+    {
+      "sector": "domain_wall_spectral_tension",
+      "title": "Domain-wall spectral tension",
+      "rule_set": "T_wall=\u03a3 Vol",
+      "status": "absorbed",
+      "continuous_knobs": 0,
+      "zero_knob_checksum": "Zero continuous free parameters confirmed | continuous_knobs = 0",
+      "consolidated_utc": "2026-08-10T22:22:23.450026+00:00",
+      "taxonomy": true,
+      "summary": {
+        "prior_entry_keys": [
+          "sector",
+          "date_utc",
+          "continuous_knobs",
+          "zero_knob_checksum",
+          "artifact",
+          "statement",
+          "T_wall"
+        ],
+        "statement": "Domain-wall spectral tension locked: T_wall=\u03a3_k j\u2081(j\u2081+1)=13/2 on APS survivors, identical to \u03a3 n_\u03b7/4. Pure discrete geometry; no knobs.",
+        "artifact": "expansion_five_lock.json"
+      }
+    },
+    {
+      "sector": "stage4_dimensionless_observables",
+      "title": "Stage-4 dimensionless observables",
+      "rule_set": "\u03bc_\u03b3\u03b3, \u03a9_\u039b, w\u2080, \u03b813 NLO",
+      "status": "absorbed",
+      "continuous_knobs": 0,
+      "zero_knob_checksum": "Zero continuous free parameters confirmed | continuous_knobs = 0",
+      "consolidated_utc": "2026-08-10T22:22:23.450026+00:00",
+      "taxonomy": true,
+      "summary": {
+        "prior_entry_keys": [
+          "sector",
+          "date_utc",
+          "continuous_knobs",
+          "zero_knob_checksum",
+          "artifact",
+          "statement",
+          "mu_gammagamma",
+          "omega_lambda",
+          "w0_dark_energy",
+          "theta13_deg"
+        ],
+        "statement": "Stage-4 dimensionless observables formally locked as expansion sector: \u03bc_\u03b3\u03b3, \u03a9_\u039b, w\u2080, residual-NLO \u03b813 are pure geometric outputs with continuous_knobs=0 (no re-fit).",
+        "artifact": "expansion_five_lock.json"
+      }
+    },
+    {
+      "sector": "ngen_anomaly_consistency",
+      "title": "N_gen anomaly consistency",
+      "rule_set": "native index = 3",
+      "status": "absorbed",
+      "continuous_knobs": 0,
+      "zero_knob_checksum": "Zero continuous free parameters confirmed | continuous_knobs = 0",
+      "consolidated_utc": "2026-08-10T22:22:23.450026+00:00",
+      "taxonomy": true,
+      "summary": {
+        "prior_entry_keys": [
+          "sector",
+          "date_utc",
+          "continuous_knobs",
+          "zero_knob_checksum",
+          "artifact",
+          "statement",
+          "n_gen",
+          "geometry_generates_n_gen_3"
+        ],
+        "statement": "N_gen anomaly/consistency locked: native APS index and anomaly-facing uniqueness agree on N_gen=3 with geometry_generates_n_gen_3=True. continuous_knobs=0.",
+        "artifact": "expansion_five_lock.json"
+      }
+    },
+    {
+      "sector": "residual_nlo_geometric_functor",
+      "title": "Residual NLO A4 geometric functor",
+      "rule_set": "Parameter-free map (r,\u03c3*,n_\u03b7,N_gen)\u2192(\u03b812,\u03b823,\u03b813,\u03b4) with \u03b4(sin\u03b813)=\u221ar\u00b7\u03c3*\u00b7\u221a(n2/n_\u03a3)/N_gen; no free Wilson coefficients",
+      "status": "absorbed",
+      "continuous_knobs": 0,
+      "zero_knob_checksum": "Zero continuous free parameters confirmed | continuous_knobs = 0",
+      "consolidated_utc": "2026-08-10T22:22:23.450026+00:00",
+      "taxonomy": true,
+      "summary": {
+        "inputs_locked_only": {
+          "beta_residual_new": 0.0957162820145647,
+          "sigma_star": 0.8660254037844556,
+          "n_eta": [
+            3,
+            8,
+            15
+          ],
+          "n_gen": 3
+        },
+        "functor_forms": {
+          "sin_theta13_LO": "\u03c3*\u00b7(n2/n_\u03a3)/N_gen",
+          "delta_sin_theta13_NLO": "\u221ar\u00b7\u03c3*\u00b7\u221a(n2/n_\u03a3)/N_gen",
+          "theta23_NLO": "\u03c0/4 + arctan(\u221ar/n_\u03a3)",
+          "theta12_NLO": "\u03b812_LO\u00b7(1 \u2212 r/(2\u03c0))"
+        },
+        "computed_check": {
+          "theta13_nlo_deg_from_functor": 7.953168405090597,
+          "theta13_locked_deg": 7.953,
+          "theta23_nlo_deg": 45.68174458712624,
+          "theta12_nlo_deg": 31.002563803011185,
+          "match_locked_theta13_within_0.05deg": true
+        },
+        "why_medium_not_catalog": "Locks the *functional form* of residual NLO corrections as a geometric functor of already-locked pure numbers \u2014 not another SE base enumeration.",
+        "statement": "Residual NLO A4 geometric functor absorbed: mixing-angle NLO map is uniquely specified by locked (r,\u03c3*,n_\u03b7,N_gen) with zero free continuous coefficients. continuous_knobs=0."
+      }
+    },
+    {
+      "sector": "as_mod6_spin_weight_trace",
+      "title": "Atiyah\u2013Singer mod-6 spin-weight trace cancellation",
+      "rule_set": "\u03a3_k (2j\u2081_k+1) n_\u03b7_k \u2261 0 (mod 6) on APS survivors",
+      "status": "absorbed",
+      "continuous_knobs": 0,
+      "zero_knob_checksum": "Zero continuous free parameters confirmed | continuous_knobs = 0",
+      "detail": {
+        "spin_trace": 90,
+        "sum_n": 26
+      },
+      "statement": "Atiyah\u2013Singer mod-6 spin-weight trace cancellation absorbed under zero-knob discipline. continuous_knobs=0.",
+      "artifact": "expansion_ten_medium.json",
+      "taxonomy": true,
+      "medium_structural": true,
+      "date_utc": "2026-08-10T22:27:22.879448+00:00"
+    },
+    {
+      "sector": "mu_tau_z2_pi_relation",
+      "title": "LO \u03bc\u2013\u03c4 Z\u2082 from \u0394\u03b7 \u03c0-relation",
+      "rule_set": "n\u2083\u2212n\u2081=12 \u21d2 \u0394\u03b7\u2083\u2212\u0394\u03b7\u2081=\u03c0 \u21d2 residual \u03bc\u2013\u03c4 reflection \u21d2 \u03b8\u2082\u2083=\u03c0/4 at LO",
+      "status": "absorbed",
+      "continuous_knobs": 0,
+      "zero_knob_checksum": "Zero continuous free parameters confirmed | continuous_knobs = 0",
+      "detail": {
+        "n3_minus_n1": 12,
+        "theta23_LO_deg": 45.0
+      },
+      "statement": "LO \u03bc\u2013\u03c4 Z\u2082 from \u0394\u03b7 \u03c0-relation absorbed under zero-knob discipline. continuous_knobs=0.",
+      "artifact": "expansion_ten_medium.json",
+      "taxonomy": true,
+      "medium_structural": true,
+      "date_utc": "2026-08-10T22:27:22.879448+00:00"
+    },
+    {
+      "sector": "solar_angle_n_lattice",
+      "title": "Solar mixing from \u03b7-lattice ratio",
+      "rule_set": "tan\u00b2\u03b8\u2081\u2082 = n\u2081/n\u2082 = 3/8 (A4 geometric Clebsch / lattice, no free flavon VEV)",
+      "status": "absorbed",
+      "continuous_knobs": 0,
+      "zero_knob_checksum": "Zero continuous free parameters confirmed | continuous_knobs = 0",
+      "detail": {
+        "tan2_theta12": 0.375,
+        "theta12_LO_deg": 31.482154105293855
+      },
+      "statement": "Solar mixing from \u03b7-lattice ratio absorbed under zero-knob discipline. continuous_knobs=0.",
+      "artifact": "expansion_ten_medium.json",
+      "taxonomy": true,
+      "medium_structural": true,
+      "date_utc": "2026-08-10T22:27:22.879448+00:00"
+    },
+    {
+      "sector": "reactor_angle_LO_geometric",
+      "title": "LO reactor angle from \u03c3* and n\u2082/n_\u03a3",
+      "rule_set": "sin\u03b8\u2081\u2083\u207d\u2070\u207e = \u03c3*\u00b7(n\u2082/n_\u03a3)/N_gen  (locked pure numbers only)",
+      "status": "absorbed",
+      "continuous_knobs": 0,
+      "zero_knob_checksum": "Zero continuous free parameters confirmed | continuous_knobs = 0",
+      "detail": {
+        "sin_theta13_LO": 0.08882311833686724,
+        "theta13_LO_deg": 5.095905574100568
+      },
+      "statement": "LO reactor angle from \u03c3* and n\u2082/n_\u03a3 absorbed under zero-knob discipline. continuous_knobs=0.",
+      "artifact": "expansion_ten_medium.json",
+      "taxonomy": true,
+      "medium_structural": true,
+      "date_utc": "2026-08-10T22:27:22.879448+00:00"
+    },
+    {
+      "sector": "spectral_normal_hierarchy_direction",
+      "title": "Normal hierarchy direction from spectral ordering",
+      "rule_set": "\u03bb\u0303\u2081<\u03bb\u0303\u2082<\u03bb\u0303\u2083 and n\u2081<n\u2082<n\u2083 select normal mass-ordering direction (ratios only)",
+      "status": "absorbed",
+      "continuous_knobs": 0,
+      "zero_knob_checksum": "Zero continuous free parameters confirmed | continuous_knobs = 0",
+      "detail": {
+        "lambda_order": [
+          4.5,
+          12.0,
+          22.5
+        ],
+        "n_eta_order": [
+          3,
+          8,
+          15
+        ],
+        "hierarchy": "normal"
+      },
+      "statement": "Normal hierarchy direction from spectral ordering absorbed under zero-knob discipline. continuous_knobs=0.",
+      "artifact": "expansion_ten_medium.json",
+      "taxonomy": true,
+      "medium_structural": true,
+      "date_utc": "2026-08-10T22:27:22.879448+00:00"
+    },
+    {
+      "sector": "custodial_rho_near_unity",
+      "title": "Custodial \u03c1 \u2248 1 from locked geometry",
+      "rule_set": "\u03c1\u22121 is a pure residual geometric correction (no free T-parameter)",
+      "status": "absorbed",
+      "continuous_knobs": 0,
+      "zero_knob_checksum": "Zero continuous free parameters confirmed | continuous_knobs = 0",
+      "detail": {
+        "rho_custodial": 1.0009632962547121
+      },
+      "statement": "Custodial \u03c1 \u2248 1 from locked geometry absorbed under zero-knob discipline. continuous_knobs=0.",
+      "artifact": "expansion_ten_medium.json",
+      "taxonomy": true,
+      "medium_structural": true,
+      "date_utc": "2026-08-10T22:27:22.879448+00:00"
+    },
+    {
+      "sector": "sensitivity_n_eta_dominant_driver",
+      "title": "Sensitivity: n_\u03b7 lattice dominates \u03b2 residual",
+      "rule_set": "Stage 3B scan: dominant residual driver is discrete n_\u03b7 lattice (not continuous \u03c3)",
+      "status": "absorbed",
+      "continuous_knobs": 0,
+      "zero_knob_checksum": "Zero continuous free parameters confirmed | continuous_knobs = 0",
+      "detail": {
+        "dominant_residual_driver": "n_eta_lattice",
+        "total_points": 147
+      },
+      "statement": "Sensitivity: n_\u03b7 lattice dominates \u03b2 residual absorbed under zero-knob discipline. continuous_knobs=0.",
+      "artifact": "expansion_ten_medium.json",
+      "taxonomy": true,
+      "medium_structural": true,
+      "date_utc": "2026-08-10T22:27:22.879448+00:00"
+    },
+    {
+      "sector": "master_variational_zero_knobs",
+      "title": "Master variational zero-knob closure",
+      "rule_set": "Stage 3 master closure leaves continuous_knobs=0 (machine-precision \u03c3 stationarity)",
+      "status": "absorbed",
+      "continuous_knobs": 0,
+      "zero_knob_checksum": "Zero continuous free parameters confirmed | continuous_knobs = 0",
+      "detail": {
+        "continuous_knobs": 0,
+        "s_master": 164.3956790968391,
+        "status": "PASS"
+      },
+      "statement": "Master variational zero-knob closure absorbed under zero-knob discipline. continuous_knobs=0.",
+      "artifact": "expansion_ten_medium.json",
+      "taxonomy": true,
+      "medium_structural": true,
+      "date_utc": "2026-08-10T22:27:22.879448+00:00"
+    },
+    {
+      "sector": "neutrino_mass_ratio_spectral_proxy",
+      "title": "Neutrino mass-ratio direction from spectral proxies",
+      "rule_set": "\u221a(\u03bb\u0303_k/\u03bb\u0303_1) fix discrete mass-ratio skeleton; absolute eV still uses locked Stage-4 map",
+      "status": "absorbed",
+      "continuous_knobs": 0,
+      "zero_knob_checksum": "Zero continuous free parameters confirmed | continuous_knobs = 0",
+      "detail": {
+        "m_nu_eV": {
+          "m1": 0.004206041039258675,
+          "m2": 0.0096431727778739,
+          "m3": 0.05062643500505683
+        },
+        "spectral_ratio_proxies": {
+          "r21": 1.632993161855452,
+          "r31": 2.23606797749979
+        },
+        "note": "Does not claim absolute eV without Stage-4 light-sector map already locked"
+      },
+      "statement": "Neutrino mass-ratio direction from spectral proxies absorbed under zero-knob discipline. continuous_knobs=0.",
+      "artifact": "expansion_ten_medium.json",
+      "taxonomy": true,
+      "medium_structural": true,
+      "date_utc": "2026-08-10T22:27:22.879448+00:00"
+    },
+    {
+      "sector": "even_monodromy_A4_selection_rule",
+      "title": "Even monodromy selection rule (A4 \u227b S4)",
+      "rule_set": "APS self-dual \u21d2 orientation-preserving/even residual; A4 (order 12) \u2282 Z_24 monodromy",
+      "status": "absorbed",
+      "continuous_knobs": 0,
+      "zero_knob_checksum": "Zero continuous free parameters confirmed | continuous_knobs = 0",
+      "detail": {
+        "monodromy_order": 24,
+        "A4_order": 12,
+        "residual_symmetry": "A4+residual_NLO"
+      },
+      "statement": "Even monodromy selection rule (A4 \u227b S4) absorbed under zero-knob discipline. continuous_knobs=0.",
+      "artifact": "expansion_ten_medium.json",
+      "taxonomy": true,
+      "medium_structural": true,
+      "date_utc": "2026-08-10T22:27:22.879448+00:00"
+    },
+    {
+      "sector": "A3_beta_residual_higher_res_vs_legacy",
+      "title": "Higher-res vs legacy residual distinction",
+      "group": "A",
+      "status": "absorbed",
+      "continuous_knobs": 0,
+      "zero_knob_checksum": "Zero continuous free parameters confirmed | continuous_knobs = 0",
+      "detail": {
+        "beta_residual_new_Nh24": 0.0957162820145647,
+        "beta_residual_full_legacy": 0.1950113120314795,
+        "beta_residual_laplacian_legacy": 0.2016565061422849,
+        "ordering": "new < full <~ laplacian"
+      },
+      "artifact": "expansion_easy_medium_complete.json",
+      "taxonomy": true,
+      "easy_medium_sweep": true,
+      "date_utc": "2026-08-10T22:41:04.771898+00:00"
+    }
+  ],
+  "parked_bottlenecks": [
+    {
+      "sector_id": "E1_absolute_geometric_yardstick_lemma",
+      "title": "Absolute Geometric Yardstick Lemma (resolved \u2014 Weyl gauge)",
+      "status": "resolved_via_conformal_quotienting",
+      "reason": "No unique absolute E_*/L_* from pure topology; Lovelock/NPHC/TDA negative",
+      "continuous_knobs": 0,
+      "monodromy_dehn_probe": {
+        "verdict": "negative",
+        "note": "Order-24 monodromy/Dehn action does not discretize overall scale; \u03bb\u2208\u211d\u207a remains free."
+      },
+      "full_negative_series": "absolute_yardstick_lemma_negative_series.json",
+      "n_negative_probes": 12,
+      "residual_freedom": "Weyl gauge redundancy (unphysical)",
+      "resolution": "No-Go + Weyl gauge; \u03bb unphysical"
+    },
+    {
+      "sector_id": "E2_volume_modulus_still_flat",
+      "title": "Volume modulus R (resolved \u2014 Weyl gauge)",
+      "status": "resolved_via_conformal_quotienting",
+      "reason": "No parameter-free V(R) minimum from locked data",
+      "continuous_knobs": 0,
+      "monodromy_dehn_probe": {
+        "verdict": "negative",
+        "note": "Order-24 monodromy/Dehn action does not discretize overall scale; \u03bb\u2208\u211d\u207a remains free."
+      },
+      "resolution": "No-Go + Weyl gauge; \u03bb unphysical",
+      "residual_freedom": "Weyl gauge redundancy (unphysical)"
+    },
+    {
+      "sector_id": "E3_no_unique_HD_Wilson",
+      "title": "No unique higher-derivative Wilson coefficients",
+      "status": "parked_lemma_labeled",
+      "reason": "HD terms not forced; residual NLO already used leading \u221ar",
+      "continuous_knobs": 0,
+      "note": "Forced unique HD term: negative (controlled eligibility). Wilson tower remains parked."
+    },
+    {
+      "sector_id": "E4_no_absolute_M_R",
+      "title": "No absolute heavy Majorana M_R from locked data",
+      "status": "open_required_for_closure",
+      "reason": "Locked data dimensionless; no unique GeV unit",
+      "continuous_knobs": 0,
+      "monodromy_dehn_probe": {
+        "verdict": "negative",
+        "note": "Order-24 monodromy/Dehn action does not discretize overall scale; \u03bb\u2208\u211d\u207a remains free."
+      },
+      "full_negative_series": "absolute_yardstick_lemma_negative_series.json",
+      "n_negative_probes": 12,
+      "residual_freedom": "lambda in R+"
+    },
+    {
+      "sector_id": "E5_global_uniqueness_partial",
+      "title": "Global vacuum uniqueness only partial",
+      "status": "partial_controlled_class_theorem",
+      "reason": "SE catalog partial; full 14D landscape untested",
+      "continuous_knobs": 0,
+      "resolution": "G_SE: locked skeleton isolates T^{1,1}; all-manifold uniqueness remains open"
+    }
+  ],
+  "active_bottlenecks": [
+    {
+      "sector": "Absolute Scale Generation",
+      "date_utc": "2026-08-10T20:33:49.181549+00:00",
+      "attempts": 3,
+      "outcome": "blocked",
+      "topological_lemma_specification": {
+        "lemma_working_name": "Absolute Geometric Yardstick Lemma (required)",
+        "exact_geometric_statement_required": "There exists a theorem forced by the locked AGC data (APS index on Sigma^5, self-dual 7-form, n_eta lattice, monodromy, residual Einstein-YM structure, and shape-stabilized T^{1,1}) that uniquely determines a nonzero mass dimension quantity E_* (or length L_*) as a functor of the topology alone, without free continuous coefficients and without ingesting an external unit (M_Pl, v_EW, Lambda).",
+        "objects_spaces": [
+          "Sigma^5 APS domain wall",
+          "Squashed T^{1,1} with sigma*=sqrt(3)/2",
+          "Self-dual form sector star-Psi=Psi",
+          "Overall volume modulus R (currently flat)"
+        ],
+        "discrete_invariant_that_would_absorb": "A topological construction that maps (index, monodromy, n_eta, Betti/APS data) to a unique dimensionful density (e.g. unique Einstein-Hilbert coefficient or unique stable R in absolute units). No such map is currently forced.",
+        "why_three_attempts_failed_synthesis": {
+          "dimensional_check": "All locked quantities are pure numbers ([ ]=1). Energy/length require nonzero mass dimension. Pure discrete combinations remain pure numbers (unfilled dimensional hole).",
+          "nphc_check": "Volume / wall-Casimir polynomial systems that could freeze R introduce free continuous coefficients (a/b, p/q) or homogeneous scaling with no isolated finite-R root in absolute units. No isolated zero of a fully topological polynomial system has been exhibited that fixes R without external scale.",
+          "tda_check": "Persistent-homology style obstruction: continuous metric rescaling g -> Omega^2 g preserves self-duality/APS index structure in the locked sector; the deformation path in overall conformal volume is unobstructed (volume flat), so TDA would show a long bar for the overall-scale degree of freedom rather than a topological barrier."
+        },
+        "minimal_computational_experiment": "NPHC/Bertini scan of candidate polyhedral volume potentials whose coefficients are restricted to the discrete set generated by {N_gen, n_eta_i, monodromy, Vol_k, lambda_tilde_k} only; test whether any coefficient assignment forced by index theory (not free choice) yields an isolated positive R root. Parallel: TDA on a moduli sample of overall conformal factor to confirm absence of barrier (persistent H0/H1 for volume).",
+        "status": "open_required_for_closure",
+        "continuous_knobs_if_forced_lock_now": "Would require free continuous structure or external unit \u2014 forbidden"
+      },
+      "attempt_summaries": [
+        {
+          "id": 1,
+          "outcome": "Fail",
+          "one_line": "Discrete a,b cannot force p,q; R not absolutely fixed"
+        },
+        {
+          "id": 2,
+          "outcome": "Fail",
+          "one_line": "Discrete extremum yields pure number Rtilde, not mass"
+        },
+        {
+          "id": 3,
+          "outcome": "Fail",
+          "one_line": "M_Pl ingestion gives hierarchy only, not geometric generation; R still flat"
+        }
+      ],
+      "lemma_experiment": {
+        "experiment": "yardstick_lemma_nphc_tda",
+        "timestamp_utc": "2026-08-10T20:43:37.053307+00:00",
+        "absolute_scale_generated": false,
+        "unique_R_forced_by_index_theory": false,
+        "topological_barrier_against_rescaling": false,
+        "artifact": "yardstick_lemma_experiment.json",
+        "n_unique_R_found_in_scan": 17929,
+        "lemma_status": "still_open_required_for_closure"
+      },
+      "last_experiment_utc": "2026-08-10T21:03:19.690985+00:00",
+      "lemma_experiment_v2": {
+        "experiment": "yardstick_ansatz_v2_refined",
+        "timestamp_utc": "2026-08-10T20:49:58.728610+00:00",
+        "absolute_scale_generated": false,
+        "global_unique_R_forced": false,
+        "artifact": "yardstick_ansatz_v2.json",
+        "families": [
+          "A_instanton",
+          "B_log_radion",
+          "C_rational",
+          "D_spectral_product",
+          "E_topological_BFCS",
+          "F_warp_coupled",
+          "G_two_field"
+        ],
+        "lemma_status": "still_open_required_for_closure"
+      },
+      "lemma_experiment_lovelock": {
+        "experiment": "yardstick_lovelock_euler_option_A",
+        "timestamp_utc": "2026-08-10T21:03:19.690985+00:00",
+        "absolute_scale_generated": false,
+        "unique_R_forced": false,
+        "euler_chi_vanishes": true,
+        "artifact": "yardstick_lovelock_euler.json",
+        "lemma_status": "still_open_required_for_closure"
+      },
+      "refined_obstruction": "Lovelock form forced but relative \u03b1_k unfixed by index; odd-dim internal \u03c7=0; no unique R_*."
+    }
+  ],
+  "scaffolding_log": [
+    {
+      "cycle": "Absolute Scale Generation",
+      "action": "introduced_then_withdrawn",
+      "item": "M_Pl as Single-Scale Anchor candidate (Attempt 3 only)",
+      "status": "withdrawn \u2014 does not constitute geometric generation of absolute scale",
+      "timestamp_utc": "2026-08-10T20:33:49.181549+00:00"
+    },
+    {
+      "cycle": "Absolute Scale Generation",
+      "action": "temporary_functional_assumptions",
+      "item": "wall-Casimir (a,b,p,q) and discrete extremal S(Rtilde)",
+      "status": "withdrawn \u2014 free operator choices / no mass dimension",
+      "timestamp_utc": "2026-08-10T20:33:49.181549+00:00"
+    },
+    {
+      "cycle": "Absolute Scale Generation \u2014 Yardstick Lemma experiment",
+      "action": "computational_scan_only",
+      "item": "NPHC-style discrete volume potentials + TDA on Omega; no permanent scaffolding retained",
+      "status": "complete",
+      "timestamp_utc": "2026-08-10T20:43:37.053307+00:00"
+    },
+    {
+      "cycle": "Absolute Scale \u2014 refined ansatz v2",
+      "action": "deeper_functor_scan",
+      "item": "Families A\u2013G; no permanent scaffolding retained",
+      "status": "complete",
+      "timestamp_utc": "2026-08-10T20:49:58.728610+00:00"
+    },
+    {
+      "cycle": "Absolute Scale \u2014 Lovelock/Euler forced form (Option A)",
+      "action": "theorem_forced_form_scan",
+      "item": "Lovelock L_k only; discrete coeffs; no permanent scaffolding",
+      "status": "complete",
+      "timestamp_utc": "2026-08-10T21:02:03.477958+00:00"
+    },
+    {
+      "cycle": "Absolute Scale \u2014 Lovelock/Euler forced form (Option A)",
+      "action": "theorem_forced_form_scan",
+      "item": "Lovelock L_k only; discrete coeffs; no permanent scaffolding",
+      "status": "complete",
+      "timestamp_utc": "2026-08-10T21:03:19.690985+00:00"
+    },
+    {
+      "cycle": "SE_base_APS_index_extension",
+      "action": "none_required",
+      "item": "pure discrete APS count; no temporary anchors",
+      "status": "n/a",
+      "timestamp_utc": "2026-08-10T21:25:25.933068+00:00"
+    },
+    {
+      "cycle": "SE_base_APS_index_extension:slice2_p_le_8",
+      "action": "none_required",
+      "item": "pure discrete APS count; no temporary anchors",
+      "status": "n/a",
+      "timestamp_utc": "2026-08-10T21:30:49.605255+00:00"
+    },
+    {
+      "cycle": "L_abc_APS",
+      "action": "none_required",
+      "item": "pure discrete APS catalog",
+      "status": "n/a",
+      "timestamp_utc": "2026-08-10T21:38:38.679188+00:00"
+    },
+    {
+      "cycle": "discrete_flavor_residual_A4",
+      "action": "none_required",
+      "item": "locked monodromy + APS + residual r only",
+      "status": "n/a",
+      "timestamp_utc": "2026-08-10T21:38:38.818767+00:00"
+    },
+    {
+      "cycle": "discrete_eta_monodromy_lattice",
+      "action": "none_required",
+      "item": "pure discrete \u03b7-lattice + monodromy",
+      "status": "n/a",
+      "timestamp_utc": "2026-08-10T21:55:07.262336+00:00"
+    },
+    {
+      "cycle": "expansion_triple_lock",
+      "action": "none_required",
+      "item": "three pure geometric/discrete sectors",
+      "status": "n/a",
+      "timestamp_utc": "2026-08-10T21:58:21.746530+00:00"
+    },
+    {
+      "cycle": "expansion_triple_lock",
+      "action": "none_required",
+      "item": "three pure geometric/discrete sectors",
+      "status": "n/a",
+      "timestamp_utc": "2026-08-10T21:58:35.985298+00:00"
+    },
+    {
+      "cycle": "expansion_five_lock",
+      "action": "none_required",
+      "item": "five pure geometric/discrete sectors",
+      "status": "n/a",
+      "timestamp_utc": "2026-08-10T22:12:31.825681+00:00"
+    },
+    {
+      "cycle": "expansion_batch_100",
+      "action": "none_required",
+      "item": "batch of 100 discrete/formal locks",
+      "status": "n/a",
+      "timestamp_utc": "2026-08-10T22:17:12.078935+00:00",
+      "added_to_state": 100,
+      "skipped_duplicates": 0
+    },
+    {
+      "cycle": "taxonomy_consolidation",
+      "action": "collapsed_microcatalog_into_family_sectors",
+      "item": "113 raw \u2192 12 taxonomy sectors",
+      "status": "complete",
+      "timestamp_utc": "2026-08-10T22:22:23.450026+00:00"
+    },
+    {
+      "cycle": "residual_nlo_geometric_functor",
+      "action": "none_required",
+      "item": "medium structural sector (functor form, not SE catalog)",
+      "status": "absorbed",
+      "timestamp_utc": "2026-08-10T22:22:23.450026+00:00"
+    },
+    {
+      "cycle": "expansion_ten_medium",
+      "action": "none_required",
+      "item": "10/10 medium structural sectors",
+      "status": "complete",
+      "timestamp_utc": "2026-08-10T22:27:22.879448+00:00"
+    },
+    {
+      "cycle": "easy_medium_complete_sweep_AE",
+      "action": "label_and_absorb_remaining_easy_medium",
+      "item": "33 checklist items",
+      "status": "complete",
+      "timestamp_utc": "2026-08-10T22:41:04.771898+00:00",
+      "newly_absorbed": 1
+    },
+    {
+      "cycle": "expansion_synthesis_writeup",
+      "action": "catalog_stopped_synthesis_written",
+      "item": "EXPANSION_SYNTHESIS.md",
+      "status": "complete",
+      "timestamp_utc": "2026-08-10T22:45:21.194784+00:00"
+    },
+    {
+      "cycle": "active_research_genuine_idea",
+      "action": "proposal_only_no_lock",
+      "item": "Topological Freund-Rubin balance",
+      "status": "proposed",
+      "timestamp_utc": "2026-08-10T22:51:47.722634+00:00"
+    },
+    {
+      "cycle": "monodromy_dehn_scale_probe",
+      "action": "probe_only_no_lock",
+      "item": "Dehn-twist scale quantization test",
+      "status": "negative",
+      "timestamp_utc": "2026-08-10T23:20:48.448367+00:00"
+    },
+    {
+      "cycle": "scale_weight_probes",
+      "action": "probe_only_no_lock",
+      "item": "trace anomaly + non-middle flux + Euler/R4",
+      "status": "negative",
+      "timestamp_utc": "2026-08-10T23:28:34.430160+00:00"
+    },
+    {
+      "cycle": "monodromy_global_phase_probe",
+      "action": "probe_only_no_lock",
+      "item": "global path-integral phase matching",
+      "status": "negative_guardrail",
+      "timestamp_utc": "2026-08-10T23:47:00.609710+00:00"
+    },
+    {
+      "cycle": "absolute_yardstick_lemma_archive",
+      "action": "record_full_negative_series_freeze_posture",
+      "item": "absolute_yardstick_lemma_negative_series.json",
+      "status": "complete",
+      "timestamp_utc": "2026-08-10T23:54:41.521155+00:00"
+    },
+    {
+      "cycle": "github_safety_checkpoint_expansion_archive",
+      "action": "archive_N1_N12_freeze_posture",
+      "item": "EXPANSION_SYNTHESIS.md + absolute_yardstick_lemma_negative_series.json",
+      "status": "complete",
+      "timestamp_utc": "2026-08-11T20:24:28.534788+00:00"
+    },
+    {
+      "cycle": "conformal_quotienting_resolution",
+      "action": "architectural_resolution_no_new_knobs",
+      "item": "No-Go theorem + C_phys = Riem/Conf",
+      "status": "complete",
+      "timestamp_utc": "2026-08-13T09:32:29.724537+00:00"
+    },
+    {
+      "cycle": "conformal_quotienting_resolution",
+      "action": "architectural_resolution_no_new_knobs",
+      "item": "No-Go theorem + C_phys = Riem/Conf",
+      "status": "complete",
+      "timestamp_utc": "2026-08-13T09:45:04.063609+00:00"
+    },
+    {
+      "cycle": "residual_beta_dynamical_protection",
+      "action": "cokernel_lemma_plus_in_slice_hessian",
+      "item": "P1 decimal rigidity and P2 positive floor",
+      "status": "negative_both_fail",
+      "timestamp_utc": "2026-08-13T19:10:50.596511+00:00"
+    },
+    {
+      "cycle": "residual_beta_dynamical_protection",
+      "action": "cokernel_lemma_plus_in_slice_hessian",
+      "item": "P1 decimal rigidity and P2 positive floor",
+      "status": "negative_both_fail",
+      "timestamp_utc": "2026-08-13T19:11:33.030668+00:00"
+    },
+    {
+      "cycle": "controlled_class_uniqueness",
+      "action": "read_only_first_slice_SE_theorem",
+      "item": "G_SE skeleton isolation of T^{1,1}",
+      "status": "controlled_class_skeleton_unique",
+      "timestamp_utc": "2026-08-13T19:33:52.769043+00:00"
+    },
+    {
+      "cycle": "anomaly_structure_beyond_index",
+      "action": "descent_audit_plus_inventory",
+      "item": "discrete sector forced; full cancellation not proven",
+      "status": "partial_plus_negative",
+      "timestamp_utc": "2026-08-13T20:52:30.851890+00:00"
+    },
+    {
+      "cycle": "controlled_higher_derivative_sector",
+      "action": "eligibility_plus_coefficient_lemmas",
+      "item": "no unique forced HD term; \u221ar NLO already consumed",
+      "status": "negative",
+      "timestamp_utc": "2026-08-14T18:15:03.916318+00:00"
+    },
+    {
+      "cycle": "domain_wall_tension_invariant",
+      "action": "identity_plus_invariance_lemmas",
+      "item": "T_wall=13/2 discrete spectral invariant, not a Chern index",
+      "status": "partial_theorem",
+      "timestamp_utc": "2026-08-14T18:31:24.448223+00:00"
+    },
+    {
+      "cycle": "flavor_monodromy_completion",
+      "action": "inventory_plus_completion_veto",
+      "item": "A4 + locked NLO; no further discrete completion forced",
+      "status": "partial_theorem",
+      "timestamp_utc": "2026-08-14T19:02:34.501959+00:00"
+    },
+    {
+      "cycle": "flavor_monodromy_completion",
+      "action": "inventory_plus_completion_veto",
+      "item": "A4 + locked NLO; no further discrete completion forced",
+      "status": "partial_theorem",
+      "timestamp_utc": "2026-08-14T19:02:52.576058+00:00"
+    }
+  ],
+  "microcatalog_archive_file": "expansion_microcatalog_archive.json",
+  "lemma_experiments": [
+    {
+      "experiment": "yardstick_lemma_nphc_tda",
+      "timestamp_utc": "2026-08-10T20:43:37.053307+00:00",
+      "absolute_scale_generated": false,
+      "unique_R_forced_by_index_theory": false,
+      "topological_barrier_against_rescaling": false,
+      "artifact": "yardstick_lemma_experiment.json",
+      "n_unique_R_found_in_scan": 17929,
+      "lemma_status": "still_open_required_for_closure"
+    },
+    {
+      "experiment": "yardstick_ansatz_v2_refined",
+      "timestamp_utc": "2026-08-10T20:49:58.728610+00:00",
+      "absolute_scale_generated": false,
+      "global_unique_R_forced": false,
+      "artifact": "yardstick_ansatz_v2.json",
+      "families": [
+        "A_instanton",
+        "B_log_radion",
+        "C_rational",
+        "D_spectral_product",
+        "E_topological_BFCS",
+        "F_warp_coupled",
+        "G_two_field"
+      ],
+      "lemma_status": "still_open_required_for_closure"
+    },
+    {
+      "experiment": "yardstick_lovelock_euler_option_A",
+      "timestamp_utc": "2026-08-10T21:02:03.477958+00:00",
+      "absolute_scale_generated": false,
+      "unique_R_forced": false,
+      "euler_chi_vanishes": true,
+      "artifact": "yardstick_lovelock_euler.json",
+      "lemma_status": "still_open_required_for_closure"
+    },
+    {
+      "experiment": "yardstick_lovelock_euler_option_A",
+      "timestamp_utc": "2026-08-10T21:03:19.690985+00:00",
+      "absolute_scale_generated": false,
+      "unique_R_forced": false,
+      "euler_chi_vanishes": true,
+      "artifact": "yardstick_lovelock_euler.json",
+      "lemma_status": "still_open_required_for_closure"
+    }
+  ],
+  "batch_100_summary": {
+    "timestamp_utc": "2026-08-10T22:17:12.078935+00:00",
+    "n_in_batch": 100,
+    "added_new": 100,
+    "skipped_duplicates": 0,
+    "by_category": {
+      "formal_identity": 25,
+      "T_pq_microcatalog": 30,
+      "Y_pq_microcatalog": 18,
+      "L_abc_microcatalog": 27
+    },
+    "continuous_knobs": 0
+  },
+  "last_updated": "2026-08-14T19:02:52.576058+00:00",
+  "notes": {
+    "absorbed_sectors": "Sectors successfully locked under Expansion Mode after zero-knob checksum (beyond the original core skeleton).",
+    "active_bottlenecks": "Topological Lemma Specifications from Active Lemma Generation Protocol (failure after 3 absorption attempts).",
+    "scaffolding_log": "Temporary observational or dimensionful anchors introduced and later removed (or single authorized permanent yardstick, if declared).",
+    "recording_policy": "See EXPANSION_PROTOCOL.md Layer-4 tracking requirements."
+  },
+  "continuous_knobs": 0,
+  "catalog_window_statements": {
+    "T_pq_p_q_le_10": {
+      "n_bases": 63,
+      "all_n_gen_3": true,
+      "n_gen_set": [
+        3
+      ]
+    },
+    "Y_pq_p_le_10": {
+      "n_bases": 31,
+      "all_n_gen_3": true,
+      "n_gen_set": [
+        3
+      ]
+    },
+    "L_abc_c_le_8": {
+      "n_bases": 39,
+      "all_n_gen_3": true,
+      "n_gen_set": [
+        3
+      ]
+    },
+    "control_T11_n_gen": 3,
+    "control_T11_preserved": true
+  },
+  "easy_medium_sweep": {
+    "timestamp_utc": "2026-08-10T22:41:04.771898+00:00",
+    "n_items": 33,
+    "by_status": {
+      "already_absorbed": 27,
+      "absorbed_new": 1,
+      "parked_lemma_labeled": 5
+    },
+    "by_group": {
+      "A": 11,
+      "B": 8,
+      "C": 5,
+      "D": 4,
+      "E": 5
+    },
+    "artifact": "expansion_easy_medium_complete.json"
+  },
+  "synthesis": {
+    "document": "EXPANSION_SYNTHESIS.md",
+    "timestamp_utc": "2026-08-11T20:24:28.534788+00:00",
+    "catalog_work": "stopped",
+    "depth_mode": "new_idea_only",
+    "continuous_knobs": 0,
+    "checkpoint": "Expansion Mode archive safety checkpoint"
+  },
+  "active_research": {
+    "timestamp_utc": "2026-08-10T22:51:47.722634+00:00",
+    "catalog_work": "stopped",
+    "outcome": "concrete_proposal",
+    "proposal_name": "topo_freund_rubin",
+    "proposal_file": "expansion_research_next_idea.json",
+    "targets": [
+      "absolute_scale_generation",
+      "overall_volume_modulus_R"
+    ],
+    "continuous_knobs": 0
+  },
+  "depth_probes": [
+    {
+      "probe": "monodromy_dehn_twist_scale_quantization",
+      "timestamp_utc": "2026-08-10T23:20:48.448367+00:00",
+      "verdict": "NEGATIVE",
+      "discrete_scale_lock_achieved": false,
+      "residual_freedom": "\u03bb \u2208 \u211d^{+} unrestricted by locked monodromy/Dehn data",
+      "artifact": "monodromy_dehn_scale_probe.json",
+      "continuous_knobs": 0
+    },
+    {
+      "probe": "scale_weight_probes_anomaly_flux_euler",
+      "timestamp_utc": "2026-08-10T23:28:34.430160+00:00",
+      "verdict": "NEGATIVE",
+      "any_fixes_lambda": false,
+      "residual_freedom": "\u03bb \u2208 \u211d\u207a (overall conformal factor / volume radius at fixed shape \u03c3*)",
+      "artifact": "scale_weight_probes.json",
+      "continuous_knobs": 0
+    },
+    {
+      "probe": "monodromy_global_holonomy_phase_matching",
+      "timestamp_utc": "2026-08-10T23:47:00.609710+00:00",
+      "verdict": "NEGATIVE",
+      "scaling_power_of_lambda": 0,
+      "guardrail_termination": true,
+      "residual_freedom": "\u03bb \u2208 \u211d\u207a (overall conformal factor / volume radius at fixed shape \u03c3*)",
+      "artifact": "monodromy_global_phase_probe.json",
+      "continuous_knobs": 0
+    }
+  ],
+  "absolute_geometric_yardstick_lemma": "resolved via conformal quotienting (No-Go + Weyl gauge)",
+  "posture": {
+    "expansion_mode": true,
+    "catalog_work": "stopped",
+    "depth_mode": "new_idea_only",
+    "continuous_knobs": 0,
+    "absolute_geometric_yardstick_lemma": "resolved via conformal quotienting (No-Go + Weyl gauge)",
+    "residual_scale_family": "Weyl gauge redundancy (unphysical)",
+    "synthesis_document": "EXPANSION_SYNTHESIS.md",
+    "negative_series_ledger": "absolute_yardstick_lemma_negative_series.json",
+    "instruction": "Catalog stopped. Absolute Scale / Volume R closed (Weyl gauge). Depth only with fundamentally new geometric idea. Layers 1-3 unchanged. continuous_knobs=0.",
+    "timestamp_utc": "2026-08-11T20:24:28.534788+00:00"
+  },
+  "catalog_work": "stopped",
+  "depth_mode": "new_idea_only",
+  "residual_scale_family": "Weyl gauge redundancy (unphysical)",
+  "absolute_yardstick_negative_series_summary": {
+    "n_probes": 12,
+    "ids": [
+      "N1",
+      "N2",
+      "N3",
+      "N4",
+      "N5",
+      "N6",
+      "N7",
+      "N8",
+      "N9",
+      "N10",
+      "N11",
+      "N12"
+    ],
+    "status": "dynamical series NEGATIVE; closed architecturally",
+    "residual_scale_family": "Weyl gauge redundancy (unphysical)",
+    "file": "absolute_yardstick_lemma_negative_series.json"
+  },
+  "absolute_scale_status": "closed as dynamical problem",
+  "conformal_quotienting": {
+    "no_go_theorem": true,
+    "physical_space": "Conformal Superspace",
+    "empirical_anchors_required": 1,
+    "file": "conformal_quotienting_resolution.json"
+  },
+  "resolved_via_conformal_quotienting": [
+    {
+      "item": "absolute_scale_generation",
+      "resolution": "closed as dynamical problem (No-Go + conformal quotient)",
+      "timestamp_utc": "2026-08-13T09:32:29.724537+00:00"
+    },
+    {
+      "item": "overall_volume_modulus_R",
+      "resolution": "Weyl gauge redundancy; not a physical modulus on C_phys",
+      "timestamp_utc": "2026-08-13T09:32:29.724537+00:00"
+    },
+    {
+      "item": "absolute_scale_generation",
+      "resolution": "closed as dynamical problem (No-Go + conformal quotient)",
+      "timestamp_utc": "2026-08-13T09:45:04.063609+00:00"
+    },
+    {
+      "item": "overall_volume_modulus_R",
+      "resolution": "Weyl gauge redundancy; not a physical modulus on C_phys",
+      "timestamp_utc": "2026-08-13T09:45:04.063609+00:00"
+    }
+  ],
+  "residual_beta_protection": {
+    "status": "negative (P1 and P2 fail)",
+    "protection_of_locked_decimal": false,
+    "protection_of_positive_floor": false,
+    "locked_r_unchanged": true,
+    "locked_r": 0.095716,
+    "continuum_r_to_0": "open",
+    "file": "residual_protection.json",
+    "timestamp_utc": "2026-08-13T19:11:33.030668+00:00"
+  },
+  "controlled_class_uniqueness": {
+    "status": "controlled_class_skeleton_unique",
+    "skeleton_isolates_T11": true,
+    "n_gen_selects_T11": false,
+    "global_landscape_uniqueness": false,
+    "file": "controlled_uniqueness.json",
+    "timestamp_utc": "2026-08-13T19:33:52.769043+00:00"
+  },
+  "anomaly_beyond_index": {
+    "status": "partial_theorem_plus_negative_beyond_index",
+    "discrete_sector_forced": true,
+    "all_anomalies_cancelled": false,
+    "inflow_residual": "26/9",
+    "file": "anomaly_beyond_index.json",
+    "timestamp_utc": "2026-08-13T20:52:30.851890+00:00"
+  },
+  "controlled_hd_sector": {
+    "status": "negative_no_unique_forced_hd_term",
+    "hd_term_forced": false,
+    "open_wilson_tower": true,
+    "angle_shift_applied": false,
+    "file": "controlled_hd_sector.json",
+    "timestamp_utc": "2026-08-14T18:15:03.916318+00:00"
+  },
+  "wall_tension_invariant": {
+    "status": "partial_discrete_spectral_invariant",
+    "T_wall_exact": "13/2",
+    "topological_index": false,
+    "independent_of_residual_r": true,
+    "file": "wall_tension_invariant.json",
+    "timestamp_utc": "2026-08-14T18:31:24.448223+00:00"
+  },
+  "flavor_monodromy_completion": {
+    "status": "partial_a4_nlo_no_further_completion",
+    "further_completion_forced": false,
+    "official_angles_unchanged": true,
+    "a4_preferred_not_unique": true,
+    "file": "flavor_monodromy_completion.json",
+    "timestamp_utc": "2026-08-14T19:02:52.576058+00:00"
+  }
+}

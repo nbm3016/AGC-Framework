@@ -1,0 +1,21 @@
+{
+  "stage": "1B",
+  "locked_input_checksum": "{\"lambda_0\": 4.5, \"lambda_targets\": [4.5, 12.0, 22.5], \"r0\": 0.0, \"survivor_count\": 3}",
+  "locked_lambda_targets": [
+    4.5,
+    12.0,
+    22.5
+  ],
+  "locked_lambda_0": 4.5,
+  "locked_r0": 0.0,
+  "c2_su3": 1.3333333333333333,
+  "ym_dressing_kappa": 0.94921875,
+  "sigma_susy_sq": 0.75,
+  "sigma_star": 0.8660254037844556,
+  "sigma_susy_exact": 0.8660254037844386,
+  "v_sigma_star": 2.25,
+  "d2v_dsigma2": 11.999999999999297,
+  "stable": true,
+  "matches_sqrt3_over_2": true,
+  "proof": "PROOF SNIPPET \u2014 supersymmetric \u03c3 minimum\n\nGiven locked Stage 1A: \u03bb\u0303\u2080=4.5, r\u2080=0.\n\n  V(\u03c3) = (3/2)\u03c3\u00b2 + (3/2)(\u03bb\u0303\u2080/6)\u00b2/\u03c3\u00b2 \u2212 (5/3)r\u2080\u00b2\n       = (3/2)\u03c3\u00b2 + 0.843750/\u03c3\u00b2 + 0\n  [C\u2082(3)\u00b2/(2\u03c3\u00b2) dressed by \u03ba=0.949219 from locked \u03bb\u0303\u2080]\n\n  dV/d\u03c3 = 3\u03c3 \u2212 2\u00b7(3/2)(\u03bb\u0303\u2080/6)\u00b2/\u03c3\u00b3 = 0\n        \u27f9 \u03c3\u2074 = (\u03bb\u0303\u2080/6)\u00b2 = 0.562500\n        \u27f9 \u03c3* = \u221a(\u03bb\u0303\u2080/6) = \u221a0.7500 = 0.866025403784\n\n  Numerical root: \u03c3* = 0.866025403784\n  Exact \u221a3/2   : \u03c3  = 0.866025403784\n  Match        : True\n\n  d\u00b2V/d\u03c3\u00b2|_0.8660 = 12.000000 > 0  \u27f9 stable."
+}

@@ -1,0 +1,100 @@
+{
+  "timestamp_utc": "2026-08-22T02:10:38.984067+00:00",
+  "continuous_knobs": 0,
+  "verification_score": "8/8",
+  "verification_status": "PASS",
+  "bit_reproducible_24_24": true,
+  "hidden_seeds_in_beta_solver": false,
+  "official_lock_unchanged": true,
+  "official_beta_residual": 0.095716,
+  "rows": [
+    {
+      "setting": "grid=24 Nh=24 (official lock)",
+      "beta_residual": 0.0957162820145647,
+      "sigma_star": 0.8660254037844556,
+      "lambda_tilde": [
+        4.5,
+        12.0,
+        22.5
+      ],
+      "mu": 1.086571,
+      "omega": 0.679528,
+      "theta13": 7.953,
+      "n_gen": 3,
+      "stable_to_reported_digits": true
+    },
+    {
+      "setting": "grid=24 Nh=24 (repeat)",
+      "beta_residual": 0.0957162820145647,
+      "sigma_star": 0.8660254037844556,
+      "lambda_tilde": [
+        4.5,
+        12.0,
+        22.5
+      ],
+      "mu": 1.086571,
+      "omega": 0.679528,
+      "theta13": 7.953,
+      "n_gen": 3,
+      "stable_to_reported_digits": true
+    },
+    {
+      "setting": "grid=32 Nh=32 (diagnostic)",
+      "beta_residual": 0.09951472448022511,
+      "sigma_star": 0.8660254037844556,
+      "lambda_tilde": [
+        4.5,
+        12.0,
+        22.5
+      ],
+      "mu": 1.086571,
+      "omega": 0.679528,
+      "theta13": 7.953,
+      "n_gen": 3,
+      "stable_to_reported_digits": true,
+      "note": "\u03b2 residual is diagnostic only; official lock remains 0.095716"
+    },
+    {
+      "setting": "grid=32 Nh=48 (diagnostic)",
+      "beta_residual": 0.09951472448024211,
+      "sigma_star": 0.8660254037844556,
+      "lambda_tilde": [
+        4.5,
+        12.0,
+        22.5
+      ],
+      "mu": 1.086571,
+      "omega": 0.679528,
+      "theta13": 7.953,
+      "n_gen": 3,
+      "stable_to_reported_digits": true,
+      "note": "\u03b2 residual is diagnostic only; official lock remains 0.095716"
+    }
+  ],
+  "sha256_before_log_append": {
+    "complete_baseline.json": "0f209b8e829d8f136ebf965d1ead23a7475ac547f8c600cb3c2d758c3a5f6b41",
+    "predictions.json": "e0520f7b48c5d3c66b068deb9d7624ae3a539de838d7fa7839aaf3000c250ef6",
+    "verification_log.txt": "8f3bf91d1cca1633d3e2d97d22b3b3c04ab62ff5e68d9b311d4e5a4a0d774f8a"
+  },
+  "locked_core": {
+    "n_gen": 3,
+    "sigma_star": 0.8660254037844556,
+    "lambda_tilde": [
+      4.5,
+      12.0,
+      22.5
+    ],
+    "beta_residual_official": 0.095716,
+    "theta13_deg": 7.953,
+    "mu_gammagamma": 1.086571,
+    "omega_lambda": 0.679528,
+    "continuous_knobs": 0
+  },
+  "sha256_after_log_append": {
+    "complete_baseline.json": "0f209b8e829d8f136ebf965d1ead23a7475ac547f8c600cb3c2d758c3a5f6b41",
+    "predictions.json": "e0520f7b48c5d3c66b068deb9d7624ae3a539de838d7fa7839aaf3000c250ef6",
+    "verification_log.txt": "8b7a9d0f70e1b34d082532f76b70a5de4943c6390eb597125bf42cfbaed3669e"
+  },
+  "baseline_hash_unchanged": true,
+  "predictions_hash_unchanged": true
+}

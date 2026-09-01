@@ -1,0 +1,334 @@
+{
+  "banner": "AGC Expansion Mode Active \u2014 10 medium structural sectors",
+  "timestamp_utc": "2026-08-10T22:27:22.879448+00:00",
+  "n_attempted": 10,
+  "n_absorbed": 10,
+  "n_failed": 0,
+  "sectors": [
+    {
+      "sector_id": "as_mod6_spin_weight_trace",
+      "title": "Atiyah\u2013Singer mod-6 spin-weight trace cancellation",
+      "rule_set": "\u03a3_k (2j\u2081_k+1) n_\u03b7_k \u2261 0 (mod 6) on APS survivors",
+      "status": "absorbed",
+      "continuous_knobs": 0,
+      "zero_knob_checksum": "Zero continuous free parameters confirmed | continuous_knobs = 0",
+      "attempts": [
+        {
+          "id": 1,
+          "outcome": "Success",
+          "reason": "\u03a3(2j+1)n = 90 \u2261 0 (mod 6)"
+        },
+        {
+          "id": 2,
+          "outcome": "Success",
+          "reason": "AS even-closure \u03a3n=26 even"
+        },
+        {
+          "id": 3,
+          "outcome": "Success",
+          "reason": "exact locked value 2*3+3*8+4*15=6+24+60=90"
+        }
+      ],
+      "detail": {
+        "spin_trace": 90,
+        "sum_n": 26
+      },
+      "statement": "Atiyah\u2013Singer mod-6 spin-weight trace cancellation absorbed under zero-knob discipline. continuous_knobs=0."
+    },
+    {
+      "sector_id": "mu_tau_z2_pi_relation",
+      "title": "LO \u03bc\u2013\u03c4 Z\u2082 from \u0394\u03b7 \u03c0-relation",
+      "rule_set": "n\u2083\u2212n\u2081=12 \u21d2 \u0394\u03b7\u2083\u2212\u0394\u03b7\u2081=\u03c0 \u21d2 residual \u03bc\u2013\u03c4 reflection \u21d2 \u03b8\u2082\u2083=\u03c0/4 at LO",
+      "status": "absorbed",
+      "continuous_knobs": 0,
+      "zero_knob_checksum": "Zero continuous free parameters confirmed | continuous_knobs = 0",
+      "attempts": [
+        {
+          "id": 1,
+          "outcome": "Success",
+          "reason": "n3-n1=12 (require 12)"
+        },
+        {
+          "id": 2,
+          "outcome": "Success",
+          "reason": "\u0394\u03b7\u2083\u2212\u0394\u03b7\u2081 = (n3-n1)\u03c0/12 = \u03c0 exactly"
+        },
+        {
+          "id": 3,
+          "outcome": "Success",
+          "reason": "LO \u03b823=\u03c0/4=45.0\u00b0 forced by Z\u2082 (before residual NLO)"
+        }
+      ],
+      "detail": {
+        "n3_minus_n1": 12,
+        "theta23_LO_deg": 45.0
+      },
+      "statement": "LO \u03bc\u2013\u03c4 Z\u2082 from \u0394\u03b7 \u03c0-relation absorbed under zero-knob discipline. continuous_knobs=0."
+    },
+    {
+      "sector_id": "solar_angle_n_lattice",
+      "title": "Solar mixing from \u03b7-lattice ratio",
+      "rule_set": "tan\u00b2\u03b8\u2081\u2082 = n\u2081/n\u2082 = 3/8 (A4 geometric Clebsch / lattice, no free flavon VEV)",
+      "status": "absorbed",
+      "continuous_knobs": 0,
+      "zero_knob_checksum": "Zero continuous free parameters confirmed | continuous_knobs = 0",
+      "attempts": [
+        {
+          "id": 1,
+          "outcome": "Success",
+          "reason": "n1/n2=3/8"
+        },
+        {
+          "id": 2,
+          "outcome": "Success",
+          "reason": "tan\u00b2\u03b812=0.375"
+        },
+        {
+          "id": 3,
+          "outcome": "Success",
+          "reason": "\u03b812_LO=arctan(\u221a(3/8))=31.4822\u00b0"
+        }
+      ],
+      "detail": {
+        "tan2_theta12": 0.375,
+        "theta12_LO_deg": 31.482154105293855
+      },
+      "statement": "Solar mixing from \u03b7-lattice ratio absorbed under zero-knob discipline. continuous_knobs=0."
+    },
+    {
+      "sector_id": "reactor_angle_LO_geometric",
+      "title": "LO reactor angle from \u03c3* and n\u2082/n_\u03a3",
+      "rule_set": "sin\u03b8\u2081\u2083\u207d\u2070\u207e = \u03c3*\u00b7(n\u2082/n_\u03a3)/N_gen  (locked pure numbers only)",
+      "status": "absorbed",
+      "continuous_knobs": 0,
+      "zero_knob_checksum": "Zero continuous free parameters confirmed | continuous_knobs = 0",
+      "attempts": [
+        {
+          "id": 1,
+          "outcome": "Success",
+          "reason": "sin\u03b813_LO=0.088823"
+        },
+        {
+          "id": 2,
+          "outcome": "Success",
+          "reason": "\u03b813_LO=5.0959\u00b0 (expect ~5.1\u00b0)"
+        },
+        {
+          "id": 3,
+          "outcome": "Success",
+          "reason": "matches A4 LO table ~5.096\u00b0 (\u0394=-0.0001)"
+        }
+      ],
+      "detail": {
+        "sin_theta13_LO": 0.08882311833686724,
+        "theta13_LO_deg": 5.095905574100568
+      },
+      "statement": "LO reactor angle from \u03c3* and n\u2082/n_\u03a3 absorbed under zero-knob discipline. continuous_knobs=0."
+    },
+    {
+      "sector_id": "spectral_normal_hierarchy_direction",
+      "title": "Normal hierarchy direction from spectral ordering",
+      "rule_set": "\u03bb\u0303\u2081<\u03bb\u0303\u2082<\u03bb\u0303\u2083 and n\u2081<n\u2082<n\u2083 select normal mass-ordering direction (ratios only)",
+      "status": "absorbed",
+      "continuous_knobs": 0,
+      "zero_knob_checksum": "Zero continuous free parameters confirmed | continuous_knobs = 0",
+      "attempts": [
+        {
+          "id": 1,
+          "outcome": "Success",
+          "reason": "\u03bb\u0303 ordered: [4.5, 12.0, 22.5]"
+        },
+        {
+          "id": 2,
+          "outcome": "Success",
+          "reason": "n_\u03b7 ordered: [3, 8, 15]"
+        },
+        {
+          "id": 3,
+          "outcome": "Success",
+          "reason": "Stage-4 hierarchy label: normal"
+        }
+      ],
+      "detail": {
+        "lambda_order": [
+          4.5,
+          12.0,
+          22.5
+        ],
+        "n_eta_order": [
+          3,
+          8,
+          15
+        ],
+        "hierarchy": "normal"
+      },
+      "statement": "Normal hierarchy direction from spectral ordering absorbed under zero-knob discipline. continuous_knobs=0."
+    },
+    {
+      "sector_id": "custodial_rho_near_unity",
+      "title": "Custodial \u03c1 \u2248 1 from locked geometry",
+      "rule_set": "\u03c1\u22121 is a pure residual geometric correction (no free T-parameter)",
+      "status": "absorbed",
+      "continuous_knobs": 0,
+      "zero_knob_checksum": "Zero continuous free parameters confirmed | continuous_knobs = 0",
+      "attempts": [
+        {
+          "id": 1,
+          "outcome": "Success",
+          "reason": "\u03c1=1.000963"
+        },
+        {
+          "id": 2,
+          "outcome": "Success",
+          "reason": "\u03c1>1 small positive residual stress signature"
+        },
+        {
+          "id": 3,
+          "outcome": "Success",
+          "reason": "predictions continuous_knobs=0"
+        }
+      ],
+      "detail": {
+        "rho_custodial": 1.0009632962547121
+      },
+      "statement": "Custodial \u03c1 \u2248 1 from locked geometry absorbed under zero-knob discipline. continuous_knobs=0."
+    },
+    {
+      "sector_id": "sensitivity_n_eta_dominant_driver",
+      "title": "Sensitivity: n_\u03b7 lattice dominates \u03b2 residual",
+      "rule_set": "Stage 3B scan: dominant residual driver is discrete n_\u03b7 lattice (not continuous \u03c3)",
+      "status": "absorbed",
+      "continuous_knobs": 0,
+      "zero_knob_checksum": "Zero continuous free parameters confirmed | continuous_knobs = 0",
+      "attempts": [
+        {
+          "id": 1,
+          "outcome": "Success",
+          "reason": "dominant_residual_driver=n_eta_lattice"
+        },
+        {
+          "id": 2,
+          "outcome": "Success",
+          "reason": "sensitivity points=147"
+        },
+        {
+          "id": 3,
+          "outcome": "Success",
+          "reason": "driver is discrete lattice sector, not free continuous modulus"
+        }
+      ],
+      "detail": {
+        "dominant_residual_driver": "n_eta_lattice",
+        "total_points": 147
+      },
+      "statement": "Sensitivity: n_\u03b7 lattice dominates \u03b2 residual absorbed under zero-knob discipline. continuous_knobs=0."
+    },
+    {
+      "sector_id": "master_variational_zero_knobs",
+      "title": "Master variational zero-knob closure",
+      "rule_set": "Stage 3 master closure leaves continuous_knobs=0 (machine-precision \u03c3 stationarity)",
+      "status": "absorbed",
+      "continuous_knobs": 0,
+      "zero_knob_checksum": "Zero continuous free parameters confirmed | continuous_knobs = 0",
+      "attempts": [
+        {
+          "id": 1,
+          "outcome": "Success",
+          "reason": "locked_results.continuous_knobs=0"
+        },
+        {
+          "id": 2,
+          "outcome": "Success",
+          "reason": "baseline status=PASS"
+        },
+        {
+          "id": 3,
+          "outcome": "Success",
+          "reason": "s_master=164.3956790968391 (present or non-negative)"
+        }
+      ],
+      "detail": {
+        "continuous_knobs": 0,
+        "s_master": 164.3956790968391,
+        "status": "PASS"
+      },
+      "statement": "Master variational zero-knob closure absorbed under zero-knob discipline. continuous_knobs=0."
+    },
+    {
+      "sector_id": "neutrino_mass_ratio_spectral_proxy",
+      "title": "Neutrino mass-ratio direction from spectral proxies",
+      "rule_set": "\u221a(\u03bb\u0303_k/\u03bb\u0303_1) fix discrete mass-ratio skeleton; absolute eV still uses locked Stage-4 map",
+      "status": "absorbed",
+      "continuous_knobs": 0,
+      "zero_knob_checksum": "Zero continuous free parameters confirmed | continuous_knobs = 0",
+      "attempts": [
+        {
+          "id": 1,
+          "outcome": "Success",
+          "reason": "m1,m2,m3=4.2060e-03,9.6432e-03,5.0626e-02"
+        },
+        {
+          "id": 2,
+          "outcome": "Success",
+          "reason": "spectral proxy m2/m1 ~ \u221a(8/3)=1.632993"
+        },
+        {
+          "id": 3,
+          "outcome": "Success",
+          "reason": "spectral proxy m3/m1 ~ \u221a5=2.236068"
+        }
+      ],
+      "detail": {
+        "m_nu_eV": {
+          "m1": 0.004206041039258675,
+          "m2": 0.0096431727778739,
+          "m3": 0.05062643500505683
+        },
+        "spectral_ratio_proxies": {
+          "r21": 1.632993161855452,
+          "r31": 2.23606797749979
+        },
+        "note": "Does not claim absolute eV without Stage-4 light-sector map already locked"
+      },
+      "statement": "Neutrino mass-ratio direction from spectral proxies absorbed under zero-knob discipline. continuous_knobs=0."
+    },
+    {
+      "sector_id": "even_monodromy_A4_selection_rule",
+      "title": "Even monodromy selection rule (A4 \u227b S4)",
+      "rule_set": "APS self-dual \u21d2 orientation-preserving/even residual; A4 (order 12) \u2282 Z_24 monodromy",
+      "status": "absorbed",
+      "continuous_knobs": 0,
+      "zero_knob_checksum": "Zero continuous free parameters confirmed | continuous_knobs = 0",
+      "attempts": [
+        {
+          "id": 1,
+          "outcome": "Success",
+          "reason": "12 | 24 monodromy: True"
+        },
+        {
+          "id": 2,
+          "outcome": "Success",
+          "reason": "locked residual_symmetry=A4+residual_NLO"
+        },
+        {
+          "id": 3,
+          "outcome": "Success",
+          "reason": "\u03c0 relation available for even residual \u03bc\u2013\u03c4 structure"
+        }
+      ],
+      "detail": {
+        "monodromy_order": 24,
+        "A4_order": 12,
+        "residual_symmetry": "A4+residual_NLO"
+      },
+      "statement": "Even monodromy selection rule (A4 \u227b S4) absorbed under zero-knob discipline. continuous_knobs=0."
+    }
+  ],
+  "depth_note": {
+    "depth_attack_attempted": false,
+    "reason": "No genuinely new geometric idea for Absolute Scale / volume / M_R beyond prior Lovelock+NPHC+TDA negatives and the open Yardstick Lemma. Parked bottlenecks unchanged."
+  },
+  "continuous_knobs": 0,
+  "scientific_core_locks_altered": false,
+  "checksum": "Zero continuous free parameters confirmed | continuous_knobs = 0"
+}

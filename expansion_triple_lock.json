@@ -1,0 +1,154 @@
+{
+  "banner": "AGC Expansion Mode Active \u2014 triple high-confidence absorption",
+  "timestamp_utc": "2026-08-10T21:58:35.985298+00:00",
+  "agent_choices": [
+    "discrete_spectral_hierarchy",
+    "sigma_star_shape_freeze",
+    "dimensionless_coupling_self_dual_sector"
+  ],
+  "why": "Low obstruction pure discrete / pure geometric structure already present in Stages 1A\u20132B; parks absolute scale and volume.",
+  "sectors": [
+    {
+      "sector": "discrete_spectral_hierarchy",
+      "spectral_ratios": {
+        "sqrt_lam2_over_lam1": 1.632993161855452,
+        "sqrt_lam3_over_lam1": 2.23606797749979,
+        "sqrt_lam3_over_lam2": 1.3693063937629153,
+        "lam2_over_lam1": 2.6666666666666665,
+        "lam3_over_lam1": 5.0
+      },
+      "exact_fractions": {
+        "lam2_over_lam1": "8/3",
+        "vol2_over_vol1": "8/3",
+        "n2_over_n1": "8/3",
+        "n3_over_n1": "5",
+        "n3_over_n2": "15/8"
+      },
+      "lambda_tilde": [
+        4.5,
+        12.0,
+        22.5
+      ],
+      "n_eta": [
+        3,
+        8,
+        15
+      ],
+      "vols": [
+        0.75,
+        2.0,
+        3.75
+      ],
+      "attempts": [
+        {
+          "id": 1,
+          "outcome": "Success",
+          "reason": "derived \u03bb\u0303=[4.5, 12.0, 22.5] from APS survivors (output, not filter)"
+        },
+        {
+          "id": 2,
+          "outcome": "Success",
+          "reason": "n/vol/\u03bb ratio identity: n_match_vol=True, lam_match_vol=True"
+        },
+        {
+          "id": 3,
+          "outcome": "Success",
+          "reason": "\u221a(\u03bb2/\u03bb1)=\u221a(8/3)=1.632993161855; \u221a(\u03bb3/\u03bb1)=\u221a5=2.236067977500"
+        }
+      ],
+      "decision": {
+        "sector_absorbed": true,
+        "continuous_knobs": 0,
+        "statement": "Discrete spectral hierarchy locked: pure ratios among \u03bb\u0303, n_\u03b7, and Vol follow from APS survivors with identities n_k=4 Vol_k, \u03bb\u0303_k=6 Vol_k. No absolute scale; no continuous knobs."
+      },
+      "artifact_fields": {
+        "sqrt_lam_ratios": [
+          1.632993161855452,
+          2.23606797749979,
+          1.3693063937629153
+        ],
+        "n_eta_ratios": "8/3, 5"
+      }
+    },
+    {
+      "sector": "sigma_star_shape_freeze",
+      "sigma_star_exact": "sqrt(3)/2",
+      "sigma_star_float": 0.8660254037844386,
+      "lambda_0": 4.5,
+      "V_at_minimum": 2.25,
+      "mass_squared_proxy": 12.000000000000002,
+      "potential": "V(\u03c3)=(3/2)\u03c3\u00b2+(3/2)(\u03bb\u0303\u2080/6)\u00b2/\u03c3\u00b2",
+      "attempts": [
+        {
+          "id": 1,
+          "outcome": "Success",
+          "reason": "\u03bb\u0303\u2080 derived from APS ground mode j\u2081=1/2: 4.5"
+        },
+        {
+          "id": 2,
+          "outcome": "Success",
+          "reason": "\u03c3*=\u221a(\u03bb\u0303\u2080/6)=\u221a3/2 \u2192 0.866025403784439; locked=0.866025403784456"
+        },
+        {
+          "id": 3,
+          "outcome": "Success",
+          "reason": "d\u00b2V/d\u03c3\u00b2|_*=12.000000>0 (stable); residual proxy m\u00b2~12.143574"
+        }
+      ],
+      "decision": {
+        "sector_absorbed": true,
+        "continuous_knobs": 0,
+        "statement": "Shape modulus formally locked: geometric V(\u03c3) from LB + derived APS ground eigenvalue forces \u03c3*=\u221a3/2 with d\u00b2V/d\u03c3\u00b2>0. No free flux; continuous_knobs=0. (Overall volume R remains open/parked.)"
+      }
+    },
+    {
+      "sector": "dimensionless_coupling_self_dual_sector",
+      "eight_pi_g_eff": 0.562500000000022,
+      "C2_SU3": 1.3333333333333333,
+      "sigma_star": 0.8660254037844556,
+      "self_dual_survivors": [
+        {
+          "j1": 0.5,
+          "j2": 0.0
+        },
+        {
+          "j1": 1.0,
+          "j2": 0.0
+        },
+        {
+          "j1": 1.5,
+          "j2": 0.0
+        }
+      ],
+      "n_gen": 3,
+      "off_sector_structurally_blocked": true,
+      "attempts": [
+        {
+          "id": 1,
+          "outcome": "Success",
+          "reason": "8\u03c0G_eff=\u03c3*\u00b2/C\u2082(3)=0.562500000000022 (pure number; not G_N in GeV\u207b\u00b2)"
+        },
+        {
+          "id": 2,
+          "outcome": "Success",
+          "reason": "self-dual survivors j\u2082=0 only; N_gen=3"
+        },
+        {
+          "id": 3,
+          "outcome": "Success",
+          "reason": "off-sector \u22c6 defect \u2016\u22c6\u03a8\u2212\u03a8\u2016\u00b2(1/2,1)=0.3750, (1,1/2)=0.3750 >0; APS r=0 sector enforced"
+        }
+      ],
+      "decision": {
+        "sector_absorbed": true,
+        "continuous_knobs": 0,
+        "statement": "Dimensionless Einstein\u2013YM coupling 8\u03c0G_eff=\u03c3*\u00b2/C\u2082(3)=9/16 and self-dual APS sector (j\u2082=0, r=0, N_gen=3) formally locked as pure geometric structure. No continuous knobs; no absolute Newton constant claimed."
+      }
+    }
+  ],
+  "continuous_knobs": 0,
+  "scientific_core_locks_altered": false,
+  "all_three_absorbed": true,
+  "baseline_status": "PASS",
+  "baseline_knobs": 0
+}

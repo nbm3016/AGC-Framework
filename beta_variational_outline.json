@@ -1,0 +1,24 @@
+{
+  "sigma_star": 0.8660254037844556,
+  "n_gen": 3,
+  "grid_shape": [
+    8,
+    8
+  ],
+  "beta_ij_shape": [
+    8,
+    8,
+    5,
+    5
+  ],
+  "ym_coupling": 1.3333333333333333,
+  "status": "OUTLINE_SCAFFOLD",
+  "next_steps": [
+    "Implement full Christoffel symbols on T^{1,1} conifold grid",
+    "Solve \u03b4/\u03b4g_{ij} (S_EH + S_YM) = 0 with locked \u03c3* boundary condition",
+    "Enforce N_gen=3 gauge multiplicity from ngen_uniqueness.json",
+    "Couple \u03b2_ij flow to locked \u0394\u03b7_k corrections from delta_eta_predicted.json",
+    "Current outline residual (Frobenius mean): 1.163889"
+  ],
+  "proof_outline": "STAGE 2B OUTLINE \u2014 variational \u03b2_ij on conifold grid\n\nLocked \u03c3* = 0.866025403784  (Stage 1B)\nLocked N_gen = 3  (Stage 2A)\nGrid: T^{1,1} 8\u00d78\n\nEinstein-YM system:\n  G_{ij} = 8\u03c0G \u00b7 T^{YM}_{ij}\n  \u03b2_{ij} = R_{ij} \u2212 2\u2202_i\u2202_j \u03c6 \u2212 2(\u2202_i\u03c6)(\u2202_j\u03c6) + 2g_{ij}\u25a1\u03c6\n\nNext: full connection solve with locked Stage 1/2A inputs."
+}

@@ -1,0 +1,868 @@
+{
+  "banner": "CONTROLLED-CLASS UNIQUENESS \u2014 LOCKED SKELETON ISOLATES T^{1,1} IN FIRST-SLICE SE \u2014 GLOBAL LANDSCAPE REMAINS OPEN \u2014 ZERO CONTINUOUS KNOBS PRESERVED",
+  "timestamp_utc": "2026-08-13T19:33:52.769043+00:00",
+  "continuous_knobs": 0,
+  "new_free_parameters_introduced": false,
+  "stages_1_3_geometry_untouched": true,
+  "absolute_scale_volume_R": "untouched (already resolved via conformal quotienting)",
+  "residual_beta_protection": "untouched (P1 and P2 already failed)",
+  "core_verification": "8/8 PASS",
+  "class_definition": {
+    "name": "G_SE",
+    "description": "First-slice regular Sasaki\u2013Einstein 5-bases T^{p,q} (p,q\u22645, gcd=1) \u222a Y^{p,q} (0<q<p\u22645, gcd=1), with \u03a3\u2075 domain wall, APS r=0, self-duality, half-integer lattice, native APS index barrier max(0,\u230a(p+q)(2j\u22123)\u230b), no extra fluxes, continuous_knobs=0.",
+    "not_included": [
+      "all 14D fibrations",
+      "L^{a,b,c} and unenumerated SE bases",
+      "infinite SE families beyond the first slice"
+    ],
+    "fixed_diffeotype_subclass": "G_T11 = locked squashed T^{1,1}+\u03a3\u2075",
+    "catalog_file": "se_aps_extension.json",
+    "slice": "T_pq_p_q_le_5_gcd1__Y_pq_p_le_5",
+    "index_rule": "max(0, floor((p+q)(2j-3)))"
+  },
+  "class_analysis": {
+    "n_bases": 28,
+    "n_gen_values_observed": [
+      3
+    ],
+    "all_n_gen_equal_3": true,
+    "n_gen_selects_T11": false,
+    "t11_control_ok": true,
+    "locked_lambda_hits": [
+      "T^{1,1}"
+    ],
+    "locked_sigma_hits": [
+      "T^{1,1}"
+    ],
+    "n_eta_shared_across_slice": true,
+    "n_shared_n_eta_bases": 28,
+    "skeleton_isolates_T11": true,
+    "sigma_isolates_T11": true,
+    "lambda_formula_scope": "Catalog Casimir extension \u03bb\u0303 = 6\u00b7(p+q)/2 \u00b7 [j(j+1)+\u2026] reducing to the locked T^{1,1} formula at (p,q)=(1,1). Uniqueness is inside G_SE as defined by those rules."
+  },
+  "bases": [
+    {
+      "base": "T^{1,1}",
+      "family": "T_pq",
+      "p": 1,
+      "q": 1,
+      "n_gen": 3,
+      "lambda_tilde": [
+        4.5,
+        12.0,
+        22.5
+      ],
+      "j1_survivors": [
+        0.5,
+        1.0,
+        1.5
+      ],
+      "n_eta_from_j": [
+        3,
+        8,
+        15
+      ],
+      "sigma_from_lam0": 0.8660254037844386,
+      "matches_locked_lambda": true,
+      "matches_locked_sigma": true,
+      "matches_locked_n_eta_map": true
+    },
+    {
+      "base": "T^{1,2}",
+      "family": "T_pq",
+      "p": 1,
+      "q": 2,
+      "n_gen": 3,
+      "lambda_tilde": [
+        6.75,
+        18.0,
+        33.75
+      ],
+      "j1_survivors": [
+        0.5,
+        1.0,
+        1.5
+      ],
+      "n_eta_from_j": [
+        3,
+        8,
+        15
+      ],
+      "sigma_from_lam0": 1.0606601717798212,
+      "matches_locked_lambda": false,
+      "matches_locked_sigma": false,
+      "matches_locked_n_eta_map": true
+    },
+    {
+      "base": "T^{1,3}",
+      "family": "T_pq",
+      "p": 1,
+      "q": 3,
+      "n_gen": 3,
+      "lambda_tilde": [
+        9.0,
+        24.0,
+        45.0
+      ],
+      "j1_survivors": [
+        0.5,
+        1.0,
+        1.5
+      ],
+      "n_eta_from_j": [
+        3,
+        8,
+        15
+      ],
+      "sigma_from_lam0": 1.224744871391589,
+      "matches_locked_lambda": false,
+      "matches_locked_sigma": false,
+      "matches_locked_n_eta_map": true
+    },
+    {
+      "base": "T^{1,4}",
+      "family": "T_pq",
+      "p": 1,
+      "q": 4,
+      "n_gen": 3,
+      "lambda_tilde": [
+        11.25,
+        30.0,
+        56.25
+      ],
+      "j1_survivors": [
+        0.5,
+        1.0,
+        1.5
+      ],
+      "n_eta_from_j": [
+        3,
+        8,
+        15
+      ],
+      "sigma_from_lam0": 1.3693063937629153,
+      "matches_locked_lambda": false,
+      "matches_locked_sigma": false,
+      "matches_locked_n_eta_map": true
+    },
+    {
+      "base": "T^{1,5}",
+      "family": "T_pq",
+      "p": 1,
+      "q": 5,
+      "n_gen": 3,
+      "lambda_tilde": [
+        13.5,
+        36.0,
+        67.5
+      ],
+      "j1_survivors": [
+        0.5,
+        1.0,
+        1.5
+      ],
+      "n_eta_from_j": [
+        3,
+        8,
+        15
+      ],
+      "sigma_from_lam0": 1.5,
+      "matches_locked_lambda": false,
+      "matches_locked_sigma": false,
+      "matches_locked_n_eta_map": true
+    },
+    {
+      "base": "T^{2,1}",
+      "family": "T_pq",
+      "p": 2,
+      "q": 1,
+      "n_gen": 3,
+      "lambda_tilde": [
+        6.75,
+        18.0,
+        33.75
+      ],
+      "j1_survivors": [
+        0.5,
+        1.0,
+        1.5
+      ],
+      "n_eta_from_j": [
+        3,
+        8,
+        15
+      ],
+      "sigma_from_lam0": 1.0606601717798212,
+      "matches_locked_lambda": false,
+      "matches_locked_sigma": false,
+      "matches_locked_n_eta_map": true
+    },
+    {
+      "base": "T^{2,3}",
+      "family": "T_pq",
+      "p": 2,
+      "q": 3,
+      "n_gen": 3,
+      "lambda_tilde": [
+        11.25,
+        30.0,
+        56.25
+      ],
+      "j1_survivors": [
+        0.5,
+        1.0,
+        1.5
+      ],
+      "n_eta_from_j": [
+        3,
+        8,
+        15
+      ],
+      "sigma_from_lam0": 1.3693063937629153,
+      "matches_locked_lambda": false,
+      "matches_locked_sigma": false,
+      "matches_locked_n_eta_map": true
+    },
+    {
+      "base": "T^{2,5}",
+      "family": "T_pq",
+      "p": 2,
+      "q": 5,
+      "n_gen": 3,
+      "lambda_tilde": [
+        15.75,
+        42.0,
+        78.75
+      ],
+      "j1_survivors": [
+        0.5,
+        1.0,
+        1.5
+      ],
+      "n_eta_from_j": [
+        3,
+        8,
+        15
+      ],
+      "sigma_from_lam0": 1.620185174601965,
+      "matches_locked_lambda": false,
+      "matches_locked_sigma": false,
+      "matches_locked_n_eta_map": true
+    },
+    {
+      "base": "T^{3,1}",
+      "family": "T_pq",
+      "p": 3,
+      "q": 1,
+      "n_gen": 3,
+      "lambda_tilde": [
+        9.0,
+        24.0,
+        45.0
+      ],
+      "j1_survivors": [
+        0.5,
+        1.0,
+        1.5
+      ],
+      "n_eta_from_j": [
+        3,
+        8,
+        15
+      ],
+      "sigma_from_lam0": 1.224744871391589,
+      "matches_locked_lambda": false,
+      "matches_locked_sigma": false,
+      "matches_locked_n_eta_map": true
+    },
+    {
+      "base": "T^{3,2}",
+      "family": "T_pq",
+      "p": 3,
+      "q": 2,
+      "n_gen": 3,
+      "lambda_tilde": [
+        11.25,
+        30.0,
+        56.25
+      ],
+      "j1_survivors": [
+        0.5,
+        1.0,
+        1.5
+      ],
+      "n_eta_from_j": [
+        3,
+        8,
+        15
+      ],
+      "sigma_from_lam0": 1.3693063937629153,
+      "matches_locked_lambda": false,
+      "matches_locked_sigma": false,
+      "matches_locked_n_eta_map": true
+    },
+    {
+      "base": "T^{3,4}",
+      "family": "T_pq",
+      "p": 3,
+      "q": 4,
+      "n_gen": 3,
+      "lambda_tilde": [
+        15.75,
+        42.0,
+        78.75
+      ],
+      "j1_survivors": [
+        0.5,
+        1.0,
+        1.5
+      ],
+      "n_eta_from_j": [
+        3,
+        8,
+        15
+      ],
+      "sigma_from_lam0": 1.620185174601965,
+      "matches_locked_lambda": false,
+      "matches_locked_sigma": false,
+      "matches_locked_n_eta_map": true
+    },
+    {
+      "base": "T^{3,5}",
+      "family": "T_pq",
+      "p": 3,
+      "q": 5,
+      "n_gen": 3,
+      "lambda_tilde": [
+        18.0,
+        48.0,
+        90.0
+      ],
+      "j1_survivors": [
+        0.5,
+        1.0,
+        1.5
+      ],
+      "n_eta_from_j": [
+        3,
+        8,
+        15
+      ],
+      "sigma_from_lam0": 1.7320508075688772,
+      "matches_locked_lambda": false,
+      "matches_locked_sigma": false,
+      "matches_locked_n_eta_map": true
+    },
+    {
+      "base": "T^{4,1}",
+      "family": "T_pq",
+      "p": 4,
+      "q": 1,
+      "n_gen": 3,
+      "lambda_tilde": [
+        11.25,
+        30.0,
+        56.25
+      ],
+      "j1_survivors": [
+        0.5,
+        1.0,
+        1.5
+      ],
+      "n_eta_from_j": [
+        3,
+        8,
+        15
+      ],
+      "sigma_from_lam0": 1.3693063937629153,
+      "matches_locked_lambda": false,
+      "matches_locked_sigma": false,
+      "matches_locked_n_eta_map": true
+    },
+    {
+      "base": "T^{4,3}",
+      "family": "T_pq",
+      "p": 4,
+      "q": 3,
+      "n_gen": 3,
+      "lambda_tilde": [
+        15.75,
+        42.0,
+        78.75
+      ],
+      "j1_survivors": [
+        0.5,
+        1.0,
+        1.5
+      ],
+      "n_eta_from_j": [
+        3,
+        8,
+        15
+      ],
+      "sigma_from_lam0": 1.620185174601965,
+      "matches_locked_lambda": false,
+      "matches_locked_sigma": false,
+      "matches_locked_n_eta_map": true
+    },
+    {
+      "base": "T^{4,5}",
+      "family": "T_pq",
+      "p": 4,
+      "q": 5,
+      "n_gen": 3,
+      "lambda_tilde": [
+        20.25,
+        54.0,
+        101.25
+      ],
+      "j1_survivors": [
+        0.5,
+        1.0,
+        1.5
+      ],
+      "n_eta_from_j": [
+        3,
+        8,
+        15
+      ],
+      "sigma_from_lam0": 1.8371173070873836,
+      "matches_locked_lambda": false,
+      "matches_locked_sigma": false,
+      "matches_locked_n_eta_map": true
+    },
+    {
+      "base": "T^{5,1}",
+      "family": "T_pq",
+      "p": 5,
+      "q": 1,
+      "n_gen": 3,
+      "lambda_tilde": [
+        13.5,
+        36.0,
+        67.5
+      ],
+      "j1_survivors": [
+        0.5,
+        1.0,
+        1.5
+      ],
+      "n_eta_from_j": [
+        3,
+        8,
+        15
+      ],
+      "sigma_from_lam0": 1.5,
+      "matches_locked_lambda": false,
+      "matches_locked_sigma": false,
+      "matches_locked_n_eta_map": true
+    },
+    {
+      "base": "T^{5,2}",
+      "family": "T_pq",
+      "p": 5,
+      "q": 2,
+      "n_gen": 3,
+      "lambda_tilde": [
+        15.75,
+        42.0,
+        78.75
+      ],
+      "j1_survivors": [
+        0.5,
+        1.0,
+        1.5
+      ],
+      "n_eta_from_j": [
+        3,
+        8,
+        15
+      ],
+      "sigma_from_lam0": 1.620185174601965,
+      "matches_locked_lambda": false,
+      "matches_locked_sigma": false,
+      "matches_locked_n_eta_map": true
+    },
+    {
+      "base": "T^{5,3}",
+      "family": "T_pq",
+      "p": 5,
+      "q": 3,
+      "n_gen": 3,
+      "lambda_tilde": [
+        18.0,
+        48.0,
+        90.0
+      ],
+      "j1_survivors": [
+        0.5,
+        1.0,
+        1.5
+      ],
+      "n_eta_from_j": [
+        3,
+        8,
+        15
+      ],
+      "sigma_from_lam0": 1.7320508075688772,
+      "matches_locked_lambda": false,
+      "matches_locked_sigma": false,
+      "matches_locked_n_eta_map": true
+    },
+    {
+      "base": "T^{5,4}",
+      "family": "T_pq",
+      "p": 5,
+      "q": 4,
+      "n_gen": 3,
+      "lambda_tilde": [
+        20.25,
+        54.0,
+        101.25
+      ],
+      "j1_survivors": [
+        0.5,
+        1.0,
+        1.5
+      ],
+      "n_eta_from_j": [
+        3,
+        8,
+        15
+      ],
+      "sigma_from_lam0": 1.8371173070873836,
+      "matches_locked_lambda": false,
+      "matches_locked_sigma": false,
+      "matches_locked_n_eta_map": true
+    },
+    {
+      "base": "Y^{2,1}",
+      "family": "Y_pq",
+      "p": 2,
+      "q": 1,
+      "n_gen": 3,
+      "lambda_tilde": [
+        6.75,
+        18.0,
+        33.75
+      ],
+      "j1_survivors": [
+        0.5,
+        1.0,
+        1.5
+      ],
+      "n_eta_from_j": [
+        3,
+        8,
+        15
+      ],
+      "sigma_from_lam0": 1.0606601717798212,
+      "matches_locked_lambda": false,
+      "matches_locked_sigma": false,
+      "matches_locked_n_eta_map": true
+    },
+    {
+      "base": "Y^{3,1}",
+      "family": "Y_pq",
+      "p": 3,
+      "q": 1,
+      "n_gen": 3,
+      "lambda_tilde": [
+        9.0,
+        24.0,
+        45.0
+      ],
+      "j1_survivors": [
+        0.5,
+        1.0,
+        1.5
+      ],
+      "n_eta_from_j": [
+        3,
+        8,
+        15
+      ],
+      "sigma_from_lam0": 1.224744871391589,
+      "matches_locked_lambda": false,
+      "matches_locked_sigma": false,
+      "matches_locked_n_eta_map": true
+    },
+    {
+      "base": "Y^{3,2}",
+      "family": "Y_pq",
+      "p": 3,
+      "q": 2,
+      "n_gen": 3,
+      "lambda_tilde": [
+        11.25,
+        30.0,
+        56.25
+      ],
+      "j1_survivors": [
+        0.5,
+        1.0,
+        1.5
+      ],
+      "n_eta_from_j": [
+        3,
+        8,
+        15
+      ],
+      "sigma_from_lam0": 1.3693063937629153,
+      "matches_locked_lambda": false,
+      "matches_locked_sigma": false,
+      "matches_locked_n_eta_map": true
+    },
+    {
+      "base": "Y^{4,1}",
+      "family": "Y_pq",
+      "p": 4,
+      "q": 1,
+      "n_gen": 3,
+      "lambda_tilde": [
+        11.25,
+        30.0,
+        56.25
+      ],
+      "j1_survivors": [
+        0.5,
+        1.0,
+        1.5
+      ],
+      "n_eta_from_j": [
+        3,
+        8,
+        15
+      ],
+      "sigma_from_lam0": 1.3693063937629153,
+      "matches_locked_lambda": false,
+      "matches_locked_sigma": false,
+      "matches_locked_n_eta_map": true
+    },
+    {
+      "base": "Y^{4,3}",
+      "family": "Y_pq",
+      "p": 4,
+      "q": 3,
+      "n_gen": 3,
+      "lambda_tilde": [
+        15.75,
+        42.0,
+        78.75
+      ],
+      "j1_survivors": [
+        0.5,
+        1.0,
+        1.5
+      ],
+      "n_eta_from_j": [
+        3,
+        8,
+        15
+      ],
+      "sigma_from_lam0": 1.620185174601965,
+      "matches_locked_lambda": false,
+      "matches_locked_sigma": false,
+      "matches_locked_n_eta_map": true
+    },
+    {
+      "base": "Y^{5,1}",
+      "family": "Y_pq",
+      "p": 5,
+      "q": 1,
+      "n_gen": 3,
+      "lambda_tilde": [
+        13.5,
+        36.0,
+        67.5
+      ],
+      "j1_survivors": [
+        0.5,
+        1.0,
+        1.5
+      ],
+      "n_eta_from_j": [
+        3,
+        8,
+        15
+      ],
+      "sigma_from_lam0": 1.5,
+      "matches_locked_lambda": false,
+      "matches_locked_sigma": false,
+      "matches_locked_n_eta_map": true
+    },
+    {
+      "base": "Y^{5,2}",
+      "family": "Y_pq",
+      "p": 5,
+      "q": 2,
+      "n_gen": 3,
+      "lambda_tilde": [
+        15.75,
+        42.0,
+        78.75
+      ],
+      "j1_survivors": [
+        0.5,
+        1.0,
+        1.5
+      ],
+      "n_eta_from_j": [
+        3,
+        8,
+        15
+      ],
+      "sigma_from_lam0": 1.620185174601965,
+      "matches_locked_lambda": false,
+      "matches_locked_sigma": false,
+      "matches_locked_n_eta_map": true
+    },
+    {
+      "base": "Y^{5,3}",
+      "family": "Y_pq",
+      "p": 5,
+      "q": 3,
+      "n_gen": 3,
+      "lambda_tilde": [
+        18.0,
+        48.0,
+        90.0
+      ],
+      "j1_survivors": [
+        0.5,
+        1.0,
+        1.5
+      ],
+      "n_eta_from_j": [
+        3,
+        8,
+        15
+      ],
+      "sigma_from_lam0": 1.7320508075688772,
+      "matches_locked_lambda": false,
+      "matches_locked_sigma": false,
+      "matches_locked_n_eta_map": true
+    },
+    {
+      "base": "Y^{5,4}",
+      "family": "Y_pq",
+      "p": 5,
+      "q": 4,
+      "n_gen": 3,
+      "lambda_tilde": [
+        20.25,
+        54.0,
+        101.25
+      ],
+      "j1_survivors": [
+        0.5,
+        1.0,
+        1.5
+      ],
+      "n_eta_from_j": [
+        3,
+        8,
+        15
+      ],
+      "sigma_from_lam0": 1.8371173070873836,
+      "matches_locked_lambda": false,
+      "matches_locked_sigma": false,
+      "matches_locked_n_eta_map": true
+    }
+  ],
+  "continuous_deformations": [
+    {
+      "deformation": "global_Weyl_lambda",
+      "preserves_class_data": true,
+      "fibration_modulus": false,
+      "status": "closed",
+      "mechanism": "Conformal quotienting: \u03bb is Weyl gauge on C_phys",
+      "reopened": false
+    },
+    {
+      "deformation": "squashing_sigma",
+      "preserves_class_data": false,
+      "fibration_modulus": true,
+      "status": "obstructed",
+      "mechanism": "V(\u03c3) unique min at \u03c3*=\u221a(\u03bb\u0303\u2080/6)=\u221a3/2, d\u00b2V/d\u03c3\u00b2>0"
+    },
+    {
+      "deformation": "j2_nonzero_or_anti_self_dual",
+      "preserves_class_data": false,
+      "fibration_modulus": true,
+      "status": "obstructed",
+      "mechanism": "\u22c6\u03a8=\u03a8 forces j\u2082=0 (T) / n=0 (Y)"
+    },
+    {
+      "deformation": "APS_fiber_r_nonzero",
+      "preserves_class_data": false,
+      "fibration_modulus": true,
+      "status": "obstructed",
+      "mechanism": "APS r=0 boundary; r\u22600 reintroduces spectral flow"
+    },
+    {
+      "deformation": "continuous_eta_off_Z12",
+      "preserves_class_data": false,
+      "fibration_modulus": true,
+      "status": "obstructed",
+      "mechanism": "\u03b7-lattice + monodromy order 24"
+    },
+    {
+      "deformation": "N_gen_not_3",
+      "preserves_class_data": false,
+      "fibration_modulus": true,
+      "status": "obstructed",
+      "mechanism": "Native APS cohomology / AS index barrier"
+    },
+    {
+      "deformation": "phi_residual_profile",
+      "preserves_class_data": true,
+      "fibration_modulus": false,
+      "status": "not_a_fibration_modulus",
+      "mechanism": "Einstein\u2013YM mismatch; P1/P2 protection already failed. Not reopened.",
+      "reopened": false
+    },
+    {
+      "deformation": "discrete_jump_to_other_SE_label",
+      "preserves_class_data": "stays_in_G_SE_if_label_in_slice",
+      "fibration_modulus": false,
+      "status": "discrete_not_continuous",
+      "mechanism": "(p,q) are integers; no continuous SE path between labels"
+    },
+    {
+      "deformation": "bases_outside_first_slice",
+      "preserves_class_data": false,
+      "fibration_modulus": true,
+      "status": "outside_class_open",
+      "mechanism": "L^{a,b,c} / unenumerated SE / other 14D fibrations not in G_SE"
+    }
+  ],
+  "prior_sector_uniqueness": {
+    "source": "vacuum_selection.json",
+    "uniqueness_achieved": "Partial",
+    "sector_of_proven_uniqueness": "squashed_T11_plus_Sigma5_APS_self_dual_with_native_zero_mode_cohomology",
+    "global_landscape_still_open": true
+  },
+  "verdict": "controlled_class_skeleton_unique",
+  "theorem_level_claim": "In G_SE, native N_gen=3 is a class invariant, not a selector. The locked derived spectrum \u03bb\u0303={4.5,12,22.5} \u2014 equivalently \u03c3*=\u221a3/2 \u2014 isolates T^{1,1} among labeled bases in the first slice. There is no continuous deformation inside G_SE connecting T^{1,1} to another label. In G_T11, every continuous deformation that would change the fibration is already obstructed (index, self-duality, APS r=0, V(\u03c3), \u03b7-lattice). Remaining continuous objects are Weyl gauge (closed) and the \u03c6-residual (not a fibration modulus; P1/P2 already failed). Uniqueness among all 14D fibrations remains open.",
+  "global_landscape_uniqueness": false,
+  "n_gen_selects_T11": false,
+  "skeleton_isolates_T11": true,
+  "locked_results_snapshot": {
+    "n_gen": 3,
+    "sigma_star": 0.8660254037844556,
+    "lambda_targets": [
+      4.5,
+      12.0,
+      22.5
+    ],
+    "n_eta": [
+      3,
+      8,
+      15
+    ],
+    "beta_residual_new": 0.0957162820145647,
+    "continuous_knobs": 0
+  },
+  "locked_numerics_unchanged": true
+}

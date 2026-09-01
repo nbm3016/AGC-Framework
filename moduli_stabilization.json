@@ -1,0 +1,186 @@
+{
+  "overall_conclusion": "partial",
+  "continuous_knobs": 0,
+  "external_fluxes_introduced": false,
+  "effective_potential_notes": "Squashing potential V(\u03c3) and residual/domain-wall tensions are built only from locked geometric quantities (\u03c3*, \u03bb\u0303\u2080 derived from native APS zero mode, Vol_k, \u03b2 residual r=0.095716). No external fluxes. Volume final squeeze: all pure-geometric volume candidates fail to produce a stable finite-R minimum without free parameters.",
+  "topological_obstructions": [
+    "continuous deformations with j\u2082 \u2260 0 (\u22c6\u03a8 defect > 0)",
+    "continuous r \u2260 0 (APS singular sector projected; index flow)",
+    "continuous N_gen away from native APS index (AS obstruction)"
+  ],
+  "moduli": [
+    {
+      "name": "sigma_squashing",
+      "description": "Squashing / breathing modulus of T^{1,1}: ratio of S\u00b2 fiber sizes. Coordinate \u03c3 with locked value \u03c3*=\u221a3/2.",
+      "stabilized_by_geometry": true,
+      "mechanism": "Geometric potential V(\u03c3)=(3/2)\u03c3\u00b2+(3/2)(\u03bb\u0303\u2080/6)\u00b2/\u03c3\u00b2 from Laplace\u2013Beltrami on T^{1,1} + backreaction of the ground APS mode eigenvalue \u03bb\u0303\u2080 (derived, not free flux). Residual tension \u03c4_res=r\u00b7\u03c3*\u00b2 adds positive mass\u00b2. d\u00b2V/d\u03c3\u00b2|_* = 12.000000 + 0.143574 (residual) = 12.143574 > 0.",
+      "mass_squared_proxy": 12.14357442302115,
+      "status": "proven",
+      "notes": "V(\u03c3*)=2.250000. \u03bb\u0303\u2080=4.5 is the native APS zero-mode eigenvalue (j\u2081=1/2), not an external flux integer."
+    },
+    {
+      "name": "overall_volume",
+      "description": "Overall volume modulus of T^{1,1} (overall radius R with shape fixed). Distinct from shape squashing \u03c3*.",
+      "stabilized_by_geometry": false,
+      "mechanism": "Final squeeze: Casimir \u223c\u03a3\u03bb\u0303\u00b2/R\u2074, wall tension T_wall/R^p, residual \u03c4_res=r\u00b7\u03c3*\u00b2 (R-independent), self-dual condensate (=0), higher-order r\u00b7T_wall products, wall\u2013Casimir balance (needs free a/b), 8\u03c0G_eff unit identification, and exp(\u2212T_wall) instanton (needs free \u039b) \u2014 all examined. NO pure geometric volume-stabilizing mechanism is forced by the locked topology. All candidates either scale homogeneously in the overall radius R (no finite minimum), vanish identically (self-dual condensate), or require an extra continuous/dimensionful input (a/b ratio, \u039b, M_Pl unit). Overall volume remains classically flat.",
+      "mass_squared_proxy": 0.0,
+      "status": "still_flat",
+      "notes": "Honest negative after final squeeze: no parameter-free pure geometric mechanism freezes overall volume. Shape \u03c3* remains frozen separately."
+    },
+    {
+      "name": "phi_conformal_fluctuation",
+      "description": "Conformal factor \u03c6(\u03b8,\u03c8) on T^{1,1} (Stage 2B/3 Einstein\u2013YM sector).",
+      "stabilized_by_geometry": true,
+      "mechanism": "Variational equilibrium of \u03b2_ij = 8\u03c0G_eff T^YM with Poisson+multi-harmonic solve. Residual r=0.095716 is the minimized fluctuation residual; mass\u00b2 proxy m\u00b2_\u03c6 \u223c 2(1+r)\u03c3*\u00b2/C\u2082 = 1.232681 > 0. No free potential parameters.",
+      "mass_squared_proxy": 1.2326808172664336,
+      "status": "proven",
+      "notes": "Fluctuations about the locked Einstein\u2013YM background are massive."
+    },
+    {
+      "name": "off_sector_deformations",
+      "description": "Continuous deformations away from r=0, j\u2082=0, or native N_gen (complex-structure-like / spectral-flow directions).",
+      "stabilized_by_geometry": true,
+      "mechanism": "Topological obstruction: j\u2082\u22600 \u21d2 \u22c6\u03a8 defect > 0; r\u22600 \u21d2 APS singular/index flow; N_gen\u2260 native APS index \u21d2 AS obstruction. Monodromy order 24 discretizes residual flavor monodromy. Discrete residual monodromy (order 24) and APS self-duality forbid continuous motion off the locked sector; this is a hard obstruction, not a potential minimum with free parameters.",
+      "mass_squared_proxy": null,
+      "status": "proven_topological",
+      "notes": "Hard topological freeze, not a soft potential minimum."
+    },
+    {
+      "name": "domain_wall_position",
+      "description": "Location of the \u03a3\u2075 APS domain wall in the fibration.",
+      "stabilized_by_geometry": true,
+      "mechanism": "APS boundary is the defining wall of the r=0 sector. Tension T_wall=6.5000 and residual \u03c4_res=0.071787 resist displacement; continuous r-motion is APS-obstructed.",
+      "mass_squared_proxy": 0.9332337496420423,
+      "status": "proven_topological",
+      "notes": "Wall is fixed by APS boundary conditions of the locked geometry."
+    }
+  ],
+  "summary_table": [
+    {
+      "modulus": "sigma_squashing",
+      "stabilized": true,
+      "mechanism": "proven",
+      "status": "proven"
+    },
+    {
+      "modulus": "overall_volume",
+      "stabilized": false,
+      "mechanism": "still_flat",
+      "status": "still_flat"
+    },
+    {
+      "modulus": "phi_conformal_fluctuation",
+      "stabilized": true,
+      "mechanism": "proven",
+      "status": "proven"
+    },
+    {
+      "modulus": "off_sector_deformations",
+      "stabilized": true,
+      "mechanism": "proven_topological",
+      "status": "proven"
+    },
+    {
+      "modulus": "domain_wall_position",
+      "stabilized": true,
+      "mechanism": "proven_topological",
+      "status": "proven"
+    }
+  ],
+  "volume_final_squeeze": {
+    "volume_stabilized_by_pure_geometry": false,
+    "final_volume_status": "still_flat",
+    "continuous_knobs": 0,
+    "external_fluxes": false,
+    "free_parameters_introduced": false,
+    "mechanisms_examined": [
+      {
+        "mechanism": "spectral_casimir_condensate",
+        "form": "V_cas(R) = \u00b1(\u03a3_k \u03bb\u0303_k\u00b2) / R^4  (m_k=\u221a\u03bb\u0303_k/R)",
+        "coefficient_locked": 670.5,
+        "volume_stabilized": false,
+        "mass_squared_at_finite_R": null,
+        "reason": "Homogeneous 1/R^4 potential has V'=0 only at R=\u221e (or 0). No stable finite-R critical point. Coefficient \u03a3\u03bb\u0303\u00b2 is locked but does not create a minimum."
+      },
+      {
+        "mechanism": "domain_wall_tension",
+        "form": "V_wall(R) = T_wall / R^p  with T_wall=\u03a3 Vol_k locked, p\u2208{0,4}",
+        "coefficient_locked": 6.5,
+        "volume_stabilized": false,
+        "mass_squared_at_finite_R": null,
+        "reason": "T_wall=6.5000 is a dimensionless spectral volume sum. A single monomial T_wall/R^p has no stable finite-R minimum. Competing powers would require a second independent dimensionful scale (not present in locked data)."
+      },
+      {
+        "mechanism": "beta_residual_boundary_stress",
+        "form": "\u03c4_res = r\u00b7\u03c3*\u00b2  (r=\u03b2_residual_new) \u2014 R-independent",
+        "coefficient_locked": 0.07178721151092633,
+        "volume_stabilized": false,
+        "mass_squared_at_finite_R": 0.0,
+        "reason": "r=0.095716 is a dimensionless Frobenius residual of the scale-free Einstein\u2013YM equation on the compact grid. It does not generate V(R)."
+      },
+      {
+        "mechanism": "self_dual_condensate",
+        "form": "\u27e8\u2016\u22c6\u03a8\u2212\u03a8\u2016\u00b2\u27e9 = 0 on locked j\u2082=0 sector",
+        "coefficient_locked": 0.0,
+        "volume_stabilized": false,
+        "mass_squared_at_finite_R": null,
+        "reason": "Self-duality is exact on the locked generation sector (defect=0). No non-vanishing self-dual condensate exists to source V(R)."
+      },
+      {
+        "mechanism": "higher_order_residual_backreaction",
+        "form": "V \u223c (r\u00b7T_wall\u00b7\u03a3\u221a\u03bb\u0303) / R^4   or   r\u00b2 / R^4",
+        "coefficient_locked": 6.42614709010673,
+        "volume_stabilized": false,
+        "mass_squared_at_finite_R": null,
+        "reason": "Products of locked dimensionless data still yield a single power of R after restoring dimensions via m\u223c1/R. No critical point at finite R without a second independent scale."
+      },
+      {
+        "mechanism": "wall_vs_casimir_balance",
+        "form": "V = a T_wall/R^p + b (\u03a3\u03bb\u0303\u00b2)/R^q  (p\u2260q)",
+        "coefficient_locked": null,
+        "volume_stabilized": false,
+        "mass_squared_at_finite_R": null,
+        "reason": "A finite-R minimum would require a fixed ratio a/b of wall to Casimir prefactors. That ratio is not determined by locked \u03c3*, r, n_\u03b7, APS, or monodromy \u2014 introducing it would be a continuous free parameter (forbidden)."
+      },
+      {
+        "mechanism": "eight_pi_g_eff_planck_identification",
+        "form": "M_Pl\u00b2 \u223c 1/(8\u03c0G_eff) with 8\u03c0G_eff=\u03c3*\u00b2/C\u2082",
+        "coefficient_locked": 0.562500000000022,
+        "volume_stabilized": false,
+        "mass_squared_at_finite_R": null,
+        "reason": "8\u03c0G_eff=0.562500 is dimensionless (\u03c3*\u00b2/C\u2082). Identifying it with a physical Planck mass chooses an external unit system, not a volume-stabilizing potential from topology."
+      },
+      {
+        "mechanism": "nonperturbative_wall_instanton",
+        "form": "V_np \u223c \u039b^4 exp(\u2212T_wall) with T_wall locked",
+        "coefficient_locked": 0.0015034391929775724,
+        "volume_stabilized": false,
+        "mass_squared_at_finite_R": null,
+        "reason": "exp(\u2212T_wall)=exp(\u22126.5000)=1.503439e-03 is fixed, but the prefactor \u039b^4 is an absolute scale not fixed by locked data. Without \u039b, no V(R) is determined."
+      }
+    ],
+    "conclusion": "NO pure geometric volume-stabilizing mechanism is forced by the locked topology. All candidates either scale homogeneously in the overall radius R (no finite minimum), vanish identically (self-dual condensate), or require an extra continuous/dimensionful input (a/b ratio, \u039b, M_Pl unit). Overall volume remains classically flat.",
+    "what_is_frozen": [
+      "shape squashing \u03c3*",
+      "\u03c6 Einstein\u2013YM fluctuations",
+      "APS sector (r=0, j\u2082=0)",
+      "\u03a3\u2075 domain-wall position"
+    ],
+    "what_remains_flat": [
+      "overall_volume_modulus_R"
+    ],
+    "locked_inputs_used": {
+      "sigma_star": 0.8660254037844556,
+      "beta_residual_new": 0.0957162820145647,
+      "T_wall": 6.5,
+      "lambda_targets": [
+        4.5,
+        12.0,
+        22.5
+      ],
+      "n_gen": 3,
+      "eight_pi_g_eff": 0.562500000000022
+    }
+  },
+  "overall": "partial moduli stabilization: squashing \u03c3*, \u03c6, APS sector, and domain-wall position frozen by pure geometric tension / topology; overall volume remains flat after final squeeze (no parameter-free pure geometric volume potential)."
+}
