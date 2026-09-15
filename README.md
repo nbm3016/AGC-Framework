@@ -1,39 +1,39 @@
-# Absolute Geometric Coherence (AGC)
+﻿# Absolute Geometric Coherence (AGC)
 
-Parameter-free computational skeleton on \(\Sigma^5\times T^{1,1}\). This tree is the scientific core only.
+**Parameter-free computational skeleton** — an *alternative* to knob-tuning frameworks, **not** a Standard Model replacement claim.
 
-## Locked results
+Author: **Nicholas Myers** (`@ZeroKnobs`)
 
-| Quantity | Value |
-|----------|-------|
-| Native APS \(N_{\mathrm{gen}}\) | 3 |
-| \(\sigma^*\) | \(\sqrt{3}/2\) |
-| Official \(\beta\) residual \(r\) | 0.095716 |
-| \(T_{\mathrm{wall}}\) | \(13/2\) |
-| Residual-NLO A4 \(\theta_{13}\) | \(7.953^\circ\) |
-| `continuous_knobs` | 0 |
-| Core verification | 8/8 PASS |
+## One sentence
+AGC locks a zero-continuous-parameter isolate you can verify on your machine: **8/8 PASS**, `continuous_knobs = 0`.
 
-Classification of Proven / Partial / Open: [`STATUS.md`](STATUS.md). Numerical source of truth: [`complete_baseline.json`](complete_baseline.json).
+## What you get here
+- Locked baseline + verification scripts
+- Honest measured-reach notes (including clean impossibilities)
+- MIT-licensed scientific core
 
-## Reproduce
+## What you do **not** get here
+- Unpublished workshop maps, product APIs, or private partner packs
+- A claim that AGC “replaces physics”
+- Marketing overclaims of proof beyond what the repo verifies
+
+## Verify
 
 ```bash
 pip install numpy scipy matplotlib
 python AGC_Computational_Framework.py --full
 ```
 
-Expected: **PASS 8/8**, official residual **0.095716**, `continuous_knobs = 0`.
+Expected: **PASS 8/8**, residual **0.095716**, `continuous_knobs = 0`.
 
-## Layout
+## Canonical references
+- Zenodo Tier 1 (locked core): https://doi.org/10.5281/zenodo.22088037
+- Zenodo Tier 2 (extended): https://doi.org/10.5281/zenodo.22088564
+- X: https://x.com/ZeroKnobs
 
-- `AGC_Computational_Framework.py` — 8-stage verification
-- `stage*.py` — stage modules and probes
-- JSON baselines and ledgers
-- `final_paper_draft.md`, `paper_appendix.tex`
-
-This export is not a full Standard Model fermion spectrum and does not contain a derived \(Y^{14}\to M^4\) Einstein–Hilbert reduction. See `M4_BRIDGE.md` and `REVIEWER_REPRODUCTION.md`.
+## Status honesty
+Public releases may lag private lab honesty. When numbers or reach statements differ, **trust the verified scripts in this repo for that release**, not social media summaries.
 
 ## License
+MIT — see `LICENSE`.
 
-MIT. See `LICENSE`.
