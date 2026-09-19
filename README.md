@@ -25,6 +25,7 @@ python AGC_Computational_Framework.py --full
 ```
 
 Expected: **PASS 8/8**, residual **0.095716**, `continuous_knobs = 0`.
+If `export_agc_package.py` is missing, `--full` skips the zip and still verifies.
 
 **Recent lock (graph only, not SM flavor):** unique involution-closed 6-regular circulant on \(\mathbb{Z}/24\) with adjacency spectrum \(\{6,3,2,-1,-2,-5\}\); \(L=6I-A\). U(2)/S3 is struck. Identifying generations with Fourier eigenspaces is an external weld (`MAP_NOT_LOCK`). Ledger: `flavor_graph_module.json`. No CKM claim.
 

@@ -985,15 +985,27 @@ class AGC_Theory:
         return path
 
     def export_submission(self) -> Dict[str, Any]:
-        import export_agc_package
-        import export_submission_package
+        try:
+            import export_agc_package
+            import export_submission_package
+        except ImportError:
+            return {
+                "skipped": True,
+                "reason": "export pack not in this tree (optional extra)",
+            }
 
         if export_agc_package.is_inside_package(self.artifact_dir):
             return {"skipped": True, "reason": "run from project root for submission zip"}
         return export_submission_package.export_submission(create_zip=True)
 
     def export_package(self, create_zip: bool = True) -> Dict[str, Any]:
-        import export_agc_package
+        try:
+            import export_agc_package
+        except ImportError:
+            return {
+                "skipped": True,
+                "reason": "export_agc_package.py not in this tree (optional extra)",
+            }
 
         if export_agc_package.is_inside_package(self.artifact_dir):
             export_agc_package.cleanup_nested_export(self.artifact_dir)
@@ -1880,6 +1892,12 @@ Sensitivity driver & {sens_f.get('dominant_residual_driver', 'N/A')} \\
         return COMPLETE_BASELINE_PATH
 
     def write_readme(self) -> str:
+        path = os.path.join(self.artifact_dir, "README.md")
+        if os.path.isfile(path):
+            with open(path, encoding="utf-8") as existing:
+                body = existing.read()
+            if "Parameter-free computational skeleton" in body or "not a Standard Model replacement" in body:
+                return path
         sens = _load_json("sensitivity_map.json") if os.path.isfile(
             os.path.join(self.artifact_dir, "sensitivity_map.json")
         ) else {}
@@ -1911,20 +1929,8 @@ Catalog work remains stopped. See `EXPANSION_SYNTHESIS.md`.
 ## Quick start
 
 ```bash
-# Full verification (8/8) + higher-res β + exports
+# Full verification (8/8). Package zip is optional and skipped if missing.
 python AGC_Computational_Framework.py --full
-
-# Re-run all solvers then verify
-python AGC_Computational_Framework.py --regenerate
-
-# Sensitivity only
-python stage3_sensitivity.py
-
-# One-click trust demo
-python agc_trust_demo.py --highres
-
-# Export submission ZIP
-python export_submission_package.py
 ```
 
 ## Python API
@@ -1992,18 +1998,12 @@ print(report["status"])  # PASS
 - `predictions.json` — Stage 4 phenomenology vs paper targets
 - `verification_log.txt` — 8/8 log + β residual timing
 - `paper_appendix.tex` — tables, proofs, figures (Stages 1–4 + higher-res β)
-- `final_paper_draft.md` — submission-ready draft
-- `AGC_Submission_Package.zip` — curated submission bundle
+- `final_paper_draft.md` — draft matching locked numbers
+- Package zip is optional and skipped if the export scripts are not in this tree
 
 ## Next research directions
 
-See `TECHNICAL_BRIEFING.md` and package docs:
-
-1. Higher harmonics — further reduce β residual below 0.0957 toward 0.05
-2. Full η-lattice — extend discrete uniqueness proof
-3. Phenomenology — map locked ratios to SM observables
-4. Master back-reaction — coupled Newton solve
-5. Sensitivity extensions — grid convergence study
+See `TECHNICAL_BRIEFING.md` and `STATUS.md`. Open items stay open.
 
 ## Requirements
 
@@ -2042,7 +2042,7 @@ def main() -> int:
 
     print("AGC Computational Framework — starting\n")
     if args.full:
-        print("Mode: --full (complete verification + higher-res β + exports)\n")
+        print("Mode: --full (8/8 verification + higher-res β; package export optional)\n")
     agc = AGC_Theory()
 
     try:
@@ -2065,7 +2065,7 @@ def main() -> int:
     print(f"Saved {VERIFICATION_LOG_PATH}")
     pkg_export = report.get("package_export", {})
     if pkg_export.get("skipped"):
-        print("Package export skipped (running inside package layout)")
+        print(f"Package export skipped ({pkg_export.get('reason', 'optional extra missing')})")
     else:
         print(f"Exported {pkg_export.get('package_root', '')}")
         if pkg_export.get("zip"):
@@ -2115,7 +2115,7 @@ def main() -> int:
     print(f"{'Elapsed (β solve, s)':<32} {'—':>16} {float(beta_new.get('elapsed_sec', 0)):16.3f}")
     print("=" * 72)
     print()
-    print("Ready for Trust Wrapper finalization – send screenshots of terminal + new files.")
+    print("Verify complete. Package zip skipped if export scripts are not in this tree.")
 
     return 0 if report["status"] == "PASS" else 1
 

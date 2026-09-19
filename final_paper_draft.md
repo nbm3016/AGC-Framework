@@ -645,15 +645,10 @@ On \(T^{1,1}\) the same number is \(\sum n_\eta/4=26/4\) and \(\sum\tilde\lambda
 ## 4. Reproducibility
 
 ```bash
-# Full verification (8/8) + package export
-python AGC_Computational_Framework.py
-
-# From standalone package
-cd AGC_Package && python AGC_Computational_Framework.py
-
-# Submission bundle
-python export_submission_package.py
+python AGC_Computational_Framework.py --full
 ```
+
+If `export_agc_package.py` is missing, `--full` still runs 8/8 verification and skips the zip.
 
 Artifacts: `complete_baseline.json`, `predictions.json`, `closure_proof.json`, `paper_appendix.tex`, `sensitivity_map.json`.
 
