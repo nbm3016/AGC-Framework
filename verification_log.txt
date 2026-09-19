@@ -1,5 +1,5 @@
 AGC Computational Framework — verification_log.txt
-timestamp_utc: 2026-08-14T19:10:03.513882+00:00
+timestamp_utc: 2026-09-19T01:04:39.975512+00:00
 overall_status: PASS
 
 VERIFICATION (8 stages)
@@ -24,7 +24,7 @@ HIGHER-RESOLUTION β_ij SOLVE
   beta_residual_max: 2.2220154850490266
   converged: True
   iterations: 19
-  elapsed_sec: 0.19637419999344274
+  elapsed_sec: 0.21861960001115222
   method: full_hessian_LBFGSB_poisson_warmstart
 
 PHENOMENOLOGY (refreshed)
@@ -32,153 +32,3 @@ PHENOMENOLOGY (refreshed)
   omega_lambda: 0.6795280169574518
 
 END
-
-NUMERICAL STRENGTHENING (diagnostic; official lock unchanged)
-timestamp_utc: 2026-08-22T02:10:38.984067+00:00
-verification: 8/8 PASS
-continuous_knobs: 0
-bit_reproducible_grid24_Nh24: True
-hidden_rng_seeds_in_beta_LBFGSB: False (deterministic Poisson + L-BFGS-B)
-official_beta_residual_lock: 0.095716
-repeat_24_24: 0.0957162820145647
-diagnostic_grid32_Nh32: 0.09951472448022511
-diagnostic_grid32_Nh48: 0.09951472448024211
-sigma_star_locked: 0.8660254037844556
-lambda_tilde_locked: [4.5, 12.0, 22.5]
-theta13_locked: 7.953
-mu_gammagamma_locked: 1.086571
-omega_lambda_locked: 0.679528
-sha256_complete_baseline.json: 0f209b8e829d8f136ebf965d1ead23a7475ac547f8c600cb3c2d758c3a5f6b41
-sha256_predictions.json: e0520f7b48c5d3c66b068deb9d7624ae3a539de838d7fa7839aaf3000c250ef6
-sha256_verification_log.txt_before_this_block: 8f3bf91d1cca1633d3e2d97d22b3b3c04ab62ff5e68d9b311d4e5a4a0d774f8a
-official locked numerics NOT rewritten
-END STRENGTHENING
-
-RESIDUAL STABILITY MAP (diagnostic; official lock unchanged)
-timestamp_utc: 2026-08-22T19:11:43.271694+00:00
-continuous_knobs: 0
-verification: 8/8 PASS (not re-run; locked core untouched)
-grid_n: 24
-n_harmonics: 24
-official_beta_residual_lock: 0.095716
-reconstructed_residual: 0.0957162820145647
-matches_official_lock_6dp: True
-candidates: 96 accepted=83 rejected=13
-min_residual_in_sector: 0.08985600540600594 (NOT promoted)
-max_residual_reduction_inside_sector: 0.0058602766085587565
-gate_fire_counts: {'native_aps_index': 3, 'self_duality': 3, 'eta_lattice_monodromy': 7}
-closest_gate_on_accepted_slice: native_aps_index
-nearest_gate_breaking: ['dual_j2=0.01', 'r_aps=0.01', 'dual_j2=0.1', 'r_aps=0.1', 'dual_j2=0.5']
-new_residual_promoted: False
-open_gaps_remain_open: True (including continuum r→0)
-absolute_scale_posture: observational conversion only
-END RESIDUAL STABILITY MAP
-
-GATED RESIDUAL MINIMIZATION (diagnostic; official lock unchanged)
-timestamp_utc: 2026-08-22T19:22:39.090571+00:00
-continuous_knobs: 0
-verification: 8/8 PASS (not re-run; locked core untouched)
-start_residual: 0.0957162820145647
-official_beta_residual_lock: 0.095716 (NOT replaced)
-lowest_accepted_residual: 0.03435979879690339 (NOT promoted)
-max_reduction_inside_sector: 0.06135648321766131
-stop_reason: numerical_convergence_inside_topological_sector_sigma_box_active
-gate_that_stopped_progress: None
-closest_gate_on_accepted_path: native_aps_index
-n_rejected_gate_failures: 0
-phase_A_nit: 23 residual=0.03661559697592827
-phase_B_nit: 11 residual=0.03436747532665664 sigma=0.8227241335952167
-new_residual_promoted: False
-open_gaps_remain_open: True (continuum r→0 still Open)
-absolute_scale_posture: observational conversion only
-END GATED RESIDUAL MINIMIZATION
-
-HIGHER-RESOLUTION GATED MINIMIZATION (diagnostic; official lock unchanged)
-timestamp_utc: 2026-08-22T19:31:23.005372+00:00
-continuous_knobs: 0
-verification: 8/8 PASS (not re-run; locked core untouched)
-grid_n: 48
-n_harmonics: 48
-n_basis_modes: 47
-start_residual_at_new_resolution: 0.08971509127908733
-official_beta_residual_lock: 0.095716 (NOT replaced)
-lowest_accepted_residual: 0.03353229547342563 (NOT promoted)
-previous_24_mode_floor: 0.0343597987969034
-lowest_minus_24_mode_floor: -0.0008275033234777726
-stop_reason: numerical_convergence_inside_topological_sector_sigma_box_active
-gate_that_stopped_progress: None
-topological_floor_status: no_topological_floor_observed_computational_or_box_limit
-n_rejected_gate_failures: 0
-phase_A_nit: 28 residual=0.03577195804581832
-phase_B_nit: 62 residual=0.033539915253458626 sigma=0.8227241335952167
-new_residual_promoted: False
-open_gaps_remain_open: True (continuum r→0 still Open)
-absolute_scale_posture: observational conversion only
-END HIGHER-RESOLUTION GATED MINIMIZATION
-
-GATED MINIMIZATION NO SIGMA BOX (diagnostic; official lock unchanged)
-timestamp_utc: 2026-08-22T19:41:53.770182+00:00
-continuous_knobs: 0
-verification: 8/8 PASS (not re-run; locked core untouched)
-grid_n: 48
-n_harmonics: 48
-start_residual: 0.08971509127908733
-official_beta_residual_lock: 0.095716 (NOT replaced)
-lowest_accepted_residual: 0.011020994962764246 (NOT promoted)
-sigma_at_best: 0.0001
-delta_sigma_over_sigma_star: -0.9998845299461621
-sigma_box: removed (numerical domain [0.0001, 20.0])
-stop_reason: numerical_sigma_positivity_bound
-gate_that_stopped_progress: None
-topological_floor_status: no_topological_floor_observed_sigma_ran_to_numerical_floor
-n_rejected_gate_failures: 0
-phase_A_nit: 28 residual=0.03577195804581832
-phase_B_nit: 124 residual=0.011020994962764246 sigma=0.0001
-new_residual_promoted: False
-open_gaps_remain_open: True (continuum r→0 still Open)
-absolute_scale_posture: observational conversion only
-END GATED MINIMIZATION NO SIGMA BOX
-
-GEOMETRIC REGULARITY PROBE FOR σ (official lock unchanged)
-timestamp_utc: 2026-08-22T20:19:38.428558+00:00
-continuous_knobs: 0
-verification: 8/8 PASS (not re-run; locked core untouched)
-decision: NO
-official_sigma_star: sqrt(3)/2 (NOT replaced)
-official_beta_residual_lock: 0.095716 (NOT replaced)
-new_sigma_promoted: False
-new_residual_promoted: False
-open_gaps_remain_open: True
-reason: No locked structure forces a strictly positive lower bound σ≥σ_min>0 on the topological sector. APS, self-duality, η-lattice, and T_wall are independent of σ. Metric non-degeneracy requires only σ>0 (infimum 0). V(σ)→∞ as σ→0⁺ selects the already-locked V-minimizer σ*=√3/2 and does not police the residual functional. Gated residual minimization with the σ box removed reached σ=10⁻⁴ at r≈0.011 with zero gate rejections. Official σ* and r=0.095716 are unchanged.
-END GEOMETRIC REGULARITY PROBE FOR σ
-
-RESIDUAL SERIES BOUNDARY RECORD (documentation only; official lock unchanged)
-timestamp_utc: 2026-08-22T20:43:23.087924+00:00
-continuous_knobs: 0
-document: residual_boundary.md
-complete_baseline_block: residual_boundary
-official_beta_residual_lock: 0.095716 (NOT replaced)
-official_sigma_star: sqrt(3)/2 (NOT replaced)
-new_residual_promoted: False
-new_sigma_promoted: False
-topological_residual_floor_observed: False
-sigma_min_forced_by_locked_geometry: False
-geometric_regularity_sigma_decision: NO
-continuum_r_to_0: Open
-gate_rejections_on_continuous_beta_sigma_paths: 0
-absolute_scale_posture: observational conversion only
-See residual_boundary.md for the full chronological record.
-END RESIDUAL SERIES BOUNDARY RECORD
-
-PHYSICAL BRIDGE (documentation of locked dimensionless maps; official lock unchanged)
-timestamp_utc: 2026-08-22T21:00:38.596141+00:00
-continuous_knobs: 0
-verification: 8/8 PASS (not re-run; locked core untouched)
-official_beta_residual_lock: 0.095716 (NOT replaced)
-official_sigma_star: sqrt(3)/2 (NOT replaced)
-no_experimental_fit: True
-unique_dimensionless: N_gen, σ*, λ̃ ratios, √(λ̃_i/λ̃_j) mass ratios, n_η, monodromy 24, T_wall=13/2, 8πG_eff=9/16, μ_γγ, Ω_Λ, w0, ρ, A4+NLO PMNS, Δm²_31/Δm²_21 ratio
-not_determined: α_em, charged-lepton/quark maps, physical CKM, M_R (GeV), absolute eV without unit convention, θ13 low-energy remainder
-new_residual_promoted: False
-open_gaps_remain_open: True
-END PHYSICAL BRIDGE

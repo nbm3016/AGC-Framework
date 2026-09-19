@@ -1920,6 +1920,11 @@ python AGC_Computational_Framework.py --regenerate
 # Sensitivity only
 python stage3_sensitivity.py
 
+# One-click trust demo
+python agc_trust_demo.py --highres
+
+# Export submission ZIP
+python export_submission_package.py
 ```
 
 ## Python API

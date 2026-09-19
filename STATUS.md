@@ -52,6 +52,7 @@ Each row is proven only inside the stated boundary. Crossing that boundary is no
 | \(\varphi\) / APS / domain-wall freeze | Massive \(\varphi\); topological freeze of off-sector modes and wall position | Proven within the locked sector only |
 | \(\Sigma^5\) domain-wall tension \(T_{\mathrm{wall}}\) | Discrete spectral invariant \(13/2=\sum j(j+1)\); independent of residual \(r\) | Not a Chern index; not a \(\mathrm{GeV}^3\) tension |
 | Flavor monodromy completion | A4 plus locked \(\sqrt{r}\) NLO is the completion inside that package; official high-scale angles unchanged | No further discrete completion is forced; S4/S3 appear only if APS evenness is dropped |
+| Flavor graph module | Unique 6-regular involution-closed circulant on \(\mathbb{Z}/24\); Aut-orbits are singlets and real 2-planes; no A4 triplet in \(L\); U(2)/S3 struck | Graph lock only. APS \(\Sigma^5\) vs \(\mathbb{Z}/24\) weld is external. FN/SO(10)/CKM/\(V_{cb}\) are MAP_NOT_LOCK |
 | Discrete anomaly sector | APS / analytic-torsion / trace-mod-6 sector forced by locked topology | Wall residual \(\eta=26/9\neq 0\); full 4D / Green–Schwarz / Witten polynomial cancellation is not forced |
 
 ---
@@ -81,6 +82,7 @@ These entries remain open **after** the probes already run. They are **not** clo
 | Continuum \(\beta\) residual \(r\to 0\) | Residual-protection probes P1 (decimal rigidity) and P2 (positive floor) both fail. Residual mass-gap probe: \(\tau_{\mathrm{res}}=r\sigma^{*2}\) is linear in \(r\) (\(d^2V/dr^2=0\)). Official \(r=0.095716\) is unchanged as the computational lock; continuum vanishing is not protected. |
 | Full anomaly cancellation beyond the index | Discrete APS/AS/trace-mod-6 sector is forced (Partial). \(\mathrm{Tr}\,F^3\), mixed, \(\mathrm{tr}\,R^4\), Green–Schwarz, and Witten polynomials are not forced; wall residual \(26/9\neq 0\). |
 | \(\theta_{13}\) high-scale \(\to\) low-energy remainder (\(\sim 0.55^\circ\)) | Bridge probe: no parameter-free geometric map from the locked high-scale \(\theta_{13}=7.953^\circ\) to \(\sim 8.5^\circ\). Official high-scale angle is unchanged. The remainder sits outside topological determination (RG / \(M_R\) / higher-order effects are not supplied by the locked skeleton). |
+| Physical CKM | Exploratory holonomy only. No locked CKM matrix or \(V_{cb}\) from the isolate. Graph Aut 2-planes are not SM generations. |
 
 Controlled ansatz expansion (five finite enlargements) produced **no** new parameter-free closure of any row above. That is why the open list was not reduced by those enlargements; it is not a sixth independent physics claim.
 

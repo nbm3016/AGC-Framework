@@ -4,6 +4,14 @@
 
 The locked baseline is a **core geometric skeleton**, not a finished ceiling. It is a rigorously proven zero-continuous-knob platform achieved by successive elimination of free parameters—not a final enclosure of the research program.
 
+**Expansion Mode is the permanent operating posture** for further work on this framework: grow into unmapped sectors under dimensional audit, discrete topological targeting, and mandatory re-lock with `continuous_knobs = 0`. See:
+
+- [`EXPANSION_MODE.md`](EXPANSION_MODE.md) — session posture and the 10 operational rules  
+- [`EXPANSION_PROTOCOL.md`](EXPANSION_PROTOCOL.md) — repeatable absorption / Active Lemma checklist  
+- [`AGC_Expansion_Mode_Directive_v2.md`](AGC_Expansion_Mode_Directive_v2.md) — full Expansion Mode Directive v2.0  
+
+Bootstrap: `python init_expansion_mode.py` → **AGC Expansion Mode Active**
+
 ---
 
 **Final locked state (scientific core)** | Framework: `stage1+2+3+3B+4-higher-res` | Verification: **8/8 PASS** | continuous_knobs: **0**
