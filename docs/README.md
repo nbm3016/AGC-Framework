@@ -30,11 +30,11 @@ The skeleton does not choose among all 14-dimensional fibrations. It does not se
 
 ## The eight checks
 
-Run this from `core/`. Do not pass `--regenerate`. That flag rebuilds solver output. The lock is the baseline already in the tree.
+Do not pass `--regenerate`. That flag rebuilds solver output. The lock is the baseline already in the tree.
 
 ```bash
-cd core
 pip install numpy scipy matplotlib
+cd core
 python AGC_Computational_Framework.py --full
 ```
 
