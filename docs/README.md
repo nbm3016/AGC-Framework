@@ -1,8 +1,8 @@
 # Absolute Geometric Coherence
 
-AGC is a geometric skeleton with no continuous knobs. The ambient object is a 14-dimensional space \(Y^{14}\), fibered down to four-dimensional spacetime \(M^4\). A self-duality condition, \(\star\Psi = \Psi\), filters the modes on a domain wall. Three modes survive. From those modes the skeleton fixes a shape, a generation count, and a short list of dimensionless numbers. One verifier checks that list.
+AGC is a zero-continuous-knob geometric isolate. Compact ambient factors named in the lock; not a separate theory claim. A self-duality condition, \(\star\Psi = \Psi\), filters the modes on a domain wall. Three modes survive. From those modes the isolate fixes a shape, a generation count, and a short list of dimensionless numbers. One verifier checks that list.
 
-\(\Sigma^5\) and \(T^{1,1}\) are compact factors inside the fibration. They are not the theory. The cone on \(T^{1,1}\) is the cone on one factor. Its holonomy is \(\mathrm{SU}(3)\). That statement is about holonomy. It is not a color group, and it is not the spacetime metric \(g_{\mu\nu}\).
+\(\Sigma^5\) and \(T^{1,1}\) are compact factors named in the lock. They are not a separate theory claim. The cone on \(T^{1,1}\) is the cone on one factor. Its holonomy is \(\mathrm{SU}(3)\). That statement is about holonomy. It is not a color group, and it is not the spacetime metric \(g_{\mu\nu}\).
 
 The numerical source of truth is [`core/complete_baseline.json`](../core/complete_baseline.json). The short form of the boundaries is [`core/CONSTITUTION.md`](../core/CONSTITUTION.md). The geometry in one page is [`WORKING_GEOMETRY.md`](WORKING_GEOMETRY.md).
 
@@ -20,7 +20,7 @@ The numerical source of truth is [`core/complete_baseline.json`](../core/complet
 | \(T_{\mathrm{wall}}\) | \(13/2\) | Dimensionless spectral identity. Not a brane tension. |
 | \(8\pi G_{\mathrm{eff}}\) | \(9/16\) | A pure number built from \(\sigma^*\) and a Casimir. Not Newton's constant. |
 
-Stage 4 sits downstream of that lock. It reports \(\mu_{\gamma\gamma}\), \(\Omega_\Lambda\), and \(w_0\). Those are checks, not new parameters.
+Downstream Stage-4 phenomenology modules sit outside the locked isolate atoms. They are developmental diagnostics, not Proven lock claims, and they are not part of the Zenodo isolate. Official numbers for strangers are only the lock table (\(N_{\mathrm{gen}}=3\), \(\sigma^*=\sqrt{3}/2\), residual \(0.095716\), `continuous_knobs=0`, 8/8 PASS).
 
 ## What is open
 
@@ -57,7 +57,7 @@ Expected result: **8/8 PASS**, residual **0.095716**, `continuous_knobs = 0`. If
 
 Author: Nicholas Myers ([@ZeroKnobs](https://x.com/ZeroKnobs)).
 
-Zenodo record of the locked core: [10.5281/zenodo.22088037](https://doi.org/10.5281/zenodo.22088037).
+Zenodo record of the locked isolate: [10.5281/zenodo.22903967](https://doi.org/10.5281/zenodo.22903967). Concept DOI for the lock family: [10.5281/zenodo.22088036](https://doi.org/10.5281/zenodo.22088036).
 
 ## License
 
