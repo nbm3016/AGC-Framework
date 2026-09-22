@@ -8,11 +8,9 @@ The pages that carry this are in [`docs/README.md`](docs/README.md). The lock, t
 
 ## Verify
 
-From `core/`. Do not pass `--regenerate`.
-
 ```bash
-cd core
 pip install numpy scipy matplotlib
+cd core
 python AGC_Computational_Framework.py --full
 ```
 
