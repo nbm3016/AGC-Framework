@@ -12,7 +12,7 @@ The numerical source of truth is [`core/complete_baseline.json`](../core/complet
 
 | Quantity | Value | Reading |
 |---|---|---|
-| \(N_{\mathrm{gen}}\) | 3 | Wall-index count on the self-dual line. Not the kernel dimension of a five-dimensional Dirac operator. |
+| \(N_{\mathrm{gen}}\) | 3 | Count of the wall-index zeros \((1/2,0,0)\), \((1,0,0)\), \((3/2,0,0)\). First \(\mathrm{SU}(2)\) dimensions 2, 3, 4: one doublet, one triplet, one quartet. Not three copies of one 4D Weyl spinor. “Three generations” is a name, not an A-lock. Not \(\ker D_5\). Not the APS index theorem. |
 | \(\tilde\lambda\) | 4.5, 12, 22.5 | The three surviving modes. |
 | \(\sigma^*\) | \(\sqrt{3}/2\) | Minimum of the shape potential on \(T^{1,1}\). |
 | \(n_\eta\) | 3, 8, 15 | The unique triple tied to those modes. |
