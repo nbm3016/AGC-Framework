@@ -13,3 +13,11 @@ These six statements are the lock. They do not add parameters. `continuous_knobs
 5. The canonical spectral triple of the locked 5-metric reconstructs \(T^{1,1}\). It does not reconstruct \(M^4\).
 
 6. `fibration_class` is not uniquely determined. \(M^{p,q}\) is not selected. The second Chern number \(c_2\) and the warp slope \(k\) stay external. \(8\pi G_{\mathrm{eff}}=9/16\) is a pure number, not \(G_N\). \(T_{\mathrm{wall}}=13/2\) is not brane tension.
+
+## A and B
+
+A is the isometry of the locked 5-metric: \(\mathrm{SU}(2)\times\mathrm{SU}(2)\times\mathrm{U}(1)\), dimension 7. That is the identity of the shape. It does not contain \(\mathrm{SU}(3)\).
+
+B is a look through the cone. \(\mathrm{Hol}(g_C)=\mathrm{SU}(3)\) has dimension 8. Naming that 8-wide look the eight-gluon observation, because \(3^2-1=8\), is a reading of the look. It is not an A-lock, and it does not force unique color.
+
+The ratio \((3/4)/(4/3)=9/16\) uses the name \(C_2(3)=4/3\). That name is not a derived color group. The official high-scale \(\theta_{13}\) remains \(7.953^\circ\). \(8.54^\circ\) is an observed poster, not a rewritten lock.

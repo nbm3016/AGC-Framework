@@ -4,7 +4,7 @@ AGC is a zero-continuous-knob geometric isolate. Compact ambient factors named i
 
 The pages that carry this are in [`docs/README.md`](docs/README.md). The lock, the verifier, and the constitution are in [`core/`](core/).
 
-\(\Sigma^5\) and \(T^{1,1}\) are compact factors named in the lock. They are not a separate theory claim. Cone holonomy \(\mathrm{SU}(3)\) is holonomy of the cone on \(T^{1,1}\). It is not color, and it is not \(g_{\mu\nu}\). \(T_{\mathrm{wall}} = 13/2\) is not a brane tension. \(8\pi G_{\mathrm{eff}} = 9/16\) is not Newton's constant. Unique color is not derived. The four-dimensional metric is not derived.
+\(\Sigma^5\) and \(T^{1,1}\) are compact factors named in the lock. They are not a separate theory claim. A is the 7-dimensional isometry of that shape. B is the look through the cone: holonomy \(\mathrm{SU}(3)\) is 8-dimensional, and the eight-gluon count is a name of that look, not an A-lock of unique color. \(T_{\mathrm{wall}} = 13/2\) is not a brane tension. \(8\pi G_{\mathrm{eff}} = 9/16\) is not Newton's constant. Unique color is not derived. The four-dimensional metric is not derived. High-scale \(\theta_{13}\) stays \(7.953^\circ\).
 
 ## Verify
 
