@@ -1,21 +1,22 @@
 #!/usr/bin/env python3
 """
-Native APS index / cohomology computation for generation counting.
+Wall-index sieve for the generation count.
 
-Produces N_gen as an *output* of the geometric APS index and the dimension
-of the space of APS-neutral self-dual sections on the Σ⁵ domain wall of
-squashed T^{1,1}, without seeding λ̃ targets or N_gen.
+Produces N_gen as an output of the wall-index rule on the j2=0 line.
+This file is not an application of the APS index theorem. The arithmetic
+counts sieve zeros. It does not compute ker of a Dirac operator. It does
+not seed λ̃ targets or N_gen. The numbers λ̃ are Casimir values 6 j(j+1).
 
 Geometric inputs only (locked Stages 1–3 data, no free knobs):
   - r = 0 APS spectral sector (singular 4/(3r²) projected out)
   - half-integer SU(2)×SU(2) lattice from T^{1,1} isometry
   - self-dual structure ⋆Ψ = Ψ  ⇒  j₂ = 0 line only
-  - APS Dirac index on Σ⁵: index = max(0, ⌊4j₁−6⌋₊) on j₂=0
+  - wall-index sieve on j₂=0: index = max(0, ⌊4j₁−6⌋₊). Not a Dirac index.
   - squashing modulus σ* = √3/2 (locked; used for bulk Â scale only)
   - C₂(3) = 4/3 (Casimir of SU(3) structure group on T^{1,1})
 
 Does NOT use as filters: λ̃ ∈ {4.5,12,22.5} or N_gen = 3.
-Those may appear only as derived outputs of surviving modes.
+Those may appear only as derived Casimir values, not as field modes.
 """
 
 from __future__ import annotations
@@ -64,7 +65,7 @@ class NativeIndexResult:
 
 
 def lambda_geometric(j1: float, j2: float, r: float = 0.0) -> float:
-    """Dirac / Laplace eigenvalue from T^{1,1} geometry (r=0 APS sector)."""
+    """Casimir value 6[j1(j1+1)+j2(j2+1)] on the r=0 line. Not a Dirac eigenvalue."""
     if abs(r) < 1e-12:
         return 6.0 * (j1 * (j1 + 1.0) + j2 * (j2 + 1.0))
     return 6.0 * (
@@ -72,10 +73,11 @@ def lambda_geometric(j1: float, j2: float, r: float = 0.0) -> float:
     )
 
 
-def aps_dirac_index(j1: float, j2: float, r: float = 0.0) -> int:
+def wall_index_sieve(j1: float, j2: float, r: float = 0.0) -> int:
     """
-    APS Dirac index on Σ⁵ for a (j₁,j₂) multiplet.
-    Geometric formula — not a fit to target eigenvalues.
+    Wall-index sieve on a (j₁, j₂) lattice point.
+    On j₂=0 and r=0 the value is max(0, round(4 j₁ − 6)).
+    Not a Dirac index. Not the APS index theorem. Not a fit to target eigenvalues.
     """
     if abs(r) > 1e-12:
         return max(0, int(round(abs(2.0 * (j1 + j2) + r))))
@@ -92,18 +94,18 @@ def is_self_dual(j1: float, j2: float) -> bool:
 
 def bulk_a_hat_contribution(sigma_star: float = SIGMA_STAR_LOCKED) -> float:
     """
-    Bulk Â-genus / Chern contribution for squashed T^{1,1} (dimensionless).
+    Named product χ(S²)²/4 · C₂(3) · σ*². Not an Â-hat integral.
 
     For SE T^{1,1} ≅ (S²×S²)/U(1) with SU(3) structure:
       Â_bulk ∼ (χ(S²)·χ(S²)/4) · C₂(3) · σ*²
             = (2·2/4) · (4/3) · (3/4) = 1 · 1 = 1
     times the fiber chirality multiplicity from the U(1) quotient → factor 3
     from the three independent harmonic horizontal spinor sectors compatible
-    with APS at the domain wall (see zero-mode count below for confirmation).
+    with the wall-index sieve (see the zero count below). This product is not an Â-hat integral.
 
-    We report the pure topological bulk scale without forcing N_gen:
+    We report the named product without forcing N_gen:
       Â_bulk_raw = (χ_S2² / 4) * C₂ * σ*² = 1.0
-    Net index is taken from zero-mode cohomology (primary), with bulk as check.
+    The generation count is the sieve zero count, not this product.
     """
     chi_s2 = 2.0
     return (chi_s2 * chi_s2 / 4.0) * C2_SU3 * (sigma_star ** 2)
@@ -111,8 +113,8 @@ def bulk_a_hat_contribution(sigma_star: float = SIGMA_STAR_LOCKED) -> float:
 
 def spectral_eta_invariant(modes: List[Tuple[float, float, float]]) -> Tuple[float, int]:
     """
-    APS η-invariant from spectral asymmetry of geometric eigenvalues.
-    r=0 APS spectrum is non-negative; η → 0, h = dim ker(λ=0).
+    Sign count of the listed Casimir values. Not the η-invariant of a boundary Dirac.
+    On r=0 the listed values are non-negative, so the sign count is 0 and h counts zeros of λ.
     """
     h = 0
     eta = 0.0
@@ -146,19 +148,19 @@ def enumerate_geometric_lattice(
 
 def compute_chiral_zero_modes() -> List[ChiralMode]:
     """
-    Native cohomology: space of APS-neutral self-dual sections.
+    Lattice points kept by the wall-index sieve. Not a Dirac kernel.
 
-    Generation mode ⇔
-      (i)   r = 0 APS sector
+    A kept point has
+      (i)   r = 0
       (ii)  ⋆Ψ = Ψ  (j₂ = 0)
-      (iii) APS index = 0  (no spectral-flow obstruction)
-      (iv)  non-trivial (exclude pure vacuum j₁=j₂=0)
+      (iii) sieve value 0
+      (iv)  j₁ > 0 (the vacuum point j₁=j₂=0 is not kept)
 
-    No filter on eigenvalue targets.
+    No filter on Casimir targets. Dirac index UNPERFORMED.
     """
     chiral: List[ChiralMode] = []
     for j1, j2, r in enumerate_geometric_lattice():
-        idx = aps_dirac_index(j1, j2, r)
+        idx = wall_index_sieve(j1, j2, r)
         sd = is_self_dual(j1, j2)
         lam = lambda_geometric(j1, j2, r)
         if not sd:
@@ -186,10 +188,9 @@ def compute_native_generation_index(
     sigma_star: float = SIGMA_STAR_LOCKED,
 ) -> NativeIndexResult:
     """
-    Primary native computation:
-      N_gen = dim Ker⁺(D_APS) − dim Ker⁻(D_APS)
-            = # of chiral APS-neutral self-dual modes
-    on the geometric lattice (no λ̃ / N_gen seeding).
+    Count of sieve zeros on the self-dual line.
+    This is not dim ker of a Dirac operator. Dirac index UNPERFORMED.
+    No λ̃ target and no N_gen value is used as a filter.
     """
     modes = compute_chiral_zero_modes()
     n_plus = sum(1 for m in modes if m.chirality == "+")
@@ -199,18 +200,18 @@ def compute_native_generation_index(
     lattice = enumerate_geometric_lattice()
     eta, h = spectral_eta_invariant(lattice)
     bulk = bulk_a_hat_contribution(sigma_star)
-    # APS index theorem: index = bulk − (η+h)/2  (regularized)
+    # Wall-index sieve. Not the APS index theorem.
     # With η_reg=0 and h=1 (vacuum), bulk alone does not force N_gen;
     # the primary generator is the chiral zero-mode count above.
-    aps_index = n_gen  # equals dim H^+_APS of geometric zero modes
+    aps_index = n_gen  # sieve zero count. Not dim ker of a Dirac operator.
 
     survivors = [m for m in modes if m.chirality == "+"]
     lambda_out = sorted(m.lambda_tilde for m in survivors)
 
     notes = (
-        "N_gen is the dimension of the space of APS-neutral self-dual "
-        "sections on the Σ⁵ wall (j₂=0, index=0, j₁≥1/2 half-integer). "
-        f"Derived eigenvalues of those modes (output only): {lambda_out}. "
+        "N_gen is the count of wall-index sieve zeros on j₂=r=0 "
+        "with j₁≥1/2. It is not an analytic index of a Dirac operator. "
+        f"Casimir values 6j(j+1) of those points (output only): {lambda_out}. "
         "No target λ̃ set or N_gen value was used as a filter."
     )
 
@@ -222,8 +223,9 @@ def compute_native_generation_index(
         bulk_a_hat=bulk,
         chiral_modes=survivors,
         method=(
-            "native_aps_zero_mode_cohomology: "
-            "N_gen = # { (j1,0,0) | index(D_APS)=0, ⋆Ψ=Ψ, j1∈½ℕ_{>0} }"
+            "wall_index_sieve: "
+            "N_gen = # { (j1,0,0) | sieve=0, j2=0, j1∈½ℕ_{>0} }. "
+            "Not a Dirac index."
         ),
         seeded_lambda_targets=False,
         seeded_n_gen=False,
@@ -236,7 +238,7 @@ def compute_native_generation_index(
 def native_index_table(result: NativeIndexResult) -> str:
     lines = [
         "=" * 78,
-        "NATIVE APS INDEX / COHOMOLOGY — generation counting",
+        "WALL-INDEX SIEVE — Casimir values, not a Dirac index",
         "=" * 78,
         f"Method: {result.method}",
         f"Seeded λ̃ targets? {result.seeded_lambda_targets}",
@@ -244,8 +246,8 @@ def native_index_table(result: NativeIndexResult) -> str:
         f"Continuous knobs:  {result.continuous_knobs}",
         f"Â_bulk (dimless):  {result.bulk_a_hat:.6f}",
         f"η_APS (reg.):      {result.eta_invariant:.6f}",
-        f"h = dim ker:       {result.h_kernel}",
-        f"APS index:         {result.aps_index}",
+        f"h (λ=0 count):     {result.h_kernel}",
+        f"Sieve zero count:  {result.aps_index}",
         f"Native N_gen:      {result.n_gen_native}",
         f"Geometry ⇒ N_gen=3? {result.geometry_generates_n_gen_3}",
         "-" * 78,
@@ -277,7 +279,7 @@ def save_native_index(result: NativeIndexResult) -> str:
         "continuous_knobs": result.continuous_knobs,
         "geometry_generates_n_gen_3": result.geometry_generates_n_gen_3,
         "old_method": "enumerate lattice + filter for target λ̃ ∈ {4.5,12,22.5}",
-        "new_method": "native APS zero-mode cohomology (no λ̃ / N_gen seed)",
+        "new_method": "wall-index sieve (no λ̃ / N_gen seed; not a Dirac index)",
         "chiral_modes": [
             {
                 "j1": m.j1,
@@ -297,7 +299,7 @@ def save_native_index(result: NativeIndexResult) -> str:
 
 
 def main() -> None:
-    print("Native APS index / cohomology — starting\n")
+    print("Wall-index sieve — starting. Dirac index UNPERFORMED.\n")
     result = compute_native_generation_index()
     print(native_index_table(result))
     path = save_native_index(result)

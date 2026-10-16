@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-AGC Computational Framework — Stages 1–3B + Stage 4 phenomenology.
+AGC Computational Framework — seven core checks, stages 1A through 3B. Stage 4 is quarantined.
 
 Usage:
     python AGC_Computational_Framework.py
@@ -45,27 +45,28 @@ def _status_classification() -> Dict[str, Any]:
         "document": "STATUS.md",
         "classification": ["Proven", "Partial", "Open"],
         "continuous_knobs": 0,
-        "core_verification": "8/8 PASS",
+        "core_verification": "7/7 PASS; stage 4 quarantined",
         "numerical_source_of_truth": "complete_baseline.json",
         "numerical_strengthening": "numerical_strengthening.json",
         "locked_core_scope": (
-            "Zero-knob computational skeleton on Sigma^5 x T^{1,1}: native APS "
-            "N_gen=3, derived lambda-tilde {4.5,12,22.5}, sigma^*=sqrt(3)/2, "
-            "n_eta=(3,8,15), official beta residual 0.095716, residual-NLO A4 "
-            "high-scale flavor, Stage-4 mu_gammagamma / Omega_Lambda / w0 "
-            "downstream. Absolute scale and volume R closed by observational "
-            "conversion posture. Reproduce: python AGC_Computational_Framework.py --full."
+            "Zero-knob computational skeleton on Sigma^5 x T^{1,1}: wall-index "
+            "sieve N_gen=3, Casimir values lambda-tilde = 6j(j+1) in "
+            "{9/2,12,45/2}, sigma^*=sqrt(3)/2, n_eta=(3,8,15), official beta "
+            "residual 0.095716, residual-NLO A4 high-scale flavor. Stage 4 is "
+            "quarantined and is not a core check. Absolute scale and volume R "
+            "closed by observational conversion posture. Reproduce: python "
+            "AGC_Computational_Framework.py --full."
         ),
         "proven": [
             {
                 "id": "native_N_gen_3",
                 "value": 3,
-                "justification": "Native APS-neutral self-dual zero-mode count; not lambda-tilde-seeded",
+                "justification": "Wall-index sieve zero count on j2=r=0; not a Dirac index; not lambda-tilde-seeded",
             },
             {
                 "id": "lambda_tilde_derived",
                 "value": [4.5, 12.0, 22.5],
-                "justification": "Output of survivors (1/2,0), (1,0), (3/2,0)",
+                "justification": "Casimir values 6j(j+1) on the wall-index line; not field modes",
             },
             {
                 "id": "sigma_star_shape_stabilized",
@@ -96,7 +97,7 @@ def _status_classification() -> Dict[str, Any]:
                 "mu_gammagamma": 1.086571,
                 "omega_lambda": 0.679528,
                 "w0": -0.987585,
-                "justification": "Stage-4 strictly downstream of locked Stages 1-3",
+                "justification": "Downstream record. Not a core check. Stage 4 is quarantined.",
             },
             {
                 "id": "light_neutrino_eV_with_unit_convention",
@@ -113,8 +114,8 @@ def _status_classification() -> Dict[str, Any]:
             },
             {
                 "id": "core_verification_8_of_8",
-                "value": "8/8 PASS",
-                "justification": "Stages 1A, 1B, 1C, 2A, 2B, 3, 3B, 4",
+                "value": "7/7 PASS; stage 4 quarantined",
+                "justification": "Stages 1A, 1B, 1C, 2A, 2B, 3, 3B. Stage 4 is quarantined and is not a core check.",
             },
         ],
         "partial": [
@@ -323,7 +324,7 @@ class Stage1:
                 VerificationResult(
                     stage="1A",
                     passed=True,
-                    message="3 survivors, APS-neutral, λ̃={4.5,12,22.5}",
+                    message="3 survivors, wall-index sieve, Casimir values λ̃={9/2,12,45/2}",
                 )
             )
             results.append(
@@ -891,18 +892,17 @@ class AGC_Theory:
         s2 = self.stage2.verify()
         s3 = self.stage3.verify()
         s3b = self.stage3b.verify()
-        s4 = self.stage4.verify()
-        all_results = s1 + s2 + s3 + s3b + s4
+        # Stage 4 is quarantined. It is not check 4 of the core list.
+        all_results = s1 + s2 + s3 + s3b
         passed = all(r.passed for r in all_results)
 
-        # Refresh Stage 4 predictions via optimized path
-        pred_report = self.predict_observables()
+        pred_report = {"status": "QUARANTINED", "predictions": {}}
 
         s1_docs = self.stage1.collect_tables_and_proofs()
         s2_docs = self.stage2.collect_tables_and_proofs()
         s3_docs = self.stage3.collect_tables_and_proofs()
         s3b_docs = self.stage3b.collect_tables_and_proofs()
-        s4_docs = self.stage4.collect_tables_and_proofs()
+        s4_docs = {"quarantine": "Stage 4 is not a core check."}
 
         report = {
             "timestamp_utc": datetime.now(timezone.utc).isoformat(),
@@ -916,7 +916,7 @@ class AGC_Theory:
             "stage2": self.stage2.to_dict(),
             "stage3": self.stage3.to_dict(),
             "stage3b": self.stage3b.to_dict(),
-            "stage4": self.stage4.to_dict(),
+            "stage4": {"status": "QUARANTINED"},
             "phenomenology_refresh": pred_report.get("predictions", {}),
             "tables": {**{k: s1_docs[k] for k in ("minima_table", "sigma_table", "delta_table")}},
             "proofs": {
@@ -945,7 +945,7 @@ class AGC_Theory:
             f"timestamp_utc: {report.get('timestamp_utc', '')}",
             f"overall_status: {report.get('status', 'UNKNOWN')}",
             "",
-            "VERIFICATION (8 stages)",
+            "VERIFICATION (7 core checks; stage 4 quarantined)",
             "=" * 60,
         ]
         n_pass = 0
@@ -1629,7 +1629,7 @@ Sensitivity driver & {sens_f.get('dominant_residual_driver', 'N/A')} \\
 
         payload = {
             "framework": "AGC_Computational_Framework",
-            "version": "stage1+2+3+3B+4-higher-res",
+            "version": "stage1+2+3+3B-higher-res",
             "timestamp_utc": report["timestamp_utc"],
             "status": report["status"],
             "status_classification": _status_classification(),
@@ -1642,7 +1642,7 @@ Sensitivity driver & {sens_f.get('dominant_residual_driver', 'N/A')} \\
                 "absolute_scale_status": "closed_by_observational_conversion_posture",
                 "empirical_anchors_required": 1,
                 "continuous_knobs": 0,
-                "core_verification": "8/8 PASS",
+                "core_verification": "7/7 PASS; stage 4 quarantined",
             },
             "residual_beta_protection": resid_prot or {
                 "verdict": "both_fail",
@@ -1651,7 +1651,7 @@ Sensitivity driver & {sens_f.get('dominant_residual_driver', 'N/A')} \\
                 "locked_r_unchanged": True,
                 "locked_r": 0.095716,
                 "continuous_knobs": 0,
-                "core_verification": "8/8 PASS",
+                "core_verification": "7/7 PASS; stage 4 quarantined",
             },
             "controlled_class_uniqueness": ctrl_uniq or {
                 "verdict": "controlled_class_skeleton_unique",
@@ -1659,7 +1659,7 @@ Sensitivity driver & {sens_f.get('dominant_residual_driver', 'N/A')} \\
                 "n_gen_selects_T11": False,
                 "global_landscape_uniqueness": False,
                 "continuous_knobs": 0,
-                "core_verification": "8/8 PASS",
+                "core_verification": "7/7 PASS; stage 4 quarantined",
             },
             "anomaly_beyond_index": anom_beyond or {
                 "verdict": "partial_theorem_plus_negative_beyond_index",
@@ -1667,7 +1667,7 @@ Sensitivity driver & {sens_f.get('dominant_residual_driver', 'N/A')} \\
                 "all_anomalies_cancelled": False,
                 "inflow_residual_exact": "26/9",
                 "continuous_knobs": 0,
-                "core_verification": "8/8 PASS",
+                "core_verification": "7/7 PASS; stage 4 quarantined",
             },
             "controlled_hd_sector": ctrl_hd or {
                 "verdict": "negative_no_unique_forced_hd_term",
@@ -1675,7 +1675,7 @@ Sensitivity driver & {sens_f.get('dominant_residual_driver', 'N/A')} \\
                 "angle_shift_applied": False,
                 "open_wilson_tower": True,
                 "continuous_knobs": 0,
-                "core_verification": "8/8 PASS",
+                "core_verification": "7/7 PASS; stage 4 quarantined",
             },
             "wall_tension_invariant": wall_inv or {
                 "verdict": "partial_discrete_spectral_invariant",
@@ -1683,7 +1683,7 @@ Sensitivity driver & {sens_f.get('dominant_residual_driver', 'N/A')} \\
                 "topological_index": False,
                 "independent_of_residual_r": True,
                 "continuous_knobs": 0,
-                "core_verification": "8/8 PASS",
+                "core_verification": "7/7 PASS; stage 4 quarantined",
             },
             "flavor_monodromy_completion": flav_mono or {
                 "verdict": "partial_a4_nlo_no_further_completion",
@@ -1691,7 +1691,7 @@ Sensitivity driver & {sens_f.get('dominant_residual_driver', 'N/A')} \\
                 "official_angles_unchanged": True,
                 "a4_preferred_not_unique": True,
                 "continuous_knobs": 0,
-                "core_verification": "8/8 PASS",
+                "core_verification": "7/7 PASS; stage 4 quarantined",
             },
             "final_locked_state": {
                 "n_gen_native": 3,
@@ -1702,7 +1702,7 @@ Sensitivity driver & {sens_f.get('dominant_residual_driver', 'N/A')} \\
                 "omega_lambda": 0.679528,
                 "w0_dark_energy": -0.987585,
                 "continuous_knobs": 0,
-                "verification": "8/8 PASS",
+                "verification": "7/7 PASS; stage 4 quarantined",
                 "proven": [
                     "native_N_gen_3",
                     "sigma_star_shape_stabilized",
@@ -1910,7 +1910,7 @@ Sensitivity driver & {sens_f.get('dominant_residual_driver', 'N/A')} \\
         beta_new = lr.get("beta_residual_new", 0.095716)
         mu = pred.get("mu_gammagamma", 1.086571)
         om = pred.get("omega_lambda", 0.679528)
-        ver = core.get("version", "stage1+2+3+3B+4-higher-res")
+        ver = core.get("version", "stage1+2+3+3B-higher-res")
         content = f"""# AGC Computational Framework
 
 Unified package for Stages 1–3B + Stage 4 phenomenology (higher-res β baseline).
@@ -1929,7 +1929,7 @@ Catalog work remains stopped. See `EXPANSION_SYNTHESIS.md`.
 ## Quick start
 
 ```bash
-# Full verification (8/8). Package zip is optional and skipped if missing.
+# Full verification (7 core checks). Stage 4 is quarantined. Package zip is optional.
 python AGC_Computational_Framework.py --full
 ```
 
@@ -1954,15 +1954,15 @@ print(report["status"])  # PASS
 | 2B | `stage2b_beta_variational.py` | β_ij equilibrium |
 | 3 | `stage3_master_variational.py` | S_master closure, 0 knobs |
 | 3B | `stage3_sensitivity.py` | robustness scan (147 points) |
-| 4 | `stage4_phenomenology.py` | μ_γγ, Ω_Λ, τ_p, neutrinos |
-| **Package** | `AGC_Computational_Framework.py` | All stages + export |
+| 4 | `stage4_phenomenology.py` | quarantined; not a core check |
+| **Package** | `AGC_Computational_Framework.py` | Core checks 1A–3B |
 
 ## Locked results (FINAL STATE)
 
 | Quantity | Value |
 |----------|-------|
 | Native APS \(N_{{\mathrm{{gen}}}}\) | **3** (geometry-generated) |
-| Survivors / derived λ̃ | (½,0,0), (1,0,0), (3/2,0,0) / {{4.5, 12.0, 22.5}} |
+| Survivors / Casimir \(\tilde\lambda=6j(j+1)\) | (½,0,0), (1,0,0), (3/2,0,0) / {{9/2, 12, 45/2}} |
 | σ* | √3/2 ≈ 0.866025 (shape stabilized) |
 | n_η / Δη/π | (3, 8, 15) / {{1/4, 2/3, 5/4}} |
 | 8πG_eff | σ²/C₂(3) = 0.5625 |
@@ -1972,14 +1972,14 @@ print(report["status"])  # PASS
 | Ω_Λ | **{float(om):.6f}** |
 | w₀ | **≈ −0.9876** |
 | Continuous knobs | **0** |
-| Verification | **8/8 PASS** |
+| Verification | **7 core checks; stage 4 quarantined** |
 | Version | `{ver}` |
 
 ### Proven / partial / open
 
 | Class | Content |
 |-------|---------|
-| **Proven** | Native \(N_{{\mathrm{{gen}}}}=3\); σ* freeze; β residual; Stage-4 μ_γγ, Ω_Λ, w₀; final θ₁₃=7.953°; knobs=0; 8/8 PASS |
+| **Proven** | Native \(N_{{\mathrm{{gen}}}}=3\); σ* freeze; β residual; final θ₁₃=7.953°; knobs=0; 7 core checks. Stage 4 is quarantined |
 | **Partial** | Shape freeze complete; vacuum uniqueness within T^{{1,1}}+Σ⁵ APS sector; first-slice SE class: locked skeleton isolates T^{{1,1}}; \(T_{{\mathrm{{wall}}}}=13/2\) discrete spectral invariant; flavor monodromy complete inside A4+NLO |
 | **Resolved** | Absolute scale / Volume \(R\): closed by observational conversion posture (external measurement yardstick only; withdrawn after comparison) |
 | **Open** | Global vacuum uniqueness; unique HD Wilson tower (no *forced* HD term); heavy \(M_R\) (needs one empirical unit map); \(\\beta\) residual continuum \(r\\to 0\) (decimal not dynamically protected); full anomaly cancellation beyond the index |
@@ -1996,7 +1996,7 @@ print(report["status"])  # PASS
 - `closure_proof.json` — Stage 3 no-knob closure proof
 - `sensitivity_map.json` — robustness scan data
 - `predictions.json` — Stage 4 phenomenology vs paper targets
-- `verification_log.txt` — 8/8 log + β residual timing
+- `verification_log.txt` — 7-check log + β residual timing
 - `paper_appendix.tex` — tables, proofs, figures (Stages 1–4 + higher-res β)
 - `final_paper_draft.md` — draft matching locked numbers
 - Package zip is optional and skipped if the export scripts are not in this tree
@@ -2035,14 +2035,14 @@ B) Sensitivity / robustness analysis (parallel track)
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="AGC Computational Framework")
-    parser.add_argument("--full", action="store_true", help="Run full 8/8 verification (default path)")
+    parser.add_argument("--full", action="store_true", help="Run 7 core checks. Stage 4 is quarantined.")
     parser.add_argument("--regenerate", action="store_true", help="Re-run all solvers first")
     parser.add_argument("--verify-only", action="store_true", help="Skip README/appendix if verify fails")
     args = parser.parse_args()
 
     print("AGC Computational Framework — starting\n")
     if args.full:
-        print("Mode: --full (8/8 verification + higher-res β; package export optional)\n")
+        print("Mode: --full (7 core checks; stage 4 quarantined; package export optional)\n")
     agc = AGC_Theory()
 
     try:
@@ -2111,7 +2111,13 @@ def main() -> int:
     print(f"{'grid_n':<32} {'12 (legacy)':>16} {str(beta_new.get('grid_n', 24)):>16}")
     print(f"{'μ_γγ':<32} {'1.086571':>16} {float(mu if mu is not None else float('nan')):16.6f}")
     print(f"{'Ω_Λ':<32} {'0.679528':>16} {float(om if om is not None else float('nan')):16.6f}")
-    print(f"{'Verification':<32} {'PASS 8/8':>16} {report['status'] + ' 8/8':>16}")
+    n_checks = len(report.get("verification") or [])
+    n_pass = sum(1 for row in report.get("verification") or [] if row.get("passed"))
+    print(
+        f"{'Verification':<32} {f'{n_pass}/{n_checks}':>16} "
+        f"{report['status'] + f' {n_pass}/{n_checks}':>16}"
+    )
+    print(f"{'Stage 4':<32} {'quarantined':>16} {'not a core check':>16}")
     print(f"{'Elapsed (β solve, s)':<32} {'—':>16} {float(beta_new.get('elapsed_sec', 0)):16.3f}")
     print("=" * 72)
     print()

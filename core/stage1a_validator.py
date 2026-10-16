@@ -274,7 +274,7 @@ def uniqueness_proof(records: List[ModeRecord]) -> str:
     survivors = [r for r in records if r.status == "survivor"]
     lam_surv = sorted(r.lambda_tilde for r in survivors)
     lines = [
-        "UNIQUENESS PROOF — exactly three APS-neutral modes",
+        "UNIQUENESS PROOF — exactly three Casimir values on the wall-index line",
         "",
         "Lemma 1 (r=0 APS kernel).",
         "  The singular term 4/(3r²) is removed by the APS projection; only",
@@ -310,7 +310,7 @@ def assert_unique_three_modes(records: List[ModeRecord]) -> None:
     Survivors are those with APS-neutral self-dual geometry; λ̃ must then
     *derive* to {4.5,12,22.5} as a consequence, not as a selection input.
     """
-    from native_aps_index import compute_native_generation_index
+    from wall_index_sieve import compute_native_generation_index
 
     native = compute_native_generation_index()
     survivors = [r for r in records if r.status == "survivor"]
@@ -318,7 +318,7 @@ def assert_unique_three_modes(records: List[ModeRecord]) -> None:
         f"Survivor count {len(survivors)} ≠ native index N_gen={native.n_gen_native}"
     )
     assert native.n_gen_native == 3, (
-        f"Native APS index gave N_gen={native.n_gen_native}, not 3"
+        f"Wall-index sieve gave N_gen={native.n_gen_native}, not 3"
     )
     coords = {(r.j1, r.j2, r.r) for r in survivors}
     assert coords == set(SURVIVOR_MODES), f"Survivor coords mismatch: {coords}"

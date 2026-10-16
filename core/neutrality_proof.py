@@ -120,7 +120,7 @@ def neutrality_proof_text() -> str:
         "    λ(j₁,j₂,0) = 6[j₁(j₁+1)+j₂(j₂+1)].",
         "",
         "Proposition (neutrality conditions).",
-        "  A mode is APS-neutral at r=0 iff simultaneously:",
+        "  A lattice point is sieve-neutral at r=0 iff simultaneously:",
         "    (i)   r = 0,",
         "    (ii)  index(∂D_A) = 0,",
         "    (iii) ‖⋆Ψ − Ψ‖² = 0.",
@@ -128,7 +128,8 @@ def neutrality_proof_text() -> str:
         "  On j₂=0: (ii) requires j₁ ∈ {½, 1, 3/2}  [index = max(0,⌊4j₁−6⌋₊)].",
         "           (iii) automatic since j₂=0 ⟹ defect=0.",
         "",
-        "Corollary (exactly three modes).",
+        "Corollary (exactly three Casimir values).",
+        "  Each λ̃ below is 6 j(j+1). These are not field modes.",
     ]
     for m in modes:
         lines.append(
@@ -140,7 +141,7 @@ def neutrality_proof_text() -> str:
         f"  λ̃ values: {[m.lambda_tilde for m in modes]}",
         f"  Target set: {list(LAMBDA_TARGETS)}",
         "",
-        "Exclusion of higher modes.",
+        "Exclusion of higher lattice points.",
         "  j₁=2, j₂=0: index=2>0 → not neutral.",
         "  j₂≠0: either index>0 or ‖⋆Ψ−Ψ‖²>0 → not neutral.",
         "  j₁=0, j₂=0: λ̃=0 ∉ {4.5, 12.0, 22.5}.",
@@ -164,7 +165,7 @@ def assert_aps_neutrality() -> None:
     assert lambda_r0(0.5, 0.0) == 4.5
     assert lambda_full(0.5, 0.0, 1e-6) != lambda_r0(0.5, 0.0)
 
-    # higher modes fail neutrality
+    # higher lattice points fail neutrality
     assert not is_aps_neutral(2.0, 0.0, 0.0)
     assert not is_aps_neutral(0.5, 0.5, 0.0)
     assert not is_aps_neutral(0.0, 0.0, 0.0)

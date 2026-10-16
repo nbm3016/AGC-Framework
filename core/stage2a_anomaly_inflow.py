@@ -106,9 +106,10 @@ def self_dual_trace_mod6(n_gen: int, baseline: LockedBaseline) -> int:
 
 def native_n_gen() -> int:
     """
-    Primary N_gen: native APS zero-mode cohomology (no λ̃ / N_gen seeding).
+    Primary N_gen: wall-index sieve zero count (no λ̃ / N_gen seeding).
+    Not a Dirac index.
     """
-    from native_aps_index import compute_native_generation_index
+    from wall_index_sieve import compute_native_generation_index
 
     return compute_native_generation_index().n_gen_native
 
@@ -116,7 +117,7 @@ def native_n_gen() -> int:
 def evaluate_candidates(baseline: LockedBaseline, n_max: int = 6) -> List[NGenCandidate]:
     """
     Consistency table over integer N_gen. The unique consistent value must
-    equal the *native* APS index N_gen (primary), not a hand-set target.
+    equal the wall-index sieve count (primary), not a hand-set target.
     """
     n_gen_native = native_n_gen()
     results: List[NGenCandidate] = []
@@ -238,7 +239,7 @@ def save_ngen_artifact(baseline: LockedBaseline, candidates: List[NGenCandidate]
         "locked_baseline_checksum": baseline.checksum,
         "n_gen_unique": n_native,
         "n_gen_native_aps_index": n_native,
-        "n_gen_method": "native_aps_zero_mode_cohomology",
+        "n_gen_method": "wall_index_sieve",
         "seeded_n_gen": False,
         "seeded_lambda_targets": False,
         "geometry_generates_n_gen_3": n_native == 3,
@@ -256,7 +257,7 @@ def save_ngen_artifact(baseline: LockedBaseline, candidates: List[NGenCandidate]
 def main() -> None:
     print("Stage 2A anomaly inflow descent — starting\n")
 
-    from native_aps_index import compute_native_generation_index, native_index_table
+    from wall_index_sieve import compute_native_generation_index, native_index_table
 
     native = compute_native_generation_index()
     print(native_index_table(native))
@@ -265,7 +266,7 @@ def main() -> None:
     baseline = load_baseline()
     print(f"Loaded baseline: {baseline.checksum}")
     print(f"  survivors={baseline.survivor_count}, σ*={baseline.sigma_star:.6f}")
-    print(f"  native APS N_gen={native.n_gen_native}\n")
+    print(f"  wall-index sieve N_gen={native.n_gen_native}\n")
 
     candidates = evaluate_candidates(baseline)
     assert_ngen_unique_three(baseline, candidates)
