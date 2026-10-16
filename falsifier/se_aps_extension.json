@@ -1,0 +1,2014 @@
+{
+  "banner": "AGC Expansion Mode Active \u2014 SE-base APS index extension (first slice)",
+  "timestamp_utc": "2026-08-10T21:25:25.933068+00:00",
+  "sector": "SE_base_APS_index_extension",
+  "slice": "T_pq_p_q_le_5_gcd1__Y_pq_p_le_5",
+  "rules": {
+    "R1_APS_r0": true,
+    "R2_self_dual": "j2=0 (T) / n=0 (Y)",
+    "R3_lattice": "half-integer",
+    "R4_index_barrier": "max(0, floor((p+q)(2j-3)))",
+    "R5_exclude_vacuum": true,
+    "R6_N_gen_output_only": true,
+    "R7_no_lambda_filter": true,
+    "reduces_to_locked_T11": "p=q=1 \u2192 index=max(0,floor(4j-6))"
+  },
+  "dimensional_audit": [
+    {
+      "P_s": "N_gen(base)",
+      "[P_s]": 0,
+      "type": "discrete_integer",
+      "provenance": "APS zero-mode count"
+    },
+    {
+      "P_s": "(p,q)",
+      "[P_s]": 0,
+      "type": "discrete_topological_integers",
+      "provenance": "SE base labels"
+    }
+  ],
+  "attempts": [
+    {
+      "id": 1,
+      "chain": {
+        "scaffolding": "None",
+        "dimensional_audit": "N_gen pure integer; (p,q) discrete",
+        "discrete_anchor": "APS index + self-duality + half-integer lattice + (p,q)",
+        "path": "Enumerate T^{p,q} SE slice; N_gen = # zero modes"
+      },
+      "outcome": "Success",
+      "reason": "T family: 19 bases; control T11 n_gen=3"
+    },
+    {
+      "id": 2,
+      "chain": {
+        "scaffolding": "None",
+        "dimensional_audit": "same",
+        "discrete_anchor": "same rules on Y^{p,q} (j,n=0) sector",
+        "path": "Enumerate Y^{p,q} SE slice"
+      },
+      "outcome": "Success",
+      "reason": "Y family: 9 bases; n_gen values [3]"
+    },
+    {
+      "id": 3,
+      "chain": {
+        "scaffolding": "None",
+        "dimensional_audit": "catalog is discrete map base\u2192N_gen",
+        "discrete_anchor": "index formula reduction check + full table",
+        "path": "Lock first-slice catalog under Expansion Mode checksum"
+      },
+      "outcome": "Success",
+      "reason": "First-slice SE-base APS extension locked as a discrete catalog: N_gen is the native APS-neutral self-dual zero-mode count under the same structural rules as T^{1,1}, with index barrier index=max(0,\u230a(p+q)(2j\u22123)\u230b) reducing exactly to the locked 4j\u2081\u22126 formula at (p,q)=(1,1). No continuous parameters introduced."
+    }
+  ],
+  "T_pq_results": [
+    {
+      "base": "T^{1,1}",
+      "family": "T_pq",
+      "p": 1,
+      "q": 1,
+      "gcd": 1,
+      "se_slice": true,
+      "topological_weight_p_plus_q": 2,
+      "n_gen": 3,
+      "survivors": [
+        {
+          "j1": 0.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 4.5,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.0,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 12.0,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 22.5,
+          "status": "survivor"
+        }
+      ],
+      "excluded_self_dual_sample": [
+        {
+          "j1": 0.0,
+          "j2": 0.0,
+          "index": 0,
+          "reason": "trivial_vacuum"
+        },
+        {
+          "j1": 2.0,
+          "j2": 0.0,
+          "index": 2,
+          "lambda_tilde_derived": 36.0,
+          "reason": "index=2>0"
+        },
+        {
+          "j1": 2.5,
+          "j2": 0.0,
+          "index": 4,
+          "lambda_tilde_derived": 52.5,
+          "reason": "index=4>0"
+        },
+        {
+          "j1": 3.0,
+          "j2": 0.0,
+          "index": 6,
+          "lambda_tilde_derived": 72.0,
+          "reason": "index=6>0"
+        }
+      ],
+      "continuous_knobs": 0,
+      "seeded_n_gen": false,
+      "seeded_lambda": false
+    },
+    {
+      "base": "T^{1,2}",
+      "family": "T_pq",
+      "p": 1,
+      "q": 2,
+      "gcd": 1,
+      "se_slice": true,
+      "topological_weight_p_plus_q": 3,
+      "n_gen": 3,
+      "survivors": [
+        {
+          "j1": 0.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 6.75,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.0,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 18.0,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 33.75,
+          "status": "survivor"
+        }
+      ],
+      "excluded_self_dual_sample": [
+        {
+          "j1": 0.0,
+          "j2": 0.0,
+          "index": 0,
+          "reason": "trivial_vacuum"
+        },
+        {
+          "j1": 2.0,
+          "j2": 0.0,
+          "index": 3,
+          "lambda_tilde_derived": 54.0,
+          "reason": "index=3>0"
+        },
+        {
+          "j1": 2.5,
+          "j2": 0.0,
+          "index": 6,
+          "lambda_tilde_derived": 78.75,
+          "reason": "index=6>0"
+        },
+        {
+          "j1": 3.0,
+          "j2": 0.0,
+          "index": 9,
+          "lambda_tilde_derived": 108.0,
+          "reason": "index=9>0"
+        }
+      ],
+      "continuous_knobs": 0,
+      "seeded_n_gen": false,
+      "seeded_lambda": false
+    },
+    {
+      "base": "T^{1,3}",
+      "family": "T_pq",
+      "p": 1,
+      "q": 3,
+      "gcd": 1,
+      "se_slice": true,
+      "topological_weight_p_plus_q": 4,
+      "n_gen": 3,
+      "survivors": [
+        {
+          "j1": 0.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 9.0,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.0,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 24.0,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 45.0,
+          "status": "survivor"
+        }
+      ],
+      "excluded_self_dual_sample": [
+        {
+          "j1": 0.0,
+          "j2": 0.0,
+          "index": 0,
+          "reason": "trivial_vacuum"
+        },
+        {
+          "j1": 2.0,
+          "j2": 0.0,
+          "index": 4,
+          "lambda_tilde_derived": 72.0,
+          "reason": "index=4>0"
+        },
+        {
+          "j1": 2.5,
+          "j2": 0.0,
+          "index": 8,
+          "lambda_tilde_derived": 105.0,
+          "reason": "index=8>0"
+        },
+        {
+          "j1": 3.0,
+          "j2": 0.0,
+          "index": 12,
+          "lambda_tilde_derived": 144.0,
+          "reason": "index=12>0"
+        }
+      ],
+      "continuous_knobs": 0,
+      "seeded_n_gen": false,
+      "seeded_lambda": false
+    },
+    {
+      "base": "T^{1,4}",
+      "family": "T_pq",
+      "p": 1,
+      "q": 4,
+      "gcd": 1,
+      "se_slice": true,
+      "topological_weight_p_plus_q": 5,
+      "n_gen": 3,
+      "survivors": [
+        {
+          "j1": 0.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 11.25,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.0,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 30.0,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 56.25,
+          "status": "survivor"
+        }
+      ],
+      "excluded_self_dual_sample": [
+        {
+          "j1": 0.0,
+          "j2": 0.0,
+          "index": 0,
+          "reason": "trivial_vacuum"
+        },
+        {
+          "j1": 2.0,
+          "j2": 0.0,
+          "index": 5,
+          "lambda_tilde_derived": 90.0,
+          "reason": "index=5>0"
+        },
+        {
+          "j1": 2.5,
+          "j2": 0.0,
+          "index": 10,
+          "lambda_tilde_derived": 131.25,
+          "reason": "index=10>0"
+        },
+        {
+          "j1": 3.0,
+          "j2": 0.0,
+          "index": 15,
+          "lambda_tilde_derived": 180.0,
+          "reason": "index=15>0"
+        }
+      ],
+      "continuous_knobs": 0,
+      "seeded_n_gen": false,
+      "seeded_lambda": false
+    },
+    {
+      "base": "T^{1,5}",
+      "family": "T_pq",
+      "p": 1,
+      "q": 5,
+      "gcd": 1,
+      "se_slice": true,
+      "topological_weight_p_plus_q": 6,
+      "n_gen": 3,
+      "survivors": [
+        {
+          "j1": 0.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 13.5,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.0,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 36.0,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 67.5,
+          "status": "survivor"
+        }
+      ],
+      "excluded_self_dual_sample": [
+        {
+          "j1": 0.0,
+          "j2": 0.0,
+          "index": 0,
+          "reason": "trivial_vacuum"
+        },
+        {
+          "j1": 2.0,
+          "j2": 0.0,
+          "index": 6,
+          "lambda_tilde_derived": 108.0,
+          "reason": "index=6>0"
+        },
+        {
+          "j1": 2.5,
+          "j2": 0.0,
+          "index": 12,
+          "lambda_tilde_derived": 157.5,
+          "reason": "index=12>0"
+        },
+        {
+          "j1": 3.0,
+          "j2": 0.0,
+          "index": 18,
+          "lambda_tilde_derived": 216.0,
+          "reason": "index=18>0"
+        }
+      ],
+      "continuous_knobs": 0,
+      "seeded_n_gen": false,
+      "seeded_lambda": false
+    },
+    {
+      "base": "T^{2,1}",
+      "family": "T_pq",
+      "p": 2,
+      "q": 1,
+      "gcd": 1,
+      "se_slice": true,
+      "topological_weight_p_plus_q": 3,
+      "n_gen": 3,
+      "survivors": [
+        {
+          "j1": 0.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 6.75,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.0,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 18.0,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 33.75,
+          "status": "survivor"
+        }
+      ],
+      "excluded_self_dual_sample": [
+        {
+          "j1": 0.0,
+          "j2": 0.0,
+          "index": 0,
+          "reason": "trivial_vacuum"
+        },
+        {
+          "j1": 2.0,
+          "j2": 0.0,
+          "index": 3,
+          "lambda_tilde_derived": 54.0,
+          "reason": "index=3>0"
+        },
+        {
+          "j1": 2.5,
+          "j2": 0.0,
+          "index": 6,
+          "lambda_tilde_derived": 78.75,
+          "reason": "index=6>0"
+        },
+        {
+          "j1": 3.0,
+          "j2": 0.0,
+          "index": 9,
+          "lambda_tilde_derived": 108.0,
+          "reason": "index=9>0"
+        }
+      ],
+      "continuous_knobs": 0,
+      "seeded_n_gen": false,
+      "seeded_lambda": false
+    },
+    {
+      "base": "T^{2,3}",
+      "family": "T_pq",
+      "p": 2,
+      "q": 3,
+      "gcd": 1,
+      "se_slice": true,
+      "topological_weight_p_plus_q": 5,
+      "n_gen": 3,
+      "survivors": [
+        {
+          "j1": 0.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 11.25,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.0,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 30.0,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 56.25,
+          "status": "survivor"
+        }
+      ],
+      "excluded_self_dual_sample": [
+        {
+          "j1": 0.0,
+          "j2": 0.0,
+          "index": 0,
+          "reason": "trivial_vacuum"
+        },
+        {
+          "j1": 2.0,
+          "j2": 0.0,
+          "index": 5,
+          "lambda_tilde_derived": 90.0,
+          "reason": "index=5>0"
+        },
+        {
+          "j1": 2.5,
+          "j2": 0.0,
+          "index": 10,
+          "lambda_tilde_derived": 131.25,
+          "reason": "index=10>0"
+        },
+        {
+          "j1": 3.0,
+          "j2": 0.0,
+          "index": 15,
+          "lambda_tilde_derived": 180.0,
+          "reason": "index=15>0"
+        }
+      ],
+      "continuous_knobs": 0,
+      "seeded_n_gen": false,
+      "seeded_lambda": false
+    },
+    {
+      "base": "T^{2,5}",
+      "family": "T_pq",
+      "p": 2,
+      "q": 5,
+      "gcd": 1,
+      "se_slice": true,
+      "topological_weight_p_plus_q": 7,
+      "n_gen": 3,
+      "survivors": [
+        {
+          "j1": 0.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 15.75,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.0,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 42.0,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 78.75,
+          "status": "survivor"
+        }
+      ],
+      "excluded_self_dual_sample": [
+        {
+          "j1": 0.0,
+          "j2": 0.0,
+          "index": 0,
+          "reason": "trivial_vacuum"
+        },
+        {
+          "j1": 2.0,
+          "j2": 0.0,
+          "index": 7,
+          "lambda_tilde_derived": 126.0,
+          "reason": "index=7>0"
+        },
+        {
+          "j1": 2.5,
+          "j2": 0.0,
+          "index": 14,
+          "lambda_tilde_derived": 183.75,
+          "reason": "index=14>0"
+        },
+        {
+          "j1": 3.0,
+          "j2": 0.0,
+          "index": 21,
+          "lambda_tilde_derived": 252.0,
+          "reason": "index=21>0"
+        }
+      ],
+      "continuous_knobs": 0,
+      "seeded_n_gen": false,
+      "seeded_lambda": false
+    },
+    {
+      "base": "T^{3,1}",
+      "family": "T_pq",
+      "p": 3,
+      "q": 1,
+      "gcd": 1,
+      "se_slice": true,
+      "topological_weight_p_plus_q": 4,
+      "n_gen": 3,
+      "survivors": [
+        {
+          "j1": 0.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 9.0,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.0,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 24.0,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 45.0,
+          "status": "survivor"
+        }
+      ],
+      "excluded_self_dual_sample": [
+        {
+          "j1": 0.0,
+          "j2": 0.0,
+          "index": 0,
+          "reason": "trivial_vacuum"
+        },
+        {
+          "j1": 2.0,
+          "j2": 0.0,
+          "index": 4,
+          "lambda_tilde_derived": 72.0,
+          "reason": "index=4>0"
+        },
+        {
+          "j1": 2.5,
+          "j2": 0.0,
+          "index": 8,
+          "lambda_tilde_derived": 105.0,
+          "reason": "index=8>0"
+        },
+        {
+          "j1": 3.0,
+          "j2": 0.0,
+          "index": 12,
+          "lambda_tilde_derived": 144.0,
+          "reason": "index=12>0"
+        }
+      ],
+      "continuous_knobs": 0,
+      "seeded_n_gen": false,
+      "seeded_lambda": false
+    },
+    {
+      "base": "T^{3,2}",
+      "family": "T_pq",
+      "p": 3,
+      "q": 2,
+      "gcd": 1,
+      "se_slice": true,
+      "topological_weight_p_plus_q": 5,
+      "n_gen": 3,
+      "survivors": [
+        {
+          "j1": 0.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 11.25,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.0,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 30.0,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 56.25,
+          "status": "survivor"
+        }
+      ],
+      "excluded_self_dual_sample": [
+        {
+          "j1": 0.0,
+          "j2": 0.0,
+          "index": 0,
+          "reason": "trivial_vacuum"
+        },
+        {
+          "j1": 2.0,
+          "j2": 0.0,
+          "index": 5,
+          "lambda_tilde_derived": 90.0,
+          "reason": "index=5>0"
+        },
+        {
+          "j1": 2.5,
+          "j2": 0.0,
+          "index": 10,
+          "lambda_tilde_derived": 131.25,
+          "reason": "index=10>0"
+        },
+        {
+          "j1": 3.0,
+          "j2": 0.0,
+          "index": 15,
+          "lambda_tilde_derived": 180.0,
+          "reason": "index=15>0"
+        }
+      ],
+      "continuous_knobs": 0,
+      "seeded_n_gen": false,
+      "seeded_lambda": false
+    },
+    {
+      "base": "T^{3,4}",
+      "family": "T_pq",
+      "p": 3,
+      "q": 4,
+      "gcd": 1,
+      "se_slice": true,
+      "topological_weight_p_plus_q": 7,
+      "n_gen": 3,
+      "survivors": [
+        {
+          "j1": 0.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 15.75,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.0,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 42.0,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 78.75,
+          "status": "survivor"
+        }
+      ],
+      "excluded_self_dual_sample": [
+        {
+          "j1": 0.0,
+          "j2": 0.0,
+          "index": 0,
+          "reason": "trivial_vacuum"
+        },
+        {
+          "j1": 2.0,
+          "j2": 0.0,
+          "index": 7,
+          "lambda_tilde_derived": 126.0,
+          "reason": "index=7>0"
+        },
+        {
+          "j1": 2.5,
+          "j2": 0.0,
+          "index": 14,
+          "lambda_tilde_derived": 183.75,
+          "reason": "index=14>0"
+        },
+        {
+          "j1": 3.0,
+          "j2": 0.0,
+          "index": 21,
+          "lambda_tilde_derived": 252.0,
+          "reason": "index=21>0"
+        }
+      ],
+      "continuous_knobs": 0,
+      "seeded_n_gen": false,
+      "seeded_lambda": false
+    },
+    {
+      "base": "T^{3,5}",
+      "family": "T_pq",
+      "p": 3,
+      "q": 5,
+      "gcd": 1,
+      "se_slice": true,
+      "topological_weight_p_plus_q": 8,
+      "n_gen": 3,
+      "survivors": [
+        {
+          "j1": 0.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 18.0,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.0,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 48.0,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 90.0,
+          "status": "survivor"
+        }
+      ],
+      "excluded_self_dual_sample": [
+        {
+          "j1": 0.0,
+          "j2": 0.0,
+          "index": 0,
+          "reason": "trivial_vacuum"
+        },
+        {
+          "j1": 2.0,
+          "j2": 0.0,
+          "index": 8,
+          "lambda_tilde_derived": 144.0,
+          "reason": "index=8>0"
+        },
+        {
+          "j1": 2.5,
+          "j2": 0.0,
+          "index": 16,
+          "lambda_tilde_derived": 210.0,
+          "reason": "index=16>0"
+        },
+        {
+          "j1": 3.0,
+          "j2": 0.0,
+          "index": 24,
+          "lambda_tilde_derived": 288.0,
+          "reason": "index=24>0"
+        }
+      ],
+      "continuous_knobs": 0,
+      "seeded_n_gen": false,
+      "seeded_lambda": false
+    },
+    {
+      "base": "T^{4,1}",
+      "family": "T_pq",
+      "p": 4,
+      "q": 1,
+      "gcd": 1,
+      "se_slice": true,
+      "topological_weight_p_plus_q": 5,
+      "n_gen": 3,
+      "survivors": [
+        {
+          "j1": 0.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 11.25,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.0,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 30.0,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 56.25,
+          "status": "survivor"
+        }
+      ],
+      "excluded_self_dual_sample": [
+        {
+          "j1": 0.0,
+          "j2": 0.0,
+          "index": 0,
+          "reason": "trivial_vacuum"
+        },
+        {
+          "j1": 2.0,
+          "j2": 0.0,
+          "index": 5,
+          "lambda_tilde_derived": 90.0,
+          "reason": "index=5>0"
+        },
+        {
+          "j1": 2.5,
+          "j2": 0.0,
+          "index": 10,
+          "lambda_tilde_derived": 131.25,
+          "reason": "index=10>0"
+        },
+        {
+          "j1": 3.0,
+          "j2": 0.0,
+          "index": 15,
+          "lambda_tilde_derived": 180.0,
+          "reason": "index=15>0"
+        }
+      ],
+      "continuous_knobs": 0,
+      "seeded_n_gen": false,
+      "seeded_lambda": false
+    },
+    {
+      "base": "T^{4,3}",
+      "family": "T_pq",
+      "p": 4,
+      "q": 3,
+      "gcd": 1,
+      "se_slice": true,
+      "topological_weight_p_plus_q": 7,
+      "n_gen": 3,
+      "survivors": [
+        {
+          "j1": 0.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 15.75,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.0,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 42.0,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 78.75,
+          "status": "survivor"
+        }
+      ],
+      "excluded_self_dual_sample": [
+        {
+          "j1": 0.0,
+          "j2": 0.0,
+          "index": 0,
+          "reason": "trivial_vacuum"
+        },
+        {
+          "j1": 2.0,
+          "j2": 0.0,
+          "index": 7,
+          "lambda_tilde_derived": 126.0,
+          "reason": "index=7>0"
+        },
+        {
+          "j1": 2.5,
+          "j2": 0.0,
+          "index": 14,
+          "lambda_tilde_derived": 183.75,
+          "reason": "index=14>0"
+        },
+        {
+          "j1": 3.0,
+          "j2": 0.0,
+          "index": 21,
+          "lambda_tilde_derived": 252.0,
+          "reason": "index=21>0"
+        }
+      ],
+      "continuous_knobs": 0,
+      "seeded_n_gen": false,
+      "seeded_lambda": false
+    },
+    {
+      "base": "T^{4,5}",
+      "family": "T_pq",
+      "p": 4,
+      "q": 5,
+      "gcd": 1,
+      "se_slice": true,
+      "topological_weight_p_plus_q": 9,
+      "n_gen": 3,
+      "survivors": [
+        {
+          "j1": 0.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 20.25,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.0,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 54.0,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 101.25,
+          "status": "survivor"
+        }
+      ],
+      "excluded_self_dual_sample": [
+        {
+          "j1": 0.0,
+          "j2": 0.0,
+          "index": 0,
+          "reason": "trivial_vacuum"
+        },
+        {
+          "j1": 2.0,
+          "j2": 0.0,
+          "index": 9,
+          "lambda_tilde_derived": 162.0,
+          "reason": "index=9>0"
+        },
+        {
+          "j1": 2.5,
+          "j2": 0.0,
+          "index": 18,
+          "lambda_tilde_derived": 236.25,
+          "reason": "index=18>0"
+        },
+        {
+          "j1": 3.0,
+          "j2": 0.0,
+          "index": 27,
+          "lambda_tilde_derived": 324.0,
+          "reason": "index=27>0"
+        }
+      ],
+      "continuous_knobs": 0,
+      "seeded_n_gen": false,
+      "seeded_lambda": false
+    },
+    {
+      "base": "T^{5,1}",
+      "family": "T_pq",
+      "p": 5,
+      "q": 1,
+      "gcd": 1,
+      "se_slice": true,
+      "topological_weight_p_plus_q": 6,
+      "n_gen": 3,
+      "survivors": [
+        {
+          "j1": 0.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 13.5,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.0,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 36.0,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 67.5,
+          "status": "survivor"
+        }
+      ],
+      "excluded_self_dual_sample": [
+        {
+          "j1": 0.0,
+          "j2": 0.0,
+          "index": 0,
+          "reason": "trivial_vacuum"
+        },
+        {
+          "j1": 2.0,
+          "j2": 0.0,
+          "index": 6,
+          "lambda_tilde_derived": 108.0,
+          "reason": "index=6>0"
+        },
+        {
+          "j1": 2.5,
+          "j2": 0.0,
+          "index": 12,
+          "lambda_tilde_derived": 157.5,
+          "reason": "index=12>0"
+        },
+        {
+          "j1": 3.0,
+          "j2": 0.0,
+          "index": 18,
+          "lambda_tilde_derived": 216.0,
+          "reason": "index=18>0"
+        }
+      ],
+      "continuous_knobs": 0,
+      "seeded_n_gen": false,
+      "seeded_lambda": false
+    },
+    {
+      "base": "T^{5,2}",
+      "family": "T_pq",
+      "p": 5,
+      "q": 2,
+      "gcd": 1,
+      "se_slice": true,
+      "topological_weight_p_plus_q": 7,
+      "n_gen": 3,
+      "survivors": [
+        {
+          "j1": 0.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 15.75,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.0,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 42.0,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 78.75,
+          "status": "survivor"
+        }
+      ],
+      "excluded_self_dual_sample": [
+        {
+          "j1": 0.0,
+          "j2": 0.0,
+          "index": 0,
+          "reason": "trivial_vacuum"
+        },
+        {
+          "j1": 2.0,
+          "j2": 0.0,
+          "index": 7,
+          "lambda_tilde_derived": 126.0,
+          "reason": "index=7>0"
+        },
+        {
+          "j1": 2.5,
+          "j2": 0.0,
+          "index": 14,
+          "lambda_tilde_derived": 183.75,
+          "reason": "index=14>0"
+        },
+        {
+          "j1": 3.0,
+          "j2": 0.0,
+          "index": 21,
+          "lambda_tilde_derived": 252.0,
+          "reason": "index=21>0"
+        }
+      ],
+      "continuous_knobs": 0,
+      "seeded_n_gen": false,
+      "seeded_lambda": false
+    },
+    {
+      "base": "T^{5,3}",
+      "family": "T_pq",
+      "p": 5,
+      "q": 3,
+      "gcd": 1,
+      "se_slice": true,
+      "topological_weight_p_plus_q": 8,
+      "n_gen": 3,
+      "survivors": [
+        {
+          "j1": 0.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 18.0,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.0,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 48.0,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 90.0,
+          "status": "survivor"
+        }
+      ],
+      "excluded_self_dual_sample": [
+        {
+          "j1": 0.0,
+          "j2": 0.0,
+          "index": 0,
+          "reason": "trivial_vacuum"
+        },
+        {
+          "j1": 2.0,
+          "j2": 0.0,
+          "index": 8,
+          "lambda_tilde_derived": 144.0,
+          "reason": "index=8>0"
+        },
+        {
+          "j1": 2.5,
+          "j2": 0.0,
+          "index": 16,
+          "lambda_tilde_derived": 210.0,
+          "reason": "index=16>0"
+        },
+        {
+          "j1": 3.0,
+          "j2": 0.0,
+          "index": 24,
+          "lambda_tilde_derived": 288.0,
+          "reason": "index=24>0"
+        }
+      ],
+      "continuous_knobs": 0,
+      "seeded_n_gen": false,
+      "seeded_lambda": false
+    },
+    {
+      "base": "T^{5,4}",
+      "family": "T_pq",
+      "p": 5,
+      "q": 4,
+      "gcd": 1,
+      "se_slice": true,
+      "topological_weight_p_plus_q": 9,
+      "n_gen": 3,
+      "survivors": [
+        {
+          "j1": 0.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 20.25,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.0,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 54.0,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 101.25,
+          "status": "survivor"
+        }
+      ],
+      "excluded_self_dual_sample": [
+        {
+          "j1": 0.0,
+          "j2": 0.0,
+          "index": 0,
+          "reason": "trivial_vacuum"
+        },
+        {
+          "j1": 2.0,
+          "j2": 0.0,
+          "index": 9,
+          "lambda_tilde_derived": 162.0,
+          "reason": "index=9>0"
+        },
+        {
+          "j1": 2.5,
+          "j2": 0.0,
+          "index": 18,
+          "lambda_tilde_derived": 236.25,
+          "reason": "index=18>0"
+        },
+        {
+          "j1": 3.0,
+          "j2": 0.0,
+          "index": 27,
+          "lambda_tilde_derived": 324.0,
+          "reason": "index=27>0"
+        }
+      ],
+      "continuous_knobs": 0,
+      "seeded_n_gen": false,
+      "seeded_lambda": false
+    }
+  ],
+  "Y_pq_results": [
+    {
+      "base": "Y^{2,1}",
+      "family": "Y_pq",
+      "p": 2,
+      "q": 1,
+      "gcd": 1,
+      "se_slice": true,
+      "topological_weight_p_plus_q": 3,
+      "n_gen": 3,
+      "survivors": [
+        {
+          "j": 0.5,
+          "n": 0,
+          "index": 0,
+          "lambda_tilde_derived": 6.75,
+          "status": "survivor"
+        },
+        {
+          "j": 1.0,
+          "n": 0,
+          "index": 0,
+          "lambda_tilde_derived": 18.0,
+          "status": "survivor"
+        },
+        {
+          "j": 1.5,
+          "n": 0,
+          "index": 0,
+          "lambda_tilde_derived": 33.75,
+          "status": "survivor"
+        }
+      ],
+      "excluded_self_dual_sample": [
+        {
+          "j": 0.0,
+          "n": 0,
+          "index": 0,
+          "reason": "trivial_vacuum"
+        },
+        {
+          "j": 2.0,
+          "n": 0,
+          "index": 3,
+          "lambda_tilde_derived": 54.0,
+          "reason": "index=3>0"
+        },
+        {
+          "j": 2.5,
+          "n": 0,
+          "index": 6,
+          "lambda_tilde_derived": 78.75,
+          "reason": "index=6>0"
+        },
+        {
+          "j": 3.0,
+          "n": 0,
+          "index": 9,
+          "lambda_tilde_derived": 108.0,
+          "reason": "index=9>0"
+        }
+      ],
+      "continuous_knobs": 0,
+      "seeded_n_gen": false,
+      "seeded_lambda": false
+    },
+    {
+      "base": "Y^{3,1}",
+      "family": "Y_pq",
+      "p": 3,
+      "q": 1,
+      "gcd": 1,
+      "se_slice": true,
+      "topological_weight_p_plus_q": 4,
+      "n_gen": 3,
+      "survivors": [
+        {
+          "j": 0.5,
+          "n": 0,
+          "index": 0,
+          "lambda_tilde_derived": 9.0,
+          "status": "survivor"
+        },
+        {
+          "j": 1.0,
+          "n": 0,
+          "index": 0,
+          "lambda_tilde_derived": 24.0,
+          "status": "survivor"
+        },
+        {
+          "j": 1.5,
+          "n": 0,
+          "index": 0,
+          "lambda_tilde_derived": 45.0,
+          "status": "survivor"
+        }
+      ],
+      "excluded_self_dual_sample": [
+        {
+          "j": 0.0,
+          "n": 0,
+          "index": 0,
+          "reason": "trivial_vacuum"
+        },
+        {
+          "j": 2.0,
+          "n": 0,
+          "index": 4,
+          "lambda_tilde_derived": 72.0,
+          "reason": "index=4>0"
+        },
+        {
+          "j": 2.5,
+          "n": 0,
+          "index": 8,
+          "lambda_tilde_derived": 105.0,
+          "reason": "index=8>0"
+        },
+        {
+          "j": 3.0,
+          "n": 0,
+          "index": 12,
+          "lambda_tilde_derived": 144.0,
+          "reason": "index=12>0"
+        }
+      ],
+      "continuous_knobs": 0,
+      "seeded_n_gen": false,
+      "seeded_lambda": false
+    },
+    {
+      "base": "Y^{3,2}",
+      "family": "Y_pq",
+      "p": 3,
+      "q": 2,
+      "gcd": 1,
+      "se_slice": true,
+      "topological_weight_p_plus_q": 5,
+      "n_gen": 3,
+      "survivors": [
+        {
+          "j": 0.5,
+          "n": 0,
+          "index": 0,
+          "lambda_tilde_derived": 11.25,
+          "status": "survivor"
+        },
+        {
+          "j": 1.0,
+          "n": 0,
+          "index": 0,
+          "lambda_tilde_derived": 30.0,
+          "status": "survivor"
+        },
+        {
+          "j": 1.5,
+          "n": 0,
+          "index": 0,
+          "lambda_tilde_derived": 56.25,
+          "status": "survivor"
+        }
+      ],
+      "excluded_self_dual_sample": [
+        {
+          "j": 0.0,
+          "n": 0,
+          "index": 0,
+          "reason": "trivial_vacuum"
+        },
+        {
+          "j": 2.0,
+          "n": 0,
+          "index": 5,
+          "lambda_tilde_derived": 90.0,
+          "reason": "index=5>0"
+        },
+        {
+          "j": 2.5,
+          "n": 0,
+          "index": 10,
+          "lambda_tilde_derived": 131.25,
+          "reason": "index=10>0"
+        },
+        {
+          "j": 3.0,
+          "n": 0,
+          "index": 15,
+          "lambda_tilde_derived": 180.0,
+          "reason": "index=15>0"
+        }
+      ],
+      "continuous_knobs": 0,
+      "seeded_n_gen": false,
+      "seeded_lambda": false
+    },
+    {
+      "base": "Y^{4,1}",
+      "family": "Y_pq",
+      "p": 4,
+      "q": 1,
+      "gcd": 1,
+      "se_slice": true,
+      "topological_weight_p_plus_q": 5,
+      "n_gen": 3,
+      "survivors": [
+        {
+          "j": 0.5,
+          "n": 0,
+          "index": 0,
+          "lambda_tilde_derived": 11.25,
+          "status": "survivor"
+        },
+        {
+          "j": 1.0,
+          "n": 0,
+          "index": 0,
+          "lambda_tilde_derived": 30.0,
+          "status": "survivor"
+        },
+        {
+          "j": 1.5,
+          "n": 0,
+          "index": 0,
+          "lambda_tilde_derived": 56.25,
+          "status": "survivor"
+        }
+      ],
+      "excluded_self_dual_sample": [
+        {
+          "j": 0.0,
+          "n": 0,
+          "index": 0,
+          "reason": "trivial_vacuum"
+        },
+        {
+          "j": 2.0,
+          "n": 0,
+          "index": 5,
+          "lambda_tilde_derived": 90.0,
+          "reason": "index=5>0"
+        },
+        {
+          "j": 2.5,
+          "n": 0,
+          "index": 10,
+          "lambda_tilde_derived": 131.25,
+          "reason": "index=10>0"
+        },
+        {
+          "j": 3.0,
+          "n": 0,
+          "index": 15,
+          "lambda_tilde_derived": 180.0,
+          "reason": "index=15>0"
+        }
+      ],
+      "continuous_knobs": 0,
+      "seeded_n_gen": false,
+      "seeded_lambda": false
+    },
+    {
+      "base": "Y^{4,3}",
+      "family": "Y_pq",
+      "p": 4,
+      "q": 3,
+      "gcd": 1,
+      "se_slice": true,
+      "topological_weight_p_plus_q": 7,
+      "n_gen": 3,
+      "survivors": [
+        {
+          "j": 0.5,
+          "n": 0,
+          "index": 0,
+          "lambda_tilde_derived": 15.75,
+          "status": "survivor"
+        },
+        {
+          "j": 1.0,
+          "n": 0,
+          "index": 0,
+          "lambda_tilde_derived": 42.0,
+          "status": "survivor"
+        },
+        {
+          "j": 1.5,
+          "n": 0,
+          "index": 0,
+          "lambda_tilde_derived": 78.75,
+          "status": "survivor"
+        }
+      ],
+      "excluded_self_dual_sample": [
+        {
+          "j": 0.0,
+          "n": 0,
+          "index": 0,
+          "reason": "trivial_vacuum"
+        },
+        {
+          "j": 2.0,
+          "n": 0,
+          "index": 7,
+          "lambda_tilde_derived": 126.0,
+          "reason": "index=7>0"
+        },
+        {
+          "j": 2.5,
+          "n": 0,
+          "index": 14,
+          "lambda_tilde_derived": 183.75,
+          "reason": "index=14>0"
+        },
+        {
+          "j": 3.0,
+          "n": 0,
+          "index": 21,
+          "lambda_tilde_derived": 252.0,
+          "reason": "index=21>0"
+        }
+      ],
+      "continuous_knobs": 0,
+      "seeded_n_gen": false,
+      "seeded_lambda": false
+    },
+    {
+      "base": "Y^{5,1}",
+      "family": "Y_pq",
+      "p": 5,
+      "q": 1,
+      "gcd": 1,
+      "se_slice": true,
+      "topological_weight_p_plus_q": 6,
+      "n_gen": 3,
+      "survivors": [
+        {
+          "j": 0.5,
+          "n": 0,
+          "index": 0,
+          "lambda_tilde_derived": 13.5,
+          "status": "survivor"
+        },
+        {
+          "j": 1.0,
+          "n": 0,
+          "index": 0,
+          "lambda_tilde_derived": 36.0,
+          "status": "survivor"
+        },
+        {
+          "j": 1.5,
+          "n": 0,
+          "index": 0,
+          "lambda_tilde_derived": 67.5,
+          "status": "survivor"
+        }
+      ],
+      "excluded_self_dual_sample": [
+        {
+          "j": 0.0,
+          "n": 0,
+          "index": 0,
+          "reason": "trivial_vacuum"
+        },
+        {
+          "j": 2.0,
+          "n": 0,
+          "index": 6,
+          "lambda_tilde_derived": 108.0,
+          "reason": "index=6>0"
+        },
+        {
+          "j": 2.5,
+          "n": 0,
+          "index": 12,
+          "lambda_tilde_derived": 157.5,
+          "reason": "index=12>0"
+        },
+        {
+          "j": 3.0,
+          "n": 0,
+          "index": 18,
+          "lambda_tilde_derived": 216.0,
+          "reason": "index=18>0"
+        }
+      ],
+      "continuous_knobs": 0,
+      "seeded_n_gen": false,
+      "seeded_lambda": false
+    },
+    {
+      "base": "Y^{5,2}",
+      "family": "Y_pq",
+      "p": 5,
+      "q": 2,
+      "gcd": 1,
+      "se_slice": true,
+      "topological_weight_p_plus_q": 7,
+      "n_gen": 3,
+      "survivors": [
+        {
+          "j": 0.5,
+          "n": 0,
+          "index": 0,
+          "lambda_tilde_derived": 15.75,
+          "status": "survivor"
+        },
+        {
+          "j": 1.0,
+          "n": 0,
+          "index": 0,
+          "lambda_tilde_derived": 42.0,
+          "status": "survivor"
+        },
+        {
+          "j": 1.5,
+          "n": 0,
+          "index": 0,
+          "lambda_tilde_derived": 78.75,
+          "status": "survivor"
+        }
+      ],
+      "excluded_self_dual_sample": [
+        {
+          "j": 0.0,
+          "n": 0,
+          "index": 0,
+          "reason": "trivial_vacuum"
+        },
+        {
+          "j": 2.0,
+          "n": 0,
+          "index": 7,
+          "lambda_tilde_derived": 126.0,
+          "reason": "index=7>0"
+        },
+        {
+          "j": 2.5,
+          "n": 0,
+          "index": 14,
+          "lambda_tilde_derived": 183.75,
+          "reason": "index=14>0"
+        },
+        {
+          "j": 3.0,
+          "n": 0,
+          "index": 21,
+          "lambda_tilde_derived": 252.0,
+          "reason": "index=21>0"
+        }
+      ],
+      "continuous_knobs": 0,
+      "seeded_n_gen": false,
+      "seeded_lambda": false
+    },
+    {
+      "base": "Y^{5,3}",
+      "family": "Y_pq",
+      "p": 5,
+      "q": 3,
+      "gcd": 1,
+      "se_slice": true,
+      "topological_weight_p_plus_q": 8,
+      "n_gen": 3,
+      "survivors": [
+        {
+          "j": 0.5,
+          "n": 0,
+          "index": 0,
+          "lambda_tilde_derived": 18.0,
+          "status": "survivor"
+        },
+        {
+          "j": 1.0,
+          "n": 0,
+          "index": 0,
+          "lambda_tilde_derived": 48.0,
+          "status": "survivor"
+        },
+        {
+          "j": 1.5,
+          "n": 0,
+          "index": 0,
+          "lambda_tilde_derived": 90.0,
+          "status": "survivor"
+        }
+      ],
+      "excluded_self_dual_sample": [
+        {
+          "j": 0.0,
+          "n": 0,
+          "index": 0,
+          "reason": "trivial_vacuum"
+        },
+        {
+          "j": 2.0,
+          "n": 0,
+          "index": 8,
+          "lambda_tilde_derived": 144.0,
+          "reason": "index=8>0"
+        },
+        {
+          "j": 2.5,
+          "n": 0,
+          "index": 16,
+          "lambda_tilde_derived": 210.0,
+          "reason": "index=16>0"
+        },
+        {
+          "j": 3.0,
+          "n": 0,
+          "index": 24,
+          "lambda_tilde_derived": 288.0,
+          "reason": "index=24>0"
+        }
+      ],
+      "continuous_knobs": 0,
+      "seeded_n_gen": false,
+      "seeded_lambda": false
+    },
+    {
+      "base": "Y^{5,4}",
+      "family": "Y_pq",
+      "p": 5,
+      "q": 4,
+      "gcd": 1,
+      "se_slice": true,
+      "topological_weight_p_plus_q": 9,
+      "n_gen": 3,
+      "survivors": [
+        {
+          "j": 0.5,
+          "n": 0,
+          "index": 0,
+          "lambda_tilde_derived": 20.25,
+          "status": "survivor"
+        },
+        {
+          "j": 1.0,
+          "n": 0,
+          "index": 0,
+          "lambda_tilde_derived": 54.0,
+          "status": "survivor"
+        },
+        {
+          "j": 1.5,
+          "n": 0,
+          "index": 0,
+          "lambda_tilde_derived": 101.25,
+          "status": "survivor"
+        }
+      ],
+      "excluded_self_dual_sample": [
+        {
+          "j": 0.0,
+          "n": 0,
+          "index": 0,
+          "reason": "trivial_vacuum"
+        },
+        {
+          "j": 2.0,
+          "n": 0,
+          "index": 9,
+          "lambda_tilde_derived": 162.0,
+          "reason": "index=9>0"
+        },
+        {
+          "j": 2.5,
+          "n": 0,
+          "index": 18,
+          "lambda_tilde_derived": 236.25,
+          "reason": "index=18>0"
+        },
+        {
+          "j": 3.0,
+          "n": 0,
+          "index": 27,
+          "lambda_tilde_derived": 324.0,
+          "reason": "index=27>0"
+        }
+      ],
+      "continuous_knobs": 0,
+      "seeded_n_gen": false,
+      "seeded_lambda": false
+    }
+  ],
+  "T_pq_summary": {
+    "n_bases": 19,
+    "n_gen_values_observed": [
+      3
+    ],
+    "bases_by_n_gen": {
+      "3": [
+        "T^{1,1}",
+        "T^{1,2}",
+        "T^{1,3}",
+        "T^{1,4}",
+        "T^{1,5}",
+        "T^{2,1}",
+        "T^{2,3}",
+        "T^{2,5}",
+        "T^{3,1}",
+        "T^{3,2}",
+        "T^{3,4}",
+        "T^{3,5}",
+        "T^{4,1}",
+        "T^{4,3}",
+        "T^{4,5}",
+        "T^{5,1}",
+        "T^{5,2}",
+        "T^{5,3}",
+        "T^{5,4}"
+      ]
+    },
+    "all_n_gen_equal_3": true,
+    "control_T11": {
+      "base": "T^{1,1}",
+      "family": "T_pq",
+      "p": 1,
+      "q": 1,
+      "gcd": 1,
+      "se_slice": true,
+      "topological_weight_p_plus_q": 2,
+      "n_gen": 3,
+      "survivors": [
+        {
+          "j1": 0.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 4.5,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.0,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 12.0,
+          "status": "survivor"
+        },
+        {
+          "j1": 1.5,
+          "j2": 0.0,
+          "index": 0,
+          "lambda_tilde_derived": 22.5,
+          "status": "survivor"
+        }
+      ],
+      "excluded_self_dual_sample": [
+        {
+          "j1": 0.0,
+          "j2": 0.0,
+          "index": 0,
+          "reason": "trivial_vacuum"
+        },
+        {
+          "j1": 2.0,
+          "j2": 0.0,
+          "index": 2,
+          "lambda_tilde_derived": 36.0,
+          "reason": "index=2>0"
+        },
+        {
+          "j1": 2.5,
+          "j2": 0.0,
+          "index": 4,
+          "lambda_tilde_derived": 52.5,
+          "reason": "index=4>0"
+        },
+        {
+          "j1": 3.0,
+          "j2": 0.0,
+          "index": 6,
+          "lambda_tilde_derived": 72.0,
+          "reason": "index=6>0"
+        }
+      ],
+      "continuous_knobs": 0,
+      "seeded_n_gen": false,
+      "seeded_lambda": false
+    }
+  },
+  "Y_pq_summary": {
+    "n_bases": 9,
+    "n_gen_values_observed": [
+      3
+    ],
+    "bases_by_n_gen": {
+      "3": [
+        "Y^{2,1}",
+        "Y^{3,1}",
+        "Y^{3,2}",
+        "Y^{4,1}",
+        "Y^{4,3}",
+        "Y^{5,1}",
+        "Y^{5,2}",
+        "Y^{5,3}",
+        "Y^{5,4}"
+      ]
+    },
+    "all_n_gen_equal_3": true,
+    "control_T11": null
+  },
+  "decision": {
+    "sector_slice_absorbed": true,
+    "continuous_knobs": 0,
+    "control_T11_n_gen_3": true,
+    "statement": "First-slice SE-base APS extension locked as a discrete catalog: N_gen is the native APS-neutral self-dual zero-mode count under the same structural rules as T^{1,1}, with index barrier index=max(0,\u230a(p+q)(2j\u22123)\u230b) reducing exactly to the locked 4j\u2081\u22126 formula at (p,q)=(1,1). No continuous parameters introduced."
+  },
+  "continuous_knobs": 0,
+  "scientific_core_locks_altered": false,
+  "scaffolding_used": []
+}

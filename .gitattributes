@@ -1,0 +1,10 @@
+* text=auto
+*.pdf -text
+*.png -text
+*.jpg -text
+*.jpeg -text
+*.gif -text
+*.zip -text
+core/complete_baseline.json -text
+falsifier/complete_baseline.json -text
+falsifier/isolate_updated.json -text

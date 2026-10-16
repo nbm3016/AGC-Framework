@@ -1,0 +1,298 @@
+{
+  "continuous_knobs": 0,
+  "promoted": false,
+  "ambient": "Y^14 \u2192 M^4",
+  "factors": [
+    "\u03a3^5",
+    "T^{1,1}"
+  ],
+  "factorization": "V4 \u2297 V32",
+  "fiber": "Cl(10) module of the 10D factor, dimension 32",
+  "projection": "E4 = Tr_fiber(E) / 32",
+  "generator": "cyclic bracket on the 128-dimensional Clifford module",
+  "module_rank": 128,
+  "module_norm": 11.313708498984761,
+  "time_ambient": "EMERGENT",
+  "mass": {
+    "spacetime_dirac": 4,
+    "fiber": 32,
+    "ambient": 128,
+    "kilogram": false
+  },
+  "pure_tensor": true,
+  "projected_operator": [
+    [
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "projected_norm": 0.0,
+  "projected_rank": 0,
+  "singular_values": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "kernel_dimension": 4,
+  "kernel_basis": [
+    [
+      "1",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "1",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "1",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  ],
+  "rows_changed": 0,
+  "moved": [],
+  "rescored": [
+    {
+      "name": "ambient_theory",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "filter_three_way",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "wall_zero_count",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "barrier_minus",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "clock_Z24",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "continuous_knobs",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "lambda_tilde",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "Iso_group",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "sigma_star",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "T_wall_identity",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "b2",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "b3",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "eight_pi_G_eff_number",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "n_eta",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "CONE",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "CONE_HOLONOMY",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "SPIN_T11",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "DIRAC_T11",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "TRIPLE_T11",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "SASAKI_PHI_J",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "g_T_omega_T",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "PARALLEL_SPINORS_CONE",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "HARM_2_EULER_PAIRING",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "D5_LABEL_FORMULA",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "VOL_T11",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "EINSTEIN_SCALAR_G5",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "CONE_HOMOTHETY",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "J_CONE",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "LINK_SECOND_FUNDAMENTAL",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "DR_WEDGE_DETA",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "DR_WEDGE_HARM2",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "DR_ETA_WEDGE_DETA",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "DR_ETA_WEDGE_HARM2",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "DR_WEDGE_DETA_SQ",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "OMEGA_TRANSVERSE",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    }
+  ]
+}

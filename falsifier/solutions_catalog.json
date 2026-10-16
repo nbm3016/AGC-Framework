@@ -1,0 +1,303 @@
+{
+  "continuous_knobs": 0,
+  "any_promoted_to_FORCED": false,
+  "rows": [
+    {
+      "id": "W1",
+      "slot": "warp_factor",
+      "claim": "A = const",
+      "external_names": [],
+      "SLOT_LEGAL": true,
+      "ISOLATE_COMPLETE": true,
+      "live_bin": "CONSISTENT",
+      "gates": [],
+      "why": [
+        "kind not decided by facts"
+      ]
+    },
+    {
+      "id": "W2",
+      "slot": "warp_factor",
+      "claim": "RS A = -k |y|",
+      "external_names": [
+        "k",
+        "L",
+        "y"
+      ],
+      "SLOT_LEGAL": true,
+      "ISOLATE_COMPLETE": true,
+      "live_bin": "CONSISTENT",
+      "gates": [],
+      "why": [
+        "kind not decided by facts"
+      ]
+    },
+    {
+      "id": "W3",
+      "slot": "warp_factor",
+      "claim": "KW / conifold log warp",
+      "external_names": [
+        "log_warp",
+        "y"
+      ],
+      "SLOT_LEGAL": true,
+      "ISOLATE_COMPLETE": true,
+      "live_bin": "CONSISTENT",
+      "gates": [],
+      "why": [
+        "kind not decided by facts"
+      ]
+    },
+    {
+      "id": "W4",
+      "slot": "warp_factor",
+      "claim": "identify A(y) with phi(theta,psi)",
+      "external_names": [],
+      "SLOT_LEGAL": true,
+      "ISOLATE_COMPLETE": false,
+      "live_bin": "REFUSED",
+      "gates": [
+        "R-metric-swap"
+      ],
+      "why": [
+        "YES identifies \u03c3* or \u03c6(\u03b8,\u03c8) with g_\u03bc\u03bd"
+      ]
+    },
+    {
+      "id": "G1",
+      "slot": "g_mu_nu",
+      "claim": "eta_mu_nu as model vacuum",
+      "external_names": [
+        "eta_mu_nu"
+      ],
+      "SLOT_LEGAL": true,
+      "ISOLATE_COMPLETE": true,
+      "live_bin": "CONSISTENT",
+      "gates": [],
+      "why": [
+        "kind not decided by facts"
+      ]
+    },
+    {
+      "id": "G2",
+      "slot": "g_mu_nu",
+      "claim": "FLRW as model vacuum",
+      "external_names": [
+        "a_t",
+        "k_curv"
+      ],
+      "SLOT_LEGAL": true,
+      "ISOLATE_COMPLETE": true,
+      "live_bin": "CONSISTENT",
+      "gates": [],
+      "why": [
+        "kind not decided by facts"
+      ]
+    },
+    {
+      "id": "G3",
+      "slot": "g_mu_nu",
+      "claim": "RS warped product as model vacuum",
+      "external_names": [
+        "k",
+        "L",
+        "y"
+      ],
+      "SLOT_LEGAL": true,
+      "ISOLATE_COMPLETE": true,
+      "live_bin": "CONSISTENT",
+      "gates": [],
+      "why": [
+        "kind not decided by facts"
+      ]
+    },
+    {
+      "id": "G4",
+      "slot": "g_mu_nu",
+      "claim": "identify g_mu_nu with sigma*",
+      "external_names": [],
+      "SLOT_LEGAL": true,
+      "ISOLATE_COMPLETE": false,
+      "live_bin": "REFUSED",
+      "gates": [
+        "R-metric-swap"
+      ],
+      "why": [
+        "YES identifies \u03c3* or \u03c6(\u03b8,\u03c8) with g_\u03bc\u03bd"
+      ]
+    },
+    {
+      "id": "C1",
+      "slot": "Iso_as_color",
+      "claim": "Iso only (control)",
+      "external_names": [],
+      "SLOT_LEGAL": false,
+      "ISOLATE_COMPLETE": false,
+      "live_bin": "REFUSED",
+      "gates": [
+        "R-color-lock",
+        "R-unlisted-modulus"
+      ],
+      "why": [
+        "YES picks unique SU(3)_c / three colors / C2 as color",
+        "modulus 'Iso_as_color' is not a named allowed menu row",
+        "slot Iso_as_color type FORBIDDEN is not CLASS/OPEN-FIELD"
+      ]
+    },
+    {
+      "id": "C2",
+      "slot": "leftover_X4_family",
+      "claim": "SU(3) bundle that does not pick CP^2 or K3 as THE space",
+      "external_names": [
+        "c2",
+        "k_instanton",
+        "bundle_moduli"
+      ],
+      "SLOT_LEGAL": true,
+      "ISOLATE_COMPLETE": true,
+      "live_bin": "CLASS",
+      "gates": [],
+      "why": [
+        "kind not decided by facts"
+      ]
+    },
+    {
+      "id": "C3",
+      "slot": "CP2_as_the_4fold",
+      "claim": "SU(3) instanton on CP^2 as THE color space",
+      "external_names": [
+        "instanton"
+      ],
+      "SLOT_LEGAL": false,
+      "ISOLATE_COMPLETE": false,
+      "live_bin": "REFUSED",
+      "gates": [
+        "R-weld",
+        "R-color-lock",
+        "R-unlisted-modulus"
+      ],
+      "why": [
+        "YES welds CLASS onto LOCK",
+        "YES picks unique SU(3)_c / three colors / C2 as color",
+        "modulus 'CP2_as_the_4fold' is not a named allowed menu row",
+        "slot CP2_as_the_4fold type FORBIDDEN is not CLASS/OPEN-FIELD"
+      ]
+    },
+    {
+      "id": "C4",
+      "slot": "K3_as_the_4fold",
+      "claim": "SU(3) on K3 as THE color space",
+      "external_names": [
+        "bundle_moduli"
+      ],
+      "SLOT_LEGAL": false,
+      "ISOLATE_COMPLETE": false,
+      "live_bin": "REFUSED",
+      "gates": [
+        "R-weld",
+        "R-color-lock",
+        "R-unlisted-modulus"
+      ],
+      "why": [
+        "YES welds CLASS onto LOCK",
+        "YES picks unique SU(3)_c / three colors / C2 as color",
+        "modulus 'K3_as_the_4fold' is not a named allowed menu row",
+        "slot K3_as_the_4fold type FORBIDDEN is not CLASS/OPEN-FIELD"
+      ]
+    },
+    {
+      "id": "C5",
+      "slot": "Iso_as_color",
+      "claim": "Iso contains SU(3)_c",
+      "external_names": [],
+      "SLOT_LEGAL": false,
+      "ISOLATE_COMPLETE": false,
+      "live_bin": "REFUSED",
+      "gates": [
+        "R-color-lock",
+        "R-unlisted-modulus"
+      ],
+      "why": [
+        "YES picks unique SU(3)_c / three colors / C2 as color",
+        "modulus 'Iso_as_color' is not a named allowed menu row",
+        "slot Iso_as_color type FORBIDDEN is not CLASS/OPEN-FIELD"
+      ]
+    },
+    {
+      "id": "C6",
+      "slot": "G_SM_from_isolate",
+      "claim": "Iso x SU(3) = G_SM claimed derived",
+      "external_names": [],
+      "SLOT_LEGAL": false,
+      "ISOLATE_COMPLETE": false,
+      "live_bin": "REFUSED",
+      "gates": [
+        "R-weld",
+        "R-color-lock",
+        "R-unlisted-modulus",
+        "R-modulus-called-lock"
+      ],
+      "why": [
+        "YES welds CLASS onto LOCK",
+        "YES picks unique SU(3)_c / three colors / C2 as color",
+        "modulus 'G_SM_from_isolate' is not a named allowed menu row",
+        "labels 'G_SM_from_isolate' type FORBIDDEN as derived",
+        "slot G_SM_from_isolate type FORBIDDEN is not CLASS/OPEN-FIELD"
+      ]
+    },
+    {
+      "id": "D1",
+      "slot": "leftover_X4_family",
+      "claim": "Lovelock form, alpha tagged external",
+      "external_names": [
+        "alpha_k"
+      ],
+      "SLOT_LEGAL": true,
+      "ISOLATE_COMPLETE": true,
+      "live_bin": "CLASS",
+      "gates": [],
+      "why": [
+        "kind not decided by facts"
+      ]
+    },
+    {
+      "id": "D2",
+      "slot": "leftover_X4_family",
+      "claim": "use official r to fix alpha",
+      "external_names": [],
+      "SLOT_LEGAL": true,
+      "ISOLATE_COMPLETE": false,
+      "live_bin": "REFUSED",
+      "gates": [
+        "R-knobs",
+        "R-knobs",
+        "R-unlisted-modulus"
+      ],
+      "why": [
+        "YES introduces a free real parameter",
+        "YES introduces L, bulk \u039b, RS k, or integration constant C as isolate",
+        "modulus 'alpha_k_from_r' is not a named allowed menu row"
+      ]
+    },
+    {
+      "id": "F1",
+      "slot": "overall_R",
+      "claim": "chosen Freund-Rubin n_F as native M_R",
+      "external_names": [],
+      "SLOT_LEGAL": false,
+      "ISOLATE_COMPLETE": false,
+      "live_bin": "REFUSED",
+      "gates": [
+        "R-scale",
+        "R-modulus-called-lock",
+        "R-map-called-lock"
+      ],
+      "why": [
+        "YES treats Weyl \u03bb or stick as R in meters",
+        "labels 'overall_R' type GAUGE as FORCED",
+        "slot overall_R type GAUGE is not CLASS/OPEN-FIELD"
+      ]
+    }
+  ],
+  "timestamp_utc": "2026-09-20T03:32:33.416276+00:00"
+}

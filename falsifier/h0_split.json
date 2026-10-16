@@ -1,0 +1,46 @@
+{
+  "E1": {
+    "id": "Q2",
+    "text": "Is E1 five-metric locked?",
+    "kind": "five_metric",
+    "bin": "FORCED",
+    "gates": [],
+    "reasons": [
+      "\u03c3* locked as T^{1,1} shape (5-metric), not g_\u03bc\u03bd"
+    ]
+  },
+  "E2": {
+    "id": "Q3",
+    "text": "Is E2 a unique picked 4-fold?",
+    "kind": "unique_4fold",
+    "bin": "REFUSED",
+    "gates": [],
+    "reasons": [
+      "unique 4-fold pick failed; leftover X^4 is CLASS not a pick"
+    ],
+    "leftover_class": true
+  },
+  "E3": {
+    "id": "Q4",
+    "text": "Is E3 warp forced?",
+    "kind": "warp",
+    "bin": "REFUSED",
+    "gates": [],
+    "reasons": [
+      "warp A not in locked atoms; failed uniqueness = NO"
+    ]
+  },
+  "E4": {
+    "id": "Q5",
+    "text": "Is g_\u03bc\u03bd identical to \u03c3*?",
+    "kind": "gmunu_is_sigma",
+    "bin": "REFUSED",
+    "gates": [
+      "R-metric-swap"
+    ],
+    "reasons": [
+      "YES identifies \u03c3* with g_\u03bc\u03bd"
+    ],
+    "color_lock": false
+  }
+}

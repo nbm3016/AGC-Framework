@@ -1,0 +1,66 @@
+{
+  "module": "h1_absence",
+  "target": "unique principal bundle with group containing SU(3)_c is impossible from locked atoms (no free rank/Wilson/flux)",
+  "not_a_retry_of": [
+    "Iso hunt",
+    "CP2 vs K3 pick",
+    "ADE integer hunt"
+  ],
+  "positive_H1_already": "OPEN_LEMMA",
+  "continuous_knobs": 0,
+  "N_gen": 3,
+  "N_gen_stands": true,
+  "locked_r_slice": 0.095716,
+  "attempts": [
+    {
+      "attempt": 1,
+      "mechanism": "Group obstruction (Iso only)",
+      "iso": "SU(2)\u00d7SU(2)\u00d7U(1) (files: SU(2)\u00d7SU(2) lattice; briefing adds U(1))",
+      "contains_SU3_c": false,
+      "new_factor_forced_by_locked_data": false,
+      "unique_SU3_c_impossible_from_Iso": true,
+      "bin": "FORCED",
+      "scope": "isometry-gauged color on locked T^{1,1}",
+      "why": "The only compact isometry group forced by the locked 5-metric is Iso(T^{1,1})=SU(2)\u00d7SU(2)\u00d7U(1). SU(3)_c is not a factor. Adding a new simple factor is a knob unless locked data force that factor; they do not. Therefore a unique SU(3)_c bundle cannot arise from Iso. Burned weld Iso=SU(3)_c not retried."
+    },
+    {
+      "attempt": 2,
+      "mechanism": "Cohomology / characteristic-class obstruction",
+      "existence_forbidden": false,
+      "uniqueness_already_failed": true,
+      "bin": "UNKNOWN",
+      "scope": "any SU(3) principal bundle on some unnamed leftover space",
+      "why": "Locked integers (T_wall=13/2 not a Chern index; n_\u03b7; monodromy 24) do not vanish H^2/H^3 in this repo. Paper: secondary characteristic classes from locked integers are free maps, not a unique class. That shows many maps can exist, not that no SU(3) bundle can exist. Impossibility of existence is not proved. H0 leftover metric is a dependency, not computed.",
+      "h0_dependency": "A leftover 4-fold carrying a bundle would need a unique Y^{14} reduction (H0); not performed."
+    },
+    {
+      "attempt": 3,
+      "mechanism": "Representation obstruction",
+      "module_A_modes": 3,
+      "is_color_3": false,
+      "extra_map_required": true,
+      "proves_impossibility": false,
+      "bin": "CONSISTENT",
+      "scope": "identification of Module A modes with the 3 of SU(3)",
+      "why": "Module A gives three zero modes, not the 3 of SU(3). Identifying them with a color triplet is a burned extra map. That shows color is not forced. It does not prove no SU(3) bundle can exist."
+    }
+  ],
+  "unique_color_bundle_impossible": true,
+  "any_SU3_bundle_existence_forbidden": false,
+  "absence_forced": true,
+  "absence_scope": "FORCED: a unique SU(3)_c principal bundle cannot be derived from locked atoms (Iso has no SU(3)_c factor; extra factor is a knob). NOT FORCED: non-existence of every SU(3) bundle (attempt 2 failed).",
+  "final": {
+    "unique_bundle_absence_FORCED": true,
+    "existence_ban_FORCED": false,
+    "absence_FORCED": true,
+    "honest_status": "Unique color bundle is impossible here without a knob (FORCED). That does not ban all SU(3) bundles (UNKNOWN). Do not lock CP^2."
+  },
+  "lemma": {
+    "name": "H1_no_unique_SU3c_bundle",
+    "status": "partial_absence",
+    "statement": "From locked isolate atoms, Iso(T^{1,1}) does not contain SU(3)_c and adding a factor is unforced, so a unique SU(3)_c principal bundle cannot be derived. Non-existence of all SU(3) bundles is not proved."
+  },
+  "complete_baseline_rewritten": false,
+  "timestamp_utc": "2026-09-19T18:52:12.137117+00:00",
+  "absence_FORCED": true
+}

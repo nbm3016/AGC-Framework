@@ -1,0 +1,68 @@
+{
+  "continuous_knobs": 0,
+  "baseline_sha256": "1d9b54a788142b9d2c818d236d55e8a7a71b841c0e032107bcc052f23abe707a",
+  "baseline_byte_stable_during_probe": true,
+  "template": "T^{1,1} transverse base S^2×S^2",
+  "template_copied_onto_sigma5": false,
+  "unique_extras_free_4d_face": "Unknown",
+  "face_name": null,
+  "rows": [
+    {
+      "id": "S1",
+      "claim": "What manifold is Σ^5 in the lock? Name the stored object.",
+      "unique": false,
+      "live_bin": "UNKNOWN",
+      "extras": [
+        "diffeomorphism type"
+      ],
+      "why": "The stored name is the compact factor Σ^5. yardstick_lovelock_euler.json records dim 5, odd=True, Euler characteristic 0. Its note is: Odd-dimensional APS wall 5-fold; χ=0. DIMENSIONAL_SCOPE.md stores APS on Σ^5 as the Stage 1A survivor set, not a live 5D mesh. No diffeomorphism type is stored.",
+      "stored_object": "Σ^5",
+      "stored_role": "compact factor and Stage 1A survivor set"
+    },
+    {
+      "id": "S2",
+      "claim": "Does Σ^5 carry a unique S^1 / Reeb / free-circle action with extras = 0?",
+      "unique": false,
+      "live_bin": "UNKNOWN",
+      "extras": [
+        "S^1 action on Σ^5"
+      ],
+      "why": "REEB_XI and CONTACT_ETA are unique and FORCED for the locked 5-metric. generated_wave2.json sets the algebra to C^infty(T^{1,1}). The transverse-base reason uses S^2×S^3. None of those records names Σ^5. No file states that Σ^5 has no circle action."
+    },
+    {
+      "id": "S3",
+      "claim": "If S2 is yes, what is the quotient 4-fold?",
+      "unique": false,
+      "live_bin": "UNKNOWN",
+      "extras": [
+        "quotient 4-fold"
+      ],
+      "why": "S2 is not yes. No Σ^5 quotient is computed. The template value S^2×S^2 stays the transverse base of T^{1,1}."
+    },
+    {
+      "id": "S4",
+      "claim": "If S2 is no or unknown, is any other extras-free 4D face of Σ^5 stored?",
+      "unique": false,
+      "live_bin": "REFUSED",
+      "extras": [],
+      "why": "S2 is not yes. generated_inventory.json, generated_wave2.json, generated_uncap.json, and yardstick_lovelock_euler.json store one extras-free 4D quotient, TRANSVERSE_BASE = S^2×S^2, and its text does not name Σ^5. No other extras-free 4D face of Σ^5 is stored."
+    },
+    {
+      "id": "S5",
+      "claim": "Is that face unique?",
+      "unique": false,
+      "live_bin": "REFUSED",
+      "extras": [],
+      "why": "No Σ^5 face is stored, so uniqueness of such a face is contradicted."
+    },
+    {
+      "id": "S6",
+      "claim": "Is that face the same object as S^2×S^2, a different stored 4-fold, or not stored?",
+      "unique": false,
+      "live_bin": "REFUSED",
+      "extras": [],
+      "why": "Not stored. S^2×S^2 is the transverse base recorded from T^{1,1} ≃ S^2×S^3. That record does not name Σ^5, so it is not copied.",
+      "relation": "not stored"
+    }
+  ]
+}

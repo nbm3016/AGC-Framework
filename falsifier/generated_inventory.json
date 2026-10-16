@@ -1,0 +1,301 @@
+{
+  "module": "consolidate_a",
+  "banner": "CONSOLIDATE LAYER A - GENERATOR STILL ON - ZERO KNOBS",
+  "continuous_knobs": 0,
+  "isolate_written": false,
+  "isolate_frozen": false,
+  "algebra": "C^infty(T^{1,1})",
+  "spectral_dimension": 5,
+  "hol_as_holonomy": "SU(3)",
+  "hol_is_color": false,
+  "n_already": 12,
+  "n_new": 10,
+  "already": [
+    {
+      "name": "Iso_group",
+      "live_bin": "FORCED",
+      "value": "SU(2)\u00d7SU(2)\u00d7U(1)",
+      "physics_reading": "not color",
+      "copied": true
+    },
+    {
+      "name": "sigma_star",
+      "live_bin": "FORCED",
+      "value": "sqrt(3)/2",
+      "physics_reading": "T^{1,1} shape, not g_\u03bc\u03bd",
+      "copied": true
+    },
+    {
+      "name": "T_wall_identity",
+      "live_bin": "FORCED",
+      "value": "13/2",
+      "physics_reading": "not Chern, not GeV^3",
+      "copied": true
+    },
+    {
+      "name": "N_gen",
+      "live_bin": "FORCED",
+      "value": 3,
+      "physics_reading": "none",
+      "copied": true
+    },
+    {
+      "name": "b2",
+      "live_bin": "FORCED",
+      "value": 1,
+      "physics_reading": "not flux",
+      "copied": true
+    },
+    {
+      "name": "b3",
+      "live_bin": "FORCED",
+      "value": 1,
+      "physics_reading": "not flux",
+      "copied": true
+    },
+    {
+      "name": "eight_pi_G_eff_number",
+      "live_bin": "FORCED",
+      "value": "9/16",
+      "physics_reading": "pure number, not G_N",
+      "copied": true
+    },
+    {
+      "name": "CONE",
+      "live_bin": "FORCED",
+      "value": "r coordinate; homothety is existing GAUGE scale",
+      "physics_reading": "generated 6-metric; not g_\u03bc\u03bd, not A(y), not color",
+      "copied": true
+    },
+    {
+      "name": "CONE_HOLONOMY",
+      "live_bin": "FORCED",
+      "value": "SU(3)",
+      "physics_reading": "Hol(g_C)=SU(3) as holonomy; not SU(3)_c",
+      "copied": true
+    },
+    {
+      "name": "SPIN_T11",
+      "live_bin": "FORCED",
+      "value": "no extra continuous knob",
+      "physics_reading": "unique spin structure on the locked 5-fold; not M^4",
+      "copied": true
+    },
+    {
+      "name": "DIRAC_T11",
+      "live_bin": "FORCED",
+      "value": "KO-dimension fixed at 5",
+      "physics_reading": "Riemannian Dirac on T^{1,1}; not N_gen; not g_mu_nu",
+      "copied": true
+    },
+    {
+      "name": "TRIPLE_T11",
+      "live_bin": "FORCED",
+      "value": "reconstructs T^{1,1}",
+      "physics_reading": "reconstruction returns T^{1,1}; not a 4D metric",
+      "copied": true
+    }
+  ],
+  "new": [
+    {
+      "extra_names": [
+        "REEB_XI",
+        "CONTACT_ETA"
+      ],
+      "unique": true,
+      "live_bin": "FORCED",
+      "forces_color": false,
+      "forces_metric": false,
+      "forces_gev": false,
+      "why": "Regular SE structure on the locked 5-metric determines one unit Reeb field and one contact form. No new continuous knob."
+    },
+    {
+      "extra_names": [
+        "TRANSVERSE_BASE"
+      ],
+      "unique": true,
+      "live_bin": "FORCED",
+      "value": "S^2\u00d7S^2",
+      "euler_class": [
+        1,
+        1
+      ],
+      "forces_color": false,
+      "forces_metric": false,
+      "forces_gev": false,
+      "why": "Locked string factors S^2\u00d7S^3. Free S^1 quotient of the S^3 factor is S^2. Product base S^2\u00d7S^2, b2=2. Euler class (1, 1) is the primitive symmetric positive class. Hopf total space over CP^2 is S^5, whose b2=0 against locked b2=1. K3 is not selected."
+    },
+    {
+      "extra_names": [
+        "KILLING_FORM_TOWER"
+      ],
+      "unique": true,
+      "live_bin": "FORCED",
+      "forms": [
+        "eta",
+        "eta_wedge_(d eta)^1",
+        "(d eta)^1",
+        "eta_wedge_(d eta)^2",
+        "(d eta)^2"
+      ],
+      "forces_color": false,
+      "forces_metric": false,
+      "forces_gev": false,
+      "why": "Contact form and d\u03b7 generate 5 special Killing forms in degrees through 5. The list is ['eta', 'eta_wedge_(d eta)^1', '(d eta)^1', 'eta_wedge_(d eta)^2', '(d eta)^2']."
+    },
+    {
+      "extra_names": [
+        "OMEGA_C"
+      ],
+      "unique": true,
+      "live_bin": "FORCED",
+      "forces_color": false,
+      "forces_metric": false,
+      "forces_gev": false,
+      "why": "Cone K\u00e4hler form \u03c9_C = r dr\u2227\u03b7 + (r^2/2) d\u03b7 is fixed by g_C and the contact form."
+    },
+    {
+      "extra_names": [
+        "OMEGA_VOL_C"
+      ],
+      "unique": true,
+      "live_bin": "FORCED",
+      "forces_color": false,
+      "forces_metric": false,
+      "forces_gev": false,
+      "why": "Holomorphic volume \u03a9_C is fixed by g_C and the Reeb weight. A constant phase is the locked Iso U(1), not a new knob. Holonomy is not color."
+    },
+    {
+      "extra_names": [
+        "ISO_BUNDLE_FAMILY"
+      ],
+      "unique": false,
+      "live_bin": "CLASS",
+      "forces_color": false,
+      "forces_metric": false,
+      "forces_gev": false,
+      "why": "Iso SU(2)\u00d7SU(2)\u00d7U(1) has irreps labeled by (j_L, j_R, q). The associated-bundle family is infinite and discrete. No single bundle is selected. Neither factor is SU(3)."
+    },
+    {
+      "extra_names": [
+        "HARM_2"
+      ],
+      "unique": true,
+      "live_bin": "FORCED",
+      "forces_color": false,
+      "forces_metric": false,
+      "forces_gev": false,
+      "why": "b2=1 so the integer generator has one harmonic representative on the locked metric, up to sign. Not a flux."
+    },
+    {
+      "extra_names": [
+        "HARM_3"
+      ],
+      "unique": true,
+      "live_bin": "FORCED",
+      "forces_color": false,
+      "forces_metric": false,
+      "forces_gev": false,
+      "why": "b3=1 so the integer generator has one harmonic representative on the locked metric, up to sign. Not a flux."
+    },
+    {
+      "extra_names": [
+        "D5_SPECTRUM"
+      ],
+      "unique": false,
+      "live_bin": "UNKNOWN",
+      "forces_color": false,
+      "forces_metric": false,
+      "forces_gev": false,
+      "why": "Dimension 5 is odd, so the volume element does not grade D (anticommutes? False). Cutoff-free eigenvalue files: none. N_gen is not this spectrum. No new j-cutoff is introduced."
+    },
+    {
+      "extra_names": [
+        "FINITE_COVERS"
+      ],
+      "unique": true,
+      "live_bin": "FORCED",
+      "degrees": [
+        1
+      ],
+      "forces_color": false,
+      "forces_metric": false,
+      "forces_gev": false,
+      "why": "Copied \u03c01 trivial=True. Finite covers are subgroups of \u03c01. Degrees written: [1]."
+    }
+  ],
+  "G": [
+    {
+      "id": "G2",
+      "text": "Does any new object force unique color / SU(3)_c?",
+      "answer": "No",
+      "bin": "REFUSED",
+      "gates": [
+        "R-color-lock",
+        "R-unlisted-modulus",
+        "R-modulus-called-lock"
+      ],
+      "reasons": [
+        "YES picks unique SU(3)_c / three colors / C2 as color",
+        "modulus 'unique_color' is not a named allowed menu row",
+        "labels 'unique_color' type FORBIDDEN as FORCED"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "G3",
+      "text": "Does any new object force unique g_mu_nu(x) or a 4D EOM?",
+      "answer": "No",
+      "bin": "REFUSED",
+      "gates": [
+        "R-metric-swap",
+        "R-knobs",
+        "R-modulus-called-lock",
+        "R-modulus-called-lock"
+      ],
+      "reasons": [
+        "YES identifies \u03c3* or \u03c6(\u03b8,\u03c8) with g_\u03bc\u03bd",
+        "YES introduces L, bulk \u039b, RS k, or integration constant C as isolate",
+        "labels 'g_mu_nu' type OPEN-FIELD as FORCED",
+        "YES treats non-FORCED modulus 'g_mu_nu' as lock"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "G4",
+      "text": "Does any new object force a native GeV?",
+      "answer": "No",
+      "bin": "REFUSED",
+      "gates": [
+        "R-scale",
+        "R-scale",
+        "R-knobs",
+        "R-unlisted-modulus",
+        "R-modulus-called-lock"
+      ],
+      "reasons": [
+        "YES treats Weyl \u03bb or stick as R in meters",
+        "YES uses T_wall as brane tension / Israel jump",
+        "YES introduces L, bulk \u039b, RS k, or integration constant C as isolate",
+        "modulus 'T_wall_as_GeV3' is not a named allowed menu row",
+        "labels 'T_wall_as_GeV3' type FORBIDDEN as FORCED"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "G5",
+      "text": "Is Layer A still open as a generator?",
+      "answer": "Yes",
+      "bin": "unfrozen",
+      "gates": [],
+      "reasons": [
+        "10 new objects. UNKNOWN among them: ['D5_SPECTRUM']. isolate_written stays false."
+      ],
+      "isolate_frozen": false
+    }
+  ],
+  "g_mu_nu_type": "OPEN-FIELD",
+  "g_mu_nu_value_forced": false,
+  "unique_color": "FORBIDDEN",
+  "timestamp_utc": "2026-09-21T22:22:49.265409+00:00"
+}

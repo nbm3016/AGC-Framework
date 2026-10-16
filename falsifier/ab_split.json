@@ -1,0 +1,29 @@
+{
+  "module": "ab_split",
+  "banner": "SESSION SNAPSHOT - FILES FIRST - A/B READING - ZERO KNOBS",
+  "continuous_knobs": 0,
+  "sheet_A": [
+    {"name": "Iso", "value": "SU(2)×SU(2)×U(1)", "dim": 7, "bin": "FORCED"},
+    {"name": "sigma_star", "value": "sqrt(3)/2", "sigma_star_squared": "3/4", "bin": "FORCED"},
+    {"name": "eight_pi_G_eff", "value": "9/16", "uses_name": "C2(3)=4/3", "reading": "number, not G_N", "bin": "FORCED"},
+    {"name": "T_wall", "value": "13/2", "reading": "dimensionless spectral identity, not tension", "bin": "FORCED"},
+    {"name": "N_gen", "value": 3, "bin": "FORCED"},
+    {"name": "n_eta", "value": [3, 8, 15], "bin": "FORCED"},
+    {"name": "b2", "value": 1, "bin": "FORCED"},
+    {"name": "b3", "value": 1, "bin": "FORCED"},
+    {"name": "r", "value": 0.095716, "bin": "FORCED"},
+    {"name": "theta13_deg", "value": 7.953, "bin": "FORCED"},
+    {"name": "Vol", "value": "16*pi**3/27", "bin": "FORCED"},
+    {"name": "Ric", "value": "4g", "scalar": 20, "bin": "FORCED"},
+    {"name": "g_C", "value": "dr^2 + r^2 g_5", "homothety": "gauge", "bin": "FORCED"},
+    {"name": "Hol_g_C", "value": "SU(3)", "dim": 8, "reading": "holonomy, not color", "bin": "FORCED", "source": "cone_curvature.json"}
+  ],
+  "sheet_B": [
+    {"name": "color_as_8_look", "bin": "CONSISTENT", "extras": ["eight_gluon_name"], "why": "Adjoint count 3^2-1 equals Hol dimension 8. The name is a look-through, not an A-lock."},
+    {"name": "Einstein_as_Ric_0_observation", "bin": "CONSISTENT", "extras": ["observer_name"], "why": "The cone slice has a vanishing Ricci component and a nonzero Riemann component. Ricci-flat is not flat, and it is not G_N."},
+    {"name": "CKM_as_clock_on_freeze", "bin": "CLASS", "extras": ["halt_plus_12_mod_24", "step_plus_7"], "why": "Images of {3,8,15} are arithmetic on the locked clock. They are not new atoms and they do not move theta13."}
+  ],
+  "ledger_external": ["k", "c2", "G_N", "unique_color"],
+  "prior_unknown_left_in_place": "cone_holonomy.json K3 remains UNKNOWN. It was not edited.",
+  "isolate_written_into_baseline": false
+}

@@ -1,0 +1,91 @@
+{
+  "banner": "HIGHER-DERIVATIVE UV PROBE COMPLETE \u2013 ZERO KNOBS PRESERVED",
+  "timestamp_utc": "2026-08-22T01:40:26.901051+00:00",
+  "continuous_knobs": 0,
+  "stages_1_3_geometry_untouched": true,
+  "wilson_coefficients_assigned": false,
+  "external_scale_used": false,
+  "unique_hd_coefficients_forced": false,
+  "status": "No",
+  "decision": "NO",
+  "n_candidates": 9,
+  "n_coefficients_forced": 0,
+  "reason": "Lovelock uniqueness fixes operator form, not \u03b1_k. Odd Euler densities are dynamically inert. Every numerical identification (\u03b1_GB=r, \u03b1\u2032=8\u03c0G_eff, \u03b1=1/24, \u2026) is an unfixed map or needs a length unit. Absolute scale is observational-conversion only and is withdrawn; it cannot lock Wilson numbers. Unique HD/UV coefficients are not forced.",
+  "candidates": [
+    {
+      "term": "Gauss\u2013Bonnet \u03b1_GB",
+      "coefficient_forced": false,
+      "candidate_id": "\u03b1_GB \u225f r = 0.095716 or r \u03c3*\u00b2 = 0.071787",
+      "origin": "not forced \u2014 r is EY Frobenius mismatch, not a GB Wilson number",
+      "result": "NO \u2014 identification \u03b1_GB=r is an unfixed map"
+    },
+    {
+      "term": "Lovelock \u03b1_k (Euler densities L_k)",
+      "coefficient_forced": false,
+      "candidate_id": "form forced (Lovelock uniqueness); \u03b1_k free",
+      "origin": "N6: \u03c7=0 on odd factors; \u03b1_k unfixed",
+      "result": "NO coefficient \u2014 form only; inert dynamics on \u03a3\u2075 / T^{1,1}"
+    },
+    {
+      "term": "R\u00b2 / Ricci-squared \u03b1_R2",
+      "coefficient_forced": false,
+      "candidate_id": "not Weyl-primary after quotient",
+      "origin": "C_phys Weyl covariance",
+      "result": "NO \u2014 operator not independently eligible; coefficient unfixed"
+    },
+    {
+      "term": "Weyl-squared \u222b C\u00b2",
+      "coefficient_forced": false,
+      "candidate_id": "eligible Weyl-covariant operator; no locked [C\u00b2] number",
+      "origin": "conformal quotient",
+      "result": "NO \u2014 under-determined coefficient"
+    },
+    {
+      "term": "\u03b1\u2032-type length\u00b2",
+      "coefficient_forced": false,
+      "candidate_id": "\u03b1\u2032 \u225f 8\u03c0G_eff=0.562500 or 1/\u03a3\u03bb\u0303=0.025641",
+      "origin": "dimensionless locked numbers vs [\u03b1\u2032]=length\u00b2",
+      "result": "NO \u2014 needs an external length (observational conversion only; withdrawn)"
+    },
+    {
+      "term": "Domain-wall GH / K\u00b3 coeff",
+      "coefficient_forced": false,
+      "candidate_id": "T_wall=6.5 dimensionless",
+      "origin": "spectral Casimir, not a curvature coupling",
+      "result": "NO \u2014 absolute GH coefficient needs a scale"
+    },
+    {
+      "term": "Self-dual torsion HD",
+      "coefficient_forced": false,
+      "candidate_id": "\u2016\u22c6\u03a8\u2212\u03a8\u2016\u00b2=0",
+      "origin": "locked j\u2082=0 sector",
+      "result": "NO \u2014 source vanishes; no nonzero Wilson number"
+    },
+    {
+      "term": "Residual back-reaction r, r\u00b2 beyond NLO",
+      "coefficient_forced": false,
+      "candidate_id": "\u221ar flavor map already consumed",
+      "origin": "locked residual-NLO A4",
+      "result": "NO \u2014 further r-polynomials are free functionals"
+    },
+    {
+      "term": "Monodromy 24 as \u03b1_HD",
+      "coefficient_forced": false,
+      "candidate_id": "\u03b1 \u225f 1/24 or 24 r = 2.297191",
+      "origin": "group integer, not a curvature coupling",
+      "result": "NO \u2014 unfixed identification"
+    }
+  ],
+  "locked_snapshot": {
+    "n_gen": 3,
+    "sigma_star": 0.8660254037844556,
+    "beta_residual_new": 0.0957162820145647,
+    "n_eta": [
+      3,
+      8,
+      15
+    ],
+    "theta13_deg": 7.953,
+    "continuous_knobs": 0
+  }
+}

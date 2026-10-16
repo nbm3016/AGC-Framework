@@ -1,0 +1,73 @@
+{
+  "banner": "FULL ANOMALY CANCELLATION PROBE COMPLETE \u2013 ZERO KNOBS PRESERVED",
+  "timestamp_utc": "2026-08-22T01:23:37.379204+00:00",
+  "continuous_knobs": 0,
+  "stages_1_3_geometry_untouched": true,
+  "locked_numerics_unchanged": true,
+  "full_anomaly_cancellation_achieved": false,
+  "status": "Partial",
+  "decision": "Partial",
+  "discrete_sector_forced": true,
+  "all_anomalies_cancelled": false,
+  "inflow_residual_exact": "26/9",
+  "inflow_residual_vanishes": false,
+  "as_index_at_3": 0,
+  "self_dual_trace": 90,
+  "self_dual_trace_mod6": 0,
+  "reason": "Locked data force the discrete APS / AS-index / trace-mod-6 sector and a nonzero wall \u03b7-piece 26/9. They do not force cancellation of local gauge, mixed, or pure gravitational polynomials, nor Witten SU(2). Completing those would require representations or GS coefficients not in the locked baseline.",
+  "anomalies": [
+    {
+      "anomaly_type": "Gauge (local Tr F\u00b3 / 4D cubic)",
+      "forced_cancellation": false,
+      "form_or_obstruction": "Wall descent \u03b4I/\u03b4A = (5/3)N_gen r0\u00b2 + C2 \u03b7 \u2192 26/9 \u2260 0 at r0=0; independent of N_gen. No locked 4D representation content for Tr F\u00b3.",
+      "requires_extra_parameter": true,
+      "result": "NO \u2014 leftover 26/9 is a nonzero rational, not cancellation. Tr F\u00b3 cannot be evaluated without free representations."
+    },
+    {
+      "anomaly_type": "Mixed gauge\u2013gravitational",
+      "forced_cancellation": false,
+      "form_or_obstruction": "Tr F tr R\u00b2 / hypercharge factors not in locked data",
+      "requires_extra_parameter": true,
+      "result": "NO \u2014 U(1) charges and mixed polynomials are under-determined"
+    },
+    {
+      "anomaly_type": "Pure gravitational (tr R\u2074, (tr R\u00b2)\u00b2)",
+      "forced_cancellation": false,
+      "form_or_obstruction": "Full chiral spin / gravitino content not specified",
+      "requires_extra_parameter": true,
+      "result": "NO \u2014 I12 gravitational pieces cannot be computed from locked spectrum"
+    },
+    {
+      "anomaly_type": "Global / discrete (APS index, AS integer, trace mod 6)",
+      "forced_cancellation": true,
+      "form_or_obstruction": "N_gen=3; AS index max(0,2N_gen\u22126)=0 (vs 2 at N_gen=4); \u03a3(2j\u2081+1)n=90\u22610 (mod 6)",
+      "requires_extra_parameter": false,
+      "result": "PARTIAL \u2014 discrete APS/AS/trace-mod-6 sector is forced and parameter-free. This is not Witten SU(2) or a full global-anomaly theorem."
+    },
+    {
+      "anomaly_type": "Green\u2013Schwarz counterterms",
+      "forced_cancellation": false,
+      "form_or_obstruction": "b_i, \u03b1_ij not present in locked baseline",
+      "requires_extra_parameter": true,
+      "result": "NO \u2014 introducing GS coefficients would be new continuous knobs"
+    },
+    {
+      "anomaly_type": "Wall inflow residual as full cancellation",
+      "forced_cancellation": false,
+      "form_or_obstruction": "C2(3) \u03a3n/12 = 26/9 (\u2260 0)",
+      "requires_extra_parameter": false,
+      "result": "NO \u2014 Stage 2A residual does not vanish; 'inflow balanced' \u2260 Tr F\u00b3=0"
+    }
+  ],
+  "locked_snapshot": {
+    "n_gen": 3,
+    "sigma_star": 0.8660254037844556,
+    "beta_residual_new": 0.0957162820145647,
+    "n_eta": [
+      3,
+      8,
+      15
+    ],
+    "continuous_knobs": 0
+  }
+}

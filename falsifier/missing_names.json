@@ -1,0 +1,7 @@
+{
+  "sheet": "C",
+  "unique_color_needs": "c2",
+  "g_mu_nu_needs": "Einstein_Hilbert",
+  "Y14_needs": "fibration_class",
+  "M_pq_needs": "p,q"
+}

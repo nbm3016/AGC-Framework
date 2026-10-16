@@ -1,0 +1,296 @@
+{
+  "module": "constraint_ideal",
+  "continuous_knobs": 0,
+  "N_gen": 3,
+  "isolate_written": false,
+  "dynamical_empty": true,
+  "positive_eom": [],
+  "rows": [
+    {
+      "id": "N_gen",
+      "kind": "IDENTITY",
+      "statement": "locked field",
+      "source": "T1 complete_baseline",
+      "live_bin": "FORCED",
+      "leftover_names": []
+    },
+    {
+      "id": "n_eta",
+      "kind": "IDENTITY",
+      "statement": "locked field",
+      "source": "T1 complete_baseline",
+      "live_bin": "FORCED",
+      "leftover_names": []
+    },
+    {
+      "id": "sigma_star",
+      "kind": "IDENTITY",
+      "statement": "locked field",
+      "source": "T1 complete_baseline",
+      "live_bin": "FORCED",
+      "leftover_names": []
+    },
+    {
+      "id": "T_wall_identity",
+      "kind": "IDENTITY",
+      "statement": "13/2",
+      "source": "T1 Fraction \u03a3 n_\u03b7/4 = \u03a3 \u03bb\u0303/6",
+      "live_bin": "FORCED",
+      "leftover_names": []
+    },
+    {
+      "id": "Iso_group",
+      "kind": "IDENTITY",
+      "statement": "SU(2)\u00d7SU(2)\u00d7U(1)",
+      "source": "T1 locked 5-fold isometry",
+      "live_bin": "FORCED",
+      "leftover_names": []
+    },
+    {
+      "id": "b2",
+      "kind": "IDENTITY",
+      "statement": "Betti",
+      "source": "T1 topology T^{1,1}\u2243S\u00b2\u00d7S\u00b3",
+      "live_bin": "FORCED",
+      "leftover_names": []
+    },
+    {
+      "id": "b3",
+      "kind": "IDENTITY",
+      "statement": "Betti",
+      "source": "T1 topology T^{1,1}\u2243S\u00b2\u00d7S\u00b3",
+      "live_bin": "FORCED",
+      "leftover_names": []
+    },
+    {
+      "id": "eight_pi_G_eff_number",
+      "kind": "IDENTITY",
+      "statement": "9/16",
+      "source": "T1 \u03c3*\u00b2/C2(3)",
+      "live_bin": "FORCED",
+      "leftover_names": []
+    },
+    {
+      "id": "Weyl_lambda",
+      "kind": "QUOTIENT",
+      "statement": "not R in meters",
+      "source": "T6 Weyl quotient",
+      "live_bin": "FORCED",
+      "leftover_names": []
+    },
+    {
+      "id": "overall_R",
+      "kind": "QUOTIENT",
+      "statement": "not dynamical freeze",
+      "source": "T6 observational conversion",
+      "live_bin": "FORCED",
+      "leftover_names": []
+    },
+    {
+      "id": "T_wall_as_Chern",
+      "kind": "FORBIDDEN",
+      "statement": "Chern",
+      "source": "T2 reading",
+      "live_bin": "FORCED",
+      "leftover_names": []
+    },
+    {
+      "id": "T_wall_as_GeV3",
+      "kind": "FORBIDDEN",
+      "statement": "GeV^3",
+      "source": "T2 reading",
+      "live_bin": "FORCED",
+      "leftover_names": []
+    },
+    {
+      "id": "eight_pi_G_eff_as_G_N",
+      "kind": "FORBIDDEN",
+      "statement": "G_N",
+      "source": "T2 reading",
+      "live_bin": "FORCED",
+      "leftover_names": []
+    },
+    {
+      "id": "b2_b3_as_flux",
+      "kind": "FORBIDDEN",
+      "statement": "flux",
+      "source": "T2 reading",
+      "live_bin": "FORCED",
+      "leftover_names": []
+    },
+    {
+      "id": "Iso_as_color",
+      "kind": "FORBIDDEN",
+      "statement": "color",
+      "source": "T2/T4 reading",
+      "live_bin": "FORCED",
+      "leftover_names": []
+    },
+    {
+      "id": "CP2_as_the_4fold",
+      "kind": "FORBIDDEN",
+      "statement": "the 4-fold",
+      "source": "T3 named pick",
+      "live_bin": "FORCED",
+      "leftover_names": []
+    },
+    {
+      "id": "K3_as_the_4fold",
+      "kind": "FORBIDDEN",
+      "statement": "the 4-fold",
+      "source": "T3 named pick",
+      "live_bin": "FORCED",
+      "leftover_names": []
+    },
+    {
+      "id": "unique_color",
+      "kind": "FORBIDDEN",
+      "statement": "unique SU(3)_c",
+      "source": "T4",
+      "live_bin": "FORCED",
+      "leftover_names": []
+    },
+    {
+      "id": "G_SM_from_isolate",
+      "kind": "FORBIDDEN",
+      "statement": "G_SM",
+      "source": "T4",
+      "live_bin": "FORCED",
+      "leftover_names": []
+    },
+    {
+      "id": "sigma_star_equals_g_mu_nu",
+      "kind": "FORBIDDEN",
+      "statement": "spacetime metric",
+      "source": "T4",
+      "live_bin": "FORCED",
+      "leftover_names": []
+    },
+    {
+      "id": "free_fit_alpha",
+      "kind": "FORBIDDEN",
+      "statement": "unlisted",
+      "source": "T7",
+      "live_bin": "FORCED",
+      "leftover_names": []
+    }
+  ],
+  "I": [
+    {
+      "id": "I1",
+      "text": "IDENTITY list from locked ports",
+      "unique": true,
+      "bin": "FORCED",
+      "gates": [],
+      "reasons": [
+        "FORCED menu rows are IDENTITY constraints"
+      ]
+    },
+    {
+      "id": "I2",
+      "text": "QUOTIENT list (Weyl / R / yardstick)",
+      "unique": true,
+      "bin": "FORCED",
+      "gates": [],
+      "reasons": [
+        "GAUGE rows are QUOTIENT constraints"
+      ]
+    },
+    {
+      "id": "I3",
+      "text": "FORBIDDEN list from menu",
+      "unique": true,
+      "bin": "FORCED",
+      "gates": [],
+      "reasons": [
+        "FORBIDDEN menu rows (+ unlisted alpha) are constraints"
+      ]
+    },
+    {
+      "id": "I4",
+      "text": "POSITIVE_EOM for warp A(y) with no new names",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [
+        "R-knobs",
+        "R-scale",
+        "R-knobs",
+        "R-unlisted-modulus"
+      ],
+      "reasons": [
+        "YES introduces a free real parameter",
+        "YES uses T_wall as brane tension / Israel jump",
+        "YES introduces L, bulk \u039b, RS k, or integration constant C",
+        "modulus 'y_interval_L' is not a named allowed menu row"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "I5",
+      "text": "POSITIVE_EOM for g_mu_nu(x) with no new names",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [
+        "R-knobs",
+        "R-modulus-called-lock",
+        "R-knobs",
+        "R-unlisted-modulus"
+      ],
+      "reasons": [
+        "YES introduces a free real parameter",
+        "YES uses 8\u03c0G_eff as G_N in an ODE",
+        "YES introduces L, bulk \u039b, RS k, or integration constant C",
+        "modulus 'Einstein_Hilbert' is not a named allowed menu row"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "I6",
+      "text": "POSITIVE_EOM that picks a CLASS color member",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [
+        "R-weld",
+        "R-color-lock",
+        "R-unlisted-modulus",
+        "R-modulus-called-lock"
+      ],
+      "reasons": [
+        "YES welds CLASS onto LOCK",
+        "YES picks unique SU(3)_c / three colors / C2 as color",
+        "modulus 'unique_color' is not a named allowed menu row",
+        "labels 'unique_color' type FORBIDDEN as FORCED"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "I7",
+      "text": "dynamical part of the ideal is non-empty",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [
+        "R-map-called-lock"
+      ],
+      "reasons": [
+        "YES labels a map/class as LOCK/FORCED/DERIVED"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "I8",
+      "text": "generator still emits constraints if dynamical part is empty",
+      "unique": true,
+      "bin": "FORCED",
+      "gates": [],
+      "reasons": [
+        "identities+quotients+forbiddens remain even if dynamical EOM is empty"
+      ]
+    }
+  ],
+  "menu_types": {
+    "warp_factor": "OPEN-FIELD",
+    "g_mu_nu": "OPEN-FIELD",
+    "unique_color": "FORBIDDEN"
+  },
+  "timestamp_utc": "2026-09-20T03:03:05.810885+00:00"
+}

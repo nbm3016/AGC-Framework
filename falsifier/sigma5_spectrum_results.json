@@ -1,0 +1,102 @@
+{
+  "continuous_knobs": 0,
+  "baseline_sha256": "1d9b54a788142b9d2c818d236d55e8a7a71b841c0e032107bcc052f23abe707a",
+  "baseline_byte_stable_during_probe": true,
+  "stored_spectrum_match": "Yes",
+  "named_5fold": "Σ^5",
+  "target": [
+    "9/2",
+    "12",
+    "45/2"
+  ],
+  "rows": [
+    {
+      "id": "M1",
+      "claim": "What eigenvalue lists are stored, and for which named 5-folds?",
+      "unique": true,
+      "live_bin": "FORCED",
+      "extras": [],
+      "why": "Stored lists: r0_modes, native_aps chiral modes, and isolate lambda_tilde all hold 9/2, 12, 45/2. The Stage 1A appendix heading names Σ^5 spectral survivors and stores that same set before the T^{1,1} subsection. D5_LABEL_FORMULA stores Killing eigenvalues -5/2 and +5/2 and does not name Σ^5. D5_SPECTRUM is stored with no eigenvalue list.",
+      "lists": [
+        {
+          "source": "r0_modes.json modes",
+          "values": [
+            "9/2",
+            "12",
+            "45/2"
+          ],
+          "named_5fold": "Σ^5"
+        },
+        {
+          "source": "native_aps_index.json chiral_modes",
+          "values": [
+            "9/2",
+            "12",
+            "45/2"
+          ],
+          "named_5fold": null,
+          "denied_name": "T^{1,1}"
+        },
+        {
+          "source": "isolate lambda_tilde",
+          "values": [
+            "9/2",
+            "12",
+            "45/2"
+          ],
+          "named_5fold": null,
+          "extras": 0
+        },
+        {
+          "source": "isolate D5_LABEL_FORMULA",
+          "values": [
+            "-5/2",
+            "5/2"
+          ],
+          "named_5fold": null
+        },
+        {
+          "source": "generated_inventory D5_SPECTRUM",
+          "values": [],
+          "named_5fold": null,
+          "live_bin": "UNKNOWN"
+        }
+      ]
+    },
+    {
+      "id": "M2",
+      "claim": "Is λ̃ = 4.5, 12, 22.5 one of those stored lists?",
+      "unique": true,
+      "live_bin": "FORCED",
+      "extras": [],
+      "why": "9/2, 12, and 45/2 equal the stored survivor lists in r0_modes.json, native_aps_index.json, and the isolate lambda_tilde lock. That lock has extras 0. They do not equal the stored Killing pair -5/2, +5/2."
+    },
+    {
+      "id": "M3",
+      "claim": "If yes, which named 5-fold carries it, and is that name Σ^5?",
+      "unique": true,
+      "live_bin": "FORCED",
+      "extras": [],
+      "why": "The Stage 1A appendix stores the set under the heading Σ^5 spectral survivors. native_aps_index.json says the rule is not ker D_5 on Ceresole T^{1,1}. The carrier name on that stored list is Σ^5.",
+      "named_5fold": "Σ^5"
+    },
+    {
+      "id": "M4",
+      "claim": "Does the match force a diffeomorphism type with extras = 0?",
+      "unique": false,
+      "live_bin": "UNKNOWN",
+      "extras": [
+        "diffeomorphism type"
+      ],
+      "why": "The matched list is stored under the name Σ^5. The Sigma5 record keys do not include a diffeomorphism type. No file says the eigenvalue match forces one."
+    },
+    {
+      "id": "M5",
+      "claim": "If no list is stored to compare, leave the type unknown.",
+      "unique": false,
+      "live_bin": "REFUSED",
+      "extras": [],
+      "why": "A survivor list is stored and matches 9/2, 12, 45/2. The premise that no list is stored is contradicted. The diffeomorphism type stays unknown because the Σ^5 record does not carry one."
+    }
+  ]
+}

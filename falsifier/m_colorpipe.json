@@ -1,0 +1,72 @@
+{
+  "module": "M_COLORPIPE",
+  "occupant": "SU(3) bundle on S^2\u00d7S^2",
+  "declared_extras": [
+    "c2"
+  ],
+  "c2_bin": "EXTERNAL",
+  "pipe_type": "CLASS",
+  "unique_color": "FORBIDDEN",
+  "euler_cup_square": 2,
+  "euler_cup_square_is_c2": false,
+  "iso_contains_SU3": false,
+  "continuous_knobs": 0,
+  "rows": [
+    {
+      "id": "C1",
+      "text": "Legal CLASS occupant of the color-pipe with extra c2, not unique color?",
+      "unique": false,
+      "live_bin": "CLASS",
+      "extras": [
+        "c2"
+      ],
+      "why": "unique_color type is FORBIDDEN. An SU(3) bundle on S^2\u00d7S^2 with c2 listed is a pipe member, not a derived color group."
+    },
+    {
+      "id": "C2",
+      "text": "Does Euler (1,1) force c2 of that SU(3) bundle?",
+      "unique": false,
+      "live_bin": "REFUSED",
+      "extras": [
+        "c2"
+      ],
+      "gates": [
+        "R-color-lock",
+        "R-unlisted-modulus",
+        "R-modulus-called-lock"
+      ],
+      "why": "Euler (1, 1) is in H^2. Its cup square is 2, the self-pairing of that U(1) class. c2 of an SU(3) bundle is a class in H^4 and is not that pairing. Integers obtained for c2: none."
+    },
+    {
+      "id": "C3",
+      "text": "Does HARM_2 or b2=1 force c2?",
+      "unique": false,
+      "live_bin": "REFUSED",
+      "extras": [
+        "c2"
+      ],
+      "why": "b2=1 is the rank of H^2 of T^{1,1}. HARM_2 is the harmonic 2-form in that line. Neither assigns an element of H^4. Integers obtained for c2: none."
+    },
+    {
+      "id": "C4",
+      "text": "Does Iso contain SU(3) so the bundle is derived?",
+      "unique": false,
+      "live_bin": "REFUSED",
+      "extras": [
+        "c2"
+      ],
+      "why": "dim Iso=7, dim SU(3)=8. 7<8, so Iso does not contain SU(3)."
+    },
+    {
+      "id": "C5",
+      "text": "Unique color stays FORBIDDEN; pipe stays CLASS; c2 stays EXTERNAL.",
+      "unique": false,
+      "live_bin": "EXTERNAL",
+      "extras": [
+        "c2"
+      ],
+      "why": "C2, C3, and C4 are No. unique_color stays FORBIDDEN. The pipe stays CLASS."
+    }
+  ],
+  "timestamp_utc": "2026-09-22T00:09:46.693415+00:00"
+}

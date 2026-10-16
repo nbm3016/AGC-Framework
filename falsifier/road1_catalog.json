@@ -1,0 +1,62 @@
+{
+  "banner": "ROAD 1 CATALOG - THREE FIELDS NOT THREE FAMILIES - ZERO KNOBS",
+  "continuous_knobs": 0,
+  "wall_zero_count": 3,
+  "N_gen_as_generations": false,
+  "rows": [
+    {
+      "mode": "(0.5,0,0)",
+      "internal_irrep": "(2 of SU(2)_1) x (1 of SU(2)_2) x U(1)_0",
+      "lorentz_spin": "UNKNOWN",
+      "gauge_boson": false,
+      "gravitino": false,
+      "light": "UNKNOWN",
+      "lambda_tilde": 4.5,
+      "extras": [
+        "no_lorentz_identification",
+        "no_stored_4d_mass"
+      ],
+      "why": "Internal dimension 2 of SU(2)_1, singlet of SU(2)_2, charge 0. Dimension 2 is not a locked 4D Weyl. No file identifies SU(2)_1 with 4D Lorentz. No 4D mass or gap is stored."
+    },
+    {
+      "mode": "(1,0,0)",
+      "internal_irrep": "(3 of SU(2)_1) x (1 of SU(2)_2) x U(1)_0",
+      "lorentz_spin": "UNKNOWN",
+      "gauge_boson": false,
+      "gravitino": false,
+      "light": "UNKNOWN",
+      "lambda_tilde": 12.0,
+      "extras": [
+        "no_lorentz_identification",
+        "no_stored_4d_mass"
+      ],
+      "why": "Internal dimension 3 of SU(2)_1, singlet of SU(2)_2, charge 0. Dimension 3 is not by itself an adjoint gauge boson. No file identifies SU(2)_1 with 4D Lorentz. No 4D mass or gap is stored."
+    },
+    {
+      "mode": "(1.5,0,0)",
+      "internal_irrep": "(4 of SU(2)_1) x (1 of SU(2)_2) x U(1)_0",
+      "lorentz_spin": "UNKNOWN",
+      "gauge_boson": false,
+      "gravitino": false,
+      "light": "UNKNOWN",
+      "lambda_tilde": 22.5,
+      "extras": [
+        "no_lorentz_identification",
+        "no_stored_4d_mass"
+      ],
+      "why": "Internal dimension 4 of SU(2)_1, singlet of SU(2)_2, charge 0. j1=3/2 is not by itself a Lorentz spin-3/2. No file identifies SU(2)_1 with 4D Lorentz. No 4D mass or gap is stored."
+    }
+  ],
+  "any_locked_4d_weyl": false,
+  "any_locked_gauge_boson": false,
+  "any_locked_gravitino": false,
+  "all_three_light_one_scale": false,
+  "lambda_tilde": [
+    4.5,
+    12.0,
+    22.5
+  ],
+  "lambda_tilde_same_scale": false,
+  "unique_color_promoted": false,
+  "timestamp_utc": "2026-09-23T21:43:30.583471+00:00"
+}

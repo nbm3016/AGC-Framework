@@ -1,0 +1,20 @@
+{
+  "A": "Frozen isolate / Layer A. Input owner. Write-set closed.",
+  "B": {
+    "B0": "What is Iso of the locked 5-fold?",
+    "B1": "Does that group contain SU(3)_c as a derived subgroup?",
+    "B2": "Does the isolate force a unique G_SM?",
+    "B3": "Is hypercharge flux forced, class, or not derived?",
+    "B4": "Are graph Aut 2-planes SM generations?",
+    "B5": "Is CKM / V_cb forced?"
+  },
+  "C": {
+    "E1": "What 5-metric is actually locked on T^{1,1}?",
+    "E2": "Is a unique 4-fold forced, or only a class?",
+    "E3": "Is warp forced?",
+    "E4": "Is g_\u03bc\u03bd derived from \u03c3*?"
+  },
+  "D": "Ports P1\u2013P4 computed then binned",
+  "E": "check_engine.runCheck",
+  "F": "Open ledger \u2014 gaps not closed to finish a table"
+}

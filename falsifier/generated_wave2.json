@@ -1,0 +1,175 @@
+{
+  "module": "generate_wave2",
+  "banner": "GENERATE WAVE 2 - DESCENDANTS OF THE TEN - ZERO KNOBS",
+  "continuous_knobs": 0,
+  "isolate_frozen": false,
+  "algebra": "C^infty(T^{1,1})",
+  "spectral_dimension": 5,
+  "geometry": {
+    "alpha": "1/6",
+    "beta": "1/9",
+    "sqrt_g": "sin(theta1)*sin(theta2)/108",
+    "psi_period": "4*pi",
+    "euler_number_per_sphere": 1,
+    "volume": "16*pi**3/27",
+    "sphere_area_factor": "4*pi",
+    "scalar_casimir_check": "-12"
+  },
+  "einstein_lambda": "4",
+  "scalar_curvature": "20",
+  "descendants": [
+    {
+      "id": "W1",
+      "object": "SASAKI_PHI_J",
+      "unique": true,
+      "live_bin": "FORCED",
+      "extras": "Phi(X)=grad_X xi; J=Phi on ker eta",
+      "why": "The Levi-Civita connection of locked g5 and the unit Reeb determine \u03a6, and \u03a6 squared is -1 on the contact distribution."
+    },
+    {
+      "id": "W2",
+      "object": "g_T_omega_T",
+      "unique": true,
+      "live_bin": "FORCED",
+      "extras": "base S^2\u00d7S^2; omega_T=d eta/2; g_T is not g_mu_nu",
+      "why": "g_T is g5 on ker \u03b7, pushed to the Reeb quotient. \u03c9_T = d\u03b7/2 is basic. The quotient is the locked transverse base. This metric is not g_\u03bc\u03bd(x)."
+    },
+    {
+      "id": "W3",
+      "object": "PARALLEL_SPINORS_CONE",
+      "unique": true,
+      "live_bin": "FORCED",
+      "extras": "Hol=SU(3); complex line of parallel spinors; phase is Iso U(1)",
+      "why": "Spin(6) spinors branch as 3\u22951 under SU(3). Exact holonomy SU(3) leaves one complex parallel spinor. The phase is the locked Reeb U(1), not a color factor."
+    },
+    {
+      "id": "W4",
+      "object": "HARM_2_EULER_PAIRING",
+      "unique": true,
+      "live_bin": "FORCED",
+      "extras": "H^2 \u2245 Z^2/Z(1,1); rank 1; not a flux",
+      "why": "\u03c0*(1,1) is exact. The quotient of base cohomology by the Euler class has rank 1, matching b2. HARM_2 is the harmonic generator of that quotient, up to sign."
+    },
+    {
+      "id": "W5",
+      "object": "D5_LABEL_FORMULA",
+      "unique": true,
+      "live_bin": "FORCED",
+      "extras": "E(j_L,j_R,q) with no cutoff list; Killing eigenvalues ['-5/2', '5/2'] under e\u00b7e=+1; scalar Laplacian on cos theta1 gives -12",
+      "why": "D5 commutes with the locked Iso, so eigenvalues are a function of irrep labels. No finite list and no j-cutoff are written. The Killing spinors sit at \u00b15/2. N_gen is not one of those values. The scalar Casimir is a different operator."
+    },
+    {
+      "id": "W6",
+      "object": "VOL_T11",
+      "unique": true,
+      "live_bin": "FORCED",
+      "extras": "16*pi**3/27",
+      "why": "sqrt(g)=sin(theta1)*sin(theta2)/108. Euler number 1 fixes \u03c8 period 4*pi. Volume integrates to 16*pi**3/27."
+    },
+    {
+      "id": "W7",
+      "object": "EINSTEIN_SCALAR_G5",
+      "unique": true,
+      "live_bin": "FORCED",
+      "extras": "Ric=4*g; scalar=20",
+      "why": "Ric(\u2202\u03c8,\u2202\u03c8)/g_\u03c8\u03c8 at \u03b8=\u03c0/2 equals 4. Dimension 5 gives scalar curvature 20."
+    },
+    {
+      "id": "W8",
+      "object": "CONE_HOMOTHETY",
+      "unique": true,
+      "live_bin": "FORCED",
+      "extras": "L_(r d/dr) g_C = 2 g_C; existing GAUGE; not a GeV",
+      "why": "On dr^2+r^2 g5 the radial field r\u2202_r is the unique homothety of weight 2 with unit \u2202r. It is the cone scale already carried as Weyl gauge."
+    },
+    {
+      "id": "W9",
+      "object": "J_CONE",
+      "unique": true,
+      "live_bin": "FORCED",
+      "extras": "J(d/dr)=xi; no extra real",
+      "why": "The cone complex structure sends \u2202r to the Reeb and restricts to \u03a6 on the link. Wave-1 contact data fix it. No new real parameter."
+    },
+    {
+      "id": "W9b",
+      "object": "LINK_SECOND_FUNDAMENTAL",
+      "unique": true,
+      "live_bin": "FORCED",
+      "extras": "II = g5 / r along the radial normal",
+      "why": "The level set of r in the cone has second fundamental form g5/r. The cone metric fixes it."
+    }
+  ],
+  "refusals": [
+    {
+      "id": "R1",
+      "object": "RESOLVED_CONE_RADII",
+      "unique": false,
+      "live_bin": "REFUSED",
+      "extras": "R-knobs,R-knobs,R-unlisted-modulus",
+      "why": "YES introduces a free real parameter; YES introduces L, bulk \u039b, RS k, or integration constant C as isolate; modulus 'resolved_cone_a_b' is not a named allowed menu row",
+      "gates": [
+        "R-knobs",
+        "R-knobs",
+        "R-unlisted-modulus"
+      ]
+    },
+    {
+      "id": "R2",
+      "object": "D3_KW",
+      "unique": false,
+      "live_bin": "REFUSED",
+      "extras": "R-burn-list,R-weld,R-unlisted-modulus",
+      "why": "YES is a burned weld; YES welds CLASS onto LOCK; modulus 'KW_quiver' is not a named allowed menu row",
+      "gates": [
+        "R-burn-list",
+        "R-weld",
+        "R-unlisted-modulus"
+      ]
+    },
+    {
+      "id": "R3",
+      "object": "g_T_EQUALS_g_mu_nu",
+      "unique": false,
+      "live_bin": "REFUSED",
+      "extras": "R-metric-swap,R-modulus-called-lock,R-modulus-called-lock",
+      "why": "YES identifies \u03c3* or \u03c6(\u03b8,\u03c8) with g_\u03bc\u03bd; labels 'g_mu_nu' type OPEN-FIELD as FORCED; YES treats non-FORCED modulus 'g_mu_nu' as lock",
+      "gates": [
+        "R-metric-swap",
+        "R-modulus-called-lock",
+        "R-modulus-called-lock"
+      ]
+    },
+    {
+      "id": "R4",
+      "object": "HOL_EQUALS_COLOR",
+      "unique": false,
+      "live_bin": "REFUSED",
+      "extras": "R-color-lock,R-unlisted-modulus,R-modulus-called-lock",
+      "why": "YES picks unique SU(3)_c / three colors / C2 as color; modulus 'unique_color' is not a named allowed menu row; labels 'unique_color' type FORBIDDEN as FORCED",
+      "gates": [
+        "R-color-lock",
+        "R-unlisted-modulus",
+        "R-modulus-called-lock"
+      ]
+    },
+    {
+      "id": "R5",
+      "object": "N_GEN_AS_EIGENVALUE",
+      "unique": false,
+      "live_bin": "REFUSED",
+      "extras": "R-map-called-lock,R-unlisted-modulus",
+      "why": "YES labels a map/class as LOCK/FORCED/DERIVED; modulus 'N_gen_as_D5_eigenvalue' is not a named allowed menu row",
+      "gates": [
+        "R-map-called-lock",
+        "R-unlisted-modulus"
+      ]
+    }
+  ],
+  "n_forced": 10,
+  "unique_color_forced": false,
+  "unique_g_mu_nu_forced": false,
+  "layer_a_still_open": true,
+  "g_mu_nu_type": "OPEN-FIELD",
+  "unique_color": "FORBIDDEN",
+  "timestamp_utc": "2026-09-21T22:40:27.061806+00:00"
+}

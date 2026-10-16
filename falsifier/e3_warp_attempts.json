@@ -1,0 +1,165 @@
+{
+  "module": "e3_warp_probe",
+  "continuous_knobs": 0,
+  "N_gen": 3,
+  "isolate_written": false,
+  "promote": false,
+  "warp_type_after": "OPEN-FIELD",
+  "value_forced": false,
+  "attempts": [
+    {
+      "id": "A",
+      "title": "Direct: locked scalars determine A(y) with no extra structure",
+      "equation": null,
+      "leftover_constants": [
+        "y-interval",
+        "A(y) functional form"
+      ],
+      "new_names_not_on_menu": [
+        "y",
+        "A(y)"
+      ],
+      "gates": [
+        "R-unlisted-modulus",
+        "R-knobs"
+      ],
+      "live_bin": "REFUSED",
+      "why": "No y in isolate atoms; A(y) not determined by scalars alone"
+    },
+    {
+      "id": "B",
+      "title": "Is \u03c6(\u03b8,\u03c8) the same object as A(y)?",
+      "equation": "g_ij = e^{2\u03c6(\u03b8,\u03c8)} g\u0304_ij  (coded; compact 5-metric)",
+      "phi_depends_on": [
+        "theta",
+        "psi"
+      ],
+      "forces_A_of_y": false,
+      "leftover_constants": [],
+      "new_names_not_on_menu": [],
+      "gates": [],
+      "live_bin": "REFUSED",
+      "why": "\u03c6(\u03b8,\u03c8) is not A(y); y is not an isolate coordinate"
+    },
+    {
+      "id": "C",
+      "title": "Tension reading: T_wall as Israel jump for [A']",
+      "equation": "[A'] =? -\u03ba T_wall  (NOT accepted: tension reading not locked)",
+      "leftover_constants": [
+        "\u03ba or G_N",
+        "normal y",
+        "brane location"
+      ],
+      "new_names_not_on_menu": [
+        "Israel_jump",
+        "kappa"
+      ],
+      "gates": [
+        "R-scale",
+        "R-knobs",
+        "R-unlisted-modulus"
+      ],
+      "live_bin": "REFUSED",
+      "why": "T_wall as 4D/5D brane tension is FORBIDDEN; equation not accepted"
+    },
+    {
+      "id": "D",
+      "title": "Shape reading: \u03c3* = A or A'",
+      "equation": "A=?\u03c3* or A'=?\u03c3*  (NOT accepted)",
+      "leftover_constants": [],
+      "new_names_not_on_menu": [],
+      "gates": [
+        "R-metric-swap"
+      ],
+      "live_bin": "REFUSED",
+      "why": "\u03c3* is T^{1,1} squashing, not A(y) or A'(y)"
+    }
+  ],
+  "W": [
+    {
+      "id": "W1",
+      "text": "Layer A already contains warped-product A(y) multiplying a 4D metric",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [
+        "R-map-called-lock",
+        "R-modulus-called-lock"
+      ],
+      "reasons": [
+        "YES labels a map/class as LOCK/FORCED/DERIVED",
+        "labels 'warp_factor' type OPEN-FIELD as FORCED"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "W2",
+      "text": "sigma* identifies with A(y) or A'(y)",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [
+        "R-metric-swap"
+      ],
+      "reasons": [
+        "YES identifies \u03c3* with g_\u03bc\u03bd or with A/A'"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "W3",
+      "text": "T_wall=13/2 sources A''(y) or [A'] as brane tension",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [
+        "R-scale",
+        "R-modulus-called-lock",
+        "R-unlisted-modulus",
+        "R-modulus-called-lock"
+      ],
+      "reasons": [
+        "YES uses T_wall as brane tension / Israel jump",
+        "YES uses 8\u03c0G_eff as G_N in an ODE",
+        "modulus 'T_wall_as_GeV3' is not a named allowed menu row",
+        "labels 'T_wall_as_GeV3' type FORBIDDEN as G_N"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "W4",
+      "text": "unique zero-knob ODE for A(y) from locked atoms only",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [
+        "R-knobs",
+        "R-knobs",
+        "R-unlisted-modulus"
+      ],
+      "reasons": [
+        "YES introduces a free real parameter",
+        "YES introduces L, bulk \u039b, RS k, or integration constant C",
+        "modulus 'y_interval_L' is not a named allowed menu row"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "W5",
+      "text": "unique profile A(y) forced modulo GAUGE/Weyl only",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [
+        "R-modulus-called-lock",
+        "R-modulus-called-lock"
+      ],
+      "reasons": [
+        "labels 'warp_factor' type OPEN-FIELD as FORCED",
+        "YES treats non-FORCED modulus 'warp_factor' as lock"
+      ],
+      "color_lock": false
+    }
+  ],
+  "fractions": {
+    "T_wall": "13/2",
+    "sigma_star_sq": "3/4",
+    "eight_pi_G_eff": "9/16"
+  },
+  "timestamp_utc": "2026-09-20T02:35:20.849355+00:00"
+}

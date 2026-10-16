@@ -1,0 +1,145 @@
+{
+  "continuous_knobs": 0,
+  "baseline_sha256": "1d9b54a788142b9d2c818d236d55e8a7a71b841c0e032107bcc052f23abe707a",
+  "baseline_byte_stable_during_probe": true,
+  "stored": {
+    "name": "Σ^5",
+    "role": "compact factor",
+    "dimension": 5,
+    "odd": true,
+    "euler_characteristic": 0,
+    "note": "Odd-dimensional APS wall 5-fold; χ=0.",
+    "survivor_set": [
+      {
+        "j1": 0.5,
+        "j2": 0.0,
+        "r": 0.0,
+        "lambda_tilde": 4.5
+      },
+      {
+        "j1": 1.0,
+        "j2": 0.0,
+        "r": 0.0,
+        "lambda_tilde": 12.0
+      },
+      {
+        "j1": 1.5,
+        "j2": 0.0,
+        "r": 0.0,
+        "lambda_tilde": 22.5
+      }
+    ],
+    "survivor_role": "Stage 1A survivor set, not a live 5D mesh",
+    "keys": [
+      "dim",
+      "euler_characteristic",
+      "note",
+      "odd"
+    ]
+  },
+  "unique_diffeomorphism_type_forced": "Unknown",
+  "diffeomorphism_type": null,
+  "rows": [
+    {
+      "id": "I1",
+      "claim": "What exact data are stored for Σ^5?",
+      "unique": true,
+      "live_bin": "FORCED",
+      "extras": [],
+      "why": "Stored: compact factor Σ^5; dimension 5; odd=true; Euler characteristic 0; note “Odd-dimensional APS wall 5-fold; χ=0.”; Stage 1A survivors (j1,j2,r) = (1/2,0,0), (1,0,0), (3/2,0,0) with lambda-tilde 4.5, 12, 22.5. DIMENSIONAL_SCOPE.md stores that survivor set as not a live 5D mesh. The Sigma5 object has no Betti number, no fundamental group, no spin row, and no contact form.",
+      "stored": {
+        "name": "Σ^5",
+        "role": "compact factor",
+        "dimension": 5,
+        "odd": true,
+        "euler_characteristic": 0,
+        "note": "Odd-dimensional APS wall 5-fold; χ=0.",
+        "survivor_set": [
+          {
+            "j1": 0.5,
+            "j2": 0.0,
+            "r": 0.0,
+            "lambda_tilde": 4.5
+          },
+          {
+            "j1": 1.0,
+            "j2": 0.0,
+            "r": 0.0,
+            "lambda_tilde": 12.0
+          },
+          {
+            "j1": 1.5,
+            "j2": 0.0,
+            "r": 0.0,
+            "lambda_tilde": 22.5
+          }
+        ],
+        "survivor_role": "Stage 1A survivor set, not a live 5D mesh",
+        "keys": [
+          "dim",
+          "euler_characteristic",
+          "note",
+          "odd"
+        ]
+      }
+    },
+    {
+      "id": "I2",
+      "claim": "Does that stored list include a diffeomorphism type?",
+      "unique": false,
+      "live_bin": "REFUSED",
+      "extras": [],
+      "why": "The Sigma5 object keys are dim, euler_characteristic, note, odd. The note does not name a diffeomorphism type. TRANSVERSE_BASE records S^2×S^3 and does not name Σ^5."
+    },
+    {
+      "id": "I3",
+      "claim": "Does dimension 5 plus χ=0 alone force a unique extras-free diffeomorphism type?",
+      "unique": false,
+      "live_bin": "UNKNOWN",
+      "extras": [
+        "diffeomorphism type"
+      ],
+      "why": "T11 and Sigma5 are both stored with dimension 5 and Euler characteristic 0. The Sigma5 note records χ=0 for an odd-dimensional APS wall 5-fold. No diffeomorphism type is written from that pair, and no file says the pair classifies one."
+    },
+    {
+      "id": "I4",
+      "claim": "Does the Stage 1A survivor set force a unique extras-free diffeomorphism type?",
+      "unique": false,
+      "live_bin": "UNKNOWN",
+      "extras": [
+        "diffeomorphism type"
+      ],
+      "why": "r0_modes.json stores three modes (j1,j2,r) with lambda-tilde 4.5, 12, 22.5. native_aps_index.json calls the rule a wall-index on j2=0 and says it is not ker D_5 on Ceresole T^{1,1}. The scope file stores the survivor set as not a live 5D mesh. No diffeomorphism type is attached, and no file says the modes classify one."
+    },
+    {
+      "id": "I5",
+      "claim": "Do I3 and I4 together force a unique extras-free diffeomorphism type?",
+      "unique": false,
+      "live_bin": "UNKNOWN",
+      "extras": [
+        "diffeomorphism type"
+      ],
+      "why": "I3 and I4 do not each force an extras-free diffeomorphism type. The files do not decide the pair."
+    },
+    {
+      "id": "I6",
+      "claim": "Is Σ^5 the same manifold as T^{1,1}?",
+      "unique": false,
+      "live_bin": "UNKNOWN",
+      "extras": [
+        "identification Σ^5 with T^{1,1}"
+      ],
+      "why": "The fibre is stored as the product of two named factors. The Σ^5 record does not identify itself with T^{1,1}. The T^{1,1} metric, Betti numbers, spin row, and Reeb quotient are not in the Σ^5 record. No file states that the two factors are diffeomorphic, and no file states that they are not."
+    },
+    {
+      "id": "I7",
+      "claim": "Unique extras-free diffeomorphism type for Σ^5 forced?",
+      "unique": false,
+      "live_bin": "UNKNOWN",
+      "extras": [
+        "diffeomorphism type"
+      ],
+      "why": "Dimension 5, Euler characteristic 0, and the Stage 1A survivor set are stored. They do not carry a diffeomorphism type. The files do not decide one."
+    }
+  ]
+}

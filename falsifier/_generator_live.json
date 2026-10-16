@@ -1,0 +1,308 @@
+{
+  "menu": [
+    {
+      "name": "N_gen",
+      "type": "FORCED",
+      "source": "T1 complete_baseline",
+      "value_forced": true,
+      "physics_reading": "none",
+      "notes": "locked field"
+    },
+    {
+      "name": "n_eta",
+      "type": "FORCED",
+      "source": "T1 complete_baseline",
+      "value_forced": true,
+      "physics_reading": "none",
+      "notes": "locked field"
+    },
+    {
+      "name": "sigma_star",
+      "type": "FORCED",
+      "source": "T1 complete_baseline",
+      "value_forced": true,
+      "physics_reading": "T^{1,1} shape, not g_\u03bc\u03bd",
+      "notes": "locked field"
+    },
+    {
+      "name": "T_wall_identity",
+      "type": "FORCED",
+      "source": "T1 Fraction \u03a3 n_\u03b7/4 = \u03a3 \u03bb\u0303/6",
+      "value_forced": true,
+      "physics_reading": "not Chern, not GeV^3",
+      "notes": "13/2"
+    },
+    {
+      "name": "Iso_group",
+      "type": "FORCED",
+      "source": "T1 locked 5-fold isometry",
+      "value_forced": true,
+      "physics_reading": "not color",
+      "notes": "SU(2)\u00d7SU(2)\u00d7U(1)"
+    },
+    {
+      "name": "b2",
+      "type": "FORCED",
+      "source": "T1 topology T^{1,1}\u2243S\u00b2\u00d7S\u00b3",
+      "value_forced": true,
+      "physics_reading": "not flux",
+      "notes": "Betti"
+    },
+    {
+      "name": "b3",
+      "type": "FORCED",
+      "source": "T1 topology T^{1,1}\u2243S\u00b2\u00d7S\u00b3",
+      "value_forced": true,
+      "physics_reading": "not flux",
+      "notes": "Betti"
+    },
+    {
+      "name": "eight_pi_G_eff_number",
+      "type": "FORCED",
+      "source": "T1 \u03c3*\u00b2/C2(3)",
+      "value_forced": true,
+      "physics_reading": "pure number, not G_N",
+      "notes": "9/16"
+    },
+    {
+      "name": "T_wall_as_Chern",
+      "type": "FORBIDDEN",
+      "source": "T2 reading",
+      "value_forced": false,
+      "physics_reading": "Chern",
+      "notes": "standing law"
+    },
+    {
+      "name": "T_wall_as_GeV3",
+      "type": "FORBIDDEN",
+      "source": "T2 reading",
+      "value_forced": false,
+      "physics_reading": "GeV^3",
+      "notes": "standing law"
+    },
+    {
+      "name": "eight_pi_G_eff_as_G_N",
+      "type": "FORBIDDEN",
+      "source": "T2 reading",
+      "value_forced": false,
+      "physics_reading": "G_N",
+      "notes": "standing law"
+    },
+    {
+      "name": "b2_b3_as_flux",
+      "type": "FORBIDDEN",
+      "source": "T2 reading",
+      "value_forced": false,
+      "physics_reading": "flux",
+      "notes": "standing law"
+    },
+    {
+      "name": "Iso_as_color",
+      "type": "FORBIDDEN",
+      "source": "T2/T4 reading",
+      "value_forced": false,
+      "physics_reading": "color",
+      "notes": "standing law"
+    },
+    {
+      "name": "Weyl_lambda",
+      "type": "GAUGE",
+      "source": "T6 Weyl quotient",
+      "value_forced": false,
+      "physics_reading": "not R in meters",
+      "notes": "observer not adjuster"
+    },
+    {
+      "name": "overall_R",
+      "type": "GAUGE",
+      "source": "T6 observational conversion",
+      "value_forced": false,
+      "physics_reading": "not dynamical freeze",
+      "notes": "stick withdrawn"
+    },
+    {
+      "name": "leftover_X4_family",
+      "type": "CLASS",
+      "source": "T3 family remains",
+      "value_forced": false,
+      "physics_reading": "not a unique 4-fold",
+      "notes": "K3/CP2/T4 unnamed pick"
+    },
+    {
+      "name": "CP2_as_the_4fold",
+      "type": "FORBIDDEN",
+      "source": "T3 named pick",
+      "value_forced": false,
+      "physics_reading": "the 4-fold",
+      "notes": "unique pick failed"
+    },
+    {
+      "name": "K3_as_the_4fold",
+      "type": "FORBIDDEN",
+      "source": "T3 named pick",
+      "value_forced": false,
+      "physics_reading": "the 4-fold",
+      "notes": "unique pick failed"
+    },
+    {
+      "name": "unique_color",
+      "type": "FORBIDDEN",
+      "source": "T4",
+      "value_forced": false,
+      "physics_reading": "unique SU(3)_c",
+      "notes": "not derived"
+    },
+    {
+      "name": "G_SM_from_isolate",
+      "type": "FORBIDDEN",
+      "source": "T4",
+      "value_forced": false,
+      "physics_reading": "G_SM",
+      "notes": "not forced"
+    },
+    {
+      "name": "sigma_star_equals_g_mu_nu",
+      "type": "FORBIDDEN",
+      "source": "T4",
+      "value_forced": false,
+      "physics_reading": "spacetime metric",
+      "notes": "\u03c3* is not g_\u03bc\u03bd"
+    },
+    {
+      "name": "warp_factor",
+      "type": "OPEN-FIELD",
+      "source": "T5",
+      "value_forced": false,
+      "physics_reading": "warp A",
+      "notes": "eligible != determined"
+    },
+    {
+      "name": "g_mu_nu",
+      "type": "OPEN-FIELD",
+      "source": "T5",
+      "value_forced": false,
+      "physics_reading": "4D metric symbol",
+      "notes": "eligible != determined"
+    }
+  ],
+  "stress": [
+    {
+      "id": "S1",
+      "text": "free fit alpha is an allowed Layer-A modulus",
+      "bin": "REFUSED",
+      "gates": [
+        "R-unlisted-modulus"
+      ],
+      "reasons": [
+        "modulus 'free_fit_alpha' is not a named allowed menu row"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "S2",
+      "text": "warp factor is FORCED by Layer A",
+      "bin": "REFUSED",
+      "gates": [
+        "R-modulus-called-lock"
+      ],
+      "reasons": [
+        "labels 'warp_factor' type OPEN-FIELD as FORCED"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "S3",
+      "text": "g_mu_nu is FORCED by identifying it with sigma*",
+      "bin": "REFUSED",
+      "gates": [
+        "R-metric-swap",
+        "R-modulus-called-lock"
+      ],
+      "reasons": [
+        "YES identifies \u03c3* or \u03c6(\u03b8,\u03c8) with g_\u03bc\u03bd",
+        "labels 'g_mu_nu' type OPEN-FIELD as FORCED"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "S4",
+      "text": "8 pi G_eff = 9/16 is G_N",
+      "bin": "REFUSED",
+      "gates": [
+        "R-unlisted-modulus",
+        "R-modulus-called-lock"
+      ],
+      "reasons": [
+        "modulus 'eight_pi_G_eff_as_G_N' is not a named allowed menu row",
+        "labels 'eight_pi_G_eff_as_G_N' type FORBIDDEN as G_N"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "S5",
+      "text": "unique color is a FORCED modulus",
+      "bin": "REFUSED",
+      "gates": [
+        "R-color-lock",
+        "R-unlisted-modulus",
+        "R-modulus-called-lock"
+      ],
+      "reasons": [
+        "YES picks unique SU(3)_c / three colors / C2 as color",
+        "modulus 'unique_color' is not a named allowed menu row",
+        "labels 'unique_color' type FORBIDDEN as FORCED"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "S6",
+      "text": "Weyl lambda is an adjuster for R in meters",
+      "bin": "REFUSED",
+      "gates": [
+        "R-scale",
+        "R-modulus-called-lock"
+      ],
+      "reasons": [
+        "YES treats Weyl \u03bb or stick as R in meters",
+        "labels 'Weyl_lambda' type GAUGE as FORCED"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "S7",
+      "text": "T_wall identity is a computed identity of locked n_eta / tilde_lambda",
+      "bin": "FORCED",
+      "gates": [],
+      "reasons": [
+        "T_wall = \u03a3 n_\u03b7/4 = \u03a3 \u03bb\u0303/6"
+      ],
+      "not_implied": [
+        "Chern index",
+        "GeV^3 tension"
+      ]
+    },
+    {
+      "id": "S8",
+      "text": "Iso group of the locked 5-fold is the isometry (not color)",
+      "bin": "FORCED",
+      "gates": [],
+      "reasons": [
+        "Iso group of locked 5-fold"
+      ],
+      "color_lock": false,
+      "not_implied": [
+        "SU(3)_c",
+        "color"
+      ]
+    }
+  ],
+  "numeric": {
+    "T_wall_from_n": "13/2",
+    "T_wall_from_lam": "13/2",
+    "T_wall_agree": true,
+    "sigma_star_sq": "3/4",
+    "eight_pi_G_eff": "9/16",
+    "C2": "4/3",
+    "disagree": false
+  }
+}

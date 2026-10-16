@@ -1,0 +1,109 @@
+{
+  "banner": "4D SPIN PROBE - INTERNAL CHARGE != LORENTZ - ZERO KNOBS",
+  "continuous_knobs": 0,
+  "modes": [
+    [
+      0.5,
+      0.0,
+      0.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      1.5,
+      0.0,
+      0.0
+    ]
+  ],
+  "rows": [
+    {
+      "id": "S1",
+      "claim": "SU(2)_1 is 4D Lorentz",
+      "unique": false,
+      "live_bin": "REFUSED",
+      "extras": [
+        "lorentz_identification"
+      ],
+      "why": "No file identifies SU(2)_1 with 4D Lorentz. The Road 1 catalog already records that absence."
+    },
+    {
+      "id": "S2",
+      "claim": "the three labels are harmonics of D5 spinors",
+      "unique": false,
+      "live_bin": "REFUSED",
+      "extras": [
+        "field_type"
+      ],
+      "why": "native_aps_index.py says the wall-index rule is not ker D_5. spin_dirac.json names Dirac(g5) on T^{1,1} and does not list these three labels as its harmonics."
+    },
+    {
+      "id": "S3",
+      "claim": "the three labels are scalar harmonics",
+      "unique": false,
+      "live_bin": "UNKNOWN",
+      "extras": [
+        "field_type"
+      ],
+      "why": "No file names the 5D field type of r0_modes as scalar."
+    },
+    {
+      "id": "S4",
+      "claim": "each descends as a 4D Weyl",
+      "unique": false,
+      "live_bin": "UNKNOWN",
+      "extras": [
+        "lorentz_identification"
+      ],
+      "why": "4D spin stays UNKNOWN. The 5-triple is not three 4D Weyls."
+    },
+    {
+      "id": "S5",
+      "claim": "each descends as a 4D scalar",
+      "unique": false,
+      "live_bin": "UNKNOWN",
+      "extras": [
+        "lorentz_identification"
+      ],
+      "why": "No descent to a 4D scalar is stored."
+    },
+    {
+      "id": "S6",
+      "claim": "each descends as a 4D vector",
+      "unique": false,
+      "live_bin": "UNKNOWN",
+      "extras": [
+        "lorentz_identification"
+      ],
+      "why": "No descent to a 4D vector is stored."
+    },
+    {
+      "id": "S7",
+      "claim": "mixed: 1/2 Weyl, 1 vector, 3/2 RS",
+      "unique": false,
+      "live_bin": "REFUSED",
+      "extras": [
+        "lorentz_identification"
+      ],
+      "why": "That mix treats j1 as spacetime spin. No file makes that identification."
+    },
+    {
+      "id": "S8",
+      "claim": "a common 4D mass scale is stored",
+      "unique": false,
+      "live_bin": "REFUSED",
+      "extras": [
+        "mass"
+      ],
+      "why": "Stored lambda-tilde values are [4.5, 12.0, 22.5]. They are not one scale, and no 4D mass is stored."
+    }
+  ],
+  "spin_4d_forced": false,
+  "common_mass_forced": false,
+  "su2_1_is_lorentz": false,
+  "family_physics_reopened": false,
+  "unique_color_promoted": false,
+  "timestamp_utc": "2026-09-23T21:52:55.178156+00:00"
+}

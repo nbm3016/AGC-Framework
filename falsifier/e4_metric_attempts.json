@@ -1,0 +1,249 @@
+{
+  "module": "e4_metric_probe",
+  "continuous_knobs": 0,
+  "N_gen": 3,
+  "isolate_written": false,
+  "promote": false,
+  "g_mu_nu_type_after": "OPEN-FIELD",
+  "value_forced": false,
+  "warp_type_unchanged": "OPEN-FIELD",
+  "attempts": [
+    {
+      "id": "A",
+      "equation": null,
+      "leftover_constants": [
+        "t,x,y,z",
+        "line element"
+      ],
+      "new_names_not_on_menu": [
+        "t",
+        "x",
+        "y",
+        "z",
+        "4D_mesh"
+      ],
+      "gates": [
+        "R-unlisted-modulus",
+        "R-knobs"
+      ],
+      "live_bin": "REFUSED",
+      "why": "no M^4 coordinates in isolate atoms"
+    },
+    {
+      "id": "B",
+      "equation": "g_ij = e^{2\u03c6(\u03b8,\u03c8)} g\u0304_ij  (compact 5-metric, not g_\u03bc\u03bd(x))",
+      "depends_on": [
+        "theta",
+        "psi",
+        "sigma_star"
+      ],
+      "leftover_constants": [],
+      "new_names_not_on_menu": [],
+      "gates": [
+        "R-metric-swap"
+      ],
+      "live_bin": "REFUSED",
+      "why": "\u03c3* and \u03c6(\u03b8,\u03c8) are not g_\u03bc\u03bd(x)"
+    },
+    {
+      "id": "C",
+      "equation": "G_\u03bc\u03bd =? (9/16) T_\u03bc\u03bd  (NOT accepted: 9/16 is not G_N)",
+      "leftover_constants": [
+        "G_N",
+        "EH integrand",
+        "T_\u03bc\u03bd",
+        "4D coords"
+      ],
+      "new_names_not_on_menu": [
+        "Einstein_Hilbert",
+        "Lambda_4",
+        "G_N"
+      ],
+      "gates": [
+        "R-modulus-called-lock",
+        "R-unlisted-modulus",
+        "R-knobs"
+      ],
+      "live_bin": "REFUSED",
+      "why": "9/16 is a compact ratio; EH term not coded; equation not accepted"
+    },
+    {
+      "id": "D",
+      "equation": null,
+      "leftover_constants": [
+        "a(t)",
+        "k_curvature",
+        "t"
+      ],
+      "new_names_not_on_menu": [
+        "FRW_scale_factor",
+        "t"
+      ],
+      "gates": [
+        "R-unlisted-modulus",
+        "R-knobs"
+      ],
+      "live_bin": "REFUSED",
+      "why": "Stage-4 scalars do not force a unique 4D line element"
+    },
+    {
+      "id": "E",
+      "equation": null,
+      "leftover_constants": [
+        "choice of vacuum metric"
+      ],
+      "new_names_not_on_menu": [
+        "eta_mu_nu"
+      ],
+      "gates": [
+        "R-weld"
+      ],
+      "live_bin": "REFUSED",
+      "why": "failed warp uniqueness does not force Minkowski; pick forbidden"
+    },
+    {
+      "id": "F",
+      "equation": null,
+      "leftover_constants": [],
+      "new_names_not_on_menu": [],
+      "gates": [
+        "R-stick-left-in",
+        "R-scale"
+      ],
+      "live_bin": "REFUSED",
+      "why": "yardstick is GAUGE conversion, not g_\u03bc\u03bd"
+    }
+  ],
+  "M": [
+    {
+      "id": "M1",
+      "text": "g_mu_nu(x) is already a coded live field on M^4",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [
+        "R-modulus-called-lock"
+      ],
+      "reasons": [
+        "labels 'g_mu_nu' type OPEN-FIELD as FORCED"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "M2",
+      "text": "sigma* or compact phi identifies with g_mu_nu",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [
+        "R-metric-swap"
+      ],
+      "reasons": [
+        "YES identifies \u03c3* or \u03c6(\u03b8,\u03c8) with g_\u03bc\u03bd"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "M3",
+      "text": "9/16 forces G_N as an Einstein-Hilbert coefficient",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [
+        "R-modulus-called-lock",
+        "R-unlisted-modulus",
+        "R-modulus-called-lock"
+      ],
+      "reasons": [
+        "YES uses 8\u03c0G_eff as G_N in an ODE",
+        "modulus 'eight_pi_G_eff_as_G_N' is not a named allowed menu row",
+        "labels 'eight_pi_G_eff_as_G_N' type FORBIDDEN as G_N"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "M4",
+      "text": "Stage-4 scalars force a unique 4D line element",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [
+        "R-knobs",
+        "R-knobs",
+        "R-unlisted-modulus"
+      ],
+      "reasons": [
+        "YES introduces a free real parameter",
+        "YES introduces L, bulk \u039b, RS k, or integration constant C",
+        "modulus 'FRW_line_element' is not a named allowed menu row"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "M5",
+      "text": "unique zero-knob 4D Einstein equation from locked atoms only",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [
+        "R-knobs",
+        "R-modulus-called-lock",
+        "R-knobs",
+        "R-unlisted-modulus"
+      ],
+      "reasons": [
+        "YES introduces a free real parameter",
+        "YES uses 8\u03c0G_eff as G_N in an ODE",
+        "YES introduces L, bulk \u039b, RS k, or integration constant C",
+        "modulus 'Einstein_Hilbert' is not a named allowed menu row"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "M6",
+      "text": "unique g_mu_nu(x) forced modulo diffeomorphism and Weyl",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [
+        "R-modulus-called-lock"
+      ],
+      "reasons": [
+        "labels 'g_mu_nu' type OPEN-FIELD as FORCED"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "M7",
+      "text": "eta_mu_nu / FLRW / RS / Schwarzschild is THE metric",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [
+        "R-weld",
+        "R-unlisted-modulus"
+      ],
+      "reasons": [
+        "YES welds CLASS onto LOCK",
+        "modulus 'eta_mu_nu' is not a named allowed menu row"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "M8",
+      "text": "observational conversion / yardstick is g_mu_nu",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [
+        "R-stick-left-in",
+        "R-scale",
+        "R-modulus-called-lock"
+      ],
+      "reasons": [
+        "YES leaves observational stick in as dynamics",
+        "YES treats Weyl \u03bb or stick as R in meters",
+        "labels 'overall_R' type GAUGE as FORCED"
+      ],
+      "color_lock": false
+    }
+  ],
+  "fractions": {
+    "T_wall": "13/2",
+    "sigma_star_sq": "3/4",
+    "eight_pi_G_eff": "9/16"
+  },
+  "timestamp_utc": "2026-09-20T02:44:03.726609+00:00"
+}

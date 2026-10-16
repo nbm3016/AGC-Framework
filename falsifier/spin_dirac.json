@@ -1,0 +1,259 @@
+{
+  "module": "spin_dirac",
+  "banner": "SPIN DIRAC T11 - 5-TRIPLE != 4-METRIC - ZERO KNOBS",
+  "continuous_knobs": 0,
+  "N_gen": 3,
+  "sigma_star": "sqrt(3)/2",
+  "topology_source": "T1 topology T^{1,1}\u2243S\u00b2\u00d7S\u00b3",
+  "certificate": {
+    "factors": [
+      2,
+      3
+    ],
+    "link_dim": 5,
+    "b0": 1,
+    "b1": 0,
+    "pi1_trivial": true,
+    "w2_sphere_factors": [
+      0,
+      0
+    ],
+    "w2": 0,
+    "h1_f2_dimension": 0,
+    "n_spin_structures": 1,
+    "extra_continuous_knobs": 0,
+    "ko_dimension": 5,
+    "ko_dimension_free": false,
+    "spectral_dimension": 5,
+    "weyl_exponent": "5/2",
+    "weight2_exponent": 2,
+    "weight2_matches_dirac": false,
+    "killing_dimension_is_4m_plus_1": true,
+    "killing_m": 1,
+    "killing_alpha": [
+      "-1/2",
+      "1/2"
+    ],
+    "spinor_rank": 4,
+    "l2_dimension": "infinite",
+    "algebra": "C^infty(T^{1,1})",
+    "algebra_is_M4": false
+  },
+  "se_on_disk": true,
+  "killing_spinors_admitted": true,
+  "wall_index_is_ker_d5": false,
+  "algebra": "C^infty(T^{1,1})",
+  "hilbert": "L^2(T^{1,1}, S)",
+  "dirac": "Dirac(g5)",
+  "unique_5_triple": true,
+  "reconstructs_T11": true,
+  "unique_g_mu_nu": false,
+  "g_mu_nu_type": "OPEN-FIELD",
+  "g_mu_nu_value_forced": false,
+  "color_type": "FORBIDDEN",
+  "cone_real_dim": 6,
+  "hol_of_cone": "SU(3)",
+  "hol_is_4d_dirac": false,
+  "S": [
+    {
+      "id": "S1",
+      "text": "Is T^{1,1} spin from locked topology?",
+      "bin": "FORCED",
+      "gates": [],
+      "reasons": [
+        "w2(S^2\u00d7S^3)=0 from stable parallelizability of each sphere. b0=1."
+      ],
+      "unique": true
+    },
+    {
+      "id": "S2",
+      "text": "Is the spin structure unique (locked b1 / Betti)? Extra continuous knob?",
+      "bin": "FORCED",
+      "gates": [],
+      "reasons": [
+        "K\u00fcnneth b1=0. \u03c01 trivial=True. H^1(Z/2) dimension=0. spin structures=1. extra knobs=0."
+      ],
+      "unique": true
+    },
+    {
+      "id": "S3",
+      "text": "Is A forced as C^infty(T^{1,1}), or picked as C^infty(M^4)?",
+      "bin": "FORCED",
+      "gates": [],
+      "reasons": [
+        "A=C^infty(T^{1,1}). Picked as C^infty(M^4)? False."
+      ],
+      "unique": true
+    },
+    {
+      "id": "S4",
+      "text": "Is H = L^2(T^{1,1}, S) unique from that spin structure?",
+      "bin": "FORCED",
+      "gates": [],
+      "reasons": [
+        "Unique spin structure determines the spinor bundle. Fibre rank=4. H=L^2 of that bundle."
+      ],
+      "unique": true
+    },
+    {
+      "id": "S5",
+      "text": "Is D = Dirac(g5) unique (no free KO-dim, no free inner fluctuation)?",
+      "bin": "FORCED",
+      "gates": [],
+      "reasons": [
+        "Dirac(g5) is the Clifford contraction of the spin connection. Shape \u03c3*=sqrt(3)/2 is locked. KO-dimension=5 (n mod 8), free=False. Inner fluctuation 1-form is 0."
+      ],
+      "unique": true
+    },
+    {
+      "id": "S6",
+      "text": "Does this triple reconstruct T^{1,1}?",
+      "bin": "FORCED",
+      "gates": [],
+      "reasons": [
+        "Canonical commutative triple of spectral dimension 5 reconstructs the locked 5-fold."
+      ],
+      "unique": true
+    },
+    {
+      "id": "S7",
+      "text": "Does this triple reconstruct a unique g_mu_nu(x) on M^4?",
+      "bin": "REFUSED",
+      "gates": [
+        "R-modulus-called-lock",
+        "R-modulus-called-lock"
+      ],
+      "reasons": [
+        "Reconstructed dimension is 5. A 4-metric is not the output.",
+        "labels 'g_mu_nu' type OPEN-FIELD as FORCED",
+        "YES treats non-FORCED modulus 'g_mu_nu' as lock"
+      ],
+      "color_lock": false,
+      "unique": false
+    },
+    {
+      "id": "S8",
+      "text": "Is N_gen=3 equal to ker D5 or to L^2 spinors of M^4?",
+      "bin": "REFUSED",
+      "gates": [
+        "R-map-called-lock",
+        "R-unlisted-modulus"
+      ],
+      "reasons": [
+        "N_gen=3. Spinor fibre rank=4. L^2 dimension=infinite. native_aps_index.py states the wall-index rule is not ker D_5. Equal to ker D5? False. Equal to L^2? False.",
+        "YES labels a map/class as LOCK/FORCED/DERIVED",
+        "modulus 'ker_D5_equals_N_gen' is not a named allowed menu row"
+      ],
+      "color_lock": false,
+      "unique": false
+    },
+    {
+      "id": "S9",
+      "text": "Is the spectral dimension 5, not 4?",
+      "bin": "FORCED",
+      "gates": [],
+      "reasons": [
+        "Spectral dimension=5. Weyl exponent=5/2. Weight-2 exponent=2."
+      ],
+      "unique": true
+    },
+    {
+      "id": "S10",
+      "text": "May a Weyl-weight-2 twist retarget reconstruction to M^4?",
+      "bin": "REFUSED",
+      "gates": [
+        "R-knobs",
+        "R-map-called-lock",
+        "R-unlisted-modulus"
+      ],
+      "reasons": [
+        "Weight-2 exponent 2 against Dirac exponent 5/2. The twist is not applied.",
+        "YES introduces a free real parameter",
+        "YES labels a map/class as LOCK/FORCED/DERIVED",
+        "modulus 'weyl_weight_2' is not a named allowed menu row"
+      ],
+      "color_lock": false,
+      "unique": false
+    },
+    {
+      "id": "S11",
+      "text": "Do cone spinors (A6,H6,D6) reconstruct g_mu_nu(x)?",
+      "bin": "REFUSED",
+      "gates": [
+        "R-map-called-lock",
+        "R-modulus-called-lock",
+        "R-modulus-called-lock"
+      ],
+      "reasons": [
+        "Cone real dimension=6. Hol(g_C)=SU(3) is holonomy, recorded as a Dirac operator? False.",
+        "YES labels a map/class as LOCK/FORCED/DERIVED",
+        "labels 'g_mu_nu' type OPEN-FIELD as FORCED",
+        "YES treats non-FORCED modulus 'g_mu_nu' as lock"
+      ],
+      "color_lock": false,
+      "unique": false
+    },
+    {
+      "id": "S12",
+      "text": "Promote g_mu_nu or unique color?",
+      "bin": "REFUSED",
+      "gates": [
+        "R-color-lock",
+        "R-unlisted-modulus",
+        "R-modulus-called-lock",
+        "R-modulus-called-lock"
+      ],
+      "reasons": [
+        "Promotion would move g_mu_nu or unique color.",
+        "YES picks unique SU(3)_c / three colors / C2 as color",
+        "modulus 'unique_color' is not a named allowed menu row",
+        "labels 'unique_color' type FORBIDDEN as FORCED",
+        "YES treats non-FORCED modulus 'unique_color' as lock"
+      ],
+      "color_lock": false,
+      "unique": false
+    }
+  ],
+  "not_input_comparison": {
+    "label": "NOT INPUT",
+    "connes_N1_to_N6": [
+      {
+        "id": "N1",
+        "bin": "REFUSED",
+        "unique": false
+      },
+      {
+        "id": "N2",
+        "bin": "REFUSED",
+        "unique": false
+      },
+      {
+        "id": "N3",
+        "bin": "REFUSED",
+        "unique": false
+      },
+      {
+        "id": "N4",
+        "bin": "REFUSED",
+        "unique": false
+      },
+      {
+        "id": "N5",
+        "bin": "REFUSED",
+        "unique": false
+      },
+      {
+        "id": "N6",
+        "bin": "REFUSED",
+        "unique": false
+      }
+    ],
+    "connes_note": "N1\u2013N6 refused a 4D triple because no triple was stored. Those bins were not edited.",
+    "e4_value_forced": false,
+    "e4_M6_bin": "REFUSED",
+    "e4_M6_unique": false,
+    "hol_note": "Hol(g_C) is holonomy of the cone, not a 4D Dirac operator."
+  },
+  "isolate_written": false,
+  "timestamp_utc": "2026-09-21T21:34:07.417288+00:00"
+}

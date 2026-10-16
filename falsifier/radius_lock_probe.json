@@ -1,0 +1,81 @@
+{
+  "banner": "WALL-INDEX RELABEL + RADIUS LOCK - ZERO KNOBS",
+  "continuous_knobs": 0,
+  "r_c_forced": false,
+  "phase3_skipped": true,
+  "rule_r11": "A length needs an observer stick unless a dimensionless ratio picks one r on the cone. Homothety that leaves R^rho_sigma_mu_nu invariant is gauge, not a lock.",
+  "rows": [
+    {
+      "id": "R1",
+      "candidate": "cone coordinate r",
+      "type_match_to_radius": false,
+      "unique": false,
+      "extras": ["coordinate_value"],
+      "live_bin": "REFUSED",
+      "why": "r in g_C = dr^2 + r^2 g_5 is a coordinate on the open cone. It is not one locked radius."
+    },
+    {
+      "id": "R2",
+      "candidate": "homothety r d/dr",
+      "type_match_to_radius": false,
+      "unique": false,
+      "extras": ["gauge_scale"],
+      "live_bin": "REFUSED",
+      "why": "Files already call this homothety GAUGE. It scales the cone and does not pick one cutoff r_c. Riemann components of type R^rho_sigma_mu_nu stay nonzero under that rescaling."
+    },
+    {
+      "id": "R3",
+      "candidate": "T_wall=13/2",
+      "type_match_to_radius": false,
+      "unique": false,
+      "extras": ["dimension"],
+      "live_bin": "REFUSED",
+      "why": "13/2 is dimensionless. Rule R11 does not turn it into a length. It is not wall thickness."
+    },
+    {
+      "id": "R4",
+      "candidate": "Vol(T^{1,1})=16*pi**3/27",
+      "type_match_to_radius": false,
+      "unique": false,
+      "extras": ["normalization"],
+      "live_bin": "REFUSED",
+      "why": "This volume is the number for the already normalized Einstein 5-metric. It is not a cutoff on the cone."
+    },
+    {
+      "id": "R5",
+      "candidate": "sigma*=sqrt(3)/2",
+      "type_match_to_radius": false,
+      "unique": false,
+      "extras": ["dimension"],
+      "live_bin": "REFUSED",
+      "why": "sigma* is a dimensionless shape. It does not pick a radial cutoff."
+    },
+    {
+      "id": "R6",
+      "candidate": "8*pi*G_eff=9/16",
+      "type_match_to_radius": false,
+      "unique": false,
+      "extras": ["dimension"],
+      "live_bin": "REFUSED",
+      "why": "9/16 is a pure number. It is not G_N and not a length."
+    },
+    {
+      "id": "R7",
+      "candidate": "official residual r=0.095716",
+      "type_match_to_radius": false,
+      "unique": false,
+      "extras": ["name_collision"],
+      "live_bin": "REFUSED",
+      "why": "The official r is a dimensionless beta residual on a 24-mode slice. The shared letter is not a cone radius."
+    },
+    {
+      "id": "R8",
+      "candidate": "Planck / wall thickness / spectral-action cutoff",
+      "type_match_to_radius": false,
+      "unique": false,
+      "extras": ["new_name"],
+      "live_bin": "REFUSED",
+      "why": "None of those names is a locked atom. They are not introduced."
+    }
+  ]
+}

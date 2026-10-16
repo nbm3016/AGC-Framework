@@ -1,0 +1,77 @@
+{
+  "banner": "WALL UNIQUENESS - THIS SIEVE NOT EVERY 5-FOLD - ZERO KNOBS",
+  "continuous_knobs": 0,
+  "rows": [
+    {
+      "id": "U1",
+      "claim": "locked atoms force T^{1,1} among all 5-manifolds",
+      "unique": false,
+      "live_bin": "REFUSED",
+      "extras": [
+        "bases_outside_first_slice"
+      ],
+      "why": "controlled_uniqueness.json sets global_landscape_uniqueness false. Uniqueness among all 5-manifolds is not claimed."
+    },
+    {
+      "id": "U2",
+      "claim": "locked atoms force T^{1,1} only inside first-slice G_SE",
+      "unique": true,
+      "live_bin": "FORCED",
+      "extras": [],
+      "why": "The file says lambda-tilde, equivalently sigma*=sqrt(3)/2, isolates T^{1,1} among labeled bases in the first slice. The scope is that slice."
+    },
+    {
+      "id": "U3",
+      "claim": "b2=b3=1 kills S^5 and Q^{1,1,1}",
+      "unique": true,
+      "live_bin": "FORCED",
+      "extras": [],
+      "why": "Locked b2=1, b3=1. S^5 has b2=0. Q^{1,1,1} as the (1,1,1) circle bundle has b2=2."
+    },
+    {
+      "id": "U4",
+      "claim": "Iso=SU(2)\u00d7SU(2)\u00d7U(1) kills M^{p,q} as this wall",
+      "unique": true,
+      "live_bin": "FORCED",
+      "extras": [],
+      "why": "This wall's isometry has dimension 7 and no SU(3) factor. M^{p,q} is dimension 7 with an SU(3) factor. Not this wall. (p,q) is not selected."
+    },
+    {
+      "id": "U5",
+      "claim": "the wall-index sieve exists only on this Iso",
+      "unique": false,
+      "live_bin": "REFUSED",
+      "extras": [
+        "other_isometry"
+      ],
+      "why": "The sieve is written in the j1, j2 labels of this isometry. The files do not prove that no other group could carry a three-zero count."
+    },
+    {
+      "id": "U6",
+      "claim": "some other locked 5-fold also has exactly three zeros under the same rule with extras=0",
+      "unique": false,
+      "live_bin": "REFUSED",
+      "extras": [
+        "second_locked_5fold"
+      ],
+      "why": "No second locked 5-fold with that zero count and empty extras is on disk."
+    },
+    {
+      "id": "U7",
+      "claim": "Y^{14} / fibration_class is forced this session",
+      "unique": false,
+      "live_bin": "REFUSED",
+      "extras": [
+        "fibration_class"
+      ],
+      "why": "The same uniqueness file says uniqueness among all 14D fibrations remains open."
+    }
+  ],
+  "unique_among_all_5folds": false,
+  "unique_inside_first_slice": true,
+  "another_extras0_fivefold": false,
+  "y14_forced": false,
+  "family_physics_reopened": false,
+  "n_gen_as_generations": false,
+  "timestamp_utc": "2026-09-23T21:56:53.426635+00:00"
+}

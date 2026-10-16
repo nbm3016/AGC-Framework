@@ -1,0 +1,79 @@
+{
+  "continuous_knobs": 0,
+  "rule": "addressable is not forced",
+  "promotion_rule": "A later atom enters the isolate only when type match, uniqueness, and extras=0 hold together.",
+  "rows": [
+    {
+      "id": "positive_eom",
+      "live_bin": "UNKNOWN",
+      "blocking_rule": "The positive-equation section is empty. Offered warp, g_mu_nu, and color-member equations are refused.",
+      "missing_type": "positive equation of motion",
+      "extra": "empty section",
+      "addressable": true,
+      "promoted": false
+    },
+    {
+      "id": "unique_color",
+      "live_bin": "FORBIDDEN",
+      "blocking_rule": "Unique color is contradicted. Hol(g_C)=SU(3) is holonomy. Isometry dimension 7 is not color.",
+      "missing_type": "unique SU(3)_c",
+      "extra": "SU(3)_c",
+      "addressable": true,
+      "promoted": false
+    },
+    {
+      "id": "G_N",
+      "live_bin": "FORBIDDEN",
+      "blocking_rule": "kappa=9/16 stays a pure number. The reading that 9/16 is G_N is rejected.",
+      "missing_type": "Newton constant",
+      "extra": "G_N",
+      "addressable": true,
+      "promoted": false
+    },
+    {
+      "id": "D5_spectrum",
+      "live_bin": "UNKNOWN",
+      "blocking_rule": "No cutoff-free eigenvalue file is stored. Survivor numbers are not ker D_5 on T^{1,1}.",
+      "missing_type": "D5 eigenvalue list",
+      "extra": "eigenvalue list",
+      "addressable": true,
+      "promoted": false
+    },
+    {
+      "id": "warp_factor",
+      "live_bin": "CONSISTENT",
+      "blocking_rule": "Catalog uniqueness is not an isolate atom. Labeling the open-field warp as forced is refused.",
+      "missing_type": "warp profile A(y)",
+      "extra": "A, y",
+      "addressable": true,
+      "promoted": false
+    },
+    {
+      "id": "g_mu_nu",
+      "live_bin": "OPEN-FIELD",
+      "blocking_rule": "g_T from the locked 5-metric is forced and is not g_mu_nu(x). No unique 4D spectral triple.",
+      "missing_type": "spacetime metric",
+      "extra": "g_mu_nu",
+      "addressable": true,
+      "promoted": false
+    },
+    {
+      "id": "fibration_class",
+      "live_bin": "CLASS",
+      "blocking_rule": "Y^14 to M^4 with fibre Sigma^5 x T^{1,1} is locked. Uniqueness among 14-dimensional fibrations is not. Y14_on_disk stays UNKNOWN. A factor result is not a landscape-wide impossibility.",
+      "missing_type": "fibration class",
+      "extra": "fibration_class",
+      "addressable": true,
+      "promoted": false
+    },
+    {
+      "id": "c2",
+      "live_bin": "UNKNOWN",
+      "blocking_rule": "The filter does not project out c2 before scoring. The Euler cup-square 2 is the U(1) self-pairing.",
+      "missing_type": "c2 of an SU(3) bundle on S^2 x S^2",
+      "extra": "c2",
+      "addressable": true,
+      "promoted": false
+    }
+  ]
+}

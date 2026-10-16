@@ -1,0 +1,52 @@
+{
+  "banner": "REPLICA SEARCH - THREE COPIES OR DO NOT START - ZERO KNOBS",
+  "continuous_knobs": 0,
+  "rows": [
+    {
+      "id": "K1",
+      "space_or_index": "T^{1,1} wall-index zeros",
+      "extras": [],
+      "kernel": "2\u22953\u22954 of SU(2)_1",
+      "three_copies_of_one_R": false,
+      "live_bin": "REFUSED",
+      "why": "Three different irreps. Not R\u2295R\u2295R. Left as the old isolate.",
+      "passes": false
+    },
+    {
+      "id": "K2",
+      "space_or_index": "parallel spinors of the cone",
+      "extras": [],
+      "kernel": "one complex line",
+      "three_copies_of_one_R": false,
+      "live_bin": "REFUSED",
+      "why": "Spin(6) spinors branch as 3\u22951 under SU(3). Exact holonomy SU(3) leaves one complex parallel spinor. The phase is the locked Reeb U(1), not a color factor.",
+      "passes": false
+    },
+    {
+      "id": "K3",
+      "space_or_index": "Killing spinors on the SE 5-fold",
+      "extras": [],
+      "kernel": "alpha=['-1/2', '1/2']",
+      "three_copies_of_one_R": false,
+      "live_bin": "REFUSED",
+      "why": "Two discrete Killing constants, not three copies of one representation.",
+      "passes": false
+    },
+    {
+      "id": "K4",
+      "space_or_index": "spinor fibre of T^{1,1}",
+      "extras": [],
+      "kernel": "rank 4",
+      "three_copies_of_one_R": false,
+      "live_bin": "REFUSED",
+      "why": "One spinor bundle of rank 4. Not three copies of one internal representation.",
+      "passes": false
+    }
+  ],
+  "blocked": true,
+  "any_extras0_triple_copy": false,
+  "new_isolate_started": false,
+  "old_isolate_rewritten": false,
+  "carried_over": false,
+  "timestamp_utc": "2026-09-23T22:02:28.951518+00:00"
+}

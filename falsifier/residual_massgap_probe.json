@@ -1,0 +1,89 @@
+{
+  "banner": "RESIDUAL \u03b2 PROTECTION PROBE COMPLETE \u2013 ZERO KNOBS PRESERVED",
+  "timestamp_utc": "2026-08-22T01:00:03.460896+00:00",
+  "continuous_knobs": 0,
+  "stages_1_3_geometry_untouched": true,
+  "locked_r_unchanged": true,
+  "locked_r": 0.095716,
+  "residual_protected": false,
+  "decision": "NO",
+  "reason": "No locked structure supplies a strictly positive mass\u00b2 for the Einstein\u2013YM residual r, nor a topological obstruction that forces r\u21920. APS/self-duality/index/monodromy/T_wall act on other discrete data. V(\u03c3) and m\u00b2_\u03c6 protect \u03c3 and \u03c6. \u03c4_res is linear in r (flat second variation). Continuum r\u21920 remains open.",
+  "mechanisms": [
+    {
+      "mechanism": "APS boundary (fiber r_APS=0)",
+      "generates_protection": false,
+      "form": "APS kernel / index flow forbids fiber r_APS\u22600",
+      "mass_squared_or_obstruction": "topological for APS r, not for EY residual r",
+      "strictly_positive_or_forced": false,
+      "result": "NO \u2014 different r; does not force Frobenius residual \u2192 0"
+    },
+    {
+      "mechanism": "self-dual 7-form \u22c6\u03a8=\u03a8",
+      "generates_protection": false,
+      "form": "\u2016\u22c6\u03a8\u2212\u03a8\u2016\u00b2=0 on j\u2082=0",
+      "mass_squared_or_obstruction": 0.0,
+      "strictly_positive_or_forced": false,
+      "result": "NO \u2014 condensate already vanishes; no remaining source for r\u21920"
+    },
+    {
+      "mechanism": "\u03a3\u2075 domain wall T_wall",
+      "generates_protection": false,
+      "form": "T_wall=\u03a3 j(j+1)=13/2 (independent of r)",
+      "mass_squared_or_obstruction": 0.0,
+      "strictly_positive_or_forced": false,
+      "result": "NO \u2014 discrete Casimir; d\u00b2T_wall/dr\u00b2=0 (flat in r)"
+    },
+    {
+      "mechanism": "monodromy order 24",
+      "generates_protection": false,
+      "form": "lcm(8,3,8)=24 cyclotomic integer",
+      "mass_squared_or_obstruction": null,
+      "strictly_positive_or_forced": false,
+      "result": "NO \u2014 group integer; does not quantize or mass the EY residual"
+    },
+    {
+      "mechanism": "residual tension \u03c4_res=r \u03c3*\u00b2",
+      "generates_protection": false,
+      "form": "V(r)\u225f\u03c4_res=r \u03c3*\u00b2; dV/dr=\u03c3*\u00b2=0.750000; d\u00b2V/dr\u00b2=0",
+      "mass_squared_or_obstruction": 0.0,
+      "strictly_positive_or_forced": false,
+      "result": "NO \u2014 linear in r: slope prefers smaller r but second variation is flat (not a mass gap). Quadratic V=\u03c4_res\u00b2 is not forced",
+      "tau_res": 0.07178721151092633
+    },
+    {
+      "mechanism": "native APS index N_gen=3",
+      "generates_protection": false,
+      "form": "dim ker D_APS = 3",
+      "mass_squared_or_obstruction": null,
+      "strictly_positive_or_forced": false,
+      "result": "NO \u2014 integer cohomology; independent of EY residual r"
+    },
+    {
+      "mechanism": "geometric V(\u03c3)",
+      "generates_protection": false,
+      "form": "m\u00b2_\u03c3=d\u00b2V/d\u03c3\u00b2|_*=12.000000>0",
+      "mass_squared_or_obstruction": 11.999999999999297,
+      "strictly_positive_or_forced": true,
+      "result": "NO for r \u2014 mass gap protects \u03c3*, not the EY residual"
+    },
+    {
+      "mechanism": "\u03c6 mass-gap proxy",
+      "generates_protection": false,
+      "form": "m\u00b2_\u03c6\u223c2(1+r)\u03c3*\u00b2/C\u2082=1.232681>0",
+      "mass_squared_or_obstruction": 1.2326808172664336,
+      "strictly_positive_or_forced": true,
+      "result": "NO for r \u2014 stabilizes the field \u03c6, not the mismatch value r[\u03c6]"
+    }
+  ],
+  "locked_snapshot": {
+    "n_gen": 3,
+    "sigma_star": 0.8660254037844556,
+    "beta_residual_new": 0.0957162820145647,
+    "tau_res": 0.07178721151092633,
+    "T_wall": 6.5,
+    "monodromy_order": 24,
+    "m2_sigma": 11.999999999999297,
+    "m2_phi": 1.2326808172664336,
+    "continuous_knobs": 0
+  }
+}

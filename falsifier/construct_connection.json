@@ -1,0 +1,311 @@
+{
+  "continuous_knobs": 0,
+  "promoted": false,
+  "ambient": "Y^14 \u2192 M^4",
+  "factors": [
+    "\u03a3^5",
+    "T^{1,1}"
+  ],
+  "vacuum_picked": false,
+  "fiber_traced": false,
+  "structure_group": {
+    "group": "U(1)",
+    "fundamental_field": "\u2202psi",
+    "parent_forms": "SU(2)\u00d7SU(2)",
+    "quotient": "diagonal U(1)",
+    "isometry_of_factor": "SU(2)\u00d7SU(2)\u00d7U(1)"
+  },
+  "forms": {
+    "sigma": "left-invariant Maurer\u2013Cartan forms \u03c3^i of the first SU(2)",
+    "Sigma": "left-invariant Maurer\u2013Cartan forms \u03a3^i of the second SU(2)",
+    "theta": "\u03c3^3 + \u03a3^3 = dpsi + cos(theta1) dphi1 + cos(theta2) dphi2",
+    "eta": "\u03b8/3",
+    "sigma5": "\u03a3^5 is a fiber factor and supplies no Maurer\u2013Cartan form"
+  },
+  "horizontal_projection": {
+    "rule": "P(X) = X - \u03b8(X) \u2202\u03c8",
+    "theta": "dpsi + cos(theta1) dphi1 + cos(theta2) dphi2",
+    "images": {
+      "\u2202theta1": "\u2202theta1",
+      "\u2202phi1": "\u2202phi1 - cos(theta1) \u2202psi",
+      "\u2202theta2": "\u2202theta2",
+      "\u2202phi2": "\u2202phi2 - cos(theta2) \u2202psi",
+      "\u2202psi": "0"
+    }
+  },
+  "D": {
+    "formula": "D_X = P(X) = X - \u03b8(X) \u2202psi",
+    "spacetime": "D_\u03bc = P(\u2202/\u2202x^\u03bc). \u03b8(\u2202/\u2202x^\u03bc) remains the pullback of \u03b8."
+  },
+  "F": {
+    "formula": "[D_X, D_Y] = -d\u03b8(X,Y) \u2202psi",
+    "bracket_term": "0",
+    "reason_bracket_term": "U(1) is abelian, so (1/2)[\u03b8, \u03b8] = 0 and F = d\u03b8.",
+    "two_form": "-sin(theta1) dtheta1\u2227dphi1 - sin(theta2) dtheta2\u2227dphi2",
+    "two_form_pairs": {
+      "dtheta1\u2227dphi1": "-sin(theta1)",
+      "dtheta2\u2227dphi2": "-sin(theta2)"
+    },
+    "eta_exterior": "(-sin(theta1)/3) dtheta1\u2227dphi1 + (-sin(theta2)/3) dtheta2\u2227dphi2",
+    "omega_T_relation": "d\u03b7/2 = d\u03b8/6",
+    "bracket_checks": [
+      {
+        "fields": [
+          "d\u03b81",
+          "d\u03c61"
+        ],
+        "bracket": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "sin(theta1)"
+        ],
+        "minus_dtheta": "sin(theta1)"
+      },
+      {
+        "fields": [
+          "d\u03b82",
+          "d\u03c62"
+        ],
+        "bracket": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "sin(theta2)"
+        ],
+        "minus_dtheta": "sin(theta2)"
+      },
+      {
+        "fields": [
+          "d\u03b81",
+          "d\u03b82"
+        ],
+        "bracket": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "minus_dtheta": "0"
+      }
+    ],
+    "bianchi": "dF = 0"
+  },
+  "rows_changed": 0,
+  "moved": [],
+  "rescored": [
+    {
+      "name": "ambient_theory",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "filter_three_way",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "wall_zero_count",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "barrier_minus",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "clock_Z24",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "continuous_knobs",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "lambda_tilde",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "Iso_group",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "sigma_star",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "T_wall_identity",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "b2",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "b3",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "eight_pi_G_eff_number",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "n_eta",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "CONE",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "CONE_HOLONOMY",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "SPIN_T11",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "DIRAC_T11",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "TRIPLE_T11",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "SASAKI_PHI_J",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "g_T_omega_T",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "PARALLEL_SPINORS_CONE",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "HARM_2_EULER_PAIRING",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "D5_LABEL_FORMULA",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "VOL_T11",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "EINSTEIN_SCALAR_G5",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "CONE_HOMOTHETY",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "J_CONE",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "LINK_SECOND_FUNDAMENTAL",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "DR_WEDGE_DETA",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "DR_WEDGE_HARM2",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "DR_ETA_WEDGE_DETA",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "DR_ETA_WEDGE_HARM2",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "DR_WEDGE_DETA_SQ",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "OMEGA_TRANSVERSE",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    }
+  ]
+}

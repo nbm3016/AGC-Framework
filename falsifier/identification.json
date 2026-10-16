@@ -1,0 +1,16 @@
+{
+  "banner": "IDENTIFICATION STAMP - THREE SPINS NOT THREE COPIES - ZERO KNOBS",
+  "continuous_knobs": 0,
+  "source": "core/r0_modes.json modes with j2=0 and r=0",
+  "N_gen": 3,
+  "N_gen_meaning": "count of wall-index zeros",
+  "three_generations_is_A_lock": false,
+  "same_4d_weyl_three_times": false,
+  "unique_color_forced": false,
+  "zeros": [
+    {"j1": "1/2", "j2": 0, "r": 0, "su2_1_dimension": 2, "name": "doublet"},
+    {"j1": "1", "j2": 0, "r": 0, "su2_1_dimension": 3, "name": "triplet"},
+    {"j1": "3/2", "j2": 0, "r": 0, "su2_1_dimension": 4, "name": "quartet"}
+  ],
+  "dimension_rule": "2*j1+1"
+}

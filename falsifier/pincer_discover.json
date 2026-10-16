@@ -1,0 +1,131 @@
+{
+  "module": "pincer_discover",
+  "banner": "PINCER DISCOVER - FORCED BUNDLES ONLY - ZERO KNOBS",
+  "continuous_knobs": 0,
+  "iso_bundle_family_skipped": true,
+  "b4_link": 0,
+  "euler_cup_square": 2,
+  "tangent_c1": [
+    2,
+    2
+  ],
+  "tangent_c2_evaluation": 4,
+  "euler_cup_assigned_as_c2_SU3": false,
+  "volume_class_assigned_as_c2_SU3": false,
+  "bundles": [
+    {
+      "bundle": "T(T^{1,1})",
+      "char_class": "p1",
+      "degree": 4,
+      "structure_group": "SO(5)",
+      "lives_on": "T^{1,1}",
+      "c1_vanishes": false,
+      "rank_C": 0,
+      "type_match_c2": false,
+      "unique": false,
+      "extras": [
+        "not_c2_SU3"
+      ],
+      "promote": false,
+      "live_bin": "EXTERNAL",
+      "why": "Real rank 5. Computed b4(S^2\u00d7S^3)=0, so the rational degree-4 class on the link is 0. It does not supply a class in H^4 of the base, and the structure group is not SU(3)."
+    },
+    {
+      "bundle": "T(S^2\u00d7S^2)",
+      "char_class": "c2 of O(2,0)\u2295O(0,2)",
+      "degree": 4,
+      "structure_group": "U(2)",
+      "lives_on": "S^2\u00d7S^2",
+      "c1_vanishes": false,
+      "rank_C": 2,
+      "type_match_c2": false,
+      "unique": false,
+      "extras": [
+        "not_c2_SU3"
+      ],
+      "promote": false,
+      "live_bin": "EXTERNAL",
+      "why": "Holomorphic tangent splits as O(2,0)\u2295O(0,2). c1=(2, 2) does not vanish. c2 evaluates to 4, equal to the Euler number, not to c2 of a rank-3 SU(3) bundle."
+    },
+    {
+      "bundle": "Reeb U(1)",
+      "char_class": "Euler (1,1), cup-square",
+      "degree": 2,
+      "structure_group": "U(1)",
+      "lives_on": "S^2\u00d7S^2",
+      "c1_vanishes": false,
+      "rank_C": 1,
+      "type_match_c2": false,
+      "unique": false,
+      "extras": [
+        "not_c2_SU3"
+      ],
+      "promote": false,
+      "live_bin": "EXTERNAL",
+      "why": "Primary class is Euler [1, 1] in H^2. Cup-square equals 2. That integer is the U(1) self-pairing. It is not c2(SU(3)). The volume class of the base is not assigned as c2(SU(3))."
+    },
+    {
+      "bundle": "Spin(T^{1,1})",
+      "char_class": "p1 of the spin lift",
+      "degree": 4,
+      "structure_group": "Spin(5)",
+      "lives_on": "T^{1,1}",
+      "c1_vanishes": false,
+      "rank_C": 0,
+      "type_match_c2": false,
+      "unique": false,
+      "extras": [
+        "not_c2_SU3"
+      ],
+      "promote": false,
+      "live_bin": "EXTERNAL",
+      "why": "One spin structure lifts SO(5) to Spin(5). Pontryagin data match the tangent bundle. Structure group Spin(5) is not SU(3)."
+    },
+    {
+      "bundle": "T(g_C)",
+      "char_class": "c2 of the cone tangent bundle",
+      "degree": 4,
+      "structure_group": "SU(3)",
+      "lives_on": "cone",
+      "c1_vanishes": true,
+      "rank_C": 3,
+      "type_match_c2": false,
+      "unique": false,
+      "extras": [
+        "not_c2_SU3"
+      ],
+      "promote": false,
+      "live_bin": "EXTERNAL",
+      "why": "Holonomy SU(3) reduces the structure group of the cone tangent bundle, so c1 vanishes on the cone. The class lives on the 6-fold, not in H^4(S^2\u00d7S^2). It is not the color bundle on the base."
+    },
+    {
+      "bundle": "transverse complex",
+      "char_class": "c2 of the transverse holomorphic tangent bundle",
+      "degree": 4,
+      "structure_group": "U(2)",
+      "lives_on": "S^2\u00d7S^2",
+      "c1_vanishes": false,
+      "rank_C": 2,
+      "type_match_c2": false,
+      "unique": false,
+      "extras": [
+        "not_c2_SU3"
+      ],
+      "promote": false,
+      "live_bin": "EXTERNAL",
+      "why": "Locked transverse J has complex rank 2. Same Chern data as T(S^2\u00d7S^2): c1=(2, 2)\u22600, c2=4. Structure group U(2), not SU(3)."
+    }
+  ],
+  "D3_structure_group_SU3": [
+    "T(g_C)"
+  ],
+  "D3_on_the_base": false,
+  "D4_length_dimension_atoms": [],
+  "k_bin": "EXTERNAL",
+  "c2_bin": "EXTERNAL",
+  "c2_SU3_forced": false,
+  "k_forced_without_observer_stick": false,
+  "promoted_to_sheet_A": [],
+  "unique_color": "FORBIDDEN",
+  "timestamp_utc": "2026-09-22T01:43:15.426417+00:00"
+}

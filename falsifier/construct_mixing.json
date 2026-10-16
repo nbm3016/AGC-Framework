@@ -1,0 +1,295 @@
+{
+  "continuous_knobs": 0,
+  "promoted": false,
+  "ambient": "Y^14 \u2192 M^4",
+  "factors": [
+    "\u03a3^5",
+    "T^{1,1}"
+  ],
+  "fibration_class_picked": false,
+  "A_is_numeric": false,
+  "A_is_lock": false,
+  "coordinate_killing_fields": false,
+  "structure_group": "SU(2)\u00d7SU(2)\u00d7U(1)",
+  "fundamental_field": "Z = \u2202psi",
+  "K_a": {
+    "names": [
+      "L1",
+      "L2",
+      "L3",
+      "R1",
+      "R2",
+      "R3",
+      "Z"
+    ],
+    "algebra": "su(2)\u2295su(2)\u2295u(1)",
+    "bracket": "[K_a, K_b] = \u2212f_ab^c K_c",
+    "left_su2": "[L_i, L_j] = \u03b5_ijk L_k",
+    "right_su2": "[R_i, R_j] = \u03b5_ijk R_k",
+    "cross": "0",
+    "u1": "Z commutes with every generator"
+  },
+  "mixing": "dy^m \u2212 A_\u03bc^a K_a^m dx^\u03bc",
+  "A": "A_\u03bc^a(x), one coefficient for each generator and each base direction",
+  "D": "D_\u03bc = \u2202_\u03bc + A_\u03bc^a K_a",
+  "F": {
+    "formula": "F_mu_nu^a = d_mu A_nu^a - d_nu A_mu^a - f_bc^a A_mu^b A_nu^c",
+    "components": {
+      "L1": "Amu_L2(t_mu, t_nu)*Anu_L3(t_mu, t_nu) - Amu_L3(t_mu, t_nu)*Anu_L2(t_mu, t_nu) - Derivative(Amu_L1(t_mu, t_nu), t_nu) + Derivative(Anu_L1(t_mu, t_nu), t_mu)",
+      "L2": "-Amu_L1(t_mu, t_nu)*Anu_L3(t_mu, t_nu) + Amu_L3(t_mu, t_nu)*Anu_L1(t_mu, t_nu) - Derivative(Amu_L2(t_mu, t_nu), t_nu) + Derivative(Anu_L2(t_mu, t_nu), t_mu)",
+      "L3": "Amu_L1(t_mu, t_nu)*Anu_L2(t_mu, t_nu) - Amu_L2(t_mu, t_nu)*Anu_L1(t_mu, t_nu) - Derivative(Amu_L3(t_mu, t_nu), t_nu) + Derivative(Anu_L3(t_mu, t_nu), t_mu)",
+      "R1": "Amu_R2(t_mu, t_nu)*Anu_R3(t_mu, t_nu) - Amu_R3(t_mu, t_nu)*Anu_R2(t_mu, t_nu) - Derivative(Amu_R1(t_mu, t_nu), t_nu) + Derivative(Anu_R1(t_mu, t_nu), t_mu)",
+      "R2": "-Amu_R1(t_mu, t_nu)*Anu_R3(t_mu, t_nu) + Amu_R3(t_mu, t_nu)*Anu_R1(t_mu, t_nu) - Derivative(Amu_R2(t_mu, t_nu), t_nu) + Derivative(Anu_R2(t_mu, t_nu), t_mu)",
+      "R3": "Amu_R1(t_mu, t_nu)*Anu_R2(t_mu, t_nu) - Amu_R2(t_mu, t_nu)*Anu_R1(t_mu, t_nu) - Derivative(Amu_R3(t_mu, t_nu), t_nu) + Derivative(Anu_R3(t_mu, t_nu), t_mu)",
+      "Z": "-Derivative(Amu_Z(t_mu, t_nu), t_nu) + Derivative(Anu_Z(t_mu, t_nu), t_mu)"
+    },
+    "split": {
+      "L1": {
+        "dA": "-Derivative(Amu_L1(t_mu, t_nu), t_nu) + Derivative(Anu_L1(t_mu, t_nu), t_mu)",
+        "A_wedge_A": "Amu_L2(t_mu, t_nu)*Anu_L3(t_mu, t_nu) - Amu_L3(t_mu, t_nu)*Anu_L2(t_mu, t_nu)"
+      },
+      "L2": {
+        "dA": "-Derivative(Amu_L2(t_mu, t_nu), t_nu) + Derivative(Anu_L2(t_mu, t_nu), t_mu)",
+        "A_wedge_A": "-Amu_L1(t_mu, t_nu)*Anu_L3(t_mu, t_nu) + Amu_L3(t_mu, t_nu)*Anu_L1(t_mu, t_nu)"
+      },
+      "L3": {
+        "dA": "-Derivative(Amu_L3(t_mu, t_nu), t_nu) + Derivative(Anu_L3(t_mu, t_nu), t_mu)",
+        "A_wedge_A": "Amu_L1(t_mu, t_nu)*Anu_L2(t_mu, t_nu) - Amu_L2(t_mu, t_nu)*Anu_L1(t_mu, t_nu)"
+      },
+      "R1": {
+        "dA": "-Derivative(Amu_R1(t_mu, t_nu), t_nu) + Derivative(Anu_R1(t_mu, t_nu), t_mu)",
+        "A_wedge_A": "Amu_R2(t_mu, t_nu)*Anu_R3(t_mu, t_nu) - Amu_R3(t_mu, t_nu)*Anu_R2(t_mu, t_nu)"
+      },
+      "R2": {
+        "dA": "-Derivative(Amu_R2(t_mu, t_nu), t_nu) + Derivative(Anu_R2(t_mu, t_nu), t_mu)",
+        "A_wedge_A": "-Amu_R1(t_mu, t_nu)*Anu_R3(t_mu, t_nu) + Amu_R3(t_mu, t_nu)*Anu_R1(t_mu, t_nu)"
+      },
+      "R3": {
+        "dA": "-Derivative(Amu_R3(t_mu, t_nu), t_nu) + Derivative(Anu_R3(t_mu, t_nu), t_mu)",
+        "A_wedge_A": "Amu_R1(t_mu, t_nu)*Anu_R2(t_mu, t_nu) - Amu_R2(t_mu, t_nu)*Anu_R1(t_mu, t_nu)"
+      },
+      "Z": {
+        "dA": "-Derivative(Amu_Z(t_mu, t_nu), t_nu) + Derivative(Anu_Z(t_mu, t_nu), t_mu)",
+        "A_wedge_A": "0"
+      }
+    },
+    "dA_plus_A_wedge_A": "every component of [D_\u03bc, D_\u03bd]",
+    "minus_dtheta_on_lifts": "\u2202_\u03bc A_\u03bd^Z \u2212 \u2202_\u03bd A_\u03bc^Z \u2212 \u03b8([D_\u03bc, D_\u03bd]) = 0",
+    "minus_dtheta_internal_angles": "not substituted"
+  },
+  "sigma5_form": [],
+  "rows_changed": 0,
+  "moved": [],
+  "rescored": [
+    {
+      "name": "ambient_theory",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "filter_three_way",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "wall_zero_count",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "barrier_minus",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "clock_Z24",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "continuous_knobs",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "lambda_tilde",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "Iso_group",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "sigma_star",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "T_wall_identity",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "b2",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "b3",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "eight_pi_G_eff_number",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "n_eta",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "CONE",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "CONE_HOLONOMY",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "SPIN_T11",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "DIRAC_T11",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "TRIPLE_T11",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "SASAKI_PHI_J",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "g_T_omega_T",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "PARALLEL_SPINORS_CONE",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "HARM_2_EULER_PAIRING",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "D5_LABEL_FORMULA",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "VOL_T11",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "EINSTEIN_SCALAR_G5",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "CONE_HOMOTHETY",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "J_CONE",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "LINK_SECOND_FUNDAMENTAL",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "DR_WEDGE_DETA",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "DR_WEDGE_HARM2",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "DR_ETA_WEDGE_DETA",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "DR_ETA_WEDGE_HARM2",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "DR_WEDGE_DETA_SQ",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "OMEGA_TRANSVERSE",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    }
+  ]
+}

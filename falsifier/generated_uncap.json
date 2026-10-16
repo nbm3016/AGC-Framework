@@ -1,0 +1,78 @@
+{
+  "module": "generate_uncap",
+  "banner": "UNCAP GENERATOR - LIST NOT PRE-SIZED - ZERO KNOBS",
+  "continuous_knobs": 0,
+  "isolate_frozen": false,
+  "algebra": "C^infty(T^{1,1})",
+  "spectral_dimension": 5,
+  "n_new": 6,
+  "empty": false,
+  "new": [
+    {
+      "name": "DR_WEDGE_DETA",
+      "unique": true,
+      "live_bin": "FORCED",
+      "determined_by": "dr from g_C(\u2202r), d\u03b7 from the contact tower",
+      "extras": "operation=wedge; degree=3; radial weight fixed by r\u2202_r",
+      "why": "Invariant form produced by one wedge with dr. It is outside the span of the already forced forms."
+    },
+    {
+      "name": "DR_WEDGE_HARM2",
+      "unique": true,
+      "live_bin": "FORCED",
+      "determined_by": "dr and HARM_2",
+      "extras": "operation=wedge; degree=3; radial weight fixed by r\u2202_r",
+      "why": "Invariant form produced by one wedge with dr. It is outside the span of the already forced forms."
+    },
+    {
+      "name": "DR_ETA_WEDGE_DETA",
+      "unique": true,
+      "live_bin": "FORCED",
+      "determined_by": "dr, \u03b7, d\u03b7",
+      "extras": "operation=wedge; degree=4; radial weight fixed by r\u2202_r",
+      "why": "Invariant form produced by one wedge with dr. It is outside the span of the already forced forms."
+    },
+    {
+      "name": "DR_ETA_WEDGE_HARM2",
+      "unique": true,
+      "live_bin": "FORCED",
+      "determined_by": "dr and HARM_3",
+      "extras": "operation=wedge; degree=4; radial weight fixed by r\u2202_r",
+      "why": "Invariant form produced by one wedge with dr. It is outside the span of the already forced forms."
+    },
+    {
+      "name": "DR_WEDGE_DETA_SQ",
+      "unique": true,
+      "live_bin": "FORCED",
+      "determined_by": "dr and (d\u03b7)^2",
+      "extras": "operation=wedge; degree=5; radial weight fixed by r\u2202_r",
+      "why": "Invariant form produced by one wedge with dr. It is outside the span of the already forced forms."
+    },
+    {
+      "name": "OMEGA_TRANSVERSE",
+      "unique": true,
+      "live_bin": "FORCED",
+      "determined_by": "contraction of \u03a9_C along \u2202r",
+      "extras": "complex 2-form of type (2,0); phase is the locked Iso U(1); not a (1,1) area form",
+      "why": "\u03b9_\u2202r \u03a9_C is the transverse holomorphic volume. The real area forms s1, s2 are type (1,1), so this (2,0)-form is not in their span. The same U(1) that phases \u03a9_C phases this factor. No new real parameter."
+    }
+  ],
+  "discarded_identities": [
+    "nabla xi = Phi",
+    "nabla J_C = 0",
+    "nabla omega_C = 0",
+    "nabla Omega_C = 0",
+    "star eta proportional to (d eta)^2",
+    "star HARM_2 proportional to HARM_3",
+    "Lie_xi of the contact tower is 0",
+    "Lie_(r d/dr) reproduces the homothety weights",
+    "iota_xi d eta = 0",
+    "omega_C wedge omega_C lies in span of dr\u2227\u03b7\u2227d\u03b7 and (d\u03b7)^2",
+    "cone volume dr\u2227\u03b7\u2227(d\u03b7)^2 has degree 6 and is excluded"
+  ],
+  "unique_color_forced": false,
+  "unique_g_mu_nu_forced": false,
+  "next_object_would_require": "resolved-cone radii a,b",
+  "known_rank": 9,
+  "timestamp_utc": "2026-09-21T22:54:26.314989+00:00"
+}

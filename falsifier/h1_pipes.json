@@ -1,0 +1,61 @@
+{
+  "B0": {
+    "id": "Q6",
+    "text": "Is B0 Iso the isometry of the locked 5-fold, and is it a color lock?",
+    "kind": "iso_and_color",
+    "bin": "FORCED",
+    "gates": [],
+    "reasons": [
+      "Iso of locked 5-fold recorded as SU(2)\u00d7SU(2)\u00d7U(1); not a color lock"
+    ],
+    "color_lock": false,
+    "iso_group": "SU(2)\u00d7SU(2)\u00d7U(1)"
+  },
+  "B1_B2": {
+    "id": "Q8",
+    "text": "Is G_SM forced from the isolate?",
+    "kind": "G_SM",
+    "bin": "REFUSED",
+    "gates": [
+      "R-weld",
+      "R-color-lock"
+    ],
+    "reasons": [
+      "YES welds CLASS onto LOCK",
+      "YES picks unique SU(3)_c as derived color"
+    ],
+    "color_lock": false
+  },
+  "unique_color": {
+    "id": "Q7",
+    "text": "Is unique color derived from the isolate?",
+    "kind": "unique_color",
+    "bin": "REFUSED",
+    "gates": [
+      "R-color-lock"
+    ],
+    "reasons": [
+      "YES picks unique SU(3)_c as derived color"
+    ],
+    "color_lock": false
+  },
+  "picked_4fold": {
+    "id": "Q9",
+    "text": "Is \u2102\u2119\u00b2 or K3 the 4-fold?",
+    "kind": "picked_4fold",
+    "bin": "REFUSED",
+    "gates": [
+      "R-weld"
+    ],
+    "reasons": [
+      "YES welds CLASS onto LOCK"
+    ],
+    "color_lock": false
+  },
+  "H1_color_value_probe": {
+    "C6": "REFUSED",
+    "unique_color_forced": false,
+    "pipes_remain_open": true,
+    "C10": "CLASS"
+  }
+}

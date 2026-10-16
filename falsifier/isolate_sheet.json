@@ -1,0 +1,182 @@
+{
+  "sheet": "A",
+  "isolate": "T^{1,1}",
+  "rebasing": null,
+  "continuous_knobs": 0,
+  "rows": [
+    {
+      "name": "Iso_group",
+      "bin": "FORCED",
+      "value": "SU(2)\u00d7SU(2)\u00d7U(1)",
+      "reading": "not color"
+    },
+    {
+      "name": "sigma_star",
+      "bin": "FORCED",
+      "value": "sqrt(3)/2",
+      "reading": "T^{1,1} shape, not g_\u03bc\u03bd"
+    },
+    {
+      "name": "T_wall_identity",
+      "bin": "FORCED",
+      "value": "13/2",
+      "reading": "not Chern, not GeV^3"
+    },
+    {
+      "name": "N_gen",
+      "bin": "FORCED",
+      "value": 3,
+      "reading": "none"
+    },
+    {
+      "name": "b2",
+      "bin": "FORCED",
+      "value": 1,
+      "reading": "not flux"
+    },
+    {
+      "name": "b3",
+      "bin": "FORCED",
+      "value": 1,
+      "reading": "not flux"
+    },
+    {
+      "name": "eight_pi_G_eff_number",
+      "bin": "FORCED",
+      "value": "9/16",
+      "reading": "number 9/16, not G_N"
+    },
+    {
+      "name": "CONE",
+      "bin": "FORCED",
+      "value": "r coordinate; homothety is existing GAUGE scale",
+      "reading": "generated 6-metric; not g_\u03bc\u03bd, not A(y), not color"
+    },
+    {
+      "name": "CONE_HOLONOMY",
+      "bin": "FORCED",
+      "value": "SU(3)",
+      "reading": "SU(3) as holonomy, not QCD"
+    },
+    {
+      "name": "SPIN_T11",
+      "bin": "FORCED",
+      "value": "no extra continuous knob",
+      "reading": "unique spin structure on the locked 5-fold; not M^4"
+    },
+    {
+      "name": "DIRAC_T11",
+      "bin": "FORCED",
+      "value": "KO-dimension fixed at 5",
+      "reading": "Riemannian Dirac on T^{1,1}; not N_gen; not g_mu_nu"
+    },
+    {
+      "name": "TRIPLE_T11",
+      "bin": "FORCED",
+      "value": "reconstructs T^{1,1}",
+      "reading": "reconstruction returns T^{1,1}; not a 4D metric"
+    },
+    {
+      "name": "SASAKI_PHI_J",
+      "bin": "FORCED",
+      "value": "Phi(X)=grad_X xi; J=Phi on ker eta",
+      "reading": "descendant"
+    },
+    {
+      "name": "g_T_omega_T",
+      "bin": "FORCED",
+      "value": "base S^2\u00d7S^2; omega_T=d eta/2; g_T is not g_mu_nu",
+      "reading": "descendant"
+    },
+    {
+      "name": "PARALLEL_SPINORS_CONE",
+      "bin": "FORCED",
+      "value": "Hol=SU(3); complex line of parallel spinors; phase is Iso U(1)",
+      "reading": "descendant"
+    },
+    {
+      "name": "HARM_2_EULER_PAIRING",
+      "bin": "FORCED",
+      "value": "H^2 \u2245 Z^2/Z(1,1); rank 1; not a flux",
+      "reading": "descendant"
+    },
+    {
+      "name": "D5_LABEL_FORMULA",
+      "bin": "FORCED",
+      "value": "E(j_L,j_R,q) with no cutoff list; Killing eigenvalues ['-5/2', '5/2'] under e\u00b7e=+1; scalar Laplacian on cos theta1 gives -12",
+      "reading": "descendant"
+    },
+    {
+      "name": "VOL_T11",
+      "bin": "FORCED",
+      "value": "16*pi**3/27",
+      "reading": "descendant"
+    },
+    {
+      "name": "EINSTEIN_SCALAR_G5",
+      "bin": "FORCED",
+      "value": "Ric=4*g; scalar=20",
+      "reading": "descendant"
+    },
+    {
+      "name": "CONE_HOMOTHETY",
+      "bin": "FORCED",
+      "value": "L_(r d/dr) g_C = 2 g_C; existing GAUGE; not a GeV",
+      "reading": "descendant"
+    },
+    {
+      "name": "J_CONE",
+      "bin": "FORCED",
+      "value": "J(d/dr)=xi; no extra real",
+      "reading": "descendant"
+    },
+    {
+      "name": "LINK_SECOND_FUNDAMENTAL",
+      "bin": "FORCED",
+      "value": "II = g5 / r along the radial normal",
+      "reading": "descendant"
+    },
+    {
+      "name": "DR_WEDGE_DETA",
+      "bin": "FORCED",
+      "value": "operation=wedge; degree=3; radial weight fixed by r\u2202_r",
+      "reading": "uncap form"
+    },
+    {
+      "name": "DR_WEDGE_HARM2",
+      "bin": "FORCED",
+      "value": "operation=wedge; degree=3; radial weight fixed by r\u2202_r",
+      "reading": "uncap form"
+    },
+    {
+      "name": "DR_ETA_WEDGE_DETA",
+      "bin": "FORCED",
+      "value": "operation=wedge; degree=4; radial weight fixed by r\u2202_r",
+      "reading": "uncap form"
+    },
+    {
+      "name": "DR_ETA_WEDGE_HARM2",
+      "bin": "FORCED",
+      "value": "operation=wedge; degree=4; radial weight fixed by r\u2202_r",
+      "reading": "uncap form"
+    },
+    {
+      "name": "DR_WEDGE_DETA_SQ",
+      "bin": "FORCED",
+      "value": "operation=wedge; degree=5; radial weight fixed by r\u2202_r",
+      "reading": "uncap form"
+    },
+    {
+      "name": "OMEGA_TRANSVERSE",
+      "bin": "FORCED",
+      "value": "complex 2-form of type (2,0); phase is the locked Iso U(1); not a (1,1) area form",
+      "reading": "uncap form"
+    },
+    {
+      "name": "n_eta",
+      "bin": "FORCED",
+      "value": "locked field",
+      "reading": "none"
+    }
+  ]
+}

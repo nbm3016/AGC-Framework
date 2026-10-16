@@ -1,0 +1,171 @@
+{
+  "module": "cone_curvature",
+  "banner": "CONE CURVATURE - RICCI-FLAT != FLAT - ZERO KNOBS",
+  "continuous_knobs": 0,
+  "N_gen": 3,
+  "sigma_star": "sqrt(3)/2",
+  "sigma_star_squared": "3/4",
+  "betti": {
+    "topology_source": "T1 topology T^{1,1}\u2243S\u00b2\u00d7S\u00b3",
+    "factors": [
+      2,
+      3
+    ],
+    "link_dim": 5,
+    "link": {
+      "b0": 1,
+      "b1": 0,
+      "b2": 1,
+      "b3": 1,
+      "b4": 0,
+      "b5": 1
+    },
+    "round_sphere": {
+      "dim": 5,
+      "b0": 1,
+      "b1": 0,
+      "b2": 0,
+      "b3": 0,
+      "b4": 0,
+      "b5": 1
+    },
+    "b2_link": 1,
+    "b3_link": 1,
+    "b2_round_sphere": 0,
+    "b3_round_sphere": 0,
+    "link_is_round_sphere": false
+  },
+  "curvature": {
+    "frame": "homogeneous Einstein metric on locked diffeotype, Ric(h)=4h",
+    "alpha": "1/6",
+    "beta": "1/9",
+    "alpha_over_beta": "3/2",
+    "einstein_residual_phi": "0",
+    "einstein_residual_psi": "0",
+    "K_link_theta1_theta2": "0",
+    "K_link_theta1_phi1": "3",
+    "round_sphere_K": "1",
+    "K_link_equals_round": false,
+    "r": 2,
+    "point": "theta1=theta2=pi/2",
+    "component_name": "R^theta1_{theta2 theta1 theta2}",
+    "component_value": "-1/6",
+    "K_cone_theta1_theta2": "-1/4",
+    "Ric_cone_theta2_theta2": "0",
+    "ricci_used_as_flatness_proof": false,
+    "component_nonzero": true
+  },
+  "se_on_disk": true,
+  "real_dim": 6,
+  "complex_dim": 3,
+  "sp_possible": false,
+  "g_C_flat": false,
+  "hol_forced_as_holonomy": true,
+  "hol": "SU(3)",
+  "color_promoted": false,
+  "dim_iso": 7,
+  "iso_unchanged": true,
+  "F": [
+    {
+      "id": "F1",
+      "text": "Do locked Betti numbers rule out the link being S^5?",
+      "bin": "FORCED",
+      "gates": [],
+      "reasons": [
+        "Kunneth b2(S^2\u00d7S^3)=1; b2(S^5)=0. Computed from the locked topology string, not pasted."
+      ],
+      "certificate": "Kunneth b2(S^2\u00d7S^3)=1; b2(S^5)=0",
+      "answer": "yes"
+    },
+    {
+      "id": "F2",
+      "text": "Is a live Riemann component of g_C at r>0 nonzero?",
+      "bin": "FORCED",
+      "gates": [],
+      "reasons": [
+        "R^theta1_{theta2 theta1 theta2}(r=2)=-1/6; K_cone=-1/4; Ric_cone_\u03b82\u03b82=0. K_link(\u03b81,\u03b82)=0 (round sphere has K=1). Ricci component 0 is not the flatness test."
+      ],
+      "certificate": "R^theta1_{theta2 theta1 theta2}(r=2)=-1/6; K_cone=-1/4; Ric_cone_\u03b82\u03b82=0",
+      "answer": "yes"
+    },
+    {
+      "id": "F3",
+      "text": "Is g_C flat?",
+      "bin": "REFUSED",
+      "gates": [],
+      "reasons": [
+        "flatness refused by F1+F2. Riem nonzero. Ric_cone component 0 is the expected Ricci-flat slice, not a flatness proof."
+      ],
+      "certificate": "F1+F2",
+      "answer": "no"
+    },
+    {
+      "id": "F4",
+      "text": "Is Hol(g_C)=SU(3) forced as holonomy?",
+      "bin": "FORCED",
+      "gates": [],
+      "reasons": [
+        "F3 is no by a live certificate; knobs=0; SE on disk => Hol \u2286 SU(3); real dim 6 is not a multiple of 4 and complex dim 3 is odd, so Sp is out. Hol(g_C)=SU(3) as holonomy. Not color."
+      ],
+      "certificate": "F1+F2+SE+dim",
+      "answer": "yes",
+      "hol": "SU(3)",
+      "as_holonomy": true,
+      "as_color": false
+    },
+    {
+      "id": "F5",
+      "text": "Does that promote unique color / SU(3)_c?",
+      "bin": "REFUSED",
+      "gates": [
+        "R-color-lock",
+        "R-unlisted-modulus",
+        "R-modulus-called-lock"
+      ],
+      "reasons": [
+        "YES picks unique SU(3)_c / three colors / C2 as color",
+        "modulus 'unique_color' is not a named allowed menu row",
+        "labels 'unique_color' type FORBIDDEN as FORCED"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "F6",
+      "text": "Does Iso change?",
+      "bin": "FORCED",
+      "gates": [],
+      "reasons": [
+        "Iso unchanged SU(2)\u00d7SU(2)\u00d7U(1), dim 7. Contains SU(3)? False."
+      ],
+      "certificate": "dim=7",
+      "answer": "no",
+      "dim_iso": 7
+    },
+    {
+      "id": "F7",
+      "text": "Does this write a 4D EOM / g_mu_nu / A(y)?",
+      "bin": "REFUSED",
+      "gates": [
+        "R-metric-swap",
+        "R-knobs",
+        "R-modulus-called-lock"
+      ],
+      "reasons": [
+        "YES identifies \u03c3* or \u03c6(\u03b8,\u03c8) with g_\u03bc\u03bd",
+        "YES introduces L, bulk \u039b, RS k, or integration constant C as isolate",
+        "labels 'g_mu_nu' type OPEN-FIELD as FORCED"
+      ],
+      "color_lock": false
+    }
+  ],
+  "not_input_comparison": {
+    "label": "NOT INPUT",
+    "prior_artifact": "cone_holonomy.json",
+    "prior_K3_bin": "UNKNOWN",
+    "prior_K3_hol": "UNKNOWN",
+    "prior_reason": "K3 stayed UNKNOWN because flatness was not computed (flat_ruled_out_by_files=false).",
+    "this_session": "F1 and F2 are new certificates. Live bins were not edited to match K3."
+  },
+  "isolate_written": false,
+  "timestamp_utc": "2026-09-21T21:14:50.651317+00:00"
+}

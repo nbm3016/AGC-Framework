@@ -1,0 +1,18 @@
+{
+  "continuous_knobs": 0,
+  "promoted": 0,
+  "rows_promoted": 0,
+  "baseline_sha256": "1d9b54a788142b9d2c818d236d55e8a7a71b841c0e032107bcc052f23abe707a",
+  "locks_changed": 0,
+  "test": "star Psi = Psi = Psi star as asymptotic on-shell boundary condition on Y^14 \u2192 M^4",
+  "operator_exported": false,
+  "exported_paths": [],
+  "solution_count": null,
+  "bin": "UNPERFORMED",
+  "substitute_used": false,
+  "C1": "UNKNOWN",
+  "C2": "UNKNOWN",
+  "coset_selected": null,
+  "fiber": "Sigma5 x T^(1,1)",
+  "sum_M4_Sigma5_cone": 15
+}

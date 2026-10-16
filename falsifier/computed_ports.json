@@ -1,0 +1,87 @@
+{
+  "numeric": {
+    "T_wall_from_n": "13/2",
+    "T_wall_from_lam": "13/2",
+    "T_wall_agree": true,
+    "sigma_star_sq": "3/4",
+    "eight_pi_G_eff": "9/16",
+    "C2": "4/3",
+    "disagree": false
+  },
+  "ports": [
+    {
+      "id": "P1",
+      "text": "b2, b3 of T^{1,1} \u2243 S\u00b2\u00d7S\u00b3. Topology or flux?",
+      "value": {
+        "b2": 1,
+        "b3": 1,
+        "reading": "topology"
+      },
+      "bin": "FORCED",
+      "gates": [],
+      "reasons": [
+        "b2=b3=1 from T^{1,1}\u2243S\u00b2\u00d7S\u00b3 topology, not a flux pick"
+      ],
+      "not_implied": [
+        "flux"
+      ]
+    },
+    {
+      "id": "P2",
+      "text": "Iso group. Is it color?",
+      "value": {
+        "group": "SU(2)\u00d7SU(2)\u00d7U(1)",
+        "is_color": false
+      },
+      "bin": "FORCED",
+      "gates": [],
+      "reasons": [
+        "Iso group of locked 5-fold"
+      ],
+      "color_lock": false,
+      "not_implied": [
+        "SU(3)_c",
+        "color"
+      ]
+    },
+    {
+      "id": "P3",
+      "text": "T_wall from locked n_\u03b7 and locked \u03bb\u0303",
+      "value": {
+        "T_wall_from_n": "13/2",
+        "T_wall_from_lam": "13/2",
+        "agree": true
+      },
+      "bin": "FORCED",
+      "gates": [],
+      "reasons": [
+        "T_wall = \u03a3 n_\u03b7/4 = \u03a3 \u03bb\u0303/6"
+      ],
+      "not_implied": [
+        "Chern index",
+        "GeV^3 tension"
+      ]
+    },
+    {
+      "id": "P4",
+      "text": "\u03c3*\u00b2 and 8\u03c0G_eff = \u03c3*\u00b2/C\u2082(3)",
+      "value": {
+        "sigma_star_sq": "3/4",
+        "eight_pi_G_eff": "9/16",
+        "is_G_N": false,
+        "proves_SU3c": false
+      },
+      "bin": "FORCED",
+      "gates": [],
+      "reasons": [
+        "\u03c3*\u00b2 and \u03c3*\u00b2/C\u2082(3) as locked-port numbers"
+      ],
+      "not_implied": [
+        "G_N",
+        "SU(3)_c"
+      ],
+      "is_G_N": false,
+      "proves_SU3c": false
+    }
+  ]
+}

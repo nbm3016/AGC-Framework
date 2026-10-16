@@ -1,0 +1,26 @@
+{
+  "door": "P2",
+  "question": "Do locked atoms force integers (p,q)?",
+  "locked": {
+    "b2": 1,
+    "b3": 1,
+    "N_gen": 3,
+    "T_wall": "13/2",
+    "sigma_star": "sqrt(3)/2",
+    "iso": "SU(2)\u00d7SU(2)\u00d7U(1)",
+    "link_dim": 5,
+    "vol": "16*pi**3/27"
+  },
+  "m_family_dim": 7,
+  "m_family_iso": "SU(3)\u00d7SU(2)\u00d7U(1)",
+  "same_isometry": false,
+  "same_dimension": false,
+  "determined": false,
+  "picked_3_2": false,
+  "live_bin": "REFUSED",
+  "extras": [
+    "p",
+    "q"
+  ],
+  "why": "Locked link dimension 5 and isometry SU(2)\u00d7SU(2)\u00d7U(1). M^{p,q} is dimension 7 with isometry SU(3)\u00d7SU(2)\u00d7U(1). No locked atom is a pair (p,q). (3,2) was not selected."
+}

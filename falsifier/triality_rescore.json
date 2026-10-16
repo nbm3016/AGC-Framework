@@ -1,0 +1,531 @@
+{
+  "continuous_knobs": 0,
+  "promoted": false,
+  "possibilities": [
+    {
+      "name": "ambient_theory",
+      "value": "Y^{14} → M^4"
+    },
+    {
+      "name": "filter_three_way",
+      "value": "★Ψ = Ψ = Ψ★"
+    },
+    {
+      "name": "wall_zero_count",
+      "value": 3
+    },
+    {
+      "name": "barrier_minus",
+      "value": "★Ψ = −Ψ"
+    },
+    {
+      "name": "clock_Z24",
+      "value": {
+        "group": "Z/24",
+        "lines": 3,
+        "seats_per_line": 8,
+        "shared_face": "+8",
+        "shared_face_order": 3,
+        "inverse_face": "+16",
+        "order_8_subgroup": [
+          0,
+          3,
+          6,
+          9,
+          12,
+          15,
+          18,
+          21
+        ]
+      }
+    },
+    {
+      "name": "continuous_knobs",
+      "value": 0
+    },
+    {
+      "name": "lambda_tilde",
+      "value": [
+        "9/2",
+        "12",
+        "45/2"
+      ]
+    },
+    {
+      "name": "Iso_group",
+      "value": "SU(2)×SU(2)×U(1)"
+    },
+    {
+      "name": "sigma_star",
+      "value": "sqrt(3)/2"
+    },
+    {
+      "name": "T_wall_identity",
+      "value": "13/2"
+    },
+    {
+      "name": "b2",
+      "value": 1
+    },
+    {
+      "name": "b3",
+      "value": 1
+    },
+    {
+      "name": "eight_pi_G_eff_number",
+      "value": "9/16"
+    },
+    {
+      "name": "n_eta",
+      "value": [
+        3,
+        8,
+        15
+      ]
+    },
+    {
+      "name": "CONE",
+      "value": "g_C = dr^2 + r^2 g_5"
+    },
+    {
+      "name": "CONE_HOLONOMY",
+      "value": "SU(3)"
+    },
+    {
+      "name": "SPIN_T11",
+      "value": "unique spin structure"
+    },
+    {
+      "name": "DIRAC_T11",
+      "value": "Dirac(g_5), KO-dimension 5, spinor rank 4"
+    },
+    {
+      "name": "TRIPLE_T11",
+      "value": "canonical 5-triple reconstructs T^{1,1}"
+    },
+    {
+      "name": "SASAKI_PHI_J",
+      "value": "Phi(X)=grad_X xi; J=Phi on ker eta"
+    },
+    {
+      "name": "g_T_omega_T",
+      "value": "base S^2×S^2; omega_T = d eta/2; g_T is not g_μν"
+    },
+    {
+      "name": "PARALLEL_SPINORS_CONE",
+      "value": "one complex line of parallel spinors; phase is the Iso U(1)"
+    },
+    {
+      "name": "HARM_2_EULER_PAIRING",
+      "value": "H^2 rank 1 from Euler (1,1); not a flux; cup-square 2 is not c2"
+    },
+    {
+      "name": "D5_LABEL_FORMULA",
+      "value": "Killing eigenvalues -5/2 and +5/2"
+    },
+    {
+      "name": "VOL_T11",
+      "value": "16*pi**3/27"
+    },
+    {
+      "name": "EINSTEIN_SCALAR_G5",
+      "value": "Ric = 4 g; scalar = 20"
+    },
+    {
+      "name": "CONE_HOMOTHETY",
+      "value": "L_(r d/dr) g_C = 2 g_C; gauge; not a GeV"
+    },
+    {
+      "name": "J_CONE",
+      "value": "J(d/dr) = xi"
+    },
+    {
+      "name": "LINK_SECOND_FUNDAMENTAL",
+      "value": "II = g_5 / r along the radial normal"
+    },
+    {
+      "name": "DR_WEDGE_DETA",
+      "value": "wedge, degree 3"
+    },
+    {
+      "name": "DR_WEDGE_HARM2",
+      "value": "wedge, degree 3"
+    },
+    {
+      "name": "DR_ETA_WEDGE_DETA",
+      "value": "wedge, degree 4"
+    },
+    {
+      "name": "DR_ETA_WEDGE_HARM2",
+      "value": "wedge, degree 4"
+    },
+    {
+      "name": "DR_WEDGE_DETA_SQ",
+      "value": "wedge, degree 5"
+    },
+    {
+      "name": "OMEGA_TRANSVERSE",
+      "value": "complex 2-form of type (2,0); phase is the locked U(1)"
+    }
+  ],
+  "seats": [
+    {
+      "seat": "Ψ",
+      "role": "mode",
+      "built": true,
+      "observer": true,
+      "record": "built"
+    },
+    {
+      "seat": "★Ψ",
+      "role": "wall reading",
+      "built": true,
+      "observer": true,
+      "record": "built"
+    },
+    {
+      "seat": "Ψ*",
+      "role": "declared",
+      "built": false,
+      "observer": false,
+      "record": "declared",
+      "not_filled_by": "Ψ★"
+    }
+  ],
+  "observers_scored": 2,
+  "trinodal_seats_occupied": "2/3",
+  "mass_candidate": 3,
+  "mass_unit": "data count, not a kilogram",
+  "time": "TRIVIAL",
+  "exhaust": 0,
+  "two_seat_exhaust": "partial",
+  "dirac_operator": "Dirac(g_5), KO-dimension 5, spinor rank 4",
+  "rows_changed": 0,
+  "rows": [
+    {
+      "id": "R1",
+      "object": "possibility set",
+      "seat": "shared",
+      "data": 35,
+      "exhaust": "",
+      "bin": "FORCED",
+      "why": "35 locks, one list. Ψ is the mode. ★Ψ is the wall reading. Ψ* is declared. Ψ★ is the same involution as the left star, so the left star does not fill Ψ*."
+    },
+    {
+      "id": "R2",
+      "object": "observers",
+      "seat": "Ψ, ★Ψ",
+      "data": 3,
+      "exhaust": "",
+      "bin": "FORCED",
+      "why": "The two built seats are observers. The binding ★Ψ = Ψ = Ψ* is not the only observer. Ψ* is not scored as a built observer."
+    },
+    {
+      "id": "R3",
+      "object": "trinodal state",
+      "seat": "Ψ, ★Ψ, Ψ*",
+      "data": 2,
+      "exhaust": "",
+      "bin": "DECLARED",
+      "why": "Two built seats are not three. Ψ* stays declared. Ψ is not copied into Ψ*."
+    },
+    {
+      "id": "R4",
+      "object": "mass candidate",
+      "seat": "occupied",
+      "data": 3,
+      "exhaust": "",
+      "bin": "FORCED",
+      "why": "The occupied seats carry the three wall modes, extras 0. The count is 3. It is not a kilogram."
+    },
+    {
+      "id": "R5",
+      "object": "time",
+      "seat": "two-seat",
+      "data": 3,
+      "exhaust": 0,
+      "bin": "TRIVIAL",
+      "why": "Hodge on the wall sends the defect to 0. Dirac(g_5) is locked and is not an extras-free eigenvector equation for these modes. The Reeb xi is locked and has no extras-free eigenvalue on them. The extras-free output is identically 0. The two-seat exhaust is partial."
+    },
+    {
+      "id": "R6",
+      "object": "35 rows",
+      "seat": "shared",
+      "data": 35,
+      "exhaust": 0,
+      "bin": "LOCK",
+      "why": "Zero exhaust resolves none of the 35. No row changes. No hypothetical deletion."
+    },
+    {
+      "id": "R7",
+      "object": "c2, holonomy, 9/16, 13/2",
+      "seat": "shared",
+      "data": 3,
+      "exhaust": 0,
+      "bin": "LOCK",
+      "why": "The exhaust does not force c2. Hol(g_C)=SU(3) stays holonomy. 9/16 stays a number. T_wall stays 13/2."
+    },
+    {
+      "id": "R8",
+      "object": "three-seat exhaust",
+      "seat": "Ψ*",
+      "data": 3,
+      "exhaust": "partial",
+      "bin": "DECLARED",
+      "why": "Three-seat exhaust needs Ψ*. That seat is unbuilt. The two-seat exhaust is partial. The 14D run is not determined with extras=0, so it is not computed."
+    }
+  ],
+  "rescored": [
+    {
+      "name": "ambient_theory",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false,
+      "why": "The extras-free exhaust is 0. It does not resolve this row."
+    },
+    {
+      "name": "filter_three_way",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false,
+      "why": "The extras-free exhaust is 0. It does not resolve this row."
+    },
+    {
+      "name": "wall_zero_count",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false,
+      "why": "The extras-free exhaust is 0. It does not resolve this row."
+    },
+    {
+      "name": "barrier_minus",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false,
+      "why": "The extras-free exhaust is 0. It does not resolve this row."
+    },
+    {
+      "name": "clock_Z24",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false,
+      "why": "The extras-free exhaust is 0. It does not resolve this row."
+    },
+    {
+      "name": "continuous_knobs",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false,
+      "why": "The extras-free exhaust is 0. It does not resolve this row."
+    },
+    {
+      "name": "lambda_tilde",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false,
+      "why": "The extras-free exhaust is 0. It does not resolve this row."
+    },
+    {
+      "name": "Iso_group",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false,
+      "why": "The extras-free exhaust is 0. It does not resolve this row."
+    },
+    {
+      "name": "sigma_star",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false,
+      "why": "The extras-free exhaust is 0. It does not resolve this row."
+    },
+    {
+      "name": "T_wall_identity",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false,
+      "why": "The extras-free exhaust is 0. It does not resolve this row."
+    },
+    {
+      "name": "b2",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false,
+      "why": "The extras-free exhaust is 0. It does not resolve this row."
+    },
+    {
+      "name": "b3",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false,
+      "why": "The extras-free exhaust is 0. It does not resolve this row."
+    },
+    {
+      "name": "eight_pi_G_eff_number",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false,
+      "why": "The extras-free exhaust is 0. It does not resolve this row."
+    },
+    {
+      "name": "n_eta",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false,
+      "why": "The extras-free exhaust is 0. It does not resolve this row."
+    },
+    {
+      "name": "CONE",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false,
+      "why": "The extras-free exhaust is 0. It does not resolve this row."
+    },
+    {
+      "name": "CONE_HOLONOMY",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false,
+      "why": "The extras-free exhaust is 0. It does not resolve this row."
+    },
+    {
+      "name": "SPIN_T11",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false,
+      "why": "The extras-free exhaust is 0. It does not resolve this row."
+    },
+    {
+      "name": "DIRAC_T11",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false,
+      "why": "The extras-free exhaust is 0. It does not resolve this row."
+    },
+    {
+      "name": "TRIPLE_T11",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false,
+      "why": "The extras-free exhaust is 0. It does not resolve this row."
+    },
+    {
+      "name": "SASAKI_PHI_J",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false,
+      "why": "The extras-free exhaust is 0. It does not resolve this row."
+    },
+    {
+      "name": "g_T_omega_T",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false,
+      "why": "The extras-free exhaust is 0. It does not resolve this row."
+    },
+    {
+      "name": "PARALLEL_SPINORS_CONE",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false,
+      "why": "The extras-free exhaust is 0. It does not resolve this row."
+    },
+    {
+      "name": "HARM_2_EULER_PAIRING",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false,
+      "why": "The extras-free exhaust is 0. It does not resolve this row."
+    },
+    {
+      "name": "D5_LABEL_FORMULA",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false,
+      "why": "The extras-free exhaust is 0. It does not resolve this row."
+    },
+    {
+      "name": "VOL_T11",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false,
+      "why": "The extras-free exhaust is 0. It does not resolve this row."
+    },
+    {
+      "name": "EINSTEIN_SCALAR_G5",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false,
+      "why": "The extras-free exhaust is 0. It does not resolve this row."
+    },
+    {
+      "name": "CONE_HOMOTHETY",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false,
+      "why": "The extras-free exhaust is 0. It does not resolve this row."
+    },
+    {
+      "name": "J_CONE",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false,
+      "why": "The extras-free exhaust is 0. It does not resolve this row."
+    },
+    {
+      "name": "LINK_SECOND_FUNDAMENTAL",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false,
+      "why": "The extras-free exhaust is 0. It does not resolve this row."
+    },
+    {
+      "name": "DR_WEDGE_DETA",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false,
+      "why": "The extras-free exhaust is 0. It does not resolve this row."
+    },
+    {
+      "name": "DR_WEDGE_HARM2",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false,
+      "why": "The extras-free exhaust is 0. It does not resolve this row."
+    },
+    {
+      "name": "DR_ETA_WEDGE_DETA",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false,
+      "why": "The extras-free exhaust is 0. It does not resolve this row."
+    },
+    {
+      "name": "DR_ETA_WEDGE_HARM2",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false,
+      "why": "The extras-free exhaust is 0. It does not resolve this row."
+    },
+    {
+      "name": "DR_WEDGE_DETA_SQ",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false,
+      "why": "The extras-free exhaust is 0. It does not resolve this row."
+    },
+    {
+      "name": "OMEGA_TRANSVERSE",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false,
+      "why": "The extras-free exhaust is 0. It does not resolve this row."
+    }
+  ],
+  "held": {
+    "c2": "map",
+    "Hol_g_C": "holonomy",
+    "kappa": "9/16",
+    "T_wall": "13/2"
+  }
+}

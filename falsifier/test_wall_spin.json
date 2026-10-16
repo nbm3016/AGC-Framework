@@ -1,0 +1,47 @@
+{
+  "continuous_knobs": 0,
+  "promoted": 0,
+  "baseline_sha256": "1d9b54a788142b9d2c818d236d55e8a7a71b841c0e032107bcc052f23abe707a",
+  "locks_changed": 0,
+  "wall_record": {
+    "sigma5_keys": [
+      "dim",
+      "euler_characteristic",
+      "note",
+      "odd"
+    ],
+    "sigma5_note": "Odd-dimensional APS wall 5-fold; \u03c7=0.",
+    "wall_zero_count": 3,
+    "harmonics": "2\u22953\u22954",
+    "su2_dimensions": [
+      2,
+      3,
+      4
+    ],
+    "aps_honest_name": "Module A wall-index RULE on j2=0: index=max(0, floor(4 j1 - 6)). Not ker D_5 on Ceresole T^{1,1}.",
+    "names_spin_t11": false,
+    "names_dirac_t11": false,
+    "names_five_triple": false
+  },
+  "w2_values_stored": [],
+  "w2_forced": false,
+  "c1_refused_by_stored_obstruction": false,
+  "c2_selected": false,
+  "candidates": [
+    {
+      "id": "C1",
+      "name": "SU(3)/SO(3)",
+      "bin": "UNKNOWN",
+      "refused_by_stored_obstruction": false
+    },
+    {
+      "id": "C2",
+      "name": "S^5 = SU(3)/SU(2)",
+      "bin": "UNKNOWN",
+      "selected": false,
+      "forced": false,
+      "unique": false,
+      "survivor": false
+    }
+  ]
+}

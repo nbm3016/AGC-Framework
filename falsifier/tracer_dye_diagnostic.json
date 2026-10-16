@@ -1,0 +1,504 @@
+{
+  "banner": "TRACER DYE DIAGNOSTIC COMPLETE \u2013 EXTERNAL SCALE WITHDRAWN",
+  "continuous_knobs": 0,
+  "M_Pl_in_final_equations": false,
+  "external_scale_status": "withdrawn",
+  "tracer_phase": {
+    "status": "temporary_only",
+    "M_Pl_tracer_GeV_used_for_map_only": 1.22091e+19,
+    "note": "M_Pl appears only in Phase A diagnostic tracer equations. It is not retained in any final locked equation or mechanism.",
+    "coupling_points_mapped": [
+      {
+        "id": "H1_residual_tension_to_vacuum_energy",
+        "structure": "residual tension \u03c4_res = r\u00b7\u03c3*\u00b2",
+        "tracer_equation": "\u03c1_vac^(diag) = \u03c4_res \u00b7 M_Pl\u2074",
+        "why_M_Pl_couples": "Einstein equation / vacuum energy density has mass dimension 4; locked \u03c4_res is a pure number. Converting residual stress into physical energy density requires an absolute mass\u2074 unit. M_Pl is the natural 4D gravitational unit when residual stress is read as a contribution to the Einstein tensor.",
+        "dimensional_hole": "[\u03c1] = mass\u2074  vs  [\u03c4_res] = 1",
+        "tracer_value_note": "\u03c4_res=0.071787; \u03c1 would be \u03c4_res\u00b7M_Pl\u2074 (diagnostic only)",
+        "locked_pure_input": {
+          "tau_res": 0.07178721151092633,
+          "r": 0.0957162820145647,
+          "sigma_star": 0.8660254037844556
+        }
+      },
+      {
+        "id": "H2_domain_wall_tension_to_surface_energy",
+        "structure": "\u03a3\u2075 domain-wall spectral tension T_wall = \u03a3 Vol_k",
+        "tracer_equation": "T_phys^(diag) = T_wall \u00b7 M_Pl\u00b3   (or T_wall \u00b7 M_Pl\u2074 \u00b7 L if L~1/M_Pl)",
+        "why_M_Pl_couples": "Physical domain-wall surface energy has dimension mass\u00b3 (in 4D effective description) or mass\u2074\u00d7length. Locked T_wall is a spectral volume sum (pure number). Matching to a physical wall requires a fundamental mass unit; M_Pl is the natural gravitational / compactification unit for the wall action term \u222b T \u221a\u03b3.",
+        "dimensional_hole": "[T_phys] = mass\u00b3 (or mass\u2074\u00b7length)  vs  [T_wall] = 1",
+        "tracer_value_note": "T_wall=6.5000",
+        "locked_pure_input": {
+          "T_wall": 6.5,
+          "n_gen": 3
+        }
+      },
+      {
+        "id": "H3_eight_pi_G_eff_to_Newton",
+        "structure": "8\u03c0G_eff = \u03c3*\u00b2/C\u2082(3) (dimensionless code ratio)",
+        "tracer_equation": "G_N^(diag) = (8\u03c0G_eff) / M_Pl\u00b2   or   8\u03c0G_N = 1/M_Pl\u00b2 with code ratio absorbed",
+        "why_M_Pl_couples": "Newton's constant has dimension mass\u207b\u00b2. The locked 8\u03c0G_eff is only the dimensionless ratio \u03c3*\u00b2/C\u2082. Identifying the Einstein\u2013Hilbert coefficient with observed gravity forces an absolute mass unit M_Pl.",
+        "dimensional_hole": "[G_N] = mass\u207b\u00b2  vs  [8\u03c0G_eff] = 1",
+        "tracer_value_note": "8\u03c0G_eff=0.562500",
+        "locked_pure_input": {
+          "eight_pi_g_eff": 0.562500000000022,
+          "sigma_star": 0.8660254037844556
+        }
+      },
+      {
+        "id": "H4_spectral_gap_to_physical_mass",
+        "structure": "APS / Laplacian eigenvalues \u03bb\u0303 on unit \u03a3\u2075",
+        "tracer_equation": "m_k^(diag) = \u221a\u03bb\u0303_k \u00b7 M_Pl / R\u0303   (R\u0303 = compact radius in Planck units)",
+        "why_M_Pl_couples": "Spectral eigenvalues \u03bb\u0303 are dimensionless on the unit manifold. Physical masses require m ~ \u221a\u03bb\u0303 / L with L a length. Writing L = R\u0303/M_Pl exposes that either M_Pl or an equivalent absolute inverse-length must enter. If R\u0303 is O(1), the hole is filled only by M_Pl itself.",
+        "dimensional_hole": "[m] = mass  vs  [\u221a\u03bb\u0303] = 1  (needs 1/L)",
+        "tracer_value_note": "\u221a\u03bb\u0303\u2080=2.121320; ratios \u221a(\u03bb\u0303_k/\u03bb\u0303_0) fixed without M_Pl",
+        "locked_pure_input": {
+          "lambda_tilde": [
+            4.5,
+            12.0,
+            22.5
+          ],
+          "sqrt_lambda_0": 2.1213203435596424
+        }
+      },
+      {
+        "id": "H5_casimir_volume_potential",
+        "structure": "Casimir-like V ~ (\u03a3 \u03bb\u0303\u00b2)/R\u2074 on overall volume modulus",
+        "tracer_equation": "V_phys^(diag) = (\u03a3 \u03bb\u0303\u00b2) \u00b7 M_Pl\u2074 / R\u0303\u2074",
+        "why_M_Pl_couples": "Restoring dimensions to the scale-free Casimir functional always introduces M_Pl\u2074 (or another mass\u2074) times a function of the dimensionless radius R\u0303 = R\u00b7M_Pl. Without M_Pl (or equivalent), V remains a pure number, not an energy density.",
+        "dimensional_hole": "[V] = mass\u2074  vs  [\u03a3\u03bb\u0303\u00b2/R\u0303\u2074] needs mass\u2074 unit",
+        "tracer_value_note": "\u03a3\u03bb\u0303\u00b2=670.50",
+        "locked_pure_input": {
+          "sum_lambda_sq": 670.5
+        }
+      },
+      {
+        "id": "H6_residual_NLO_flavor_angles",
+        "structure": "residual NLO A4 mixing (\u221ar, \u03c3*, n_\u03b7, N_gen)",
+        "tracer_equation": "\u03b8_ij^(NLO) = f(r, \u03c3*, n_\u03b7, N_gen)   [no M_Pl]",
+        "why_M_Pl_couples": "CONTROL POINT: mixing angles are dimensionless. The residual NLO map already closes without any absolute scale. Tracer dye does not couple here \u2014 this is a filled dimensionless slot, not a hole.",
+        "dimensional_hole": "none \u2014 [\u03b8] = 1 already matched",
+        "tracer_value_note": "\u03b813=7.953\u00b0 locked; M_Pl not required",
+        "locked_pure_input": {
+          "r": 0.0957162820145647,
+          "sigma_star": 0.8660254037844556,
+          "n_gen": 3
+        },
+        "is_control_not_hole": true
+      },
+      {
+        "id": "H7_instanton_prefactor",
+        "structure": "nonperturbative factor exp(\u2212T_wall) or exp(\u22121/r)",
+        "tracer_equation": "\u039b_np^(diag) = M_Pl \u00b7 exp(\u2212T_wall)   or   M_Pl \u00b7 exp(\u22121/r)",
+        "why_M_Pl_couples": "Exponential suppressions are pure numbers; the prefactor that turns them into a mass or \u039b_QCD-like scale is an absolute mass unit. M_Pl is the default gravitational UV cutoff used as tracer.",
+        "dimensional_hole": "[\u039b_np] = mass  vs  [e^{\u2212S}] = 1",
+        "tracer_value_note": "exp(-T_wall)=1.503439e-03; exp(-1/r)=2.901948e-05",
+        "locked_pure_input": {
+          "exp_minus_T_wall": 0.0015034391929775724,
+          "exp_minus_1_over_r": 2.9019478211041056e-05
+        }
+      },
+      {
+        "id": "H8_warp_hierarchy_IR_anchor",
+        "structure": "warp factor W = exp(n_\u03a3\u00b7\u03c3*/N_gen) from \u03b7-lattice + \u03c3*",
+        "tracer_equation": "\u039b_IR^(diag) = M_Pl \u00b7 W^{\u22121}   or   M_Pl \u00b7 W",
+        "why_M_Pl_couples": "Warp fixes only the ratio \u039b_IR/\u039b_UV. Anchoring either end of the hierarchy requires an absolute scale; tracer places M_Pl at the UV.",
+        "dimensional_hole": "[\u039b_IR] = mass  vs  [W] = 1",
+        "tracer_value_note": "W=1.818111e+03",
+        "locked_pure_input": {
+          "warp_factor": 1818.111309962671,
+          "n_eta_sum": 26
+        }
+      },
+      {
+        "id": "H9_self_dual_projection",
+        "structure": "self-duality \u22c6\u03a8=\u03a8 and APS index",
+        "tracer_equation": "\u22c6\u03a8=\u03a8,  index(D_APS)=0   [projector / integer; no M_Pl]",
+        "why_M_Pl_couples": "CONTROL POINT: self-duality and APS index are topological / projector conditions. They select discrete mode content (N_gen=3) without introducing mass dimension. Tracer dye does not couple.",
+        "dimensional_hole": "none \u2014 topological selection is scale-free",
+        "tracer_value_note": "N_gen=3 native; j2=0 sector",
+        "locked_pure_input": {
+          "n_gen": 3,
+          "monodromy_order": 24
+        },
+        "is_control_not_hole": true
+      },
+      {
+        "id": "H10_APS_wall_physical_thickness",
+        "structure": "APS domain-wall locus on \u03a3\u2075 (topologically fixed position in field space)",
+        "tracer_equation": "L_wall^(diag) = \u2113_* / M_Pl   with \u2113_* = \u03c3*/\u221ar or 1/\u221aT_wall (pure)",
+        "why_M_Pl_couples": "Wall position is topologically fixed in dimensionless field coordinates. Converting that locus into a physical thickness/length requires 1/M_Pl (or another inverse-mass unit).",
+        "dimensional_hole": "[L] = mass\u207b\u00b9  vs  [\u2113_*] = 1",
+        "tracer_value_note": "\u2113_* proxies: 1/\u221aT_wall=0.392232, \u03c3*/\u221ar=2.799224",
+        "locked_pure_input": {
+          "inv_sqrt_T_wall": 0.3922322702763681,
+          "sigma_over_sqrt_r": 2.799224440491436
+        }
+      }
+    ]
+  },
+  "withdrawal_phase": {
+    "status": "complete",
+    "M_Pl_removed": true,
+    "replacements": [
+      {
+        "coupling_point_id": "H1_residual_tension_to_vacuum_energy",
+        "structure": "residual tension \u03c4_res = r\u00b7\u03c3*\u00b2",
+        "is_dimensional_hole": true,
+        "tracer_equation_withdrawn": "\u03c1_vac^(diag) = \u03c4_res \u00b7 [WITHDRAWN]\u2074",
+        "pure_topological_replacement_found": false,
+        "replacement_form": null,
+        "ratio_only_structure_still_available": "\u03c1_vac / \u03c1_* = \u03c4_res  (ratio only; \u03c1_* still free)",
+        "contains_M_Pl": false,
+        "contains_continuous_parameter": false,
+        "status": "hole_unfilled_by_pure_geometry",
+        "notes": "Locked \u03c4_res=0.071787 can fix a *dimensionless* vacuum fraction relative to an unspecified \u03c1_* (as Stage-4 \u03a9_\u039b does). It cannot set absolute \u03c1_vac without mass\u2074. No pure topological filler for the absolute energy-density hole.",
+        "pure_numbers_examined": {
+          "tau_res": 0.07178721151092633,
+          "T_wall": 6.5,
+          "r": 0.0957162820145647,
+          "eight_pi_g_eff": 0.562500000000022,
+          "sqrt_lambda_0": 2.1213203435596424,
+          "sum_lambda_sq": 670.5,
+          "n_gen": 3,
+          "monodromy_order": 24,
+          "warp_factor": 1818.111309962671,
+          "exp_minus_T_wall": 0.0015034391929775724,
+          "N_gen_times_T_wall": 19.5,
+          "r_times_T_wall": 0.6221558330946705
+        }
+      },
+      {
+        "coupling_point_id": "H2_domain_wall_tension_to_surface_energy",
+        "structure": "\u03a3\u2075 domain-wall spectral tension T_wall = \u03a3 Vol_k",
+        "is_dimensional_hole": true,
+        "tracer_equation_withdrawn": "T_phys^(diag) = T_wall \u00b7 [WITHDRAWN]\u00b3   (or T_wall \u00b7 [WITHDRAWN]\u2074 \u00b7 L if L~1/[WITHDRAWN])",
+        "pure_topological_replacement_found": false,
+        "replacement_form": null,
+        "ratio_only_structure_still_available": "T_phys / scale\u00b3 = T_wall  (ratio only)",
+        "contains_M_Pl": false,
+        "contains_continuous_parameter": false,
+        "status": "hole_unfilled_by_pure_geometry",
+        "notes": "T_wall=6.5000 fixes relative wall strength among spectral sectors and topological freeze of wall *position* in field space, but not absolute surface energy.",
+        "pure_numbers_examined": {
+          "tau_res": 0.07178721151092633,
+          "T_wall": 6.5,
+          "r": 0.0957162820145647,
+          "eight_pi_g_eff": 0.562500000000022,
+          "sqrt_lambda_0": 2.1213203435596424,
+          "sum_lambda_sq": 670.5,
+          "n_gen": 3,
+          "monodromy_order": 24,
+          "warp_factor": 1818.111309962671,
+          "exp_minus_T_wall": 0.0015034391929775724,
+          "N_gen_times_T_wall": 19.5,
+          "r_times_T_wall": 0.6221558330946705
+        }
+      },
+      {
+        "coupling_point_id": "H3_eight_pi_G_eff_to_Newton",
+        "structure": "8\u03c0G_eff = \u03c3*\u00b2/C\u2082(3) (dimensionless code ratio)",
+        "is_dimensional_hole": true,
+        "tracer_equation_withdrawn": "G_N^(diag) = (8\u03c0G_eff) / [WITHDRAWN]\u00b2   or   8\u03c0G_N = 1/[WITHDRAWN]\u00b2 with code ratio absorbed",
+        "pure_topological_replacement_found": false,
+        "replacement_form": null,
+        "ratio_only_structure_still_available": "G_code = \u03c3*\u00b2/C\u2082  (already locked dimensionless)",
+        "contains_M_Pl": false,
+        "contains_continuous_parameter": false,
+        "status": "hole_unfilled_by_pure_geometry",
+        "notes": "The dimensionless Einstein\u2013YM ratio is already fixed. The hole is the conversion of that ratio into dimensionful G_N; no topological integer supplies mass\u207b\u00b2.",
+        "pure_numbers_examined": {
+          "tau_res": 0.07178721151092633,
+          "T_wall": 6.5,
+          "r": 0.0957162820145647,
+          "eight_pi_g_eff": 0.562500000000022,
+          "sqrt_lambda_0": 2.1213203435596424,
+          "sum_lambda_sq": 670.5,
+          "n_gen": 3,
+          "monodromy_order": 24,
+          "warp_factor": 1818.111309962671,
+          "exp_minus_T_wall": 0.0015034391929775724,
+          "N_gen_times_T_wall": 19.5,
+          "r_times_T_wall": 0.6221558330946705
+        }
+      },
+      {
+        "coupling_point_id": "H4_spectral_gap_to_physical_mass",
+        "structure": "APS / Laplacian eigenvalues \u03bb\u0303 on unit \u03a3\u2075",
+        "is_dimensional_hole": true,
+        "tracer_equation_withdrawn": "m_k^(diag) = \u221a\u03bb\u0303_k \u00b7 [WITHDRAWN] / R\u0303   (R\u0303 = compact radius in Planck units)",
+        "pure_topological_replacement_found": false,
+        "replacement_form": null,
+        "ratio_only_structure_still_available": "m_k / m_1 = \u221a(\u03bb\u0303_k/\u03bb\u0303_1)  (ratios only)",
+        "contains_M_Pl": false,
+        "contains_continuous_parameter": false,
+        "status": "hole_unfilled_by_pure_geometry",
+        "notes": "APS spectrum uniquely fixes mass *ratios*. Absolute m_k still needs 1/L. Volume modulus R remains flat, so no pure geometric L emerges.",
+        "pure_numbers_examined": {
+          "tau_res": 0.07178721151092633,
+          "T_wall": 6.5,
+          "r": 0.0957162820145647,
+          "eight_pi_g_eff": 0.562500000000022,
+          "sqrt_lambda_0": 2.1213203435596424,
+          "sum_lambda_sq": 670.5,
+          "n_gen": 3,
+          "monodromy_order": 24,
+          "warp_factor": 1818.111309962671,
+          "exp_minus_T_wall": 0.0015034391929775724,
+          "N_gen_times_T_wall": 19.5,
+          "r_times_T_wall": 0.6221558330946705
+        }
+      },
+      {
+        "coupling_point_id": "H5_casimir_volume_potential",
+        "structure": "Casimir-like V ~ (\u03a3 \u03bb\u0303\u00b2)/R\u2074 on overall volume modulus",
+        "is_dimensional_hole": true,
+        "tracer_equation_withdrawn": "V_phys^(diag) = (\u03a3 \u03bb\u0303\u00b2) \u00b7 [WITHDRAWN]\u2074 / R\u0303\u2074",
+        "pure_topological_replacement_found": false,
+        "replacement_form": null,
+        "ratio_only_structure_still_available": "V_code(R\u0303) = (\u03a3\u03bb\u0303\u00b2)/R\u0303\u2074  (scale-free shape; no absolute min)",
+        "contains_M_Pl": false,
+        "contains_continuous_parameter": false,
+        "status": "hole_unfilled_by_pure_geometry",
+        "notes": "Even after fixing the functional *shape* with locked \u03bb\u0303, the potential is homogeneous in overall radius and has no stable finite-R minimum without a second independent scale (prior volume-squeeze negative).",
+        "pure_numbers_examined": {
+          "tau_res": 0.07178721151092633,
+          "T_wall": 6.5,
+          "r": 0.0957162820145647,
+          "eight_pi_g_eff": 0.562500000000022,
+          "sqrt_lambda_0": 2.1213203435596424,
+          "sum_lambda_sq": 670.5,
+          "n_gen": 3,
+          "monodromy_order": 24,
+          "warp_factor": 1818.111309962671,
+          "exp_minus_T_wall": 0.0015034391929775724,
+          "N_gen_times_T_wall": 19.5,
+          "r_times_T_wall": 0.6221558330946705
+        }
+      },
+      {
+        "coupling_point_id": "H6_residual_NLO_flavor_angles",
+        "structure": "residual NLO A4 mixing (\u221ar, \u03c3*, n_\u03b7, N_gen)",
+        "is_dimensional_hole": false,
+        "pure_topological_replacement_found": true,
+        "replacement_form": "Already closed by pure geometry / topology (residual NLO A4 mixing (\u221ar, \u03c3*, n_\u03b7, N_gen)); no absolute unit required.",
+        "contains_M_Pl": false,
+        "contains_continuous_parameter": false,
+        "status": "no_hole_control_point",
+        "notes": "CONTROL POINT: mixing angles are dimensionless. The residual NLO map already closes without any absolute scale. Tracer dye does not couple here \u2014 this is a filled dimensionless slot, not a hole."
+      },
+      {
+        "coupling_point_id": "H7_instanton_prefactor",
+        "structure": "nonperturbative factor exp(\u2212T_wall) or exp(\u22121/r)",
+        "is_dimensional_hole": true,
+        "tracer_equation_withdrawn": "\u039b_np^(diag) = [WITHDRAWN] \u00b7 exp(\u2212T_wall)   or   [WITHDRAWN] \u00b7 exp(\u22121/r)",
+        "pure_topological_replacement_found": false,
+        "replacement_form": null,
+        "ratio_only_structure_still_available": "suppression = exp(\u2212T_wall) or exp(\u22121/r)  (pure number)",
+        "contains_M_Pl": false,
+        "contains_continuous_parameter": false,
+        "status": "hole_unfilled_by_pure_geometry",
+        "notes": "Nonperturbative *exponents* are fixed by locked T_wall and r. The absolute prefactor mass remains unfilled.",
+        "pure_numbers_examined": {
+          "tau_res": 0.07178721151092633,
+          "T_wall": 6.5,
+          "r": 0.0957162820145647,
+          "eight_pi_g_eff": 0.562500000000022,
+          "sqrt_lambda_0": 2.1213203435596424,
+          "sum_lambda_sq": 670.5,
+          "n_gen": 3,
+          "monodromy_order": 24,
+          "warp_factor": 1818.111309962671,
+          "exp_minus_T_wall": 0.0015034391929775724,
+          "N_gen_times_T_wall": 19.5,
+          "r_times_T_wall": 0.6221558330946705
+        }
+      },
+      {
+        "coupling_point_id": "H8_warp_hierarchy_IR_anchor",
+        "structure": "warp factor W = exp(n_\u03a3\u00b7\u03c3*/N_gen) from \u03b7-lattice + \u03c3*",
+        "is_dimensional_hole": true,
+        "tracer_equation_withdrawn": "\u039b_IR^(diag) = [WITHDRAWN] \u00b7 W^{\u22121}   or   [WITHDRAWN] \u00b7 W",
+        "pure_topological_replacement_found": false,
+        "replacement_form": null,
+        "ratio_only_structure_still_available": "\u039b_IR/\u039b_UV = W or 1/W with W=1.818111e+03",
+        "contains_M_Pl": false,
+        "contains_continuous_parameter": false,
+        "status": "hole_unfilled_by_pure_geometry",
+        "notes": "Warp factor from n_\u03b7 and \u03c3* is a pure hierarchy ratio. UV or IR anchor scale is not topological.",
+        "pure_numbers_examined": {
+          "tau_res": 0.07178721151092633,
+          "T_wall": 6.5,
+          "r": 0.0957162820145647,
+          "eight_pi_g_eff": 0.562500000000022,
+          "sqrt_lambda_0": 2.1213203435596424,
+          "sum_lambda_sq": 670.5,
+          "n_gen": 3,
+          "monodromy_order": 24,
+          "warp_factor": 1818.111309962671,
+          "exp_minus_T_wall": 0.0015034391929775724,
+          "N_gen_times_T_wall": 19.5,
+          "r_times_T_wall": 0.6221558330946705
+        }
+      },
+      {
+        "coupling_point_id": "H9_self_dual_projection",
+        "structure": "self-duality \u22c6\u03a8=\u03a8 and APS index",
+        "is_dimensional_hole": false,
+        "pure_topological_replacement_found": true,
+        "replacement_form": "Already closed by pure geometry / topology (self-duality \u22c6\u03a8=\u03a8 and APS index); no absolute unit required.",
+        "contains_M_Pl": false,
+        "contains_continuous_parameter": false,
+        "status": "no_hole_control_point",
+        "notes": "CONTROL POINT: self-duality and APS index are topological / projector conditions. They select discrete mode content (N_gen=3) without introducing mass dimension. Tracer dye does not couple."
+      },
+      {
+        "coupling_point_id": "H10_APS_wall_physical_thickness",
+        "structure": "APS domain-wall locus on \u03a3\u2075 (topologically fixed position in field space)",
+        "is_dimensional_hole": true,
+        "tracer_equation_withdrawn": "L_wall^(diag) = \u2113_* / [WITHDRAWN]   with \u2113_* = \u03c3*/\u221ar or 1/\u221aT_wall (pure)",
+        "pure_topological_replacement_found": false,
+        "replacement_form": null,
+        "ratio_only_structure_still_available": "\u2113_* = \u03c3*/\u221ar or 1/\u221aT_wall  (dimensionless thickness proxy)",
+        "contains_M_Pl": false,
+        "contains_continuous_parameter": false,
+        "status": "hole_unfilled_by_pure_geometry",
+        "notes": "APS fixes wall locus in field space and pure-number thickness proxies. Physical length still needs mass\u207b\u00b9.",
+        "pure_numbers_examined": {
+          "tau_res": 0.07178721151092633,
+          "T_wall": 6.5,
+          "r": 0.0957162820145647,
+          "eight_pi_g_eff": 0.562500000000022,
+          "sqrt_lambda_0": 2.1213203435596424,
+          "sum_lambda_sq": 670.5,
+          "n_gen": 3,
+          "monodromy_order": 24,
+          "warp_factor": 1818.111309962671,
+          "exp_minus_T_wall": 0.0015034391929775724,
+          "N_gen_times_T_wall": 19.5,
+          "r_times_T_wall": 0.6221558330946705
+        }
+      }
+    ]
+  },
+  "summary": {
+    "n_structures_probed": 10,
+    "n_dimensional_holes": 8,
+    "n_control_points_already_closed": 2,
+    "n_holes_filled_by_pure_topology": 0,
+    "n_holes_unfilled": 8,
+    "unfilled_hole_ids": [
+      "H1_residual_tension_to_vacuum_energy",
+      "H2_domain_wall_tension_to_surface_energy",
+      "H3_eight_pi_G_eff_to_Newton",
+      "H4_spectral_gap_to_physical_mass",
+      "H5_casimir_volume_potential",
+      "H7_instanton_prefactor",
+      "H8_warp_hierarchy_IR_anchor",
+      "H10_APS_wall_physical_thickness"
+    ],
+    "control_point_ids": [
+      "H6_residual_NLO_flavor_angles",
+      "H9_self_dual_projection"
+    ]
+  },
+  "decision_table": [
+    {
+      "coupling_point": "H1_residual_tension_to_vacuum_energy",
+      "structure": "residual tension \u03c4_res = r\u00b7\u03c3*\u00b2",
+      "pure_topological_replacement_found": "No",
+      "replacement_form": null,
+      "notes_short": "dimensional hole unfilled"
+    },
+    {
+      "coupling_point": "H2_domain_wall_tension_to_surface_energy",
+      "structure": "\u03a3\u2075 domain-wall spectral tension T_wall = \u03a3 Vol_k",
+      "pure_topological_replacement_found": "No",
+      "replacement_form": null,
+      "notes_short": "dimensional hole unfilled"
+    },
+    {
+      "coupling_point": "H3_eight_pi_G_eff_to_Newton",
+      "structure": "8\u03c0G_eff = \u03c3*\u00b2/C\u2082(3) (dimensionless code ratio)",
+      "pure_topological_replacement_found": "No",
+      "replacement_form": null,
+      "notes_short": "dimensional hole unfilled"
+    },
+    {
+      "coupling_point": "H4_spectral_gap_to_physical_mass",
+      "structure": "APS / Laplacian eigenvalues \u03bb\u0303 on unit \u03a3\u2075",
+      "pure_topological_replacement_found": "No",
+      "replacement_form": null,
+      "notes_short": "dimensional hole unfilled"
+    },
+    {
+      "coupling_point": "H5_casimir_volume_potential",
+      "structure": "Casimir-like V ~ (\u03a3 \u03bb\u0303\u00b2)/R\u2074 on overall volume modulus",
+      "pure_topological_replacement_found": "No",
+      "replacement_form": null,
+      "notes_short": "dimensional hole unfilled"
+    },
+    {
+      "coupling_point": "H6_residual_NLO_flavor_angles",
+      "structure": "residual NLO A4 mixing (\u221ar, \u03c3*, n_\u03b7, N_gen)",
+      "pure_topological_replacement_found": "Yes",
+      "replacement_form": "Already closed by pure geometry / topology (residual NLO A4 mixing (\u221ar, \u03c3*, n_\u03b7, N_gen)); no absolute unit required.",
+      "notes_short": "control (no dimensional hole)"
+    },
+    {
+      "coupling_point": "H7_instanton_prefactor",
+      "structure": "nonperturbative factor exp(\u2212T_wall) or exp(\u22121/r)",
+      "pure_topological_replacement_found": "No",
+      "replacement_form": null,
+      "notes_short": "dimensional hole unfilled"
+    },
+    {
+      "coupling_point": "H8_warp_hierarchy_IR_anchor",
+      "structure": "warp factor W = exp(n_\u03a3\u00b7\u03c3*/N_gen) from \u03b7-lattice + \u03c3*",
+      "pure_topological_replacement_found": "No",
+      "replacement_form": null,
+      "notes_short": "dimensional hole unfilled"
+    },
+    {
+      "coupling_point": "H9_self_dual_projection",
+      "structure": "self-duality \u22c6\u03a8=\u03a8 and APS index",
+      "pure_topological_replacement_found": "Yes",
+      "replacement_form": "Already closed by pure geometry / topology (self-duality \u22c6\u03a8=\u03a8 and APS index); no absolute unit required.",
+      "notes_short": "control (no dimensional hole)"
+    },
+    {
+      "coupling_point": "H10_APS_wall_physical_thickness",
+      "structure": "APS domain-wall locus on \u03a3\u2075 (topologically fixed position in field space)",
+      "pure_topological_replacement_found": "No",
+      "replacement_form": null,
+      "notes_short": "dimensional hole unfilled"
+    }
+  ],
+  "absolute_scale_generation_final_status": "NO",
+  "statement": "Absolute scale generation remains NO. Tracer dye exposed dimensional coupling holes; after complete withdrawal of M_Pl, no pure topological feature fills those mass-dimension slots. Dimensionless sectors (flavor angles, APS index, self-duality) were already closed without a yardstick.",
+  "what_tracer_revealed": [
+    "Absolute scale must couple wherever mass dimension is required: vacuum energy (mass\u2074), wall surface energy (mass\u00b3), G_N (mass\u207b\u00b2), physical masses/lengths (mass / mass\u207b\u00b9), instanton prefactor (mass), warp anchors (mass).",
+    "Dimensionless locked predictions (\u03b8_ij, N_gen, \u03c3*, monodromy, APS projectors) do not require the tracer.",
+    "After withdrawal, pure geometry still only supplies pure numbers and ratios \u2014 the dimensional holes remain structural."
+  ],
+  "locked_pure_numbers_used": {
+    "sigma_star": 0.8660254037844556,
+    "lambda_tilde": [
+      4.5,
+      12.0,
+      22.5
+    ],
+    "n_eta": [
+      3,
+      8,
+      15
+    ],
+    "n_eta_sum": 26,
+    "beta_residual_new": 0.0957162820145647,
+    "n_gen": 3,
+    "eight_pi_g_eff": 0.562500000000022,
+    "T_wall": 6.5,
+    "tau_res": 0.07178721151092633,
+    "monodromy_order": 24
+  }
+}

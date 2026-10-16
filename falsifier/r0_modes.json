@@ -1,0 +1,42 @@
+{
+  "sector": "r=0",
+  "aps_neutrality": "kernel projects 4/(3r\u00b2); survivors satisfy index=0 and \u2016\u22c6\u03a8\u2212\u03a8\u2016\u00b2=0",
+  "lambda_targets": [
+    4.5,
+    12.0,
+    22.5
+  ],
+  "mode_count": 3,
+  "modes": [
+    {
+      "j1": 0.5,
+      "j2": 0.0,
+      "r": 0.0,
+      "lambda_tilde": 4.5,
+      "index": 0,
+      "psi_defect": 0.0,
+      "vol_n5": 0.75,
+      "aps_neutral": true
+    },
+    {
+      "j1": 1.0,
+      "j2": 0.0,
+      "r": 0.0,
+      "lambda_tilde": 12.0,
+      "index": 0,
+      "psi_defect": 0.0,
+      "vol_n5": 2.0,
+      "aps_neutral": true
+    },
+    {
+      "j1": 1.5,
+      "j2": 0.0,
+      "r": 0.0,
+      "lambda_tilde": 22.5,
+      "index": 0,
+      "psi_defect": 0.0,
+      "vol_n5": 3.75,
+      "aps_neutral": true
+    }
+  ]
+}

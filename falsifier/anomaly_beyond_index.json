@@ -1,0 +1,187 @@
+{
+  "banner": "ANOMALY BEYOND THE INDEX \u2014 DISCRETE SECTOR FORCED \u2014 FULL CANCELLATION NOT PROVEN \u2014 26/9 \u2260 0 \u2014 ZERO CONTINUOUS KNOBS PRESERVED",
+  "timestamp_utc": "2026-08-13T20:52:30.851890+00:00",
+  "continuous_knobs": 0,
+  "new_free_parameters_introduced": false,
+  "counterterms_introduced": false,
+  "stages_1_3_geometry_untouched": true,
+  "absolute_scale_volume_R": "untouched",
+  "residual_beta_protection": "untouched",
+  "controlled_class_uniqueness": "untouched",
+  "core_verification": "8/8 PASS",
+  "discrete_sector_forced": true,
+  "all_anomalies_cancelled": false,
+  "inflow_residual_26_over_9": true,
+  "inflow_residual_exact": "26/9",
+  "inflow_residual_vanishes": false,
+  "N_gen_torque_vanishes_at_wall": true,
+  "inflow_balanced_is_not_TrF3_cancellation": true,
+  "descent_audit": {
+    "equation": "\u03b4I/\u03b4A|\u03a3\u2075 = (5/3) N_gen r0\u00b2 + C2(3) \u03b7(D_\u0393)",
+    "r0": 0.0,
+    "C2_SU3": "4/3",
+    "n_eta": [
+      3,
+      8,
+      15
+    ],
+    "sum_n": 26,
+    "eta_piece_exact": "26/9",
+    "eta_piece_26_over_9": true,
+    "eta_piece_nonzero": true,
+    "torque_vanishes_at_r0_0": true,
+    "residual_independent_of_N_gen": true,
+    "inflow_is_not_zero": true,
+    "inflow_balanced_means": "discrete APS / AS / trace-mod-6 consistency, not Tr F\u00b3 = 0 and not vanishing wall residual",
+    "by_n_gen": [
+      {
+        "n_gen": 1,
+        "torque_5_3_N_r0sq": "0",
+        "eta_piece": "26/9",
+        "residual": "26/9",
+        "residual_float": 2.888888888888889
+      },
+      {
+        "n_gen": 2,
+        "torque_5_3_N_r0sq": "0",
+        "eta_piece": "26/9",
+        "residual": "26/9",
+        "residual_float": 2.888888888888889
+      },
+      {
+        "n_gen": 3,
+        "torque_5_3_N_r0sq": "0",
+        "eta_piece": "26/9",
+        "residual": "26/9",
+        "residual_float": 2.888888888888889
+      },
+      {
+        "n_gen": 4,
+        "torque_5_3_N_r0sq": "0",
+        "eta_piece": "26/9",
+        "residual": "26/9",
+        "residual_float": 2.888888888888889
+      },
+      {
+        "n_gen": 5,
+        "torque_5_3_N_r0sq": "0",
+        "eta_piece": "26/9",
+        "residual": "26/9",
+        "residual_float": 2.888888888888889
+      },
+      {
+        "n_gen": 6,
+        "torque_5_3_N_r0sq": "0",
+        "eta_piece": "26/9",
+        "residual": "26/9",
+        "residual_float": 2.888888888888889
+      }
+    ]
+  },
+  "discrete_sector": {
+    "native_N_gen": 3,
+    "as_index_at_3": 0,
+    "as_index_at_4": 2,
+    "self_dual_trace": 90,
+    "self_dual_trace_mod6": 0,
+    "as_index_zero_on_survivors": true,
+    "trace_mod6_ok": true,
+    "N_gen_uniqueness_already_stage2A": true,
+    "forced": true
+  },
+  "inventory": [
+    {
+      "sector": "APS_spectral_flow_index",
+      "status": "forced",
+      "result": "N_gen=3 native zero-mode cohomology"
+    },
+    {
+      "sector": "integer_AS_closure",
+      "status": "forced",
+      "result": "index=max(0,2 N_gen\u22126)=0 on survivors; N_gen\u22654 obstructed"
+    },
+    {
+      "sector": "self_dual_trace_mod6",
+      "status": "forced",
+      "result": "\u03a3(2j\u2081+1)n = 90 \u2261 0 (mod 6)"
+    },
+    {
+      "sector": "wall_eta_inflow_rational",
+      "status": "forced",
+      "result": "C2(3) \u03a3n/12 = 26/9 \u2260 0"
+    },
+    {
+      "sector": "local_4D_Tr_F3",
+      "status": "under_determined",
+      "result": "complete 4D gauge representations not in locked data"
+    },
+    {
+      "sector": "mixed_gauge_gravity",
+      "status": "under_determined",
+      "result": "hypercharges / U(1) factors not specified"
+    },
+    {
+      "sector": "pure_gravitational_trR4",
+      "status": "under_determined",
+      "result": "full chiral spin / gravitino content not specified"
+    },
+    {
+      "sector": "Green_Schwarz_coefficients",
+      "status": "under_determined",
+      "result": "would be free continuous data; not introduced"
+    },
+    {
+      "sector": "Witten_SU2_global",
+      "status": "under_determined",
+      "result": "needs a precise 4D fermion spectrum"
+    },
+    {
+      "sector": "4D_trace_anomaly_a_c",
+      "status": "under_determined",
+      "result": "N8: a,c not forced without UV reference; not reopened as scale"
+    },
+    {
+      "sector": "parity_or_global_discrete_beyond_mod6",
+      "status": "unchecked_beyond_mod6",
+      "result": "only locked trace \u2261 0 (mod 6) is checked"
+    },
+    {
+      "sector": "bulk_I_hatA_wedge_F_wedge_F_integral",
+      "status": "unchecked",
+      "result": "Eq. 2A.1 is schematic; Stage 2A never integrates it on 14D curvature"
+    }
+  ],
+  "forced_sectors": [
+    "APS_spectral_flow_index",
+    "integer_AS_closure",
+    "self_dual_trace_mod6",
+    "wall_eta_inflow_rational"
+  ],
+  "under_determined": [
+    "local_4D_Tr_F3",
+    "mixed_gauge_gravity",
+    "pure_gravitational_trR4",
+    "Green_Schwarz_coefficients",
+    "Witten_SU2_global",
+    "4D_trace_anomaly_a_c",
+    "parity_or_global_discrete_beyond_mod6",
+    "bulk_I_hatA_wedge_F_wedge_F_integral"
+  ],
+  "stage2A_n_gen_theorem_untouched": true,
+  "stage2A_n_gen_unique": 3,
+  "verdict": "partial_theorem_plus_negative_beyond_index",
+  "theorem_level_claim": "Locked APS + self-dual 7-form + \u03b7-lattice uniquely determine N_gen=3, AS index=0 on survivors, self-dual trace \u2261 0 (mod 6), and the wall \u03b7-inflow piece C2(3) \u03a3 n_k/12 = 26/9. No continuous counterterm is used.",
+  "negative_beyond_index": "These conditions do not cancel all local gauge, gravitational, mixed, or global anomalies. At r0=0 the N_gen-dependent inflow torque vanishes, so it cannot be a 4D Tr F\u00b3 cancellation. The descent residual is the nonzero rational 26/9, not zero. Full I8/I12, Green\u2013Schwarz coefficients, Witten anomalies, and (a,c) remain under-determined without a complete 4D representation content. No new knobs are introduced to close them.",
+  "locked_results_snapshot": {
+    "n_gen": 3,
+    "sigma_star": 0.8660254037844556,
+    "n_eta": [
+      3,
+      8,
+      15
+    ],
+    "beta_residual_new": 0.0957162820145647,
+    "continuous_knobs": 0
+  },
+  "locked_numerics_unchanged": true
+}

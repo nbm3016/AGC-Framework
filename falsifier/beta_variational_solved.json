@@ -1,0 +1,48 @@
+{
+  "stage": "2B",
+  "status": "SOLVED",
+  "locked_baseline_checksum": "{\"lambda\": [4.5, 12.0, 22.5], \"n_eta\": [3, 8, 15]}",
+  "sigma_star": 0.8660254037844556,
+  "n_gen": 3,
+  "delta_eta": [
+    0.7853981633974483,
+    2.0943951023931953,
+    3.926990816987241
+  ],
+  "n_eta": [
+    3,
+    8,
+    15
+  ],
+  "grid_n": 12,
+  "residual_frobenius_laplacian_sector": 0.2016565061422849,
+  "residual_max": 2.241477334507459,
+  "action_value": 0.2024665061422849,
+  "converged": true,
+  "iterations": 2,
+  "phi_mean": 6.0233454026972465e-21,
+  "phi_std": 0.0009565357773467593,
+  "eight_pi_g_eff": 0.562500000000022,
+  "beta_laplacian_diagonal_means": [
+    -4.2610859806855176e-05,
+    -4.2610859806855176e-05,
+    -5.6814479742470036e-05,
+    -5.6814479742470036e-05,
+    -5.6814479742470036e-05
+  ],
+  "beta_full_diagonal_means": [
+    -4.301290849943094e-05,
+    -4.301290849943027e-05,
+    -5.6814479742470036e-05,
+    -5.6814479742470036e-05,
+    -5.6814479742470036e-05
+  ],
+  "tym_diagonal_means": [
+    0.53987732924589,
+    0.53987732924589,
+    0.7198364389944919,
+    0.7198364389944919,
+    0.7198364389944919
+  ],
+  "proof": "PROOF SNIPPET \u2014 Stage 2B \u03b2_ij variational equilibrium\n\nLocked baseline: {\"lambda\": [4.5, 12.0, 22.5], \"n_eta\": [3, 8, 15]}\n  \u03c3* = 0.866025403784,  N_gen = 3\n  \u0394\u03b7 = [0.7854, 2.0944, 3.927]\n  n_\u03b7 = (3, 8, 15)\n\nEinstein-YM solve on T^{1,1} grid:\n  min_\u03c6 \u222b (\u03b2_{aa}^{\u25a1} \u2212 8\u03c0G_eff\u00b7T^{YM}_{aa})\u00b2 + \u03bb(\u03c6\u2212\u03c6\u2080)\u00b2\n  \u03b2_{aa}^{\u25a1} = 2e^{2\u03c6}g\u0304_{aa}\u25a1\u03c6  (laplacian sector)\n  Poisson warm-start \u2192 amplitude variational solve\n  \u21d2 residual = 2.0166e-01  (converged=True)\n\nLocked couplings enforced:\n  \u2022 \u03c3* boundary from Stage 1B\n  \u2022 N_gen=3 flux multiplicity from Stage 2A\n  \u2022 \u0394\u03b7_g harmonic weights from Stage 1C"
+}

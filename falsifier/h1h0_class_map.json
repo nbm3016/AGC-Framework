@@ -1,0 +1,144 @@
+{
+  "module": "h1h0_class_map",
+  "map_neq_lock": true,
+  "track_A_lock": false,
+  "track_B_lock": false,
+  "combined_lock": false,
+  "H1_unique_color": "NOT_DERIVED",
+  "iso_is_not_color": true,
+  "CP2_locked": false,
+  "K3_locked": false,
+  "SU3_c_installed": false,
+  "continuous_knobs": 0,
+  "N_gen": 3,
+  "N_gen_stands": true,
+  "locked_integers": {
+    "N_gen": 3,
+    "n1": 3,
+    "n2": 8,
+    "n3": 15,
+    "sum_n": 26,
+    "monodromy": 24,
+    "T_wall": "13/2",
+    "Delta_eta_denoms": [
+      4,
+      3,
+      4
+    ]
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "track": "A",
+      "mechanism": "Bundle Chern data vs locked integers",
+      "unique": false,
+      "bin": "REFUSED",
+      "why": "12 distinct identifications of {c2, rank, k} with {N_gen, n_\u03b7, 24, 13/2}. Existence of some SU(3) bundle is not uniqueness. Matching N_gen or T_wall to c2 by hand is a map. Wilson lines / parabolic reduction remain unfixed scaffolding.",
+      "n_fits": 12,
+      "fits": [
+        {
+          "map": "rank=N_gen=3",
+          "rank": 3,
+          "group_hint": "not SU(3) rank (SU(3) rank=2)"
+        },
+        {
+          "map": "rank=2 not in locked ints as unique",
+          "rank": 2,
+          "group_hint": "SU(3) rank; extra choice"
+        },
+        {
+          "map": "c2=N_gen=3",
+          "c2": 3
+        },
+        {
+          "map": "c2=n2=8",
+          "c2": 8
+        },
+        {
+          "map": "c2=n3=15",
+          "c2": 15
+        },
+        {
+          "map": "c2=monodromy=24",
+          "c2": 24
+        },
+        {
+          "map": "c2=sum_n_eta=26",
+          "c2": 26
+        },
+        {
+          "map": "instanton_k=N_gen=3",
+          "k": 3
+        },
+        {
+          "map": "instanton_k=n2=8",
+          "k": 8
+        },
+        {
+          "map": "instanton_k=monodromy=24",
+          "k": 24
+        },
+        {
+          "map": "T_wall=13/2 as c2",
+          "c2": 6.5,
+          "note": "not an integer instanton number"
+        },
+        {
+          "map": "dim SU(3)=8=n2",
+          "extra": "identifies dim(G) with n_eta_2"
+        }
+      ],
+      "scaffolding_named": [
+        "c2",
+        "instanton number k",
+        "Wilson lines",
+        "parabolic reduction"
+      ],
+      "scaffolding_withdrawn": true
+    },
+    {
+      "attempt": 2,
+      "track": "B",
+      "mechanism": "K3 reduction class vs other leftover 4-folds",
+      "unique": false,
+      "bin": "CLASS",
+      "why": "Locked isolate does not force leftover X^4 \u2245 K3 rather than CP^2 / T^4 / other Einstein 4-folds. Holonomy of a K3 metric is SU(2), not SU(3). Iso(K3) is not SU(3)_c. CP^2 stays named as the KK-isometry color option; not picked because QCD wants SU(3).",
+      "named_classes": [
+        "K3 (holonomy SU(2), not SU(3))",
+        "CP^2 (KK-isometry color option)",
+        "T^4",
+        "other Einstein 4-folds"
+      ],
+      "k3_gives": [
+        "SU(2) holonomy of a hyperkahler metric",
+        "can CARRY an external SU(3) bundle (Track A on Track B, still CLASS)"
+      ],
+      "k3_does_not_give": [
+        "SU(3)_c as holonomy",
+        "SU(3)_c as Iso(K3)",
+        "a unique leftover 4-fold",
+        "a live 4D Einstein metric"
+      ],
+      "h0_dependency": "Live 4D Einstein / KK needs a unique 14D metric + reduction; this track does not produce that metric.",
+      "scaffolding_withdrawn": true
+    },
+    {
+      "attempt": 3,
+      "track": "A+B",
+      "mechanism": "Combined (K3, SU(3) bundle) functor",
+      "unique": false,
+      "bin": "REFUSED",
+      "why": "A pair (X^4, P) is a product of a non-unique leftover class and non-unique Chern data. No unique pair (K3, SU(3) bundle) from locked atoms. Picking the SM-looking pair is forbidden.",
+      "scaffolding_withdrawn": true
+    }
+  ],
+  "extra_data_remaining": [
+    "principal-bundle rank",
+    "c2 / instanton number k",
+    "Wilson lines / parabolic reduction",
+    "choice of leftover X^4 (K3 vs CP^2 vs T^4 vs other)",
+    "H0 14D metric + reduction (not produced here)"
+  ],
+  "complete_baseline_rewritten": false,
+  "timestamp_utc": "2026-09-19T20:32:32.611910+00:00"
+}

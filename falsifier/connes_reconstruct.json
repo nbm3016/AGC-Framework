@@ -1,0 +1,224 @@
+{
+  "module": "connes_reconstruct",
+  "banner": "CONNES RECONSTRUCT - TRIPLE != METRIC - ZERO KNOBS",
+  "continuous_knobs": 0,
+  "N_gen": 3,
+  "inventory": {
+    "triple_phrase_mentions": [
+      "STATUS.md:72"
+    ],
+    "triple_records": [],
+    "weyl_slope_mentions": [],
+    "ko_dimension_mentions": [],
+    "inner_fluctuation_mentions": []
+  },
+  "axioms": [
+    {
+      "axiom": "commutativity of A",
+      "holds_for_a_unique_isolate_triple": false,
+      "why": "no (A, H, D) record is on disk, so the axiom is not instantiated"
+    },
+    {
+      "axiom": "bounded commutators and compact resolvent",
+      "holds_for_a_unique_isolate_triple": false,
+      "why": "no (A, H, D) record is on disk, so the axiom is not instantiated"
+    },
+    {
+      "axiom": "regularity",
+      "holds_for_a_unique_isolate_triple": false,
+      "why": "no (A, H, D) record is on disk, so the axiom is not instantiated"
+    },
+    {
+      "axiom": "order one",
+      "holds_for_a_unique_isolate_triple": false,
+      "why": "no (A, H, D) record is on disk, so the axiom is not instantiated"
+    },
+    {
+      "axiom": "orientability (Hochschild cycle represents chirality)",
+      "holds_for_a_unique_isolate_triple": false,
+      "why": "no (A, H, D) record is on disk, so the axiom is not instantiated"
+    },
+    {
+      "axiom": "finiteness and absolute continuity",
+      "holds_for_a_unique_isolate_triple": false,
+      "why": "no (A, H, D) record is on disk, so the axiom is not instantiated"
+    },
+    {
+      "axiom": "reality operator J and a fixed KO-dimension",
+      "holds_for_a_unique_isolate_triple": false,
+      "why": "no (A, H, D) record is on disk, so the axiom is not instantiated"
+    },
+    {
+      "axiom": "Poincare duality",
+      "holds_for_a_unique_isolate_triple": false,
+      "why": "no (A, H, D) record is on disk, so the axiom is not instantiated"
+    },
+    {
+      "axiom": "spectral dimension 4",
+      "holds_for_a_unique_isolate_triple": false,
+      "why": "no (A, H, D) record is on disk, so the axiom is not instantiated"
+    }
+  ],
+  "internal_wall_index_is_4d_dirac": false,
+  "dynamical_empty": true,
+  "positive_eom_count": 0,
+  "hol_of_cone": "SU(3)",
+  "g_C_flat": false,
+  "hol_is_4d_metric": false,
+  "cone_holonomy_reading": "Hol(g_C)=SU(3) as holonomy; not SU(3)_c",
+  "g_mu_nu_type": "OPEN-FIELD",
+  "g_mu_nu_value_forced": false,
+  "unique_spectral_triple": false,
+  "unique_g_mu_nu": false,
+  "color_type": "FORBIDDEN",
+  "N": [
+    {
+      "id": "N1",
+      "text": "Is a unique algebra A forced by locked atoms (not picked C^infty(M^4))?",
+      "bin": "REFUSED",
+      "gates": [
+        "R-map-called-lock",
+        "R-unlisted-modulus"
+      ],
+      "reasons": [
+        "structured (A, H, D) records: 0. Phrase mentions: 1. A sentence is not an algebra.",
+        "YES labels a map/class as LOCK/FORCED/DERIVED",
+        "modulus 'C_infty_M4' is not a named allowed menu row"
+      ],
+      "color_lock": false,
+      "unique": false
+    },
+    {
+      "id": "N2",
+      "text": "Is a unique Hilbert space H / spinor module forced?",
+      "bin": "REFUSED",
+      "gates": [
+        "R-map-called-lock",
+        "R-unlisted-modulus"
+      ],
+      "reasons": [
+        "N_gen=3 is a finite wall-index count. An L2 spinor space is not determined by that count.",
+        "YES labels a map/class as LOCK/FORCED/DERIVED",
+        "modulus 'spinor_module_H' is not a named allowed menu row"
+      ],
+      "color_lock": false,
+      "unique": false
+    },
+    {
+      "id": "N3",
+      "text": "Is a unique Dirac D forced (no free KO-dimension, no free inner-fluctuation knobs)?",
+      "bin": "REFUSED",
+      "gates": [
+        "R-knobs",
+        "R-knobs",
+        "R-unlisted-modulus"
+      ],
+      "reasons": [
+        "KO-dimension mentions: 0. Inner-fluctuation mentions: 0. native_aps_index.py states the wall-index rule is not ker D_5.",
+        "YES introduces a free real parameter",
+        "YES introduces L, bulk \u039b, RS k, or integration constant C as isolate",
+        "modulus 'KO_dimension' is not a named allowed menu row"
+      ],
+      "color_lock": false,
+      "unique": false
+    },
+    {
+      "id": "N4",
+      "text": "Do the reconstruction axioms hold for that unique triple with spectral dimension 4?",
+      "bin": "REFUSED",
+      "gates": [
+        "R-map-called-lock",
+        "R-unlisted-modulus"
+      ],
+      "reasons": [
+        "axioms instantiated for a unique triple: False. Forced dims on disk are the 5-link, the 6-cone, and the 14D fibration.",
+        "YES labels a map/class as LOCK/FORCED/DERIVED",
+        "modulus 'spectral_dimension_4' is not a named allowed menu row"
+      ],
+      "color_lock": false,
+      "unique": false
+    },
+    {
+      "id": "N5",
+      "text": "Does Weyl slope 2 by itself force (M^4, g)?",
+      "bin": "REFUSED",
+      "gates": [
+        "R-map-called-lock",
+        "R-unlisted-modulus"
+      ],
+      "reasons": [
+        "Weyl-slope mentions: 0. A slope is not A, not H, not D, and not g.",
+        "YES labels a map/class as LOCK/FORCED/DERIVED",
+        "modulus 'weyl_slope_2' is not a named allowed menu row"
+      ],
+      "color_lock": false,
+      "unique": false
+    },
+    {
+      "id": "N6",
+      "text": "Does reconstruction force a unique g_mu_nu(x) modulo diffeomorphism / Weyl already GAUGE?",
+      "bin": "REFUSED",
+      "gates": [
+        "R-modulus-called-lock",
+        "R-modulus-called-lock"
+      ],
+      "reasons": [
+        "Reconstruction needs a unique triple. None is stored, so g is not reconstructed.",
+        "labels 'g_mu_nu' type OPEN-FIELD as FORCED",
+        "YES treats non-FORCED modulus 'g_mu_nu' as lock"
+      ],
+      "color_lock": false,
+      "unique": false
+    },
+    {
+      "id": "N7",
+      "text": "May we pick eta_mu_nu / FLRW / RS because N6 failed?",
+      "bin": "REFUSED",
+      "gates": [
+        "R-weld",
+        "R-unlisted-modulus"
+      ],
+      "reasons": [
+        "A failed reconstruction does not license a named 4D metric.",
+        "YES welds CLASS onto LOCK",
+        "modulus 'eta_mu_nu' is not a named allowed menu row"
+      ],
+      "color_lock": false,
+      "unique": false
+    },
+    {
+      "id": "N8",
+      "text": "Does 9/16 become G_N, or sigma* become g?",
+      "bin": "REFUSED",
+      "gates": [
+        "R-metric-swap",
+        "R-modulus-called-lock",
+        "R-unlisted-modulus",
+        "R-modulus-called-lock"
+      ],
+      "reasons": [
+        "8\u03c0G_eff = 9/16 is a locked pure number. \u03c3* is the 5-shape.",
+        "YES identifies \u03c3* or \u03c6(\u03b8,\u03c8) with g_\u03bc\u03bd",
+        "YES uses 8\u03c0G_eff as G_N in an ODE",
+        "modulus 'eight_pi_G_eff_as_G_N' is not a named allowed menu row",
+        "labels 'eight_pi_G_eff_as_G_N' type FORBIDDEN as G_N"
+      ],
+      "color_lock": false,
+      "unique": false
+    }
+  ],
+  "not_input_comparison": {
+    "label": "NOT INPUT",
+    "e4_value_forced": false,
+    "e4_M6_bin": "REFUSED",
+    "e4_M6_unique": false,
+    "e4_note": "E4 metric value was not forced. That row was not edited.",
+    "dynamical_ideal_empty": true,
+    "weyl_slope_on_disk": false,
+    "weyl_slope_is_a_triple": false,
+    "hol": "SU(3)",
+    "hol_note": "Hol(g_C) is holonomy of the cone. It is not g_mu_nu(x)."
+  },
+  "isolate_written": false,
+  "timestamp_utc": "2026-09-21T21:22:17.572746+00:00"
+}

@@ -1,0 +1,112 @@
+{
+  "sheet": "B",
+  "weld": false,
+  "continuous_knobs": 0,
+  "rows": [
+    {
+      "id": "W1",
+      "slot": "warp_factor",
+      "claim": "A = const",
+      "bin": "CONSISTENT",
+      "extras": [],
+      "map_not_lock": true
+    },
+    {
+      "id": "W2",
+      "slot": "warp_factor",
+      "claim": "RS A = -k |y|",
+      "bin": "CONSISTENT",
+      "extras": [
+        "k",
+        "L",
+        "y"
+      ],
+      "map_not_lock": true
+    },
+    {
+      "id": "W3",
+      "slot": "warp_factor",
+      "claim": "KW / conifold log warp",
+      "bin": "CONSISTENT",
+      "extras": [
+        "log_warp",
+        "y"
+      ],
+      "map_not_lock": true
+    },
+    {
+      "id": "G1",
+      "slot": "g_mu_nu",
+      "claim": "eta_mu_nu as model vacuum",
+      "bin": "CONSISTENT",
+      "extras": [
+        "eta_mu_nu"
+      ],
+      "map_not_lock": true
+    },
+    {
+      "id": "G2",
+      "slot": "g_mu_nu",
+      "claim": "FLRW as model vacuum",
+      "bin": "CONSISTENT",
+      "extras": [
+        "a_t",
+        "k_curv"
+      ],
+      "map_not_lock": true
+    },
+    {
+      "id": "G3",
+      "slot": "g_mu_nu",
+      "claim": "RS warped product as model vacuum",
+      "bin": "CONSISTENT",
+      "extras": [
+        "k",
+        "L",
+        "y"
+      ],
+      "map_not_lock": true
+    },
+    {
+      "id": "C2_color_pipe",
+      "slot": "unique_color",
+      "claim": "CLASS Chern / leftover 4-fold pipes",
+      "bin": "CLASS",
+      "extras": [
+        "which Chern (c2,rank,k)",
+        "which 4-fold"
+      ],
+      "map_not_lock": true
+    },
+    {
+      "id": "HD_alpha",
+      "slot": "alpha_k",
+      "claim": "higher-derivative coefficient",
+      "bin": "CLASS",
+      "extras": [
+        "alpha_k"
+      ],
+      "map_not_lock": true
+    },
+    {
+      "id": "ISO_BUNDLE_FAMILY",
+      "slot": "associated_bundles",
+      "claim": "irreps (j_L, j_R, q)",
+      "bin": "CLASS",
+      "extras": [
+        "j_L",
+        "j_R",
+        "q"
+      ],
+      "map_not_lock": true
+    },
+    {
+      "id": "scale_withdrawn",
+      "slot": "Weyl_lambda",
+      "claim": "absolute scale withdrawn; yardstick is not a GeV",
+      "bin": "GAUGE",
+      "extras": [],
+      "map_not_lock": true
+    }
+  ]
+}

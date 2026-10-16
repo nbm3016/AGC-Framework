@@ -1,0 +1,325 @@
+{
+  "continuous_knobs": 0,
+  "promoted": false,
+  "psi_star": "charge conjugation C",
+  "generator": "Pauli-lift charge conjugation C; exhaust is [Psi, star Psi] + [star Psi, Psi-star] + [Psi-star, Psi]",
+  "not": "elementwise conj",
+  "factor_5d": {
+    "dimension": 5,
+    "state_dim": 4,
+    "generator": "Pauli-lift charge conjugation C",
+    "C_sign": 1,
+    "C_square": "I",
+    "star": "transverse 4-volume",
+    "star_square": "I",
+    "volume_is_scalar": true,
+    "exhaust_norm": 0.0,
+    "exhaust_is_zero": true,
+    "exhaust_rank": 0,
+    "transverse_exhaust_norm": 0.0
+  },
+  "ambient_14d": {
+    "dimension": 14,
+    "state_dim": 128,
+    "generator": "Pauli-lift charge conjugation C",
+    "C_sign": 1,
+    "C_square": "I",
+    "star": "Clifford volume",
+    "star_square": "I",
+    "volume_is_scalar": false,
+    "exhaust_norm": 11.313708498984761,
+    "exhaust_is_zero": false,
+    "exhaust_rank": 128,
+    "transverse_exhaust_norm": 0.0
+  },
+  "time_factor": "TRIVIAL",
+  "time_ambient": "EMERGENT",
+  "mass_candidate": 4,
+  "rows_changed": 0,
+  "rows": [
+    {
+      "id": "R1",
+      "object": "possibility set",
+      "seat": "shared",
+      "data": 35,
+      "exhaust": "",
+      "bin": "FORCED",
+      "why": "35 locks, one list. Psi-star is charge conjugation C, not the left star and not elementwise conj."
+    },
+    {
+      "id": "R2",
+      "object": "observers",
+      "seat": "Psi, star Psi, Psi-star",
+      "data": 4,
+      "exhaust": "",
+      "bin": "FORCED",
+      "why": "Three seats are occupied. Each is an observer. The binding is not the only observer."
+    },
+    {
+      "id": "R3",
+      "object": "trinodal state",
+      "seat": "3/3",
+      "data": 4,
+      "exhaust": "",
+      "bin": "FORCED",
+      "why": "Psi is (I+star)/2. On the factor the 5-volume is I, so star Psi is the transverse 4-volume. Psi-star is C."
+    },
+    {
+      "id": "R4",
+      "object": "mass candidate",
+      "seat": "three",
+      "data": 4,
+      "exhaust": "",
+      "bin": "FORCED",
+      "why": "The three seats act together on the rank-4 spinor space of Dirac(g_5). The data count is 4. It is not a kilogram."
+    },
+    {
+      "id": "R5",
+      "object": "time",
+      "seat": "three",
+      "data": 4,
+      "exhaust": 0.0,
+      "bin": "TRIVIAL",
+      "why": "The cyclic bracket was computed. A zero bracket is TRIVIAL. A non-zero bracket is EMERGENT. The two-seat defect was not used."
+    },
+    {
+      "id": "R6",
+      "object": "35 rows",
+      "seat": "shared",
+      "data": 35,
+      "exhaust": 0.0,
+      "bin": "LOCK",
+      "why": "The exhaust is an operator on the spinor space. It does not assign any of the 35 atoms. No row moves."
+    },
+    {
+      "id": "R7",
+      "object": "c2, holonomy, 9/16, 13/2",
+      "seat": "shared",
+      "data": 4,
+      "exhaust": 0.0,
+      "bin": "LOCK",
+      "why": "The bracket does not force c2. Hol(g_C)=SU(3) stays holonomy. 9/16 stays a number. T_wall stays 13/2."
+    },
+    {
+      "id": "R8",
+      "object": "14D ambient",
+      "seat": "same three",
+      "data": 128,
+      "exhaust": 11.313708498984761,
+      "bin": "EMERGENT",
+      "why": "Same three seats on Cl(14): mode (I+star)/2, star = Clifford volume, Psi-star = C. Cyclic bracket on that module. Not an on-shell boundary condition."
+    }
+  ],
+  "rescored": [
+    {
+      "name": "ambient_theory",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "filter_three_way",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "wall_zero_count",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "barrier_minus",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "clock_Z24",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "continuous_knobs",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "lambda_tilde",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "Iso_group",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "sigma_star",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "T_wall_identity",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "b2",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "b3",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "eight_pi_G_eff_number",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "n_eta",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "CONE",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "CONE_HOLONOMY",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "SPIN_T11",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "DIRAC_T11",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "TRIPLE_T11",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "SASAKI_PHI_J",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "g_T_omega_T",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "PARALLEL_SPINORS_CONE",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "HARM_2_EULER_PAIRING",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "D5_LABEL_FORMULA",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "VOL_T11",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "EINSTEIN_SCALAR_G5",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "CONE_HOMOTHETY",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "J_CONE",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "LINK_SECOND_FUNDAMENTAL",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "DR_WEDGE_DETA",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "DR_WEDGE_HARM2",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "DR_ETA_WEDGE_DETA",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "DR_ETA_WEDGE_HARM2",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "DR_WEDGE_DETA_SQ",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "OMEGA_TRANSVERSE",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    }
+  ]
+}

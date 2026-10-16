@@ -1,0 +1,113 @@
+{
+  "module": "mr_scale_probe",
+  "continuous_knobs": 0,
+  "N_gen": 3,
+  "M_R_GeV": null,
+  "unique_heavy_majorana_scale_forced": false,
+  "R_is_GAUGE": true,
+  "nF_proven": false,
+  "promote": false,
+  "R": [
+    {
+      "id": "R1",
+      "text": "locked isolate data are dimensionless (no native GeV on disk)",
+      "unique": true,
+      "bin": "FORCED",
+      "gates": [],
+      "reasons": [
+        "M_R_GeV is null; locked maps labeled dimensionless"
+      ]
+    },
+    {
+      "id": "R2",
+      "text": "unique GeV M_R from locked atoms, conversion withdrawn",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [
+        "R-knobs",
+        "R-stick-left-in",
+        "R-scale",
+        "R-unlisted-modulus"
+      ],
+      "reasons": [
+        "YES introduces a free real parameter",
+        "YES leaves observational stick in as dynamics",
+        "YES treats Weyl \u03bb or stick as R in meters",
+        "modulus 'M_R_GeV' is not a named allowed menu row"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "R3",
+      "text": "T_wall=13/2 forces a GeV^3 scale",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [
+        "R-scale",
+        "R-unlisted-modulus",
+        "R-modulus-called-lock"
+      ],
+      "reasons": [
+        "YES uses T_wall as brane tension / Israel jump",
+        "modulus 'T_wall_as_GeV3' is not a named allowed menu row",
+        "labels 'T_wall_as_GeV3' type FORBIDDEN as G_N"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "R4",
+      "text": "9/16 forces G_N or M_Pl",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [
+        "R-modulus-called-lock",
+        "R-unlisted-modulus",
+        "R-modulus-called-lock"
+      ],
+      "reasons": [
+        "YES uses 8\u03c0G_eff as G_N in an ODE",
+        "modulus 'eight_pi_G_eff_as_G_N' is not a named allowed menu row",
+        "labels 'eight_pi_G_eff_as_G_N' type FORBIDDEN as G_N"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "R5",
+      "text": "unique Freund-Rubin n_F and unique x=R*M_Pl from locked atoms",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [
+        "R-knobs",
+        "R-scale",
+        "R-modulus-called-lock"
+      ],
+      "reasons": [
+        "YES introduces a free real parameter",
+        "YES treats Weyl \u03bb or stick as R in meters",
+        "labels 'overall_R' type GAUGE as FORCED"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "R6",
+      "text": "Stage-4 Sigma m_nu back-solves a geometric M_R",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [
+        "R-knobs",
+        "R-stick-left-in",
+        "R-knobs",
+        "R-unlisted-modulus"
+      ],
+      "reasons": [
+        "YES introduces a free real parameter",
+        "YES leaves observational stick in as dynamics",
+        "YES introduces L, bulk \u039b, RS k, or integration constant C",
+        "modulus 'v_EW' is not a named allowed menu row"
+      ],
+      "color_lock": false
+    }
+  ],
+  "isolate_written": false,
+  "timestamp_utc": "2026-09-20T03:18:45.229602+00:00"
+}

@@ -1,0 +1,268 @@
+{
+  "continuous_knobs": 0,
+  "promoted": false,
+  "possibilities": [
+    {
+      "name": "ambient_theory",
+      "value": "Y^{14} → M^4"
+    },
+    {
+      "name": "filter_three_way",
+      "value": "★Ψ = Ψ = Ψ★"
+    },
+    {
+      "name": "wall_zero_count",
+      "value": 3
+    },
+    {
+      "name": "barrier_minus",
+      "value": "★Ψ = −Ψ"
+    },
+    {
+      "name": "clock_Z24",
+      "value": {
+        "group": "Z/24",
+        "lines": 3,
+        "seats_per_line": 8,
+        "shared_face": "+8",
+        "shared_face_order": 3,
+        "inverse_face": "+16",
+        "order_8_subgroup": [
+          0,
+          3,
+          6,
+          9,
+          12,
+          15,
+          18,
+          21
+        ]
+      }
+    },
+    {
+      "name": "continuous_knobs",
+      "value": 0
+    },
+    {
+      "name": "lambda_tilde",
+      "value": [
+        "9/2",
+        "12",
+        "45/2"
+      ]
+    },
+    {
+      "name": "Iso_group",
+      "value": "SU(2)×SU(2)×U(1)"
+    },
+    {
+      "name": "sigma_star",
+      "value": "sqrt(3)/2"
+    },
+    {
+      "name": "T_wall_identity",
+      "value": "13/2"
+    },
+    {
+      "name": "b2",
+      "value": 1
+    },
+    {
+      "name": "b3",
+      "value": 1
+    },
+    {
+      "name": "eight_pi_G_eff_number",
+      "value": "9/16"
+    },
+    {
+      "name": "n_eta",
+      "value": [
+        3,
+        8,
+        15
+      ]
+    },
+    {
+      "name": "CONE",
+      "value": "g_C = dr^2 + r^2 g_5"
+    },
+    {
+      "name": "CONE_HOLONOMY",
+      "value": "SU(3)"
+    },
+    {
+      "name": "SPIN_T11",
+      "value": "unique spin structure"
+    },
+    {
+      "name": "DIRAC_T11",
+      "value": "Dirac(g_5), KO-dimension 5, spinor rank 4"
+    },
+    {
+      "name": "TRIPLE_T11",
+      "value": "canonical 5-triple reconstructs T^{1,1}"
+    },
+    {
+      "name": "SASAKI_PHI_J",
+      "value": "Phi(X)=grad_X xi; J=Phi on ker eta"
+    },
+    {
+      "name": "g_T_omega_T",
+      "value": "base S^2×S^2; omega_T = d eta/2; g_T is not g_μν"
+    },
+    {
+      "name": "PARALLEL_SPINORS_CONE",
+      "value": "one complex line of parallel spinors; phase is the Iso U(1)"
+    },
+    {
+      "name": "HARM_2_EULER_PAIRING",
+      "value": "H^2 rank 1 from Euler (1,1); not a flux; cup-square 2 is not c2"
+    },
+    {
+      "name": "D5_LABEL_FORMULA",
+      "value": "Killing eigenvalues -5/2 and +5/2"
+    },
+    {
+      "name": "VOL_T11",
+      "value": "16*pi**3/27"
+    },
+    {
+      "name": "EINSTEIN_SCALAR_G5",
+      "value": "Ric = 4 g; scalar = 20"
+    },
+    {
+      "name": "CONE_HOMOTHETY",
+      "value": "L_(r d/dr) g_C = 2 g_C; gauge; not a GeV"
+    },
+    {
+      "name": "J_CONE",
+      "value": "J(d/dr) = xi"
+    },
+    {
+      "name": "LINK_SECOND_FUNDAMENTAL",
+      "value": "II = g_5 / r along the radial normal"
+    },
+    {
+      "name": "DR_WEDGE_DETA",
+      "value": "wedge, degree 3"
+    },
+    {
+      "name": "DR_WEDGE_HARM2",
+      "value": "wedge, degree 3"
+    },
+    {
+      "name": "DR_ETA_WEDGE_DETA",
+      "value": "wedge, degree 4"
+    },
+    {
+      "name": "DR_ETA_WEDGE_HARM2",
+      "value": "wedge, degree 4"
+    },
+    {
+      "name": "DR_WEDGE_DETA_SQ",
+      "value": "wedge, degree 5"
+    },
+    {
+      "name": "OMEGA_TRANSVERSE",
+      "value": "complex 2-form of type (2,0); phase is the locked U(1)"
+    }
+  ],
+  "seats": [
+    {
+      "seat": "Ψ",
+      "over": "shared possibility set",
+      "built": true,
+      "record": "built",
+      "file": "isolate_updated.json filter.parts"
+    },
+    {
+      "seat": "★Ψ",
+      "over": "shared possibility set",
+      "built": true,
+      "record": "built",
+      "file": "isolate_updated.json filter.wall_reading"
+    },
+    {
+      "seat": "Ψ*",
+      "over": "shared possibility set",
+      "built": false,
+      "record": "declared",
+      "file": "STATUS.md Observational core; theory/THEORY_RULES.md Observational core",
+      "not_filled_by": "Ψ★"
+    }
+  ],
+  "seats_built": "2/3",
+  "rotation_forced": false,
+  "spin_performed": false,
+  "test_14d_performed": false,
+  "rows": [
+    {
+      "id": "T1",
+      "claim": "Possibility set. Locked atoms are the shared possibilities, listed once.",
+      "live_bin": "FORCED",
+      "extras": [],
+      "why": "35 locks with status LOCK. One list. It is not copied onto the seats."
+    },
+    {
+      "id": "T2",
+      "claim": "Three seats over that set. Which seat did the files build?",
+      "live_bin": "DECLARED",
+      "extras": [
+        "Ψ*"
+      ],
+      "why": "Ψ is built as the mode in the filter. ★Ψ is built as the left side of the wall reading j2=0. Ψ* is declared in the observational core. Ψ★ is the same involution as the left star, not a second operator, so it does not build Ψ*."
+    },
+    {
+      "id": "T3",
+      "claim": "Does any file permit the seats to exchange roles with extras=0?",
+      "live_bin": "REFUSED",
+      "extras": [
+        "rotation"
+      ],
+      "why": "The written map is the APS edge ★Ψ = Ψ in the T^{1,1} self-dual sector. That is one pairing. It is not a rotation of the three seats."
+    },
+    {
+      "id": "T4",
+      "claim": "Is the joint fixed point ★Ψ = Ψ = Ψ* forced?",
+      "live_bin": "DECLARED",
+      "extras": [
+        "Ψ*",
+        "binding"
+      ],
+      "why": "The observational core declares the joint fixed point. Three seats are not all built, so the binding is not determined with extras=0."
+    },
+    {
+      "id": "T5",
+      "claim": "Is a spin, a rotation parameter, or a time coordinate forced?",
+      "live_bin": "UNPERFORMED",
+      "extras": [
+        "t"
+      ],
+      "why": "DIMENSIONAL_SCOPE.md leaves t undiscretized. No rotation parameter is a locked atom. The spin of this rotation is unperformed. t is not invented."
+    },
+    {
+      "id": "T6",
+      "claim": "A state blocked by the binding but not by the edge.",
+      "live_bin": "UNKNOWN",
+      "extras": [],
+      "why": "No file exhibits a state the binding blocks and the edge allows. c2 stays a map. Hol(g_C)=SU(3) stays holonomy."
+    },
+    {
+      "id": "T7",
+      "claim": "A state the rotation forces that the one pairing does not.",
+      "live_bin": "REFUSED",
+      "extras": [
+        "rotation"
+      ],
+      "why": "The rotation is not an extras-free map. It forces no state beyond the pairing ★Ψ = Ψ."
+    },
+    {
+      "id": "T8",
+      "claim": "Has the binding been run on Y^14 → M^4?",
+      "live_bin": "UNPERFORMED",
+      "extras": [],
+      "why": "The observational core says the joint rule has not been run as an asymptotic on-shell boundary condition on Y^14 → M^4. Unperformed is not a disproof."
+    }
+  ]
+}

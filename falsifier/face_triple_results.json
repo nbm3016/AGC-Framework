@@ -1,0 +1,74 @@
+{
+  "continuous_knobs": 0,
+  "baseline_sha256": "1d9b54a788142b9d2c818d236d55e8a7a71b841c0e032107bcc052f23abe707a",
+  "baseline_byte_stable_during_probe": true,
+  "unique_triple_forced": "No",
+  "face_from_T11": "S^2×S^2",
+  "face_from_Sigma5": null,
+  "third_face": null,
+  "rows": [
+    {
+      "id": "F1",
+      "claim": "Is Σ^5 × T^{1,1} the locked 10D compact space?",
+      "unique": true,
+      "live_bin": "FORCED",
+      "extras": [],
+      "why": "isolate compact_fibre is X^{10} = Σ^5 × T^{1,1}. yardstick_lovelock_euler.json records dim 5 and dim 5, product dim 10. five_fold_is_ambient is false. continuous_knobs is 0. fibration_class_unique is false and is a different row."
+    },
+    {
+      "id": "F2",
+      "claim": "What 4D faces, if any, are forced by T^{1,1}?",
+      "unique": true,
+      "live_bin": "FORCED",
+      "extras": [],
+      "why": "generated_inventory.json TRANSVERSE_BASE is unique and FORCED, value S^2×S^2. The recorded reason is the free S^1 quotient of the S^3 factor of T^{1,1} ≃ S^2×S^3. S^2×S^2 is 4-real-dimensional. forces_metric is false.",
+      "value": "S^2×S^2",
+      "real_dimension": 4
+    },
+    {
+      "id": "F3",
+      "claim": "What 4D faces, if any, are forced by Σ^5?",
+      "unique": false,
+      "live_bin": "UNKNOWN",
+      "extras": [
+        "4D face of Σ^5"
+      ],
+      "why": "yardstick_lovelock_euler.json records Sigma5 as dim 5 with Euler characteristic 0 and no quotient. DIMENSIONAL_SCOPE.md says APS on Σ^5 is the Stage 1A survivor set, not a live 5D mesh. No extras-free 4D face is stored, and no file rules one out.",
+      "scope_not_a_mesh": false,
+      "sigma_dim": 5
+    },
+    {
+      "id": "F4",
+      "claim": "What does N_gen=3 force as a geometric type?",
+      "unique": false,
+      "live_bin": "REFUSED",
+      "extras": [],
+      "why": "falsifier/identification.json stores N_gen as the count of wall-index zeros. three_generations_is_A_lock is false. same_4d_weyl_three_times is false. The zeros are the harmonics of dimensions 2, 3, and 4. That record contradicts a type of three 4-manifolds.",
+      "forced_as": "wall-index zero count"
+    },
+    {
+      "id": "F5",
+      "claim": "What does ★Ψ=Ψ force as a geometric type?",
+      "unique": false,
+      "live_bin": "REFUSED",
+      "extras": [],
+      "why": "isolate filter.role is filter. wall_reading is j2 = 0, where the defect vanishes. The stored statement is ★Ψ = Ψ = Ψ★. No 4-manifold is stored on that row. The record contradicts a geometric face type."
+    },
+    {
+      "id": "F6",
+      "claim": "Is a third 4D face forced from the 10-fold with extras=0?",
+      "unique": false,
+      "live_bin": "REFUSED",
+      "extras": [],
+      "why": "modulus_menu.json g_mu_nu is OPEN-FIELD with value_forced false. leftover_X4_family is CLASS and is not a unique 4-fold. CP2_as_the_4fold and K3_as_the_4fold are FORBIDDEN. page_interface is not a lock and is_g_mu_nu is false. M^4 is the base in the ambient statement, and the 10-fold is the fibre. Those rows contradict a third 4D face forced from the 10-fold with extras 0."
+    },
+    {
+      "id": "F7",
+      "claim": "Is a unique triple of 4D faces forced?",
+      "unique": false,
+      "live_bin": "REFUSED",
+      "extras": [],
+      "why": "A unique triple needs F2, F3, and F6 each FORCED with extras 0. At least one of those legs is contradicted by the files."
+    }
+  ]
+}

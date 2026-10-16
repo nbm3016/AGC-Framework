@@ -1,0 +1,180 @@
+{
+  "module": "h1_color_bundle",
+  "target": "unique gauge bundle containing SU(3)_c or unique ADE reducing to G_SM",
+  "continuous_knobs": 0,
+  "N_gen_stands": true,
+  "N_gen": 3,
+  "locked_snapshot_unchanged": true,
+  "h0_metric_reduction": "dependency note only; not performed",
+  "burned_not_retried": [
+    "Iso(T^{1,1})=SU(3)_c",
+    "holonomy SU(3)=QCD",
+    "chi=N_gen welded to CP2",
+    "N_gen=dim of the 3 of SU(3)",
+    "3 APS modes=45 SM Weyl",
+    "C2(3)=4/3 in V(sigma) as proof of color",
+    "graph orbits=color or SM gens"
+  ],
+  "physical_bridge_no_SM_gauge": {
+    "quantity": "\u03b1_em, \u03b1_s, sin\u00b2\u03b8_W, G_F",
+    "status": "not_determined_by_locked_geometry",
+    "reason": "No locked map identifies the compact 8\u03c0G_eff=\u03c3*\u00b2/C\u2082 with a Standard Model gauge coupling. Any such identification would be a new continuous or discrete choice."
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "mechanism": "Iso of locked space",
+      "iso_from_files": "SU(2)\u00d7SU(2) lattice from T^{1,1} isometry (native_aps_index.py)",
+      "iso_from_briefing": "Iso(T^{1,1})=SU(2)\u00d7SU(2)\u00d7U(1) (ingested briefing; not SU(3)_c)",
+      "contains_SU3_c": false,
+      "unique_SU3_c_or_ADE": false,
+      "bin": "REFUSED",
+      "why": "Locked T^{1,1} isometry algebra cited in-repo is SU(2)\u00d7SU(2) (plus briefing U(1)). That group does not contain SU(3)_c as a simple factor. Enlarging the group by hand is forbidden. Iso(T^{1,1})=SU(3)_c is burned; not retried as the proof",
+      "scaffolding_withdrawn": true
+    },
+    {
+      "attempt": 2,
+      "mechanism": "Unique leftover X^4",
+      "named_classes_scaffolding": [
+        "CP^2 (KK color, scaffolding)",
+        "K3 (Einstein / existing 7-form, scaffolding)"
+      ],
+      "unique_X4_forced": false,
+      "unique_SU3_c_or_ADE": false,
+      "bin": "CLASS",
+      "why": "Locked atoms do not force a unique leftover 4-fold. CP^2 and K3 are named classes only; neither is selected without an extra choice. Picking CP^2 because QCD wants SU(3) is forbidden. physical_bridge.json: no locked map to a SM gauge coupling. H0 metric reduction is a one-line dependency, not performed.",
+      "h0_dependency_note": "A unique X^4 would need a unique Y^{14}\u2192M^4\u00d7X^{10} reduction (H0), which is not in the isolate.",
+      "scaffolding_withdrawn": true
+    },
+    {
+      "attempt": 3,
+      "mechanism": "ADE from locked integers only",
+      "locked_integers": {
+        "N_gen": 3,
+        "n1": 3,
+        "n2": 8,
+        "n3": 15,
+        "sum_n_eta": 26,
+        "monodromy": 24
+      },
+      "T_wall": "13/2 (not an integer Coxeter number)",
+      "n_ADE_hits_any_single_integer": 12,
+      "sample_hits": [
+        {
+          "ade": "A2",
+          "rank": 2,
+          "coxeter": 3,
+          "matches": [
+            "coxeter=N_gen=3",
+            "coxeter=n1=3"
+          ]
+        },
+        {
+          "ade": "A3",
+          "rank": 3,
+          "coxeter": 4,
+          "matches": [
+            "rank=N_gen=3",
+            "rank=n1=3"
+          ]
+        },
+        {
+          "ade": "A7",
+          "rank": 7,
+          "coxeter": 8,
+          "matches": [
+            "coxeter=n2=8"
+          ]
+        },
+        {
+          "ade": "A8",
+          "rank": 8,
+          "coxeter": 9,
+          "matches": [
+            "rank=n2=8"
+          ]
+        },
+        {
+          "ade": "A14",
+          "rank": 14,
+          "coxeter": 15,
+          "matches": [
+            "coxeter=n3=15"
+          ]
+        },
+        {
+          "ade": "A23",
+          "rank": 23,
+          "coxeter": 24,
+          "matches": [
+            "coxeter=monodromy=24"
+          ]
+        },
+        {
+          "ade": "A24",
+          "rank": 24,
+          "coxeter": 25,
+          "matches": [
+            "rank=monodromy=24"
+          ]
+        },
+        {
+          "ade": "D5",
+          "rank": 5,
+          "coxeter": 8,
+          "matches": [
+            "coxeter=n2=8"
+          ]
+        },
+        {
+          "ade": "D8",
+          "rank": 8,
+          "coxeter": 14,
+          "matches": [
+            "rank=n2=8"
+          ]
+        },
+        {
+          "ade": "D13",
+          "rank": 13,
+          "coxeter": 24,
+          "matches": [
+            "coxeter=monodromy=24"
+          ]
+        },
+        {
+          "ade": "D24",
+          "rank": 24,
+          "coxeter": 46,
+          "matches": [
+            "rank=monodromy=24"
+          ]
+        },
+        {
+          "ade": "E8",
+          "rank": 8,
+          "coxeter": 30,
+          "matches": [
+            "rank=n2=8"
+          ]
+        }
+      ],
+      "A2_and_A3_both_hit_integer_3": true,
+      "unique_SU3_c_or_ADE": false,
+      "bin": "REFUSED",
+      "why": "The same integer 3 matches A2 (coxeter=N_gen) and A3 (rank=N_gen). Monodromy 24 matches A23 (coxeter) and other diagrams. Several ADE fit the same locked integers depending on an extra map (rank vs coxeter vs dim of 3). Uniqueness refused. C2(3)=4/3 in V(\u03c3) is burned as a color proof.",
+      "scaffolding_withdrawn": true
+    }
+  ],
+  "h1_forced": false,
+  "final_bin": "OPEN_LEMMA",
+  "lemma": {
+    "name": "H1_unique_color_bundle",
+    "status": "open",
+    "required_theorem": "A unique functor from locked isolate atoms to a principal bundle P\u2192compact space with Aut(P) containing SU(3)_c (or a unique ADE that reduces to G_SM) with no free rank, Wilson line, or flux.",
+    "next_experiment": "Do not pick CP^2. Either derive a unique leftover 4-fold from a completed H0 reduction without knobs, or prove no such bundle exists in this isolate (negative lemma)."
+  },
+  "MAP_NOT_LOCK": "stays",
+  "complete_baseline_rewritten": false,
+  "timestamp_utc": "2026-09-19T18:23:52.427009+00:00"
+}

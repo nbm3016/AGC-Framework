@@ -1,0 +1,152 @@
+{
+  "banner": "AGC Expansion Mode Active \u2014 monodromy Dehn-twist scale quantization probe",
+  "timestamp_utc": "2026-08-10T23:20:48.448367+00:00",
+  "locked_inputs_used": {
+    "n_eta": [
+      3,
+      8,
+      15
+    ],
+    "eta_period": 12,
+    "delta_eta": [
+      0.7853981633974483,
+      2.0943951023931953,
+      3.926990816987241
+    ],
+    "delta_eta_over_pi": [
+      "1/4",
+      "2/3",
+      "5/4"
+    ],
+    "phase_orders": [
+      8,
+      3,
+      8
+    ],
+    "cyclotomic_monodromy_order": 24,
+    "survivors_j1": [
+      0.5,
+      1.0,
+      1.5
+    ],
+    "self_dual": "j2=0",
+    "n_gen": 3,
+    "sigma_star": 0.8660254037844556,
+    "lambda_tilde": [
+      4.5,
+      12.0,
+      22.5
+    ],
+    "T_wall": 6.5
+  },
+  "monodromy_as_dehn_twist": {
+    "description": "Monodromy acts as simultaneous U(1) rotations by 2\u03c0\u00b7(n_g/24) on fiber/\u03b7-circles of the three APS survivors; group cyclic of order 24.",
+    "primitive_root_order": 24,
+    "zeta_powers_n_g": [
+      3,
+      8,
+      15
+    ],
+    "rotations_as_fraction_of_2pi": [
+      "1/8",
+      "1/3",
+      "5/8"
+    ],
+    "mapping_torus_construction": "Mapping torus M_f = (Y \u00d7 [0,1]) / ~ with (y,0)~(f(y),1), where f is the fiber isometry implementing the product of U(1) rotations. f^{24} = id on the unit-geometry fiber (order divides 24).",
+    "is_isometry_of_unit_metric": true,
+    "free_SL2Z_integers_introduced": false
+  },
+  "scale_weight_analysis": {
+    "scale_family": "\u03bb \u2208 \u211d\u207a (overall conformal factor / volume radius unit)",
+    "holonomy_scale_weight": 0,
+    "holonomy_constraint": "Locked monodromy only constrains scale-invariant holonomies exp(i \u0394\u03b7_g)=\u03b6^{n_g}. No condition on \u03bb.",
+    "self_dual_7form": {
+      "dimension_d": 14,
+      "form_degree_p": 7,
+      "star_conformal_weight_d_minus_2p": 0,
+      "self_duality_scale_invariant": true,
+      "implication": "\u22c6\u03a8=\u03a8 is unchanged under g\u2192\u03bb\u00b2\u011d. Monodromy of self-dual periods cannot quantize \u03bb via self-duality matching."
+    },
+    "spectral_eigenvalues": {
+      "code_lambda_tilde": [
+        4.5,
+        12.0,
+        22.5
+      ],
+      "physical_scaling": "\u03bb_phys = \u03bb_tilde / R\u00b2 with R\u221d\u03bb",
+      "monodromy_action_on_spectrum": "Fiber isometries preserve the spectrum of the unit metric; they do not select a preferred R."
+    },
+    "shape_modulus_sigma": {
+      "sigma_star": 0.8660254037844556,
+      "note": "\u03c3* is already frozen by V(\u03c3); monodromy does not further discretize overall volume once shape is fixed."
+    }
+  },
+  "mapping_torus_smoothness": {
+    "finite_order": 24,
+    "f_power_equals_id": true,
+    "smooth_mapping_torus_for_all_positive_lambda": true,
+    "reason": "f is an isometry of every overall rescaling of the metric that preserves the unit angular/fiber geometry (Dehn-type rotation angles fixed). Smoothness of M_f therefore holds for the entire continuous family \u03bb\u2208\u211d\u207a.",
+    "no_new_integers_required": true
+  },
+  "period_matching_test": {
+    "model": "\u03a0_g(\u03bb)=\u03bb^w \u00b7 Vol_g \u00b7 exp(i \u0394\u03b7_g)",
+    "weight_w_common": 1.0,
+    "monodromy_preserves_magnitude_for_all_lambda": true,
+    "samples": [
+      {
+        "lambda": 0.1,
+        "magnitudes_preserved": true
+      },
+      {
+        "lambda": 0.5,
+        "magnitudes_preserved": true
+      },
+      {
+        "lambda": 1.0,
+        "magnitudes_preserved": true
+      },
+      {
+        "lambda": 2.0,
+        "magnitudes_preserved": true
+      },
+      {
+        "lambda": 10.0,
+        "magnitudes_preserved": true
+      }
+    ],
+    "implication": "Period matching under monodromy is homogeneous in \u03bb and is satisfied for every \u03bb>0. No discrete arithmetic subset of \u211d\u207a is selected."
+  },
+  "arithmetic_integers_not_scale": {
+    "discrete_integers_already_locked": [
+      1,
+      3,
+      8,
+      12,
+      15,
+      24,
+      26
+    ],
+    "forced_as_value_of_overall_scale_lambda": false,
+    "reason": "These integers classify holonomy/\u03b7-lattice data. Identifying \u03bb with any of them would assign a pure number to a dimensionful (or conformal-factor) quantity without a monodromy obstruction forcing it."
+  },
+  "decision": {
+    "discrete_scale_lock_achieved": false,
+    "unique_positive_pure_number_for_lambda": null,
+    "unique_arithmetic_set_for_lambda": null,
+    "verdict": "NEGATIVE",
+    "summary": "Locked monodromy maps to a cyclic order-24 U(1)/Dehn action on fiber cycles. Holonomies and middle-degree self-duality are scale-invariant; mapping-torus smoothness and period matching hold for every \u03bb>0. Therefore monodromy constrains shape/fiber holonomy only and leaves the overall scale family \u03bb\u2208\u211d\u207a continuous. No discrete arithmetic quantization of overall scale is forced.",
+    "residual_continuous_family": {
+      "parameter": "\u03bb \u2208 \u211d\u207a",
+      "meaning": "Overall conformal factor of the internal metric (volume radius R \u221d \u03bb with shape \u03c3* held fixed at \u221a3/2)",
+      "constrained_by_monodromy": false,
+      "constrained_by_self_duality": false,
+      "constrained_by_mapping_torus_smoothness": false,
+      "constrained_by_period_matching": false,
+      "explicit_residual_freedom": "\u03bb \u2208 \u211d^{+} unrestricted by locked monodromy/Dehn data"
+    },
+    "continuous_knobs": 0,
+    "lock_forced": false
+  },
+  "scientific_core_locks_altered": false,
+  "scaffolding_retained": false
+}

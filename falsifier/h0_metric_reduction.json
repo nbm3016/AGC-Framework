@@ -1,0 +1,61 @@
+{
+  "module": "h0_metric_reduction",
+  "target": "unique (g_Y14, g_mu_nu) with no free warp/radius/Wilson/X^4",
+  "h0_forced": false,
+  "continuous_knobs": 0,
+  "N_gen": 3,
+  "N_gen_stands": true,
+  "sigma_star_is_not_g_mu_nu": true,
+  "lambda_is_not_R_meters": true,
+  "absolute_scale_reopened": false,
+  "locked_r_slice": 0.095716,
+  "attempts": [
+    {
+      "attempt": 1,
+      "mechanism": "Unique 14D metric from locked 5-geometry",
+      "unique": false,
+      "bin": "CLASS",
+      "why": "Locked data force a unique squashed T^{1,1} 5-metric (\u03c3*=\u221a3/2) plus \u03a3^5 wall and self-dual 7-form on that compact sector. They do not fix leftover X^4 or warps that would complete g_{Y^{14}}. \u03c3* is shape of T^{1,1}, not g_{\u03bc\u03bd}. Briefing fibration Y^{14}\u2192M^4 is ansatz language (M4_BRIDGE.md), not a coded 14D metric.",
+      "what_is_forced": "unique 5-metric on T^{1,1} at \u03c3*",
+      "what_is_free": [
+        "leftover X^4",
+        "warps between factors"
+      ]
+    },
+    {
+      "attempt": 2,
+      "mechanism": "Unique 4D Einstein / KK reduction",
+      "unique": false,
+      "bin": "REFUSED",
+      "why": "No live g_{\u03bc\u03bd}(x) is discretized (M4_BRIDGE.md; physical_bridge.json). KK ansatz ds\u00b2 = e^{2A} g_{\u03bc\u03bd}(x) + g_int has warp A and 4D conformal class unfixed by locked atoms. \u03bb is Weyl gauge / observational conversion, not R in meters. Absolute scale is not reopened as a dynamical modulus (N1\u2013N12 negative; closed by quotienting).",
+      "warp_A_fixed": false,
+      "g_mu_nu_Einstein_forced": false,
+      "live_g_mu_nu_in_repo": false
+    },
+    {
+      "attempt": 3,
+      "mechanism": "Leftover 4-fold as part of H0",
+      "unique": false,
+      "bin": "CLASS",
+      "why": "Existing CLASS map: leftover X^4 is not forced to be K3 vs CP^2 vs T^4 vs other Einstein 4-folds (h1h0_class_map.json). Not picked because reductions often use K3.",
+      "track_B_lock": false,
+      "named_not_picked": [
+        "K3",
+        "CP^2",
+        "T^4"
+      ]
+    }
+  ],
+  "lemma": {
+    "name": "H0_unique_metric_reduction",
+    "status": "open",
+    "required_theorem": "A unique 14D metric g_{Y^{14}} and a unique KK reduction to an Einstein g_{\u03bc\u03bd}(x) with warp A fixed by locked isolate atoms.",
+    "extra_data_remaining": [
+      "leftover X^4 (K3 vs CP^2 vs T^4 vs other)",
+      "warp A in ds\u00b2 = e^{2A} g_{\u03bc\u03bd} + g_int",
+      "4D conformal class of g_{\u03bc\u03bd}"
+    ]
+  },
+  "complete_baseline_rewritten": false,
+  "timestamp_utc": "2026-09-19T20:45:35.316871+00:00"
+}

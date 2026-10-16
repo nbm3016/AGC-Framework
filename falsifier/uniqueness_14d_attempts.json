@@ -1,0 +1,83 @@
+{
+  "module": "uniqueness_14d_probe",
+  "continuous_knobs": 0,
+  "N_gen": 3,
+  "G_SE_n_bases": 28,
+  "skeleton_isolates_T11": true,
+  "global_vacuum_uniqueness_achieved": false,
+  "later_slice_scored": false,
+  "labc_on_disk_first_slice_only": false,
+  "promote_landscape": false,
+  "U": [
+    {
+      "id": "U1",
+      "text": "T^{1,1} isolated inside first-slice G_SE by locked lambda-tilde / sigma*",
+      "unique": false,
+      "bin": "CLASS",
+      "gates": [],
+      "reasons": [
+        "skeleton_isolates_T11=true inside G_SE (28 bases); sector theorem, not all 14D"
+      ]
+    },
+    {
+      "id": "U2",
+      "text": "that theorem covers bases outside the first slice",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [
+        "R-weld",
+        "R-map-called-lock"
+      ],
+      "reasons": [
+        "YES welds CLASS onto LOCK",
+        "YES labels a map/class as LOCK/FORCED/DERIVED"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "U3",
+      "text": "unique 14D fibration forced landscape-wide (all fibrations)",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [
+        "R-weld",
+        "R-map-called-lock"
+      ],
+      "reasons": [
+        "YES welds CLASS onto LOCK",
+        "YES labels a map/class as LOCK/FORCED/DERIVED"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "U4",
+      "text": "non-SE / later-slice base forced as THE vacuum because uniqueness failed outside G_SE",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [
+        "R-weld",
+        "R-unlisted-modulus",
+        "R-modulus-called-lock"
+      ],
+      "reasons": [
+        "YES welds CLASS onto LOCK",
+        "modulus 'K3_as_the_4fold' is not a named allowed menu row",
+        "labels 'K3_as_the_4fold' type FORBIDDEN as the 4-fold"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "U5",
+      "text": "later-slice / non-SE bases actually present and scored on disk",
+      "unique": false,
+      "bin": "UNKNOWN",
+      "gates": [],
+      "reasons": [
+        "later-slice / non-SE bases not scored on disk"
+      ]
+    }
+  ],
+  "proof_boundary": "Uniqueness is proven for continuous deformations of locked T^{1,1}+\u03a3\u2075 and for isolation of the locked skeleton inside first-slice G_SE (skeleton_isolates_T11=True). It is not proven among all 14D fibrations. Claiming landscape-wide uniqueness would exceed the locked data.",
+  "isolate_written": false,
+  "timestamp_utc": "2026-09-20T03:21:37.211051+00:00"
+}

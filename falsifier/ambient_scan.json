@@ -1,0 +1,457 @@
+{
+  "module": "zero_knob_ambients",
+  "banner": "ZERO-KNOB AMBIENTS - NOT ONLY 14D FILES - ZERO KNOBS",
+  "continuous_knobs": 0,
+  "limited_to_14d_files": false,
+  "isolate_frozen": false,
+  "scan": [
+    {
+      "name": "T^{1,1}",
+      "extras": [],
+      "dim": 5,
+      "iso": "SU(2)\u00d7SU(2)\u00d7U(1)",
+      "iso_dim": 7,
+      "hol": null,
+      "contains_SU3_lie_factor": false,
+      "forces_unique_4d_metric": false,
+      "knobs": 0,
+      "live_bin": "REFUSED",
+      "new_isolate": false,
+      "missing_extra": "none",
+      "why": "Locked 5-fold already. extras=0, but it is not a new isolate."
+    },
+    {
+      "name": "C(T^{1,1})",
+      "extras": [],
+      "dim": 6,
+      "iso": "SU(2)\u00d7SU(2)\u00d7U(1)",
+      "iso_dim": 7,
+      "hol": "SU(3)",
+      "contains_SU3_lie_factor": false,
+      "forces_unique_4d_metric": false,
+      "knobs": 0,
+      "live_bin": "REFUSED",
+      "new_isolate": false,
+      "missing_extra": "none",
+      "why": "Cone already generated from g5. Holonomy SU(3) is not an isometry factor and not a new isolate."
+    },
+    {
+      "name": "Spin(g5)",
+      "extras": [],
+      "dim": 15,
+      "iso": "Spin(5)",
+      "iso_dim": 10,
+      "hol": null,
+      "contains_SU3_lie_factor": false,
+      "forces_unique_4d_metric": false,
+      "knobs": 0,
+      "live_bin": "REFUSED",
+      "new_isolate": false,
+      "missing_extra": "none",
+      "why": "Unique spin structure determines the principal Spin(5) bundle. Dimension 15. Not selected as the isolate."
+    },
+    {
+      "name": "Frame(g5)",
+      "extras": [],
+      "dim": 15,
+      "iso": "SO(5)",
+      "iso_dim": 10,
+      "hol": null,
+      "contains_SU3_lie_factor": false,
+      "forces_unique_4d_metric": false,
+      "knobs": 0,
+      "live_bin": "REFUSED",
+      "new_isolate": false,
+      "missing_extra": "none",
+      "why": "Oriented frame bundle of the locked 5-metric. Same dimension as the spin bundle. Not selected as the isolate."
+    },
+    {
+      "name": "Twistor(S^2\u00d7S^2)",
+      "extras": [
+        "chirality"
+      ],
+      "dim": 6,
+      "iso": "SO(3)\u00d7SO(3)",
+      "iso_dim": 6,
+      "hol": null,
+      "contains_SU3_lie_factor": false,
+      "forces_unique_4d_metric": false,
+      "knobs": 0,
+      "live_bin": "REFUSED",
+      "new_isolate": false,
+      "missing_extra": "chirality",
+      "why": "S^2 bundle on the locked transverse base. Self-dual and anti-self-dual are two choices. Not the isolate."
+    },
+    {
+      "name": "S^5",
+      "extras": [],
+      "dim": 5,
+      "iso": "SO(6)",
+      "iso_dim": 15,
+      "hol": "SO(5)",
+      "contains_SU3_lie_factor": false,
+      "forces_unique_4d_metric": false,
+      "knobs": 0,
+      "live_bin": "REFUSED",
+      "new_isolate": false,
+      "missing_extra": "b2",
+      "why": "Round sphere. Computed b2=0 against locked b2=1."
+    },
+    {
+      "name": "C(S^5)",
+      "extras": [],
+      "dim": 6,
+      "iso": "SO(6)",
+      "iso_dim": 15,
+      "hol": "trivial",
+      "contains_SU3_lie_factor": false,
+      "forces_unique_4d_metric": false,
+      "knobs": 0,
+      "live_bin": "REFUSED",
+      "new_isolate": false,
+      "missing_extra": "b2",
+      "why": "Cone on the round 5-sphere is flat. Locked cone holonomy is SU(3) and the link has b2=1."
+    },
+    {
+      "name": "Q^{1,1,1}",
+      "extras": [],
+      "dim": 5,
+      "iso": "SU(2)\u00d7SU(2)\u00d7SU(2)\u00d7U(1)",
+      "iso_dim": 10,
+      "hol": null,
+      "contains_SU3_lie_factor": false,
+      "forces_unique_4d_metric": false,
+      "knobs": 0,
+      "live_bin": "REFUSED",
+      "new_isolate": false,
+      "missing_extra": "b2",
+      "why": "Circle bundle over S^2\u00d7S^2\u00d7S^2 with Euler (1,1,1). Computed b2=2 against locked b2=1."
+    },
+    {
+      "name": "M^{3,2}",
+      "extras": [
+        "p",
+        "q"
+      ],
+      "dim": 7,
+      "iso": "SU(3)\u00d7SU(2)\u00d7U(1)",
+      "iso_dim": 12,
+      "hol": null,
+      "contains_SU3_lie_factor": true,
+      "forces_unique_4d_metric": false,
+      "knobs": 0,
+      "live_bin": "REFUSED",
+      "new_isolate": false,
+      "missing_extra": "p",
+      "why": "Homogeneous 7-fold. SU(3) is an isometry factor. The integers (3,2) are not derived, and the dimension is 7. Not color."
+    },
+    {
+      "name": "S^7",
+      "extras": [],
+      "dim": 7,
+      "iso": "SO(8)",
+      "iso_dim": 28,
+      "hol": "SO(7)",
+      "contains_SU3_lie_factor": false,
+      "forces_unique_4d_metric": false,
+      "knobs": 0,
+      "live_bin": "REFUSED",
+      "new_isolate": false,
+      "missing_extra": "dimension",
+      "why": "Round 7-sphere. Dimension 7. Locked link dimension is 5."
+    },
+    {
+      "name": "Y14_on_disk",
+      "extras": [
+        "fibration_class"
+      ],
+      "dim": 14,
+      "iso": "SU(2)\u00d7SU(2)\u00d7U(1)",
+      "iso_dim": 7,
+      "hol": null,
+      "contains_SU3_lie_factor": false,
+      "forces_unique_4d_metric": false,
+      "knobs": 0,
+      "live_bin": "UNKNOWN",
+      "new_isolate": false,
+      "missing_extra": "fibration_class",
+      "why": "On-disk skeleton is Sigma^5 \u00d7 T^{1,1}. Global uniqueness among 14D fibrations is open on disk. Not a new isolate."
+    },
+    {
+      "name": "T^{p,q}",
+      "extras": [
+        "p",
+        "q"
+      ],
+      "dim": 5,
+      "iso": null,
+      "iso_dim": null,
+      "hol": null,
+      "contains_SU3_lie_factor": false,
+      "forces_unique_4d_metric": false,
+      "knobs": 0,
+      "live_bin": "CLASS",
+      "new_isolate": false,
+      "missing_extra": "p",
+      "why": "Integer family. T^{1,1} is the locked member, not a license to pick another pair."
+    },
+    {
+      "name": "Y^{p,q}",
+      "extras": [
+        "p",
+        "q"
+      ],
+      "dim": 5,
+      "iso": null,
+      "iso_dim": null,
+      "hol": null,
+      "contains_SU3_lie_factor": false,
+      "forces_unique_4d_metric": false,
+      "knobs": 0,
+      "live_bin": "CLASS",
+      "new_isolate": false,
+      "missing_extra": "p",
+      "why": "Integer family of SE 5-folds. Not the isolate."
+    },
+    {
+      "name": "L^{a,b,c}",
+      "extras": [
+        "a",
+        "b",
+        "c"
+      ],
+      "dim": 5,
+      "iso": null,
+      "iso_dim": null,
+      "hol": null,
+      "contains_SU3_lie_factor": false,
+      "forces_unique_4d_metric": false,
+      "knobs": 0,
+      "live_bin": "CLASS",
+      "new_isolate": false,
+      "missing_extra": "a",
+      "why": "Integer family. Three labels. Not the isolate."
+    }
+  ],
+  "omitted": [
+    {
+      "name": "compact G2",
+      "included": false,
+      "reason": "extras b3 (and b2) are not fixed by the locked atoms",
+      "missing_extra": "b3"
+    },
+    {
+      "name": "compact Spin(7)",
+      "included": false,
+      "reason": "extras b4 is not fixed by the locked atoms",
+      "missing_extra": "b4"
+    }
+  ],
+  "n_new_isolate": 0,
+  "blocked": true,
+  "new_isolate_forced": false,
+  "which": null,
+  "isolate_sheet": null,
+  "unique_color_forced": false,
+  "unique_g_mu_nu_forced": false,
+  "interface": {
+    "isolate": "T^{1,1}",
+    "slice": "T^{1,1}",
+    "role": "MAP",
+    "lock": false,
+    "ports": [
+      {
+        "name": "Iso_group",
+        "bin": "FORCED",
+        "map_not_lock": true
+      },
+      {
+        "name": "sigma_star",
+        "bin": "FORCED",
+        "map_not_lock": true
+      },
+      {
+        "name": "T_wall_identity",
+        "bin": "FORCED",
+        "map_not_lock": true
+      },
+      {
+        "name": "N_gen",
+        "bin": "FORCED",
+        "map_not_lock": true
+      },
+      {
+        "name": "b2",
+        "bin": "FORCED",
+        "map_not_lock": true
+      },
+      {
+        "name": "b3",
+        "bin": "FORCED",
+        "map_not_lock": true
+      },
+      {
+        "name": "eight_pi_G_eff_number",
+        "bin": "FORCED",
+        "map_not_lock": true
+      },
+      {
+        "name": "CONE",
+        "bin": "FORCED",
+        "map_not_lock": true
+      },
+      {
+        "name": "CONE_HOLONOMY",
+        "bin": "FORCED",
+        "map_not_lock": true
+      },
+      {
+        "name": "SPIN_T11",
+        "bin": "FORCED",
+        "map_not_lock": true
+      },
+      {
+        "name": "DIRAC_T11",
+        "bin": "FORCED",
+        "map_not_lock": true
+      },
+      {
+        "name": "TRIPLE_T11",
+        "bin": "FORCED",
+        "map_not_lock": true
+      },
+      {
+        "name": "REEB_XI,CONTACT_ETA",
+        "bin": "FORCED",
+        "map_not_lock": true
+      },
+      {
+        "name": "TRANSVERSE_BASE",
+        "bin": "FORCED",
+        "map_not_lock": true
+      },
+      {
+        "name": "KILLING_FORM_TOWER",
+        "bin": "FORCED",
+        "map_not_lock": true
+      },
+      {
+        "name": "OMEGA_C",
+        "bin": "FORCED",
+        "map_not_lock": true
+      },
+      {
+        "name": "OMEGA_VOL_C",
+        "bin": "FORCED",
+        "map_not_lock": true
+      },
+      {
+        "name": "ISO_BUNDLE_FAMILY",
+        "bin": "CLASS",
+        "map_not_lock": true
+      },
+      {
+        "name": "HARM_2",
+        "bin": "FORCED",
+        "map_not_lock": true
+      },
+      {
+        "name": "HARM_3",
+        "bin": "FORCED",
+        "map_not_lock": true
+      },
+      {
+        "name": "D5_SPECTRUM",
+        "bin": "UNKNOWN",
+        "map_not_lock": true
+      },
+      {
+        "name": "FINITE_COVERS",
+        "bin": "FORCED",
+        "map_not_lock": true
+      },
+      {
+        "name": "SASAKI_PHI_J",
+        "bin": "FORCED",
+        "map_not_lock": true
+      },
+      {
+        "name": "g_T_omega_T",
+        "bin": "FORCED",
+        "map_not_lock": true
+      },
+      {
+        "name": "PARALLEL_SPINORS_CONE",
+        "bin": "FORCED",
+        "map_not_lock": true
+      },
+      {
+        "name": "HARM_2_EULER_PAIRING",
+        "bin": "FORCED",
+        "map_not_lock": true
+      },
+      {
+        "name": "D5_LABEL_FORMULA",
+        "bin": "FORCED",
+        "map_not_lock": true
+      },
+      {
+        "name": "VOL_T11",
+        "bin": "FORCED",
+        "map_not_lock": true
+      },
+      {
+        "name": "EINSTEIN_SCALAR_G5",
+        "bin": "FORCED",
+        "map_not_lock": true
+      },
+      {
+        "name": "CONE_HOMOTHETY",
+        "bin": "FORCED",
+        "map_not_lock": true
+      },
+      {
+        "name": "J_CONE",
+        "bin": "FORCED",
+        "map_not_lock": true
+      },
+      {
+        "name": "LINK_SECOND_FUNDAMENTAL",
+        "bin": "FORCED",
+        "map_not_lock": true
+      },
+      {
+        "name": "DR_WEDGE_DETA",
+        "bin": "FORCED",
+        "map_not_lock": true
+      },
+      {
+        "name": "DR_WEDGE_HARM2",
+        "bin": "FORCED",
+        "map_not_lock": true
+      },
+      {
+        "name": "DR_ETA_WEDGE_DETA",
+        "bin": "FORCED",
+        "map_not_lock": true
+      },
+      {
+        "name": "DR_ETA_WEDGE_HARM2",
+        "bin": "FORCED",
+        "map_not_lock": true
+      },
+      {
+        "name": "DR_WEDGE_DETA_SQ",
+        "bin": "FORCED",
+        "map_not_lock": true
+      },
+      {
+        "name": "OMEGA_TRANSVERSE",
+        "bin": "FORCED",
+        "map_not_lock": true
+      }
+    ]
+  },
+  "t11_is_slice_of_new_isolate": false,
+  "timestamp_utc": "2026-09-21T23:24:59.874089+00:00"
+}

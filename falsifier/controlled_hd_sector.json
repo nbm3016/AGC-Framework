@@ -1,0 +1,122 @@
+{
+  "banner": "CONTROLLED HD SECTOR \u2014 NO UNIQUE FORCED TERM \u2014 \u221ar NLO ALREADY CONSUMED \u2014 \u03b813 UNCHANGED \u2014 ZERO CONTINUOUS KNOBS PRESERVED",
+  "timestamp_utc": "2026-08-14T18:15:03.916318+00:00",
+  "continuous_knobs": 0,
+  "wilson_coefficients_introduced": false,
+  "external_alpha_prime_introduced": false,
+  "stages_1_3_geometry_untouched": true,
+  "absolute_scale_volume_R": "untouched",
+  "residual_beta_protection": "untouched",
+  "controlled_class_uniqueness": "untouched",
+  "anomaly_beyond_index": "untouched",
+  "core_verification": "8/8 PASS",
+  "hd_term_forced": false,
+  "angle_shift_applied": false,
+  "mass_shift_applied": false,
+  "open_wilson_tower": true,
+  "weyl_quotient_enforced": true,
+  "lovelock_form_known": true,
+  "eligibility_lemma": [
+    {
+      "operator": "Lovelock_L_k",
+      "eligible": true,
+      "form_forced": true,
+      "coefficient_forced": false,
+      "dynamics": "inert_on_odd_factors",
+      "reason": "Lovelock uniqueness fixes the form in given dimension. Odd factors \u03a3\u2075, T^{1,1} have \u03c7=0 / Euler densities \u03bb-independent (N6/N10). \u03b1_k unfixed."
+    },
+    {
+      "operator": "Weyl_squared_C2_on_C_phys",
+      "eligible": true,
+      "form_forced": false,
+      "coefficient_forced": false,
+      "dynamics": "allowed_weyl_covariant",
+      "reason": "Weyl-covariant on C_phys after conformal quotienting. No locked dimensionless number is the coefficient of \u222b C\u00b2."
+    },
+    {
+      "operator": "R2_Ricci_squared",
+      "eligible": false,
+      "form_forced": false,
+      "coefficient_forced": false,
+      "dynamics": "not_weyl_primary",
+      "reason": "After Weyl quotient, non-Weyl-primary curvature squares are redundant or unphysical as independent moduli."
+    },
+    {
+      "operator": "residual_NNLO_r_powers",
+      "eligible": false,
+      "form_forced": false,
+      "coefficient_forced": false,
+      "dynamics": "free_functional",
+      "reason": "Not an operator uniqueness. Residual NLO already consumed the unique \u221ar flavor map. Further r, r\u00b2 maps are knobs."
+    },
+    {
+      "operator": "domain_wall_K_K3",
+      "eligible": true,
+      "form_forced": false,
+      "coefficient_forced": false,
+      "dynamics": "needs_length",
+      "reason": "Boundary-eligible. T_wall is a dimensionless spectral sum; absolute GH/K\u00b3 coefficients need a length unit."
+    },
+    {
+      "operator": "self_dual_torsion_HD",
+      "eligible": true,
+      "form_forced": true,
+      "coefficient_forced": false,
+      "dynamics": "source_vanishes",
+      "reason": "On \u22c6\u03a8=\u03a8 the torsion condensate that would source HD vanishes."
+    },
+    {
+      "operator": "alpha_prime_unit_maps",
+      "eligible": false,
+      "form_forced": false,
+      "coefficient_forced": false,
+      "dynamics": "unit_choice",
+      "reason": "\u03b1' \u223c 8\u03c0G_eff or 1/\u03a3\u03bb\u0303 identifies a dimensionless locked number with a length\u00b2 coupling. Unit map, not a derivation."
+    }
+  ],
+  "n_eligible_operators": 4,
+  "n_forced_coefficients": 0,
+  "coefficient_lemma": {
+    "prior_scan_file": "higher_derivative_test.json",
+    "prior_n_candidates": 8,
+    "prior_any_forced": false,
+    "prior_decision": "NO",
+    "r_is_not_GB_wilson": true,
+    "sqrt_r_nlo_already_consumed": true,
+    "nlo_form": "sin\u03b813 \u2190 sin\u03b813_LO + \u221ar \u00b7 \u03c3* \u00b7 \u221a(n2/n_\u03a3) / N_gen",
+    "further_r_maps_are_knobs": true,
+    "locked_dimensionless_data_do_not_fix_alpha_k": true,
+    "coefficient_uniquely_forced": false
+  },
+  "consumed_sqrt_r_nlo": {
+    "status": "already_locked",
+    "not_a_new_HD_curvature_term": true,
+    "theta13_deg": 7.953
+  },
+  "verdict": "negative_no_unique_forced_hd_term",
+  "theorem_level_claim": "After conformal quotienting, Lovelock uniqueness, vanishing Euler dynamics on the odd factors, and self-dual torsion vanishing, the locked 14D data determine an eligible operator class but no unique coefficient. The Einstein\u2013YM residual r is not a Gauss\u2013Bonnet coupling. The only parameter-free residual coupling already used is the locked \u221ar NLO flavor map. No further calculable shift to mixing angles, masses, or r is applied.",
+  "open_boundary": "Unique HD Wilson coefficients from a UV completion remain parked. Continuum r\u21920 remains the residual-\u03b2 open boundary, not an HD coefficient.",
+  "final_theta13_deg": 7.953,
+  "locked_flavor_angles_deg": {
+    "theta12_deg": 31.003,
+    "theta23_deg": 45.682,
+    "theta13_deg": 7.953,
+    "delta_cp_deg": -146.694,
+    "residual_symmetry": "A4+residual_NLO",
+    "status": "final_geometric_high_scale_prediction",
+    "locked": true,
+    "further_theta13_corrections": false,
+    "interpretation": "Best zero-knob geometric high-scale prediction from locked topology (A4 residual + parameter-free residual NLO with r=\u03b2_residual_new). Any ~0.55\u00b0 remaining difference vs low-energy experimental \u03b8\u2081\u2083\u22488.5\u00b0 is attributed to RG evolution or higher-order effects outside the current topological determination. No continuous parameters introduced.",
+    "computed_from_locked_baseline": true
+  },
+  "locked_results_snapshot": {
+    "n_gen": 3,
+    "sigma_star": 0.8660254037844556,
+    "beta_residual_new": 0.0957162820145647,
+    "theta13_deg": 7.953,
+    "mu_gammagamma": 1.086571,
+    "omega_lambda": 0.679528,
+    "continuous_knobs": 0
+  },
+  "locked_numerics_unchanged": true
+}

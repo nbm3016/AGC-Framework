@@ -1,0 +1,319 @@
+{
+  "continuous_knobs": 0,
+  "promoted": false,
+  "selected": null,
+  "sigma5": {
+    "dim": 5,
+    "odd": true,
+    "euler_characteristic": 0,
+    "note": "Odd-dimensional APS wall 5-fold; \u03c7=0.",
+    "keys": [
+      "dim",
+      "euler_characteristic",
+      "note",
+      "odd"
+    ],
+    "compact_factor": true,
+    "five_fold_is_ambient": false,
+    "diffeotype": null,
+    "betti_copied_from_T11": false,
+    "b2_lock_left_on_its_carrier": 1,
+    "b3_lock_left_on_its_carrier": 1
+  },
+  "wall_zero_count": {
+    "value": 3,
+    "role": "generation count",
+    "is_representation": false,
+    "zeros": [
+      "(1/2,0,0)",
+      "(1,0,0)",
+      "(3/2,0,0)"
+    ],
+    "su2_dimensions": [
+      2,
+      3,
+      4
+    ],
+    "reading": "N_gen = 3 stays frozen. The integer is the wall-zero count of the three harmonics 2\u22953\u22954. It is not a copied 4D Weyl triplet, not ker D_5, and not the APS index theorem."
+  },
+  "holonomy_lock": {
+    "value": "SU(3)",
+    "dimension": 8,
+    "stored_as": "holonomy",
+    "reading": "Hol(g_C)=SU(3) as holonomy of the cone. Not Iso. Not SU(3)_c. The older cone_holonomy.json equality row stays UNKNOWN and was not edited.",
+    "is_isometry": false
+  },
+  "isometry_lock": {
+    "value": "SU(2)\u00d7SU(2)\u00d7U(1)",
+    "dimension": 7,
+    "stored_as": "isometry",
+    "carrier": "T^{1,1}",
+    "copied_onto_sigma5": false
+  },
+  "continuous_group_forced": false,
+  "three_modes": {
+    "count": 3,
+    "carry_group_action": false,
+    "su3_triplet": false,
+    "why": "The count 3 enumerates three harmonics with SU(2) dimensions 2, 3, and 4. No lock forces one group to act on that count."
+  },
+  "candidates": [
+    {
+      "id": "C1",
+      "name": "SU(3)/SO(3)",
+      "dimension": 5,
+      "isometry_algebra": "contains su(3)",
+      "isometry_dimension": 8,
+      "isometry_dimension_is": "lower bound",
+      "su3_acts_on_candidate": true,
+      "su3_action": "The left su(3) action is infinitesimally faithful, so an 8-dimensional su(3) acts by isometries of any SU(3)-invariant metric.",
+      "holonomy": "not computed",
+      "holonomy_note": "The isotropy algebra is so(3). That isotropy is not a holonomy.",
+      "bin": "UNKNOWN",
+      "why": "Dimension 5 matches the stored factor. No diffeomorphism type is stored, so the coset is not forced. The identification is an extra."
+    },
+    {
+      "id": "C2",
+      "name": "S^5 = SU(3)/SU(2)",
+      "dimension": 5,
+      "isometry_algebra": "so(6)",
+      "isometry_dimension": 15,
+      "isometry_dimension_is": "exact for the round metric",
+      "su3_acts_on_candidate": true,
+      "su3_action": "su(3) injects into so(6). An 8-dimensional su(3) acts by isometries of the round metric and is not the full isometry algebra.",
+      "holonomy": "SO(5)",
+      "holonomy_dimension": 10,
+      "holonomy_note": "Holonomy of the round metric is SO(5). The isometry algebra is so(6). The isotropy su(2) is not the holonomy.",
+      "bin": "UNKNOWN",
+      "why": "Dimension 5 matches the stored factor. No diffeomorphism type is stored, so the sphere is not forced. The round metric is an extra."
+    },
+    {
+      "id": "C3",
+      "name": "wall R \u00d7 M^4",
+      "dimension": 5,
+      "isometry_algebra": "not forced",
+      "isometry_dimension": null,
+      "isometry_dimension_is": "no metric on M^4 is locked",
+      "su3_acts_on_candidate": false,
+      "su3_action": "No lock puts an 8-dimensional su(3) on this product.",
+      "holonomy": "not forced",
+      "holonomy_note": "A product holonomy would be the holonomy of M^4. No locked atom selects g_\u03bc\u03bd.",
+      "bin": "REFUSED",
+      "why": "\u03a3^5 is stored as a compact factor. R \u00d7 M^4 is not compact."
+    }
+  ],
+  "rows_changed": 0,
+  "moved": [],
+  "rescored": [
+    {
+      "name": "ambient_theory",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "filter_three_way",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "wall_zero_count",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "barrier_minus",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "clock_Z24",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "continuous_knobs",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "lambda_tilde",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "Iso_group",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "sigma_star",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "T_wall_identity",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "b2",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "b3",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "eight_pi_G_eff_number",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "n_eta",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "CONE",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "CONE_HOLONOMY",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "SPIN_T11",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "DIRAC_T11",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "TRIPLE_T11",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "SASAKI_PHI_J",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "g_T_omega_T",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "PARALLEL_SPINORS_CONE",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "HARM_2_EULER_PAIRING",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "D5_LABEL_FORMULA",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "VOL_T11",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "EINSTEIN_SCALAR_G5",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "CONE_HOMOTHETY",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "J_CONE",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "LINK_SECOND_FUNDAMENTAL",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "DR_WEDGE_DETA",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "DR_WEDGE_HARM2",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "DR_ETA_WEDGE_DETA",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "DR_ETA_WEDGE_HARM2",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "DR_WEDGE_DETA_SQ",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    },
+    {
+      "name": "OMEGA_TRANSVERSE",
+      "prior": "LOCK",
+      "bin": "LOCK",
+      "changed": false
+    }
+  ]
+}

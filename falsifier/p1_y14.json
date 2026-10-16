@@ -1,0 +1,13 @@
+{
+  "door": "P1",
+  "question": "Is fibration_class uniquely determined, extras=0?",
+  "global_landscape_uniqueness": false,
+  "skeleton_isolates_T11_inside_first_slice": true,
+  "determined": false,
+  "extras": [
+    "fibration_class"
+  ],
+  "extra_name": "fibration_class",
+  "rebase": false,
+  "why": "First-slice files isolate T^{1,1} inside G_SE. The same files say uniqueness among all 14D fibrations remains open. No fibration class was picked."
+}

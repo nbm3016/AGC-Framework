@@ -1,0 +1,189 @@
+{
+  "banner": "DYNAMICAL SCALE-GENERATION PRINCIPLES TESTED \u2013 ZERO KNOBS PRESERVED",
+  "continuous_knobs": 0,
+  "numerical_mass_values_injected": false,
+  "locked_data_only": true,
+  "mechanisms": [
+    {
+      "mechanism": "dimensional_transmutation",
+      "principle": "Dimensionless coupling runs; dimensional transmutation generates \u039b ~ \u03bc0 exp(\u2212\u222b dg/\u03b2(g)) without bare mass parameters.",
+      "triggered": false,
+      "triggered_label": "No",
+      "responsible_geometric_feature": null,
+      "features_examined": [
+        "\u03a3\u2075 domain-wall tension T_wall",
+        "\u03b2 residual (higher-res Einstein\u2013YM residual)",
+        "8\u03c0G_eff = \u03c3*\u00b2/C\u2082",
+        "residual NLO use of \u221ar"
+      ],
+      "absolute_scale_generated": false,
+      "checks": [
+        {
+          "check": "beta_residual_is_Callan_Symanzik_beta",
+          "result": false,
+          "detail": "Locked \u03b2 residual r=0.095716 is the Frobenius residual of the scale-free Einstein\u2013YM equation on the compact grid, not \u03b2_CS(g)=\u03bc dg/d\u03bc for a running gauge coupling."
+        },
+        {
+          "check": "domain_wall_induces_running_g_mu",
+          "result": false,
+          "detail": "T_wall=6.5000 is a dimensionless spectral volume sum. It freezes wall position / tension proxy; it does not define a Wilsonian coupling g(\u03bc) or a \u03b2-function trajectory."
+        },
+        {
+          "check": "eight_pi_G_eff_runs_with_scale",
+          "result": false,
+          "detail": "8\u03c0G_eff=0.562500=\u03c3*\u00b2/C\u2082 is a fixed pure number at the locked minimum, not g(\u03bc) with Landau pole."
+        },
+        {
+          "check": "Landau_pole_or_confinement_scale_forced",
+          "result": false,
+          "detail": "No RG equation for any dimensionless coupling is present in Stages 1\u20134 locked output. No \u03bc0 and no \u222bdg/\u03b2(g) exist in the baseline."
+        },
+        {
+          "check": "residual_NLO_uses_r_as_running_coupling",
+          "result": false,
+          "detail": "Residual NLO flavor uses \u221ar as a fixed geometric deformation parameter for angles (dimensionless), not as a scale-running g(\u03bc)."
+        }
+      ],
+      "reason": "The locked geometry does not activate dimensional transmutation. The word '\u03b2 residual' is not the Callan\u2013Symanzik \u03b2-function; the domain wall supplies a pure-number tension proxy; no running coupling g(\u03bc), Landau pole, or confinement scale is forced by the locked data. Continuous knobs remain 0; no mass numbers injected.",
+      "continuous_knobs": 0
+    },
+    {
+      "mechanism": "asymptotic_safety",
+      "principle": "Non-trivial UV fixed point of the RG; departure along a relevant direction defines a Planck-like crossover scale without bare M_Pl input.",
+      "triggered": false,
+      "triggered_label": "No",
+      "responsible_geometric_feature": null,
+      "features_examined": [
+        "\u03c3* squashing minimum on T^{1,1}",
+        "\u03b2 residual of Einstein\u2013YM solve",
+        "absence of FRG / Wetterich trajectory in baseline"
+      ],
+      "absolute_scale_generated": false,
+      "checks": [
+        {
+          "check": "sigma_star_is_Wilsonian_UV_fixed_point",
+          "result": false,
+          "detail": "\u03c3*=0.866025=\u221a3/2 is the classical minimum of the geometric potential V(\u03c3)=(3/2)\u03c3\u00b2+(3/2)(\u03bb\u0303\u2080/6)\u00b2/\u03c3\u00b2. It is not a fixed point of a Wetterich / FRG flow \u03b2_i(g*)=0 in theory space."
+        },
+        {
+          "check": "Einstein_YM_residual_vanishes_as_AS_beta_functions",
+          "result": false,
+          "detail": "Higher-res residual r=0.095716 measures incomplete cancellation of the classical Einstein\u2013YM tensor equation on a finite harmonic basis \u2014 not vanishing of gravitational \u03b2-functions at a non-Gaussian UV fixed point."
+        },
+        {
+          "check": "RG_trajectory_and_relevant_deformation_present",
+          "result": false,
+          "detail": "Locked baseline contains no k-dependent couplings g(k), \u03bb(k), no critical exponents, and no identification of a relevant direction whose vev sets a crossover scale k_*."
+        },
+        {
+          "check": "conifold_geometry_forces_non_Gaussian_FP",
+          "result": false,
+          "detail": "Squashed T^{1,1} is a classical Sasaki\u2013Einstein / Einstein\u2013YM background. Correspondence to an AS UV fixed point would require an FRG computation not present in the locked Stages 1\u20134 data."
+        }
+      ],
+      "reason": "Asymptotic safety is not activated by the locked geometry. Classical shape stabilization at \u03c3*=\u221a3/2 and a nonzero Einstein\u2013YM residual are not equivalent to a non-Gaussian UV fixed point plus relevant deformation. No Planck-like crossover scale is generated. Continuous knobs remain 0; no mass numbers injected.",
+      "continuous_knobs": 0,
+      "note_classical_vs_AS": "Do not confuse classical geometric equilibrium with an AS fixed point: the former freezes a dimensionless modulus; the latter would define scale via RG departure in theory space."
+    },
+    {
+      "mechanism": "topological_mass_generation_BF_Chern_Simons",
+      "principle": "BF (m\u222bB\u2227F) or Chern\u2013Simons-type couplings generate a topological mass gap without a continuous Higgs vev.",
+      "triggered": false,
+      "triggered_label": "No",
+      "responsible_geometric_feature": null,
+      "related_but_not_activating_feature": "APS index + self-duality (discrete zero-mode / generation selection)",
+      "features_examined": [
+        "self-dual 7-form \u22c6\u03a8=\u03a8",
+        "APS boundary / index",
+        "derived spectral \u03bb\u0303 on unit manifold",
+        "monodromy order / n_\u03b7 integers",
+        "\u03b2 residual r"
+      ],
+      "absolute_scale_generated": false,
+      "partial_topological_mode_selection_present": true,
+      "spectral_ratios_dimensionless": {
+        "sqrt_lambda_1_over_0": 1.0,
+        "sqrt_lambda_2_over_0": 1.632993161855452,
+        "sqrt_lambda_3_over_0": 2.23606797749979
+      },
+      "beta_residual_role": "r=0.095716 enters residual NLO flavor (angles), not a BF mass m.",
+      "checks": [
+        {
+          "check": "BF_term_m_B_wedge_F_forced_by_geometry",
+          "result": false,
+          "detail": "Locked data enforce self-duality \u22c6\u03a8=\u03a8 and APS boundary conditions. They do not force a dynamical BF mass parameter m in a 4D effective action \u222b m B\u2227F. No such m is determined (even as a pure principle with m fixed by topology alone without a scale)."
+        },
+        {
+          "check": "Chern_Simons_level_defines_absolute_mass_gap",
+          "result": false,
+          "detail": "Monodromy order 24 and n_\u03b7 quanta are group-theoretic integers used for discrete flavor naturalness, not a 3D CS level k that sets m_top ~ k\u00b7e\u00b2 with an absolute mass in 4D."
+        },
+        {
+          "check": "APS_self_dual_selects_discrete_zero_modes",
+          "result": true,
+          "detail": "APS index + self-duality do select a discrete zero-mode sector with N_gen=3 and derived \u03bb\u0303=[4.5, 12.0, 22.5]. Off-sector modes are obstructed (index>0 or \u22c6-defect). This is topological *mode selection*, not BF/CS topological mass generation of an absolute scale."
+        },
+        {
+          "check": "absolute_mass_gap_from_topology_alone",
+          "result": false,
+          "detail": "Eigenvalue ratios \u221a(\u03bb\u0303_k/\u03bb\u0303_0) are fixed, but absolute masses still require m~\u221a\u03bb\u0303/L with overall length L unfixed (volume modulus flat; absolute yardstick test negative)."
+        },
+        {
+          "check": "self_dual_7_form_equals_BF_mass_term",
+          "result": false,
+          "detail": "\u22c6\u03a8=\u03a8 is an algebraic projector on the form field, not a Proca/BF mass term with dynamically generated m\u22600 in absolute units."
+        }
+      ],
+      "reason": "Topological BF/Chern\u2013Simons mass generation is not activated as a scale-generating mechanism. Self-duality + APS do produce topological selection of N_gen=3 zero modes and dimensionless spectral ratios, but that is discrete mode structure on a scale-free background \u2014 not a BF/CS absolute mass gap. Continuous knobs remain 0; no mass numbers injected.",
+      "continuous_knobs": 0
+    }
+  ],
+  "comparative_table": [
+    {
+      "mechanism": "dimensional_transmutation",
+      "triggered": "No",
+      "responsible_geometric_feature": null,
+      "absolute_scale_generated": "No"
+    },
+    {
+      "mechanism": "asymptotic_safety",
+      "triggered": "No",
+      "responsible_geometric_feature": null,
+      "absolute_scale_generated": "No"
+    },
+    {
+      "mechanism": "topological_mass_generation_BF_Chern_Simons",
+      "triggered": "No",
+      "responsible_geometric_feature": null,
+      "absolute_scale_generated": "No"
+    }
+  ],
+  "summary": {
+    "n_mechanisms_tested": 3,
+    "n_triggered": 0,
+    "triggered_names": [],
+    "any_absolute_scale_generated": false,
+    "absolute_scale_status": "NO"
+  },
+  "statement": "None of the three parameter-free dynamical principles \u2014 dimensional transmutation, asymptotic safety, or BF/Chern\u2013Simons topological mass generation \u2014 is activated by the locked 14D geometry as a generator of an absolute scale. Related topological structure (APS + self-duality) selects discrete zero modes and dimensionless ratios only. continuous_knobs=0; no numerical mass values were introduced.",
+  "locked_snapshot": {
+    "sigma_star": 0.8660254037844556,
+    "lambda_tilde": [
+      4.5,
+      12.0,
+      22.5
+    ],
+    "n_eta": [
+      3,
+      8,
+      15
+    ],
+    "beta_residual_new": 0.0957162820145647,
+    "n_gen": 3,
+    "eight_pi_g_eff": 0.562500000000022,
+    "T_wall": 6.5,
+    "tau_res": 0.07178721151092633,
+    "monodromy_order": 24,
+    "geometry_generates_n_gen_3": true
+  }
+}

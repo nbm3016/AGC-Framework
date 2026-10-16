@@ -1,0 +1,203 @@
+{
+  "questions": [
+    {
+      "id": "Q1",
+      "text": "Are isolate atoms write-closed at knobs=0, N_gen=3?",
+      "kind": "write_closed",
+      "bin": "FORCED",
+      "gates": [],
+      "reasons": [
+        "isolate knobs=0 and N_gen=3 recorded; write-set closed"
+      ]
+    },
+    {
+      "id": "Q2",
+      "text": "Is E1 five-metric locked?",
+      "kind": "five_metric",
+      "bin": "FORCED",
+      "gates": [],
+      "reasons": [
+        "\u03c3* locked as T^{1,1} shape (5-metric), not g_\u03bc\u03bd"
+      ]
+    },
+    {
+      "id": "Q3",
+      "text": "Is E2 a unique picked 4-fold?",
+      "kind": "unique_4fold",
+      "bin": "REFUSED",
+      "gates": [],
+      "reasons": [
+        "unique 4-fold pick failed; leftover X^4 is CLASS not a pick"
+      ],
+      "leftover_class": true
+    },
+    {
+      "id": "Q4",
+      "text": "Is E3 warp forced?",
+      "kind": "warp",
+      "bin": "REFUSED",
+      "gates": [],
+      "reasons": [
+        "warp A not in locked atoms; failed uniqueness = NO"
+      ]
+    },
+    {
+      "id": "Q5",
+      "text": "Is g_\u03bc\u03bd identical to \u03c3*?",
+      "kind": "gmunu_is_sigma",
+      "bin": "REFUSED",
+      "gates": [
+        "R-metric-swap"
+      ],
+      "reasons": [
+        "YES identifies \u03c3* with g_\u03bc\u03bd"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "Q6",
+      "text": "Is B0 Iso the isometry of the locked 5-fold, and is it a color lock?",
+      "kind": "iso_and_color",
+      "bin": "FORCED",
+      "gates": [],
+      "reasons": [
+        "Iso of locked 5-fold recorded as SU(2)\u00d7SU(2)\u00d7U(1); not a color lock"
+      ],
+      "color_lock": false,
+      "iso_group": "SU(2)\u00d7SU(2)\u00d7U(1)"
+    },
+    {
+      "id": "Q7",
+      "text": "Is unique color derived from the isolate?",
+      "kind": "unique_color",
+      "bin": "REFUSED",
+      "gates": [
+        "R-color-lock"
+      ],
+      "reasons": [
+        "YES picks unique SU(3)_c as derived color"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "Q8",
+      "text": "Is G_SM forced from the isolate?",
+      "kind": "G_SM",
+      "bin": "REFUSED",
+      "gates": [
+        "R-weld",
+        "R-color-lock"
+      ],
+      "reasons": [
+        "YES welds CLASS onto LOCK",
+        "YES picks unique SU(3)_c as derived color"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "Q9",
+      "text": "Is \u2102\u2119\u00b2 or K3 the 4-fold?",
+      "kind": "picked_4fold",
+      "bin": "REFUSED",
+      "gates": [
+        "R-weld"
+      ],
+      "reasons": [
+        "YES welds CLASS onto LOCK"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "Q10",
+      "text": "Are P3 and P4 computed identities of the locked ports (not a spacetime metric, not G_N)?",
+      "kind": "port_identities",
+      "bin": "FORCED",
+      "gates": [],
+      "reasons": [
+        "P3/P4 are Fraction identities of locked ports"
+      ],
+      "spacetime_reading_forced": false,
+      "is_G_N": false,
+      "proves_SU3c": false
+    }
+  ],
+  "ports": [
+    {
+      "id": "P1",
+      "text": "b2, b3 of T^{1,1} \u2243 S\u00b2\u00d7S\u00b3. Topology or flux?",
+      "value": {
+        "b2": 1,
+        "b3": 1,
+        "reading": "topology"
+      },
+      "bin": "FORCED",
+      "gates": [],
+      "reasons": [
+        "b2=b3=1 from T^{1,1}\u2243S\u00b2\u00d7S\u00b3 topology, not a flux pick"
+      ],
+      "not_implied": [
+        "flux"
+      ]
+    },
+    {
+      "id": "P2",
+      "text": "Iso group. Is it color?",
+      "value": {
+        "group": "SU(2)\u00d7SU(2)\u00d7U(1)",
+        "is_color": false
+      },
+      "bin": "FORCED",
+      "gates": [],
+      "reasons": [
+        "Iso group of locked 5-fold"
+      ],
+      "color_lock": false,
+      "not_implied": [
+        "SU(3)_c",
+        "color"
+      ]
+    },
+    {
+      "id": "P3",
+      "text": "T_wall from locked n_\u03b7 and locked \u03bb\u0303",
+      "value": {
+        "T_wall_from_n": "13/2",
+        "T_wall_from_lam": "13/2",
+        "agree": true
+      },
+      "bin": "FORCED",
+      "gates": [],
+      "reasons": [
+        "T_wall = \u03a3 n_\u03b7/4 = \u03a3 \u03bb\u0303/6"
+      ],
+      "not_implied": [
+        "Chern index",
+        "GeV^3 tension"
+      ]
+    },
+    {
+      "id": "P4",
+      "text": "\u03c3*\u00b2 and 8\u03c0G_eff = \u03c3*\u00b2/C\u2082(3)",
+      "value": {
+        "sigma_star_sq": "3/4",
+        "eight_pi_G_eff": "9/16",
+        "is_G_N": false,
+        "proves_SU3c": false
+      },
+      "bin": "FORCED",
+      "gates": [],
+      "reasons": [
+        "\u03c3*\u00b2 and \u03c3*\u00b2/C\u2082(3) as locked-port numbers"
+      ],
+      "not_implied": [
+        "G_N",
+        "SU(3)_c"
+      ],
+      "is_G_N": false,
+      "proves_SU3c": false
+    }
+  ],
+  "continuous_knobs": 0,
+  "isolate_written": false,
+  "timestamp_utc": "2026-09-20T02:22:42.627097+00:00"
+}

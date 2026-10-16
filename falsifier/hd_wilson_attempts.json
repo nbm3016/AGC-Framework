@@ -1,0 +1,97 @@
+{
+  "module": "hd_wilson_probe",
+  "continuous_knobs": 0,
+  "N_gen": 3,
+  "r": 0.095716,
+  "theta13_deg": 7.953,
+  "n_form_forced": 2,
+  "n_coeff_forced": 0,
+  "form_forced_operators": [
+    "Lovelock_L_k",
+    "self_dual_torsion_HD"
+  ],
+  "promote_alpha_k": false,
+  "H": [
+    {
+      "id": "H1",
+      "text": "any HD form (Lovelock/GB/C^2/R^2) forced as a form",
+      "unique": false,
+      "bin": "CLASS",
+      "gates": [],
+      "reasons": [
+        "2 form_forced operators ['Lovelock_L_k', 'self_dual_torsion_HD']; form != unique alpha_k"
+      ]
+    },
+    {
+      "id": "H2",
+      "text": "unique coefficient alpha_k forced by locked atoms",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [],
+      "reasons": [
+        "n_forced_coefficients=0 in locked HD files; eligible form != unique alpha_k"
+      ]
+    },
+    {
+      "id": "H3",
+      "text": "official r=0.095716 fixes a new alpha_k (leftover residual as Wilson knob)",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [
+        "R-knobs",
+        "R-knobs",
+        "R-unlisted-modulus"
+      ],
+      "reasons": [
+        "YES introduces a free real parameter",
+        "YES introduces L, bulk \u039b, RS k, or integration constant C",
+        "modulus 'alpha_k_from_r' is not a named allowed menu row"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "H4",
+      "text": "alpha-prime / GeV unit map forces a Wilson coefficient",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [
+        "R-scale",
+        "R-unlisted-modulus"
+      ],
+      "reasons": [
+        "YES treats Weyl \u03bb or stick as R in meters",
+        "modulus 'alpha_prime_unit_map' is not a named allowed menu row"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "H5",
+      "text": "wall K^3 / torsion HD coefficient uniquely forced",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [],
+      "reasons": [
+        "wall K^3 needs_length; torsion source_vanishes; coefficient_forced false"
+      ]
+    },
+    {
+      "id": "H6",
+      "text": "forced form promotes a coefficient to FORCED",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [
+        "R-map-called-lock",
+        "R-modulus-called-lock",
+        "R-modulus-called-lock"
+      ],
+      "reasons": [
+        "YES labels a map/class as LOCK/FORCED/DERIVED",
+        "labels 'warp_factor' type OPEN-FIELD as FORCED",
+        "YES treats non-FORCED modulus 'warp_factor' as lock"
+      ],
+      "color_lock": false
+    }
+  ],
+  "isolate_written": false,
+  "timestamp_utc": "2026-09-20T03:15:14.827263+00:00"
+}

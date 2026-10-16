@@ -1,0 +1,293 @@
+{
+  "module": "h1_color_probe",
+  "continuous_knobs": 0,
+  "N_gen": 3,
+  "dim_iso": 7,
+  "dim_su3": 8,
+  "iso_contains_SU3": false,
+  "promote": false,
+  "unique_color_type_after": "FORBIDDEN",
+  "iso_type": "FORCED",
+  "G_SM_type": "FORBIDDEN",
+  "attempts": [
+    {
+      "id": "A",
+      "dim_iso": 7,
+      "dim_su3": 8,
+      "contains_SU3": false,
+      "leftover_picks": [],
+      "new_names_not_on_menu": [],
+      "gates": [],
+      "live_bin": "REFUSED",
+      "why": "dim(Iso)=7 < dim(SU(3))=8; no derived SU(3)_c subgroup"
+    },
+    {
+      "id": "B",
+      "leftover_picks": [
+        "identify generations with colors"
+      ],
+      "new_names_not_on_menu": [],
+      "gates": [
+        "R-color-lock"
+      ],
+      "live_bin": "REFUSED",
+      "why": "N_gen=3 does not force three colors"
+    },
+    {
+      "id": "C",
+      "leftover_picks": [
+        "read C2(3) as QCD"
+      ],
+      "new_names_not_on_menu": [],
+      "gates": [
+        "R-color-lock",
+        "R-burn-list"
+      ],
+      "live_bin": "REFUSED",
+      "why": "C2(3) in G_eff identity is not a color lock"
+    },
+    {
+      "id": "D",
+      "leftover_picks": [
+        "read Betti as flux"
+      ],
+      "new_names_not_on_menu": [],
+      "gates": [
+        "R-map-called-lock"
+      ],
+      "live_bin": "REFUSED",
+      "why": "b2=b3=1 is topology; flux reading FORBIDDEN"
+    },
+    {
+      "id": "E",
+      "leftover_picks": [
+        "CP2",
+        "K3"
+      ],
+      "new_names_not_on_menu": [],
+      "gates": [
+        "R-weld"
+      ],
+      "live_bin": "REFUSED",
+      "why": "CLASS family; named pick not unique color"
+    },
+    {
+      "id": "F",
+      "leftover_picks": [
+        "GUT embedding",
+        "U(1)_X"
+      ],
+      "new_names_not_on_menu": [
+        "U1_X",
+        "GUT_integers",
+        "Wilson_color"
+      ],
+      "gates": [
+        "R-weld",
+        "R-unlisted-modulus"
+      ],
+      "live_bin": "REFUSED",
+      "why": "G_SM weld not locked; extra factors are knobs/picks"
+    },
+    {
+      "id": "G",
+      "leftover_picks": [
+        "Fourier = color"
+      ],
+      "new_names_not_on_menu": [],
+      "gates": [
+        "R-weld"
+      ],
+      "live_bin": "REFUSED",
+      "why": "MAP != LOCK; graph eigenspaces not color/G_SM"
+    },
+    {
+      "id": "H",
+      "pipes_on_disk": [
+        "Track A external SU(3) Chern family",
+        "leftover X^4 family"
+      ],
+      "unique_member": false,
+      "leftover_picks": [
+        "which Chern (c2,rank,k)",
+        "which 4-fold"
+      ],
+      "new_names_not_on_menu": [],
+      "gates": [],
+      "live_bin": "CLASS",
+      "why": "CLASS pipes remain a family; unique member not forced"
+    }
+  ],
+  "C": [
+    {
+      "id": "C1",
+      "text": "unique SU(3)_c already in the atoms as a derived group",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [
+        "R-color-lock",
+        "R-unlisted-modulus",
+        "R-modulus-called-lock"
+      ],
+      "reasons": [
+        "YES picks unique SU(3)_c / three colors / C2 as color",
+        "modulus 'unique_color' is not a named allowed menu row",
+        "labels 'unique_color' type FORBIDDEN as FORCED"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "C2",
+      "text": "Iso contains SU(3) as a Lie subgroup or forces SU(3)_c",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [],
+      "reasons": [
+        "dim(Iso)=7 < dim(SU(3))=8; Iso cannot contain SU(3) as a Lie subgroup"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "C3",
+      "text": "N_gen=3 forces three colors",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [
+        "R-color-lock"
+      ],
+      "reasons": [
+        "YES picks unique SU(3)_c / three colors / C2 as color"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "C4",
+      "text": "C2(3)=4/3 in 8\u03c0G_eff forces SU(3)_c",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [
+        "R-burn-list",
+        "R-color-lock",
+        "R-unlisted-modulus",
+        "R-modulus-called-lock"
+      ],
+      "reasons": [
+        "YES is a burned weld",
+        "YES picks unique SU(3)_c / three colors / C2 as color",
+        "modulus 'unique_color' is not a named allowed menu row",
+        "labels 'unique_color' type FORBIDDEN as FORCED"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "C5",
+      "text": "b2=1 and b3=1 force color or hypercharge flux",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [
+        "R-unlisted-modulus",
+        "R-modulus-called-lock"
+      ],
+      "reasons": [
+        "modulus 'b2_b3_as_flux' is not a named allowed menu row",
+        "labels 'b2_b3_as_flux' type FORBIDDEN as FORCED"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "C6",
+      "text": "unique color embedding from locked atoms only",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [
+        "R-color-lock",
+        "R-unlisted-modulus",
+        "R-modulus-called-lock"
+      ],
+      "reasons": [
+        "YES picks unique SU(3)_c / three colors / C2 as color",
+        "modulus 'unique_color' is not a named allowed menu row",
+        "labels 'unique_color' type FORBIDDEN as FORCED"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "C7",
+      "text": "CP^2 or K3 is THE color space / THE 4-fold",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [
+        "R-weld",
+        "R-unlisted-modulus",
+        "R-modulus-called-lock"
+      ],
+      "reasons": [
+        "YES welds CLASS onto LOCK",
+        "modulus 'CP2_as_the_4fold' is not a named allowed menu row",
+        "labels 'CP2_as_the_4fold' type FORBIDDEN as the 4-fold"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "C8",
+      "text": "G_SM / GUT weld forced from the isolate",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [
+        "R-weld",
+        "R-unlisted-modulus",
+        "R-modulus-called-lock"
+      ],
+      "reasons": [
+        "YES welds CLASS onto LOCK",
+        "modulus 'G_SM_from_isolate' is not a named allowed menu row",
+        "labels 'G_SM_from_isolate' type FORBIDDEN as FORCED"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "C9",
+      "text": "Z/24 circulant / Fourier eigenspaces force color or G_SM",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [
+        "R-burn-list",
+        "R-weld"
+      ],
+      "reasons": [
+        "YES is a burned weld",
+        "YES welds CLASS onto LOCK"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "C10",
+      "text": "CLASS color pipes force a unique member",
+      "unique": false,
+      "bin": "CLASS",
+      "gates": [],
+      "reasons": [
+        "CLASS color pipes remain a family; no unique member forced"
+      ]
+    },
+    {
+      "id": "C11",
+      "text": "alpha_s / a color coupling forced",
+      "unique": false,
+      "bin": "REFUSED",
+      "gates": [
+        "R-knobs",
+        "R-knobs",
+        "R-unlisted-modulus"
+      ],
+      "reasons": [
+        "YES introduces a free real parameter",
+        "YES introduces L, bulk \u039b, RS k, or integration constant C",
+        "modulus 'alpha_s' is not a named allowed menu row"
+      ],
+      "color_lock": false
+    }
+  ],
+  "timestamp_utc": "2026-09-20T02:51:49.787983+00:00",
+  "isolate_written": false
+}

@@ -1,0 +1,75 @@
+{
+  "module": "M_WARP",
+  "occupant": "A(y)=-k|y|",
+  "warp_factor": "exp(-k|y|)",
+  "declared_extras": [
+    "k",
+    "L",
+    "y"
+  ],
+  "k_bin": "EXTERNAL",
+  "warp_type": "OPEN-FIELD",
+  "warp_value_forced": false,
+  "T_wall_read_as_tension": false,
+  "continuous_knobs": 0,
+  "rows": [
+    {
+      "id": "W1",
+      "text": "Is RS a legal OPEN-FIELD occupant if extras are listed?",
+      "unique": false,
+      "live_bin": "CONSISTENT",
+      "extras": [
+        "k",
+        "L",
+        "y"
+      ],
+      "why": "warp_factor type is OPEN-FIELD and value_forced is False. A(y)=-k|y| with those extras listed is a map occupant. Survive is not a derivation."
+    },
+    {
+      "id": "W2",
+      "text": "Does T_wall=13/2 force a unique number for k?",
+      "unique": false,
+      "live_bin": "REFUSED",
+      "extras": [
+        "k"
+      ],
+      "gates": [
+        "R-scale",
+        "R-knobs",
+        "R-unlisted-modulus",
+        "R-modulus-called-lock"
+      ],
+      "why": "T_wall=13/2 is a dimensionless spectral identity. The set of k compatible with that number has not one element. T_wall was not read as brane tension."
+    },
+    {
+      "id": "W3",
+      "text": "Do \u03c3*, Vol, Ric=4g, or 9/16 force k?",
+      "unique": false,
+      "live_bin": "REFUSED",
+      "extras": [
+        "k"
+      ],
+      "gates": [
+        "R-scale",
+        "R-modulus-called-lock",
+        "R-knobs",
+        "R-unlisted-modulus",
+        "R-modulus-called-lock"
+      ],
+      "why": "Locked tests are dimensionless: T_wall=13/2, sigma_star=sqrt(3)/2, vol=16*pi**3/27, ricci_factor=4, eight_pi_G_eff=9/16. None is a length^{-1}."
+    },
+    {
+      "id": "W4",
+      "text": "Bin k as EXTERNAL. Warp type stays OPEN-FIELD.",
+      "unique": false,
+      "live_bin": "EXTERNAL",
+      "extras": [
+        "k",
+        "L",
+        "y"
+      ],
+      "why": "W2 and W3 are No. k is EXTERNAL. warp_factor stays OPEN-FIELD."
+    }
+  ],
+  "timestamp_utc": "2026-09-22T00:09:46.693415+00:00"
+}

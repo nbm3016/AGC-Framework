@@ -1,0 +1,7 @@
+Copyright (c) 2026 Nicholas Myers.
+
+`core/` and `docs/` are MIT. See `core/LICENSE` and `docs/LICENSE`.
+
+`falsifier/` and `project/theory/` are published in this repository by the author so the framework, the theory ledger, and the falsifier run as one tree. That publication is not a grant to relicense these two packages as MIT.
+
+`qec`, `dna`, `lab`, and `lab2` are not in this repository.

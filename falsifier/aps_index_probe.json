@@ -1,0 +1,121 @@
+{
+  "banner": "APS INDEX PROBE - NO 3 IN THE CUTOFF - ZERO KNOBS",
+  "continuous_knobs": 0,
+  "carriers": [
+    {
+      "id": "L1",
+      "object": "T^{1,1}",
+      "dim": 5,
+      "boundary": false,
+      "legal_APS_carrier": false,
+      "extras": [],
+      "why": "Closed and odd-dimensional. A chiral APS index needs a boundary or a cylindrical end."
+    },
+    {
+      "id": "L2",
+      "object": "C(T^{1,1})",
+      "dim": 6,
+      "boundary": false,
+      "legal_APS_carrier": false,
+      "extras": [
+        "boundary_radius"
+      ],
+      "why": "Files give g_C = dr^2 + r^2 g_5 for r>0. That is an open cone with a tip, not a compact manifold with boundary. A cutoff radius is not locked."
+    }
+  ],
+  "operator": {
+    "bundle_on_disk": "unique spin structure of T^{1,1}; cone tangent reduced by Hol=SU(3)",
+    "dirac_on_disk": "Riemannian Dirac of g5, plus a Module A wall-index rule that the project file says is not ker D_5",
+    "aps_cut": "not stored. The file uses r=0 and j2=0, not the positive spectrum of a boundary Dirac",
+    "star_psi": "imposed as j2=0 in is_self_dual. Not derived from a computed kernel",
+    "core_py_calls_sieve_APS": false,
+    "project_py_denies_ker_D5": true
+  },
+  "formula": {
+    "named_product": "1.0",
+    "is_A_hat_integral": false,
+    "bin": "NAMED_PRODUCT",
+    "why": "The file multiplies chi(S^2)^2/4 by the name C2(3) and by sigma*^2. That product is 1. It is not an integral of the A-hat genus.",
+    "eta_regularized_in_file": 0.0,
+    "eta_is_boundary_eta": false,
+    "eta_why": "The file sets eta to 0 because its listed lambda_geometric values are non-negative. That is not eta(0) of D on T^{1,1}.",
+    "boundary_harmonics_stored": false
+  },
+  "lattice": {
+    "half_integer_source": "HALF_INT_LATTICE and j_max=3.0 inside wall_index_sieve.py",
+    "j2_zero_source": "is_self_dual returns true only when j2 is numerically zero",
+    "finite_list_source": "the loop stops at j_max written in the file",
+    "live_bin": "REFUSED",
+    "why": "A finite half-integer list is not forced by a boundary spectrum on disk. The only source is the lattice written in the Python file."
+  },
+  "stability": {
+    "stored_sieve_zeros_on_r0_modes": 3,
+    "sieve_zeros_if_r_equals_1": 0,
+    "sieve_zeros_if_j2_equals_half": 0,
+    "hole_count_changes": true,
+    "new_metric": false,
+    "why": "On the j1 values stored in r0_modes.json, the r\u22600 branch and the j2\u22600 branch of the same sieve do not keep the same zero count. This is sieve arithmetic, not an APS kernel."
+  },
+  "named_product_value": "1.0",
+  "sieve_is_aps_theorem": false,
+  "dim_ker_computed": false,
+  "integer_forced_extras_0": false,
+  "called_N_gen": false,
+  "called_three_colors": false,
+  "constitution_says_wall_index_not_ker_D5": true,
+  "rows": [
+    {
+      "id": "P1",
+      "claim": "Closed T^{1,1} is a legal APS carrier",
+      "live_bin": "REFUSED",
+      "why": "Closed and odd-dimensional. A chiral APS index needs a boundary or a cylindrical end."
+    },
+    {
+      "id": "P2",
+      "claim": "Open cone as written is a legal APS carrier",
+      "live_bin": "REFUSED",
+      "why": "Files give g_C = dr^2 + r^2 g_5 for r>0. That is an open cone with a tip, not a compact manifold with boundary. A cutoff radius is not locked."
+    },
+    {
+      "id": "P3",
+      "claim": "star Psi = Psi is derived from a kernel",
+      "live_bin": "REFUSED",
+      "why": "imposed as j2=0 in is_self_dual. Not derived from a computed kernel"
+    },
+    {
+      "id": "P4",
+      "claim": "Named product is an A-hat integral",
+      "live_bin": "REFUSED",
+      "why": "The file multiplies chi(S^2)^2/4 by the name C2(3) and by sigma*^2. That product is 1. It is not an integral of the A-hat genus."
+    },
+    {
+      "id": "P5",
+      "claim": "File eta is the eta-invariant of the boundary Dirac",
+      "live_bin": "REFUSED",
+      "why": "The file sets eta to 0 because its listed lambda_geometric values are non-negative. That is not eta(0) of D on T^{1,1}."
+    },
+    {
+      "id": "P6",
+      "claim": "Finite j lattice is forced by geometry",
+      "live_bin": "REFUSED",
+      "why": "A finite half-integer list is not forced by a boundary spectrum on disk. The only source is the lattice written in the Python file."
+    },
+    {
+      "id": "P7",
+      "claim": "Sieve zero-count is stable under listed discrete branches",
+      "live_bin": "REFUSED",
+      "why": "On the j1 values stored in r0_modes.json, the r\u22600 branch and the j2\u22600 branch of the same sieve do not keep the same zero count. This is sieve arithmetic, not an APS kernel."
+    },
+    {
+      "id": "P8",
+      "claim": "dim ker of a named APS operator is computed",
+      "live_bin": "UNKNOWN",
+      "why": "No boundary Dirac spectrum is stored, so the kernel dimension is not computed."
+    }
+  ],
+  "cone_not_flat": true,
+  "spin_structures": 1,
+  "r0_mode_count_field": 3,
+  "validated_has_lambda_targets": true,
+  "timestamp_utc": "2026-10-15T06:27:00.037709+00:00"
+}

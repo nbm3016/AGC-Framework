@@ -1,0 +1,513 @@
+{
+  "document": "isolate_updated",
+  "continuous_knobs": 0,
+  "source_note": "Working updated isolate. complete_baseline.json was not edited. cone_holonomy.json was not edited. Old engine files were not edited. A formula is a lock only when type, uniqueness from the locked atoms, and extras = 0 all hold.",
+  "ambient_dimension": 14,
+  "ambient_statement": "Y^{14} → M^4",
+  "compact_factors_only": ["Σ^5", "T^{1,1}"],
+  "compact_fibre": "X^{10} = Σ^5 × T^{1,1}",
+  "five_fold_is_ambient": false,
+  "fibration_class_unique": false,
+  "filter": {
+    "role": "filter",
+    "statement": "★Ψ = Ψ = Ψ★",
+    "parts": ["★Ψ", "Ψ", "Ψ★"],
+    "reading": "One three-way lock. The three parts are equal at once.",
+    "ascii": "star Psi = Psi = Psi star",
+    "star_meaning": "Ψ★ is the same involution as the left star. It is not a second operator and not a new real.",
+    "wall_reading": "j2 = 0, where the defect ||★Ψ − Ψ||^2 vanishes"
+  },
+  "barrier": {
+    "role": "barrier",
+    "statement": "★Ψ = −Ψ",
+    "ascii": "star Psi = -Psi",
+    "is_the_filter": false,
+    "not_the_wall_index_formula": true,
+    "meaning": "Minus eigenspace of the same involution. Separate from ★Ψ = Ψ = Ψ★. Not the formula max(0, round(4*j1-6)). Not a twistor choice."
+  },
+  "holonomy": {
+    "statement": "Hol(g_C) = SU(3)",
+    "stored_as": "holonomy",
+    "dimension": 8,
+    "not": ["Iso", "color", "SU(3)_c", "QCD"]
+  },
+  "isometry": {
+    "statement": "Iso = SU(2)×SU(2)×U(1)",
+    "stored_as": "isometry",
+    "dimension": 7,
+    "sum": "3+3+1",
+    "contains_SU3": false,
+    "not": "color"
+  },
+  "page_interface": {
+    "name": "Π_{s,t}",
+    "ascii": "Pi_{s,t}",
+    "equation": "Π_{s,t}(Y^{14}) = 0",
+    "role": "cut",
+    "status": "INTERFACE",
+    "is_lock": false,
+    "is_g_mu_nu": false,
+    "not_promoted": ["eta_mu_nu", "FLRW", "RS", "g_mu_nu"]
+  },
+  "locks": [
+    {
+      "name": "ambient_theory",
+      "action": "changed",
+      "status": "LOCK",
+      "extras": 0,
+      "value": "Y^{14} → M^4",
+      "compact_fibre": "X^{10} = Σ^5 × T^{1,1}",
+      "old": "isolate_sheet named the isolate T^{1,1}",
+      "why": "Constitution statement 1 already fixes the ambient dimension at 14 and names both 5-folds as compact factors. fibration_class stays not unique."
+    },
+    {
+      "name": "filter_three_way",
+      "action": "changed",
+      "status": "LOCK",
+      "extras": 0,
+      "value": "★Ψ = Ψ = Ψ★",
+      "parts": ["★Ψ", "Ψ", "Ψ★"],
+      "reading": "One equality. Three parts equal at once.",
+      "why": "The three parts ★Ψ, Ψ, and Ψ★ are one lock. Ψ★ is that same involution, not a second coupling."
+    },
+    {
+      "name": "wall_zero_count",
+      "action": "changed",
+      "status": "LOCK",
+      "extras": 0,
+      "value": 3,
+      "historical_label": "N_gen",
+      "N_gen": 3,
+      "zeros": ["(1/2,0,0)", "(1,0,0)", "(3/2,0,0)"],
+      "su2_dimensions": [2, 3, 4],
+      "reading": "N_gen = 3 stays frozen. The integer is the wall-zero count of the three harmonics 2⊕3⊕4. It is not a copied 4D Weyl triplet, not ker D_5, and not the APS index theorem.",
+      "why": "The integer 3 stays. It counts the three distinct harmonics 2⊕3⊕4."
+    },
+    {
+      "name": "barrier_minus",
+      "action": "added",
+      "status": "LOCK",
+      "extras": 0,
+      "value": "★Ψ = −Ψ",
+      "is_the_filter": false,
+      "why": "Middle degree on the 14-dimensional theory is 7. The same involution has a minus eigenspace. That eigenspace is the barrier, not the filter."
+    },
+    {
+      "name": "clock_Z24",
+      "action": "added",
+      "status": "LOCK",
+      "extras": 0,
+      "value": {
+        "group": "Z/24",
+        "lines": 3,
+        "seats_per_line": 8,
+        "shared_face": "+8",
+        "shared_face_order": 3,
+        "inverse_face": "+16",
+        "order_8_subgroup": [0, 3, 6, 9, 12, 15, 18, 21]
+      },
+      "why": "Monodromy order 24 equals lcm(8,3,8). The unique subgroup of order 8 has index 3. The least positive element of order 3 is +8. No new integer."
+    },
+    {
+      "name": "continuous_knobs",
+      "action": "kept",
+      "status": "LOCK",
+      "extras": 0,
+      "value": 0
+    },
+    {
+      "name": "lambda_tilde",
+      "action": "kept",
+      "status": "LOCK",
+      "extras": 0,
+      "value": ["9/2", "12", "45/2"],
+      "file_decimals": [4.5, 12.0, 22.5],
+      "reading": "Three outputs of the wall zeros. Not one 4D mass."
+    },
+    {
+      "name": "Iso_group",
+      "action": "kept",
+      "status": "LOCK",
+      "extras": 0,
+      "value": "SU(2)×SU(2)×U(1)",
+      "dimension": 7,
+      "stored_as": "isometry",
+      "reading": "not color"
+    },
+    {
+      "name": "sigma_star",
+      "action": "kept",
+      "status": "LOCK",
+      "extras": 0,
+      "value": "sqrt(3)/2",
+      "square": "3/4",
+      "reading": "T^{1,1} shape, not g_μν"
+    },
+    {
+      "name": "T_wall_identity",
+      "action": "kept",
+      "status": "LOCK",
+      "extras": 0,
+      "value": "13/2",
+      "reading": "dimensionless spectral identity. Not Chern. Not GeV^3. Not brane tension."
+    },
+    {
+      "name": "b2",
+      "action": "kept",
+      "status": "LOCK",
+      "extras": 0,
+      "value": 1,
+      "reading": "topology, not flux"
+    },
+    {
+      "name": "b3",
+      "action": "kept",
+      "status": "LOCK",
+      "extras": 0,
+      "value": 1,
+      "reading": "topology, not flux"
+    },
+    {
+      "name": "eight_pi_G_eff_number",
+      "action": "kept",
+      "status": "LOCK",
+      "extras": 0,
+      "value": "9/16",
+      "kappa": "9/16",
+      "identity": "(3/4)/(4/3)",
+      "four_kappa": "9/4",
+      "four_kappa_plus_1": "13/4",
+      "reading": "Pure number κ = 8π G_eff = 9/16. Not G_N. Live identity: 4κ = 9/4, therefore 4κ+1 = 13/4. C_2(3)=4/3 is the name on the ratio, not a color group. The lock-name pair 9/4 is not this identity."
+    },
+    {
+      "name": "n_eta",
+      "action": "kept",
+      "status": "LOCK",
+      "extras": 0,
+      "value": [3, 8, 15],
+      "delta_eta_over_pi": ["1/4", "2/3", "5/4"],
+      "reading": "unique triple on the locked modes"
+    },
+    {
+      "name": "CONE",
+      "action": "kept",
+      "status": "LOCK",
+      "extras": 0,
+      "value": "g_C = dr^2 + r^2 g_5",
+      "reading": "cone on the locked 5-metric. Homothety r∂_r is gauge. Not a cutoff radius. Not g_μν. Not A(y)."
+    },
+    {
+      "name": "CONE_HOLONOMY",
+      "action": "kept",
+      "status": "LOCK",
+      "extras": 0,
+      "value": "SU(3)",
+      "stored_as": "holonomy",
+      "dimension": 8,
+      "reading": "Hol(g_C)=SU(3) as holonomy of the cone. Not Iso. Not SU(3)_c. The older cone_holonomy.json equality row stays UNKNOWN and was not edited."
+    },
+    {
+      "name": "SPIN_T11",
+      "action": "kept",
+      "status": "LOCK",
+      "extras": 0,
+      "value": "unique spin structure",
+      "reading": "5-fold datum on T^{1,1}. Not a 4-metric."
+    },
+    {
+      "name": "DIRAC_T11",
+      "action": "kept",
+      "status": "LOCK",
+      "extras": 0,
+      "value": "Dirac(g_5), KO-dimension 5, spinor rank 4",
+      "reading": "Riemannian Dirac on the 5-fold. Not N_gen. Not g_μν."
+    },
+    {
+      "name": "TRIPLE_T11",
+      "action": "kept",
+      "status": "LOCK",
+      "extras": 0,
+      "value": "canonical 5-triple reconstructs T^{1,1}",
+      "reading": "5-fold datum. Not a 4-metric."
+    },
+    {
+      "name": "SASAKI_PHI_J",
+      "action": "kept",
+      "status": "LOCK",
+      "extras": 0,
+      "value": "Phi(X)=grad_X xi; J=Phi on ker eta"
+    },
+    {
+      "name": "g_T_omega_T",
+      "action": "kept",
+      "status": "LOCK",
+      "extras": 0,
+      "value": "base S^2×S^2; omega_T = d eta/2; g_T is not g_μν"
+    },
+    {
+      "name": "PARALLEL_SPINORS_CONE",
+      "action": "kept",
+      "status": "LOCK",
+      "extras": 0,
+      "value": "one complex line of parallel spinors; phase is the Iso U(1)"
+    },
+    {
+      "name": "HARM_2_EULER_PAIRING",
+      "action": "kept",
+      "status": "LOCK",
+      "extras": 0,
+      "value": "H^2 rank 1 from Euler (1,1); not a flux; cup-square 2 is not c2"
+    },
+    {
+      "name": "D5_LABEL_FORMULA",
+      "action": "kept",
+      "status": "LOCK",
+      "extras": 0,
+      "value": "Killing eigenvalues -5/2 and +5/2"
+    },
+    {
+      "name": "VOL_T11",
+      "action": "kept",
+      "status": "LOCK",
+      "extras": 0,
+      "value": "16*pi**3/27"
+    },
+    {
+      "name": "EINSTEIN_SCALAR_G5",
+      "action": "kept",
+      "status": "LOCK",
+      "extras": 0,
+      "value": "Ric = 4 g; scalar = 20"
+    },
+    {
+      "name": "CONE_HOMOTHETY",
+      "action": "kept",
+      "status": "LOCK",
+      "extras": 0,
+      "value": "L_(r d/dr) g_C = 2 g_C; gauge; not a GeV"
+    },
+    {
+      "name": "J_CONE",
+      "action": "kept",
+      "status": "LOCK",
+      "extras": 0,
+      "value": "J(d/dr) = xi"
+    },
+    {
+      "name": "LINK_SECOND_FUNDAMENTAL",
+      "action": "kept",
+      "status": "LOCK",
+      "extras": 0,
+      "value": "II = g_5 / r along the radial normal"
+    },
+    {
+      "name": "DR_WEDGE_DETA",
+      "action": "kept",
+      "status": "LOCK",
+      "extras": 0,
+      "value": "wedge, degree 3"
+    },
+    {
+      "name": "DR_WEDGE_HARM2",
+      "action": "kept",
+      "status": "LOCK",
+      "extras": 0,
+      "value": "wedge, degree 3"
+    },
+    {
+      "name": "DR_ETA_WEDGE_DETA",
+      "action": "kept",
+      "status": "LOCK",
+      "extras": 0,
+      "value": "wedge, degree 4"
+    },
+    {
+      "name": "DR_ETA_WEDGE_HARM2",
+      "action": "kept",
+      "status": "LOCK",
+      "extras": 0,
+      "value": "wedge, degree 4"
+    },
+    {
+      "name": "DR_WEDGE_DETA_SQ",
+      "action": "kept",
+      "status": "LOCK",
+      "extras": 0,
+      "value": "wedge, degree 5"
+    },
+    {
+      "name": "OMEGA_TRANSVERSE",
+      "action": "kept",
+      "status": "LOCK",
+      "extras": 0,
+      "value": "complex 2-form of type (2,0); phase is the locked U(1)"
+    }
+  ],
+  "kappa_live_identity": {
+    "kappa": "9/16",
+    "four_kappa": "9/4",
+    "four_kappa_plus_1": "13/4",
+    "arithmetic": "4*(9/16) = 9/4; 9/4 + 1 = 13/4",
+    "status": "identity of the locked number κ",
+    "extras": 0,
+    "not_a_lock_name": "pair 9/4"
+  },
+  "maps": [
+    {
+      "name": "unique_color",
+      "status": "MAP",
+      "extras": ["SU(3)_c"],
+      "why": "Hol(g_C) = SU(3) is stored as holonomy, dimension 8. Iso has dimension 7 and does not contain SU(3). Unique color is an extra name on either group."
+    },
+    {
+      "name": "unique_g_mu_nu",
+      "status": "MAP",
+      "extras": ["g_mu_nu"],
+      "why": "No locked atom selects one g_μν(x). η_μν, FLRW, and RS stay occupants. The 5-triple reconstructs T^{1,1} only."
+    },
+    {
+      "name": "unique_warp_A",
+      "status": "MAP",
+      "extras": ["A", "y"],
+      "why": "A(y) is a function of an extra coordinate. The locked cone is g_C = dr^2 + r^2 g_5. No unique value of A is fixed."
+    },
+    {
+      "name": "warp_k",
+      "status": "MAP",
+      "extras": ["k", "L", "y"],
+      "why": "k is an RS slope of dimension length^{-1}. Under R11 the observer stick is not a lock. No locked dimensionless atom supplies k, L, or y."
+    },
+    {
+      "name": "chern_c2",
+      "status": "MAP",
+      "extras": ["c2"],
+      "why": "c2 of an SU(3) bundle on S^2×S^2 is an extra. The Euler cup-square 2 is the U(1) self-pairing."
+    },
+    {
+      "name": "native_GeV_M_R",
+      "status": "MAP",
+      "extras": ["GeV", "M_R"],
+      "why": "Locked atoms are dimensionless. Native GeV and M_R are dimensionful extras. No conversion is written."
+    },
+    {
+      "name": "G_N_equals_9_16",
+      "status": "MAP",
+      "extras": ["G_N"],
+      "why": "κ = 8π G_eff = 9/16 stays a pure number. G_N is an extra."
+    },
+    {
+      "name": "fibration_class",
+      "status": "MAP",
+      "extras": ["fibration_class"],
+      "why": "Y^{14} → M^4 with compact fibre Σ^5 × T^{1,1} is locked. Uniqueness among all 14-dimensional fibrations is still an extra."
+    },
+    {
+      "name": "pair_9_4_lock_name",
+      "status": "MAP",
+      "extras": ["lock_name"],
+      "why": "The live values are 4κ = 9/4 and 4κ+1 = 13/4. A lock-name that calls the pair 9/4 uses the value of 4κ for the other slot. That name is an extra. κ itself is the locked number 9/16."
+    },
+    {
+      "name": "hop_mass",
+      "status": "MAP",
+      "formula": "m = κ n_η τ / 3",
+      "reduced": "m = (3/16) n_η τ",
+      "n_eta": [3, 8, 15],
+      "tau": ["2-sqrt(2)", "3", "2+sqrt(2)"],
+      "no_hop": "m = 0",
+      "GeV_conversion": false,
+      "image": {
+        "n_eta_3": ["(9/16)(2-sqrt(2))", "27/16", "(9/16)(2+sqrt(2))"],
+        "n_eta_8": ["(3/2)(2-sqrt(2))", "9/2", "(3/2)(2+sqrt(2))"],
+        "n_eta_15": ["(45/16)(2-sqrt(2))", "135/16", "(45/16)(2+sqrt(2))"],
+        "no_hop": "0"
+      },
+      "score": {
+        "type_match_dimensionless_weight": true,
+        "type_match_GeV": false,
+        "unique_from_locked_atoms": false,
+        "H1_unique_tau": false,
+        "H2_hop_case_forced": false,
+        "H3_extras_empty": false,
+        "H4_promoted_to_LOCK": false,
+        "extras": ["tau", "hop_case"]
+      },
+      "uniqueness": {
+        "file": "HOP_MASS_UNIQUENESS.md",
+        "atoms_used": [
+          "Y^{14} → M^4",
+          "fibre Σ^5 × T^{1,1}",
+          "★Ψ = Ψ = Ψ★",
+          "★Ψ = −Ψ",
+          "clock Z/24, 3×8, face +8",
+          "κ = 9/16",
+          "4κ = 9/4",
+          "N_gen = 3",
+          "n_η = (3, 8, 15)",
+          "σ* = sqrt(3)/2",
+          "T_wall = 13/2",
+          "Iso dimension 7",
+          "Hol(g_C) = SU(3) as holonomy"
+        ],
+        "tau_remains": ["2-sqrt(2)", "3", "2+sqrt(2)"],
+        "promoted_to_LOCK": false,
+        "leftover_extras": ["tau", "hop_case"],
+        "continuous_knobs": 0
+      },
+      "extras": ["tau", "hop_case"],
+      "why": "κ = 9/16 and n_η = (3, 8, 15) are locked. The algebraic type is a pure number, and no GeV conversion is applied. HOP_MASS_UNIQUENESS.md scores the listed locks one atom at a time. No atom forces one τ from {2-sqrt(2), 3, 2+sqrt(2)}. No atom forces the product branch against the zero branch. Leftover extras are tau and hop_case. The dimensionless type matches, uniqueness fails, and extras are not empty, so the status stays MAP."
+    },
+    {
+      "name": "occupancy_names",
+      "status": "MAP",
+      "counts_from": {
+        "Hol": {"group": "SU(3)", "stored_as": "holonomy", "dimension": 8},
+        "Iso": {"group": "SU(2)×SU(2)×U(1)", "dimension": 7, "sum": "3+3+1"},
+        "clock": {"group": "Z/24", "order": 24, "lines": 3, "seats": 8, "face": "+8"}
+      },
+      "names_stay_names": true,
+      "pdg_masses": false,
+      "score": {
+        "counts_type_match": true,
+        "counts_unique_from_locked_atoms": true,
+        "counts_extras": 0,
+        "counts_status": "already the Hol, Iso, and clock locks",
+        "names_type_match": false,
+        "names_unique_from_locked_atoms": false,
+        "names_extras": ["name"],
+        "H5_new_count_forced": false,
+        "H5_names_stay_names": true
+      },
+      "extras": ["name"],
+      "why": "The counts that type-match, are unique, and have extras 0 are the locked integers dim Hol = 8, dim Iso = 7 = 3+3+1, and the clock Z/24 = 3×8 with face +8. Those stay the Hol, Iso, and clock locks. H5 of the hop-mass uniqueness pass forces no new count. A name is not a count and not a PDG mass. A name is an extra, and it is not unique. Status MAP."
+    },
+    {
+      "name": "dynamical_4d_eom",
+      "status": "MAP",
+      "slot": "empty",
+      "emptiness_is_an_isolate_atom": false,
+      "extras": ["EOM"],
+      "why": "The dynamical 4D equation-of-motion slot is empty. An equation is not supplied by the locked atoms. Emptiness is not an isolate atom. An EOM would be an extra."
+    },
+    {
+      "name": "page_interface_Pi",
+      "status": "INTERFACE",
+      "extras": 0,
+      "why": "Π_{s,t} names the cut already stated by the fibration. It is not a lock of g_μν(x)."
+    }
+  ],
+  "hop_mass_uniqueness": {
+    "file": "HOP_MASS_UNIQUENESS.md",
+    "promoted_to_LOCK": false,
+    "leftover_extras": ["tau", "hop_case"],
+    "occupancy_names_status": "MAP",
+    "occupancy_names_extras": ["name"],
+    "continuous_knobs": 0
+  },
+  "counts": {
+    "locks_kept": 30,
+    "locks_added": 2,
+    "locks_changed": 3,
+    "promotions_refused": 12
+  }
+}

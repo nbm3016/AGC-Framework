@@ -1,0 +1,142 @@
+{
+  "module": "weld_retirement",
+  "question": "unique parameter-free pairing {three APS modes} <-> {graph Aut-orbits / L-eigenspaces}",
+  "continuous_knobs": 0,
+  "locked_inputs": {
+    "APS_j1": [
+      0.5,
+      1.0,
+      1.5
+    ],
+    "N_gen": 3,
+    "n_eta": [
+      3,
+      8,
+      15
+    ],
+    "monodromy_order": 24,
+    "delta_eta_over_pi": [
+      0.25,
+      0.6666666666666666,
+      1.25
+    ],
+    "r": 0.095716,
+    "sigma_star": "sqrt(3)/2",
+    "graph_connection": [
+      3,
+      8,
+      9,
+      15,
+      16,
+      21
+    ],
+    "lambda_L": [
+      0.0,
+      3.0,
+      4.0,
+      7.0,
+      8.0,
+      11.0
+    ],
+    "multiplicities": [
+      1,
+      2,
+      6,
+      12,
+      1,
+      2
+    ]
+  },
+  "baseline_check": {
+    "N_gen": 3,
+    "n_eta": [
+      3,
+      8,
+      15
+    ],
+    "r": 0.095716,
+    "theta13_deg": 7.953,
+    "untouched": true
+  },
+  "L_eigenspace_dims": [
+    1,
+    2,
+    6,
+    12,
+    1,
+    2
+  ],
+  "Aut_orbit_dims": [
+    1,
+    2,
+    4,
+    2,
+    8,
+    4,
+    1,
+    2
+  ],
+  "n_L_objects_dim_3": 0,
+  "n_Aut_orbits_dim_3": 0,
+  "n_L_doublet_singlet_unions": 4,
+  "n_Aut_orbit_doublet_singlet_unions": 6,
+  "L_doublet_singlet_unions": [
+    {
+      "dim2_lambda_L": 3.0,
+      "dim2_k": [
+        8,
+        16
+      ],
+      "dim1_lambda_L": 0.0,
+      "dim1_k": [
+        0
+      ]
+    },
+    {
+      "dim2_lambda_L": 3.0,
+      "dim2_k": [
+        8,
+        16
+      ],
+      "dim1_lambda_L": 8.0,
+      "dim1_k": [
+        12
+      ]
+    },
+    {
+      "dim2_lambda_L": 11.0,
+      "dim2_k": [
+        4,
+        20
+      ],
+      "dim1_lambda_L": 0.0,
+      "dim1_k": [
+        0
+      ]
+    },
+    {
+      "dim2_lambda_L": 11.0,
+      "dim2_k": [
+        4,
+        20
+      ],
+      "dim1_lambda_L": 8.0,
+      "dim1_k": [
+        12
+      ]
+    }
+  ],
+  "n_eta_is_Aut_orbit": false,
+  "n_eta_is_L_eigenspace": false,
+  "A4_triplet_in_L": false,
+  "unique_forced_pairing": false,
+  "functor": null,
+  "verdict": "FAIL",
+  "reason": "L has no 3-dimensional eigenspace and Aut has no 3-dimensional orbit that the APS triple must occupy.",
+  "MAP_NOT_LOCK": "stays",
+  "CKM_welded": false,
+  "r_touched": false,
+  "theta13_touched": false,
+  "complete_baseline_rewritten": false,
+  "timestamp_utc": "2026-09-19T01:34:14.746824+00:00"
+}

@@ -1,0 +1,125 @@
+{
+  "continuous_knobs": 0,
+  "strict_complete": {
+    "W1": true,
+    "W2": false,
+    "W3": false,
+    "W4": false,
+    "G1": false,
+    "G2": false,
+    "G3": false,
+    "G4": false,
+    "C1": false,
+    "C2": false,
+    "C3": false,
+    "C4": false,
+    "C5": false,
+    "C6": false,
+    "D1": false,
+    "D2": false,
+    "F1": false
+  },
+  "questions": [
+    {
+      "id": "S1",
+      "slot": "warp",
+      "n_tested": 3,
+      "n_complete": 1,
+      "unique_complete": true,
+      "complete_ids": [
+        "W1"
+      ],
+      "live_bin": "CONSISTENT",
+      "gates": [],
+      "why": [
+        "unique isolate-complete occupant ['W1'] in catalog; catalog uniqueness != isolate atom; not FORCED"
+      ]
+    },
+    {
+      "id": "S2",
+      "slot": "metric",
+      "n_tested": 3,
+      "n_complete": 0,
+      "unique_complete": false,
+      "complete_ids": [],
+      "live_bin": "REFUSED",
+      "gates": [],
+      "why": [
+        "zero isolate-complete maps (strict: no extra name/real)"
+      ]
+    },
+    {
+      "id": "S3",
+      "slot": "color",
+      "n_tested": 6,
+      "n_complete": 0,
+      "unique_complete": false,
+      "complete_ids": [],
+      "live_bin": "REFUSED",
+      "gates": [
+        "R-color-lock",
+        "R-unlisted-modulus",
+        "R-modulus-called-lock"
+      ],
+      "why": [
+        "C2 carries external bundle moduli so not isolate-complete; catalog-of-one is not unique color"
+      ]
+    },
+    {
+      "id": "S4",
+      "slot": "HD",
+      "n_tested": 2,
+      "n_complete": 0,
+      "unique_complete": false,
+      "complete_ids": [],
+      "live_bin": "REFUSED",
+      "gates": [
+        "R-map-called-lock"
+      ],
+      "why": [
+        "zero isolate-complete maps (strict: no extra name/real)"
+      ]
+    },
+    {
+      "id": "S5",
+      "slot": "tie",
+      "n_tested": 0,
+      "n_complete": 0,
+      "unique_complete": false,
+      "complete_ids": [],
+      "live_bin": "REFUSED",
+      "gates": [
+        "R-knobs",
+        "R-weld"
+      ],
+      "why": [
+        "YES introduces a free real parameter",
+        "YES welds CLASS onto LOCK"
+      ]
+    },
+    {
+      "id": "S6",
+      "slot": "promote",
+      "n_tested": 0,
+      "n_complete": 0,
+      "unique_complete": false,
+      "complete_ids": [],
+      "live_bin": "REFUSED",
+      "gates": [
+        "R-map-called-lock",
+        "R-modulus-called-lock",
+        "R-modulus-called-lock"
+      ],
+      "why": [
+        "YES labels a map/class as LOCK/FORCED/DERIVED",
+        "labels 'warp_factor' type OPEN-FIELD as FORCED",
+        "YES treats non-FORCED modulus 'warp_factor' as lock"
+      ]
+    }
+  ],
+  "unique_complete_warp": true,
+  "unique_complete_metric": false,
+  "unique_color": false,
+  "any_promoted": false,
+  "timestamp_utc": "2026-09-20T03:53:33.231983+00:00"
+}

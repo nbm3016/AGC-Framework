@@ -1,0 +1,117 @@
+{
+  "module": "cone_holonomy",
+  "continuous_knobs": 0,
+  "N_gen": 3,
+  "iso_group": "SU(2)\u00d7SU(2)\u00d7U(1)",
+  "dim_iso": 7,
+  "dim_su3": 8,
+  "iso_contains_SU3": false,
+  "iso_rewritten": false,
+  "se_on_disk": true,
+  "sp_ruled_out_by_complex_dim": true,
+  "flat_ruled_out_by_files": false,
+  "hol_live": "UNKNOWN",
+  "color_promoted": false,
+  "K": [
+    {
+      "id": "K1",
+      "text": "cone metric g_C uniquely determined by locked 5-metric; extra knob?",
+      "bin": "FORCED",
+      "gates": [],
+      "reasons": [
+        "g_C = dr^2 + r^2 g_5 is uniquely fixed by the locked 5-metric; r is a coordinate, homothety is GAUGE; knobs stay 0"
+      ],
+      "extra_names": [
+        "r_coordinate"
+      ]
+    },
+    {
+      "id": "K2",
+      "text": "r is Wilson/GeV/M_R, or a coordinate whose homothety is GAUGE?",
+      "bin": "FORCED",
+      "gates": [],
+      "reasons": [
+        "r is a cone coordinate; homothety is existing GAUGE overall scale; not Wilson, GeV, M_R, or A(y)"
+      ],
+      "extra_names": []
+    },
+    {
+      "id": "K3",
+      "text": "What is Hol(g_C)?",
+      "bin": "UNKNOWN",
+      "gates": [],
+      "reasons": [
+        "SE on disk implies Hol(g_C) \u2286 SU(3) if the cone theorem is applied; Sp ruled out (complex dim 3); flat not ruled out by a Riemann computation on disk. Equality Hol=SU(3) not FORCED. Not color."
+      ],
+      "hol": "UNKNOWN",
+      "inclusion": "subseteq SU(3) conditional on SE cone theorem; equality not forced"
+    },
+    {
+      "id": "K4",
+      "text": "Hol(g_C)=SU(3) forces unique color SU(3)_c",
+      "bin": "REFUSED",
+      "gates": [
+        "R-burn-list",
+        "R-color-lock",
+        "R-unlisted-modulus",
+        "R-modulus-called-lock"
+      ],
+      "reasons": [
+        "YES is a burned weld",
+        "YES picks unique SU(3)_c / three colors / C2 as color",
+        "modulus 'unique_color' is not a named allowed menu row",
+        "labels 'unique_color' type FORBIDDEN as FORCED"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "K5",
+      "text": "Does Iso change? Does Iso contain SU(3)?",
+      "bin": "FORCED",
+      "gates": [],
+      "reasons": [
+        "Iso unchanged SU(2)\u00d7SU(2)\u00d7U(1), dim 7; contains SU(3)? False (7<8)"
+      ],
+      "extra_names": [],
+      "color_lock": false
+    },
+    {
+      "id": "K6",
+      "text": "cone writes g_mu_nu(x) or A(y) or a 4D EOM",
+      "bin": "REFUSED",
+      "gates": [
+        "R-metric-swap",
+        "R-knobs",
+        "R-modulus-called-lock"
+      ],
+      "reasons": [
+        "YES identifies \u03c3* or \u03c6(\u03b8,\u03c8) with g_\u03bc\u03bd",
+        "YES introduces L, bulk \u039b, RS k, or integration constant C as isolate",
+        "labels 'g_mu_nu' type OPEN-FIELD as FORCED"
+      ],
+      "color_lock": false
+    },
+    {
+      "id": "K7",
+      "text": "D3 / KW quiver / G_SM / S^5 / M(3,2) may finish K3 or K4",
+      "bin": "REFUSED",
+      "gates": [
+        "R-burn-list",
+        "R-weld",
+        "R-color-lock",
+        "R-unlisted-modulus",
+        "R-modulus-called-lock"
+      ],
+      "reasons": [
+        "YES is a burned weld",
+        "YES welds CLASS onto LOCK",
+        "YES picks unique SU(3)_c / three colors / C2 as color",
+        "modulus 'G_SM_from_isolate' is not a named allowed menu row",
+        "labels 'G_SM_from_isolate' type FORBIDDEN as FORCED"
+      ],
+      "color_lock": false
+    }
+  ],
+  "isolate_written": false,
+  "timestamp_utc": "2026-09-21T20:55:33.798878+00:00"
+}

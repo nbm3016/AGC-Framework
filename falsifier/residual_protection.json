@@ -1,0 +1,118 @@
+{
+  "banner": "RESIDUAL-\u03b2 PROTECTION TESTED \u2013 BOTH P1 AND P2 FAIL \u2013 LOCKED r UNCHANGED \u2013 ZERO CONTINUOUS KNOBS PRESERVED",
+  "timestamp_utc": "2026-08-13T19:11:33.030668+00:00",
+  "continuous_knobs": 0,
+  "new_free_parameters_introduced": false,
+  "locked_r_unchanged": true,
+  "locked_r": 0.095716,
+  "locked_r_full": 0.0957162820145647,
+  "core_verification": "8/8 PASS",
+  "absolute_scale_volume_R": "untouched (already resolved via conformal quotienting)",
+  "stages_1_3_geometry_untouched": true,
+  "allowed_deformations": "periodic mean-zero \u03b4\u03c6(\u03b8,\u03c8) at frozen APS, self-duality, \u03c3*, n_\u03b7, N_gen, and master variational structure",
+  "p1_locked_decimal_protected": false,
+  "p2_positive_floor_protected": false,
+  "verdict": "both_fail",
+  "theorem_level_claim": "The locked residual r = 0.095716 is not dynamically protected, and no positive continuum floor is forced by the locked Einstein\u2013YM map. Continuum r \u2192 0 remains an honest open boundary.",
+  "negative_result": {
+    "P1": "The production decimal r = 0.095716 is a least-squares mismatch in a truncated, regularized 24-mode slice. It already moved from the legacy 8-mode / grid-12 value 0.195011 to 0.095716 under a basis enlargement that preserved APS, self-duality, and the master structure. It is not a geometric invariant.",
+    "P2": "A linearized cokernel exists (\u03c8-independent T_01 vs \u2202_\u03b8\u2202_\u03c8), but the quadratic Wronskian identity fills it at finite amplitude. No forced positive floor. Continuum r \u2192 0 remains open."
+  },
+  "linearized_coker_lemma": {
+    "statement": "On the periodic (\u03b8,\u03c8) torus the linearized map \u03b4\u03c6 \u21a6 \u03b4\u03b2_01 = \u22122 \u2202_\u03b8\u2202_\u03c8 \u03b4\u03c6 has cokernel equal to the modes with k_\u03b8 k_\u03c8 = 0. Locked T_01 \u221d \u03a3_g (\u0394\u03b7_g/\u03c3*) sin(n_g \u03b8) is \u03c8-independent, so its Fourier support lies entirely in that cokernel.",
+    "t01_psi_independent": true,
+    "t01_fourier_coker_fraction": 1.0,
+    "t01_forced_by_n_eta": [
+      3,
+      8,
+      15
+    ],
+    "linear_response_to_psi_independent_trial": 0.0,
+    "linear_response_to_mixed_trial": 7.129974208865516,
+    "linear_coker_exists": true,
+    "protects_finite_amplitude_floor": false,
+    "reason_not_a_floor": "The obstruction is linearized. The quadratic piece \u222b \u03b2_01 d\u03c8 = \u22122 \u222b \u03c6_\u03b8 \u03c6_\u03c8 d\u03c8 can be prescribed: \u03c6 = p(\u03b8) cos \u03c8 + q(\u03b8) sin \u03c8 yields Wronskian \u03c0(p'q \u2212 q'p). Choosing q = 1 and p' equal to the locked T_01 profile gives a smooth periodic \u03c6 that cancels the \u03c8-average of T_01. Therefore the linearized cokernel is not a finite-amplitude range obstruction and does not force inf r > 0.",
+    "wronskian_filling": {
+      "ansatz": "\u03c6 = p(\u03b8) cos \u03c8 + q(\u03b8) sin \u03c8",
+      "identity": "\u222b \u03c6_\u03b8 \u03c6_\u03c8 d\u03c8 = \u03c0 (p' q \u2212 q' p)",
+      "explicit_solution": "q = 1, p' \u221d \u03a3_g (\u0394\u03b7_g/\u03c3*) sin(n_g \u03b8)",
+      "periodic": true,
+      "fills_linear_coker": true
+    }
+  },
+  "in_slice_hessian": {
+    "n_modes": 23,
+    "step": 0.00015,
+    "eigenvalues_min": -4.446437852070427e-10,
+    "eigenvalues_max": 46.33789632331204,
+    "n_negative": 0,
+    "n_near_zero": 11,
+    "n_positive": 12,
+    "positive_definite": false,
+    "local_in_slice_minimum": true,
+    "protects_locked_decimal": false,
+    "note": "Hessian of the unregularized residual on the locked 24-mode slice. No unstable eigenvalue. A large near-null subspace remains, so even in-slice the decimal is not isolated. Local non-negativity is computational stability, not protection of r = 0.095716 against basis enlargement.",
+    "smallest_eigenvalues": [
+      -4.446437852070427e-10,
+      -2.4257542663573296e-10,
+      -1.5741377221449497e-10,
+      -1.0585612708491433e-10,
+      -4.823747707545164e-11
+    ]
+  },
+  "component_breakdown_at_locked_slice": {
+    "total_r": 0.0957162820145647,
+    "component_mean_squares": {
+      "00": 0.24576985734927406,
+      "11": 0.24576985734927403,
+      "01": 0.26927425859368476,
+      "22": 0.45427293949273323,
+      "33": 0.45427293949273323,
+      "44": 0.45427293949273323
+    },
+    "offdiag_01_plus_10_fraction_of_r": 0.22506035790459186,
+    "psi_average_01_mismatch": 0.26926960249555093
+  },
+  "infinitesimal_probes_around_star": {
+    "r_at_star": 0.0957162820145647,
+    "amplitude": 0.0001,
+    "probes": {
+      "psi_independent_n1": {
+        "r_plus": 0.09571628277117003,
+        "r_minus": 0.09571628277117003,
+        "delta_min": 7.566053339402856e-10
+      },
+      "mixed_n1_sin_psi": {
+        "r_plus": 0.09571628294479176,
+        "r_minus": 0.09571628294478356,
+        "delta_min": 9.302188602733352e-10
+      },
+      "mixed_n1_cos_psi": {
+        "r_plus": 0.09571628294588143,
+        "r_minus": 0.09571628294588143,
+        "delta_min": 9.313167320668114e-10
+      }
+    }
+  },
+  "slice_diagnostics": {
+    "n_basis_modes": 23,
+    "grid_n": 24,
+    "n_harmonics": 24,
+    "r_official_regularized_slice": 0.0957162820145647,
+    "r_unregularized_slice_min": 0.09571628201456807,
+    "legacy_r_full_on_disk": 0.1950113120314795,
+    "regularizers_are_non_geometric": true
+  },
+  "phi_mass_gap_is_not_r_protection": "m\u00b2_\u03c6 \u223c 2(1+r)\u03c3*\u00b2/C\u2082 > 0 stabilizes the field \u03c6, not the value of the Einstein\u2013YM mismatch r[\u03c6].",
+  "locked_results_snapshot": {
+    "n_gen": 3,
+    "sigma_star": 0.8660254037844556,
+    "n_eta": [
+      3,
+      8,
+      15
+    ],
+    "beta_residual_new": 0.095716,
+    "continuous_knobs": 0
+  }
+}

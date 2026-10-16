@@ -1,0 +1,154 @@
+{
+  "continuous_knobs": 0,
+  "promoted": 0,
+  "rows_promoted": 0,
+  "baseline_sha256": "1d9b54a788142b9d2c818d236d55e8a7a71b841c0e032107bcc052f23abe707a",
+  "locks_changed": 0,
+  "exhaust_shape": [
+    128,
+    128
+  ],
+  "exhaust_frobenius_norm": 11.313708498984761,
+  "A_anticommute": [
+    0,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13
+  ],
+  "A_commute": [
+    1,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12
+  ],
+  "anticommutator_norms": [
+    0.0,
+    22.627416997969522,
+    22.627416997969522,
+    0.0,
+    22.627416997969522,
+    0.0,
+    22.627416997969522,
+    0.0,
+    22.627416997969522,
+    0.0,
+    22.627416997969522,
+    0.0,
+    22.627416997969522,
+    0.0
+  ],
+  "commutator_norms": [
+    22.627416997969522,
+    0.0,
+    0.0,
+    22.627416997969522,
+    0.0,
+    22.627416997969522,
+    0.0,
+    22.627416997969522,
+    0.0,
+    22.627416997969522,
+    0.0,
+    22.627416997969522,
+    0.0,
+    22.627416997969522
+  ],
+  "index_11_in_A_anticommute": true,
+  "index_13_in_A_anticommute": true,
+  "E_equals_omega_C": true,
+  "omega_square": "+I128",
+  "C_square": "+I128",
+  "C_sign": 1,
+  "symmetric_indices": [
+    0,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13
+  ],
+  "antisymmetric_indices": [
+    1,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12
+  ],
+  "solved_indices": [
+    0,
+    3,
+    5,
+    7,
+    9
+  ],
+  "unique_generator": false,
+  "promotion_candidate": false,
+  "time_candidate_indices": [
+    0,
+    3,
+    5,
+    7,
+    9
+  ],
+  "time_candidate_identified": true,
+  "pair_anticommutators_zero": true,
+  "gamma_t_square": {
+    "0": "+I128",
+    "3": "+I128",
+    "5": "+I128",
+    "7": "+I128",
+    "9": "+I128"
+  },
+  "pair_norms": {
+    "0": [
+      0.0,
+      0.0
+    ],
+    "3": [
+      0.0,
+      0.0
+    ],
+    "5": [
+      0.0,
+      0.0
+    ],
+    "7": [
+      0.0,
+      0.0
+    ],
+    "9": [
+      0.0,
+      0.0
+    ],
+    "11": [
+      22.627416997969522,
+      0.0
+    ],
+    "13": [
+      0.0,
+      22.627416997969522
+    ]
+  },
+  "fiber_action_by_index": {
+    "0": "Off-diagonal",
+    "3": "Off-diagonal",
+    "5": "Off-diagonal",
+    "7": "Off-diagonal",
+    "9": "Diagonal"
+  },
+  "fiber_action": "Diagonal (9); Off-diagonal (0, 3, 5, 7)",
+  "C1": "UNKNOWN",
+  "C2": "UNKNOWN",
+  "coset_selected": null,
+  "fiber": "Sigma5 x T^(1,1)",
+  "sum_M4_Sigma5_cone": 15
+}
