@@ -25,9 +25,10 @@ from pathlib import Path
 THEORY = Path(__file__).resolve().parent
 ROOT = THEORY.parent
 DATA = ROOT.parent / "falsifier"
-BASELINE_SHA = (
-    "1d9b54a788142b9d2c818d236d55e8a7a71b841c0e032107bcc052f23abe707a"
-)
+sys.path.insert(0, str(DATA))
+from content_sha import WORK_BASELINE_SHA, content_sha256
+
+BASELINE_SHA = WORK_BASELINE_SHA
 OPEN_EXTRAS = (
     "color",
     "occupancy",
@@ -89,7 +90,7 @@ def run_certificate(script: str, expect: str) -> None:
 
 def inventory() -> tuple[list[dict], list[dict], str]:
     baseline_path = DATA / "complete_baseline.json"
-    digest = hashlib.sha256(baseline_path.read_bytes()).hexdigest()
+    digest = content_sha256(baseline_path)
     if digest != BASELINE_SHA:
         fail("baseline hash", digest)
     isolate = json.loads((DATA / "isolate_updated.json").read_text(encoding="utf-8"))

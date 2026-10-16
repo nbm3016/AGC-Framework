@@ -12,9 +12,12 @@ from fractions import Fraction
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2] / "falsifier"
-BASELINE_SHA = (
-    "1d9b54a788142b9d2c818d236d55e8a7a71b841c0e032107bcc052f23abe707a"
-)
+import sys
+
+sys.path.insert(0, str(ROOT))
+from content_sha import WORK_BASELINE_SHA, content_sha256
+
+BASELINE_SHA = WORK_BASELINE_SHA
 PASSED: list[str] = []
 
 Mat = tuple[tuple[int, ...], ...]
@@ -367,7 +370,7 @@ def main() -> int:
         by_name["CONE_HOLONOMY"].get("status") == "LOCK",
     )
 
-    digest = hashlib.sha256((ROOT / "complete_baseline.json").read_bytes()).hexdigest()
+    digest = content_sha256(ROOT / "complete_baseline.json")
     check("baseline hash unchanged", digest == BASELINE_SHA, digest)
 
     print("C1 C2 DERIVATION CERTIFICATE PASS")

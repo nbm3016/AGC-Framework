@@ -52,7 +52,7 @@ These are different files.
 | internal timestamp | 2026-09-19 | 2026-08-14 |
 | version string | `stage1+2+3+3B-higher-res` | `stage1+2+3+3B+4-higher-res` |
 
-The public file's verification stamp is `7/7 PASS; stage 4 quarantined`. The numeric rows above were not edited. The working file was not edited.
+The public file's verification stamp is `8/8 PASS`. The numeric rows above were not edited. The working baseline text was not edited. A Windows checkout and a Unix checkout of that text differ by carriage returns. The check hashes the text with carriage returns removed.
 | status | PASS | PASS |
 
 Of the 32 keys in the public file, 28 are equal in the working file. The four that differ are housekeeping:

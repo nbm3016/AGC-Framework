@@ -16,8 +16,13 @@ import pauli_proof as P
 ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / "falsifier"
 CORE = ROOT / "core" / "complete_baseline.json"
-WORK_SHA = "1d9b54a788142b9d2c818d236d55e8a7a71b841c0e032107bcc052f23abe707a"
-CORE_SHA = "e79808eb82123bbbd5a98cfa23d5c26ffd02677915cc94e28cfb5fc59257eabc"
+import sys
+
+sys.path.insert(0, str(DATA))
+from content_sha import CORE_BASELINE_SHA, WORK_BASELINE_SHA, content_sha256
+
+WORK_SHA = WORK_BASELINE_SHA
+CORE_SHA = CORE_BASELINE_SHA
 PASSED: list[str] = []
 PAIRS = ((0, 1), (0, 2), (0, 3), (1, 2), (1, 3), (2, 3))
 DISJOINT = (((0, 1), (2, 3)), ((0, 2), (1, 3)), ((0, 3), (1, 2)))
@@ -237,8 +242,8 @@ def locks_and_hashes() -> None:
         slot.get("status") == "MAP" and slot.get("slot") == "empty" and slot.get("extras") == ["EOM"],
     )
     check("metric extra remains", maps["unique_g_mu_nu"].get("extras") == ["g_mu_nu"])
-    work = hashlib.sha256((DATA / "complete_baseline.json").read_bytes()).hexdigest()
-    core = hashlib.sha256(CORE.read_bytes()).hexdigest()
+    work = content_sha256(DATA / "complete_baseline.json")
+    core = content_sha256(CORE)
     check("working baseline hash", work == WORK_SHA, work)
     check("core baseline hash", core == CORE_SHA, core)
 

@@ -19,10 +19,9 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[2] / "falsifier"
 sys.path.insert(0, str(ROOT))
+from content_sha import WORK_BASELINE_SHA, content_sha256
 
-BASELINE_SHA = (
-    "1d9b54a788142b9d2c818d236d55e8a7a71b841c0e032107bcc052f23abe707a"
-)
+BASELINE_SHA = WORK_BASELINE_SHA
 PASSED: list[str] = []
 
 
@@ -1104,14 +1103,13 @@ def main() -> int:
     check("bridge: bracket equals the Pauli exhaust", np.allclose(to_matrix(exhaust_op), exhaust_num))
 
     # Baseline and locks, read only.
-    baseline = (ROOT / "complete_baseline.json").read_bytes()
-    digest = hashlib.sha256(baseline).hexdigest()
+    digest = content_sha256(ROOT / "complete_baseline.json")
     check("baseline hash unchanged", digest == BASELINE_SHA, digest)
     isolate = json.loads((ROOT / "isolate_updated.json").read_text(encoding="utf-8"))
     n_lock = sum(1 for item in isolate["locks"] if item.get("status") == "LOCK")
     check("35 locks", n_lock == 35, str(n_lock))
     # Re-read baseline to prove this process did not rewrite it.
-    digest2 = hashlib.sha256((ROOT / "complete_baseline.json").read_bytes()).hexdigest()
+    digest2 = content_sha256(ROOT / "complete_baseline.json")
     check("baseline still unread-as-write", digest2 == BASELINE_SHA)
 
     print("PAULI PROOF CERTIFICATE PASS")

@@ -6,7 +6,7 @@ The framework, the theory ledger, and the falsifier are one tree. The checks do 
 
 | Part | Path | What it is |
 |---|---|---|
-| Framework | [`core/`](core/) | The seven-check verifier and the constitution. |
+| Framework | [`core/`](core/) | The eight-check verifier and the constitution. |
 | Theory | [`project/theory/`](project/theory/) | The ledger and the certificates. A page here is not a lock. |
 | Falsifier | [`falsifier/`](falsifier/) | The isolate, the working baseline, and the probes. |
 
@@ -25,7 +25,9 @@ python project/theory/health_check.py
 
 Expected: `HEALTH CHECK PASS`, `continuous_knobs = 0`, 35 locks, 15 sound extras.
 
-The framework check is separate. `--full` rewrites `core/complete_baseline.json`. Do not pass `--regenerate`.
+That command does not rewrite a baseline. The hash it checks is the text of `falsifier/complete_baseline.json` with carriage returns removed, so a Windows checkout and a Unix checkout are the same file.
+
+`python AGC_Computational_Framework.py --full` is a different command. It rewrites `core/complete_baseline.json`, `predictions.json`, and `verification_log.txt`. That makes a clean checkout look dirty. Do not pass `--regenerate`. Do not use `--full` when you only want the check.
 
 ```bash
 cd core

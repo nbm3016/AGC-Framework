@@ -12,7 +12,12 @@ from pathlib import Path
 
 THEORY = Path(__file__).resolve().parent
 DATA = THEORY.parent.parent / "falsifier"
-WORK_SHA = "1d9b54a788142b9d2c818d236d55e8a7a71b841c0e032107bcc052f23abe707a"
+import sys
+
+sys.path.insert(0, str(DATA))
+from content_sha import WORK_BASELINE_SHA, content_sha256
+
+WORK_SHA = WORK_BASELINE_SHA
 SPOKEN = (
     "color",
     "occupancy",
@@ -64,7 +69,7 @@ def fail(name: str, detail: str = "") -> None:
 
 def main() -> int:
     baseline = DATA / "complete_baseline.json"
-    digest = hashlib.sha256(baseline.read_bytes()).hexdigest()
+    digest = content_sha256(baseline)
     if digest != WORK_SHA:
         fail("working baseline hash", digest)
     isolate = json.loads((DATA / "isolate_updated.json").read_text(encoding="utf-8"))
