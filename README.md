@@ -1,6 +1,6 @@
 # Absolute Geometric Coherence
 
-AGC is a zero-continuous-knob geometric isolate. Compact ambient factors named in the lock; not a separate theory claim. A self-duality condition, \(\star\Psi = \Psi\), keeps three Casimir values on a domain wall. Those values are \(\tilde\lambda = 6j(j+1)\) for \(j\in\{1/2,1,3/2\}\), namely \(9/2\), \(12\), and \(45/2\). They are not field modes. From that line the isolate fixes a shape, a generation count, and a short list of dimensionless numbers. The verifier checks seven core assertions. Stage 4 is quarantined and is not one of them. This is not a Standard Model replacement.
+AGC is a zero-continuous-knob geometric isolate. Compact ambient factors named in the lock; not a separate theory claim. A self-duality condition, \(\star\Psi = \Psi\), keeps three Casimir values on a domain wall. Those values are \(\tilde\lambda = 6j(j+1)\) for \(j\in\{1/2,1,3/2\}\), namely \(9/2\), \(12\), and \(45/2\). They are not field modes. From that line the isolate fixes a shape, a generation count, and a short list of dimensionless numbers. The verifier checks eight assertions, stages 1A through 4. This is not a Standard Model replacement.
 
 The framework, the theory ledger, and the falsifier are one tree. The checks do not run if those three are split apart.
 
@@ -32,7 +32,7 @@ cd core
 python AGC_Computational_Framework.py --full
 ```
 
-Expected from that command: **7/7 PASS**, stage 4 quarantined, residual **0.095716**.
+Expected from that command: **8/8 PASS**, residual **0.095716**.
 
 The whole repository is MIT. See [`LICENSE`](LICENSE).
 

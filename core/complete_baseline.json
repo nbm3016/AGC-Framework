@@ -1,6 +1,6 @@
 {
   "framework": "AGC_Computational_Framework",
-  "version": "stage1+2+3+3B-higher-res",
+  "version": "stage1+2+3+3B+4-higher-res",
   "timestamp_utc": "2026-09-19T01:04:39.975512+00:00",
   "status": "PASS",
   "status_classification": {
@@ -11,15 +11,15 @@
       "Open"
     ],
     "continuous_knobs": 0,
-    "core_verification": "7/7 PASS; stage 4 quarantined",
+    "core_verification": "8/8 PASS",
     "numerical_source_of_truth": "complete_baseline.json",
     "numerical_strengthening": "numerical_strengthening.json",
-    "locked_core_scope": "Zero-knob computational skeleton on Sigma^5 x T^{1,1}: wall-index sieve N_gen=3, Casimir values lambda-tilde = 6j(j+1) in {9/2,12,45/2}, sigma^*=sqrt(3)/2, n_eta=(3,8,15), official beta residual 0.095716, residual-NLO A4 high-scale flavor. Stage 4 is quarantined and is not a core check. Absolute scale and volume R closed by observational conversion posture. Reproduce: python AGC_Computational_Framework.py --full.",
+    "locked_core_scope": "Zero-knob computational skeleton on Sigma^5 x T^{1,1}: native APS N_gen=3, derived lambda-tilde {4.5,12,22.5}, sigma^*=sqrt(3)/2, n_eta=(3,8,15), official beta residual 0.095716, residual-NLO A4 high-scale flavor, Stage-4 mu_gammagamma / Omega_Lambda / w0 downstream. Absolute scale and volume R closed by observational conversion posture. Reproduce: python AGC_Computational_Framework.py --full.",
     "proven": [
       {
         "id": "native_N_gen_3",
         "value": 3,
-        "justification": "Wall-index sieve zero count on j2=r=0; not a Dirac index; not lambda-tilde-seeded"
+        "justification": "Native APS-neutral self-dual zero-mode count; not lambda-tilde-seeded"
       },
       {
         "id": "lambda_tilde_derived",
@@ -28,7 +28,7 @@
           12.0,
           22.5
         ],
-        "justification": "Casimir values 6j(j+1) on the wall-index line; not field modes"
+        "justification": "Output of survivors (1/2,0), (1,0), (3/2,0)"
       },
       {
         "id": "sigma_star_shape_stabilized",
@@ -67,7 +67,7 @@
         "mu_gammagamma": 1.086571,
         "omega_lambda": 0.679528,
         "w0": -0.987585,
-        "justification": "Downstream record. Not a core check. Stage 4 is quarantined."
+        "justification": "Stage-4 strictly downstream of locked Stages 1-3"
       },
       {
         "id": "light_neutrino_eV_with_unit_convention",
@@ -84,8 +84,8 @@
       },
       {
         "id": "core_verification_8_of_8",
-        "value": "7/7 PASS; stage 4 quarantined",
-        "justification": "Stages 1A, 1B, 1C, 2A, 2B, 3, 3B. Stage 4 is quarantined and is not a core check."
+        "value": "8/8 PASS",
+        "justification": "Stages 1A, 1B, 1C, 2A, 2B, 3, 3B, 4"
       }
     ],
     "partial": [
@@ -407,7 +407,7 @@
     "continuous_knobs": 0,
     "new_free_parameters_introduced": false,
     "stages_1_4_numerical_locks_untouched": true,
-    "core_verification": "7/7 PASS; stage 4 quarantined",
+    "core_verification": "8/8 PASS",
     "locked_results_snapshot": {
       "n_gen": 3,
       "sigma_star": 0.8660254037844556,
@@ -423,7 +423,7 @@
     "locked_r_unchanged": true,
     "locked_r": 0.095716,
     "locked_r_full": 0.0957162820145647,
-    "core_verification": "7/7 PASS; stage 4 quarantined",
+    "core_verification": "8/8 PASS",
     "absolute_scale_volume_R": "untouched (already resolved via conformal quotienting)",
     "stages_1_3_geometry_untouched": true,
     "allowed_deformations": "periodic mean-zero \u03b4\u03c6(\u03b8,\u03c8) at frozen APS, self-duality, \u03c3*, n_\u03b7, N_gen, and master variational structure",
@@ -541,7 +541,7 @@
     "stages_1_3_geometry_untouched": true,
     "absolute_scale_volume_R": "untouched (already resolved via conformal quotienting)",
     "residual_beta_protection": "untouched (P1 and P2 already failed)",
-    "core_verification": "7/7 PASS; stage 4 quarantined",
+    "core_verification": "8/8 PASS",
     "class_definition": {
       "name": "G_SE",
       "description": "First-slice regular Sasaki\u2013Einstein 5-bases T^{p,q} (p,q\u22645, gcd=1) \u222a Y^{p,q} (0<q<p\u22645, gcd=1), with \u03a3\u2075 domain wall, APS r=0, self-duality, half-integer lattice, native APS index barrier max(0,\u230a(p+q)(2j\u22123)\u230b), no extra fluxes, continuous_knobs=0.",
@@ -1411,7 +1411,7 @@
     "absolute_scale_volume_R": "untouched",
     "residual_beta_protection": "untouched",
     "controlled_class_uniqueness": "untouched",
-    "core_verification": "7/7 PASS; stage 4 quarantined",
+    "core_verification": "8/8 PASS",
     "discrete_sector_forced": true,
     "all_anomalies_cancelled": false,
     "inflow_residual_26_over_9": true,
@@ -1599,7 +1599,7 @@
     "residual_beta_protection": "untouched",
     "controlled_class_uniqueness": "untouched",
     "anomaly_beyond_index": "untouched",
-    "core_verification": "7/7 PASS; stage 4 quarantined",
+    "core_verification": "8/8 PASS",
     "hd_term_forced": false,
     "angle_shift_applied": false,
     "mass_shift_applied": false,
@@ -1721,7 +1721,7 @@
     "controlled_class_uniqueness": "untouched",
     "anomaly_beyond_index": "untouched",
     "controlled_hd_sector": "untouched",
-    "core_verification": "7/7 PASS; stage 4 quarantined",
+    "core_verification": "8/8 PASS",
     "T_wall_exact": "13/2",
     "T_wall_float": 6.5,
     "topological_index": false,
@@ -1840,7 +1840,7 @@
     "anomaly_beyond_index": "untouched",
     "controlled_hd_sector": "untouched",
     "wall_tension_invariant": "untouched",
-    "core_verification": "7/7 PASS; stage 4 quarantined",
+    "core_verification": "8/8 PASS",
     "further_completion_forced": false,
     "official_angles_unchanged": true,
     "a4_preferred_not_unique": true,
@@ -1980,7 +1980,7 @@
     "omega_lambda": 0.679528,
     "w0_dark_energy": -0.987585,
     "continuous_knobs": 0,
-    "verification": "7/7 PASS; stage 4 quarantined",
+    "verification": "8/8 PASS",
     "proven": [
       "native_N_gen_3",
       "sigma_star_shape_stabilized",

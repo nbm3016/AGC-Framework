@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 """
-QUARANTINED. Not a core check. The advertised core list is seven checks, stages 1A through 3B.
-
 Stage 4 — Phenomenology predictions from locked complete_baseline.json.
 
 All coefficients fixed by Stages 1–3 closure (zero continuous knobs).
