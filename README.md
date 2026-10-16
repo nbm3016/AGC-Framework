@@ -34,7 +34,7 @@ python AGC_Computational_Framework.py --full
 
 Expected from that command: **7/7 PASS**, stage 4 quarantined, residual **0.095716**.
 
-`core/` and `docs/` are MIT. See [`docs/LICENSE`](docs/LICENSE). `falsifier/` and `project/theory/` are published in this repository so the three parts run together. See [`falsifier/LICENSE`](falsifier/LICENSE).
+The whole repository is MIT. See [`LICENSE`](LICENSE).
 
 Zenodo record of the locked isolate: [10.5281/zenodo.22903967](https://doi.org/10.5281/zenodo.22903967). Concept DOI for the lock family: [10.5281/zenodo.22088036](https://doi.org/10.5281/zenodo.22088036).
 
